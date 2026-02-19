@@ -458,139 +458,7 @@
         </footer>
         <!-- /footer -->
 
-        <!-- Modal -->   
-        <!-- gedung dan ruangan -->
-        <!-- Modal Gedung Utama - Rooms as Swipes -->
-        <div id="modalUtama" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6" style="cursor: move;">
-                    <h2 class="text-3xl font-bold text-blue-600">🏢 Gedung Utama</h2>
-                    <button onclick="closeBuildingModal('utama')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
-                </div>
-                <div class="p-6">
-                    <!-- Swiper: Ruangan Gedung Utama -->
-                    <div class="relative" style="position: relative;">
-                    <div class="swiper" id="swiperRuanganUtama">
-                        <div class="swiper-wrapper">
-                            <!-- Ruang Direktur -->
-                            <div class="swiper-slide">
-                                <div class="space-y-4">
-                                    <img src="<?= base_url('images/bg-balatkop1.jpeg') ?>" alt="Ruang Direktur" class="w-full rounded-lg h-96 object-cover">
-                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Direktur</h3>
-                                    <p class="text-gray-700"><strong>Lantai:</strong> 10</p>
-                                    <p class="text-gray-700"><strong>Luas:</strong> 80 m²</p>
-                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang kerja ekskutif dengan fasilitas lengkap, AC central, dan pemandangan kota yang luas.</p>
-                                    <div class="flex gap-2 flex-wrap">
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">AC</span>
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">WiFi</span>
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Parkir</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Ruang Rapat Utama -->
-                            <div class="swiper-slide">
-                                <div class="space-y-4">
-                                    <img src="<?= base_url('images/bg-balatkop2.jpeg') ?>" alt="Ruang Rapat Utama" class="w-full rounded-lg h-96 object-cover">
-                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Rapat Utama</h3>
-                                    <p class="text-gray-700"><strong>Lantai:</strong> 9</p>
-                                    <p class="text-gray-700"><strong>Luas:</strong> 120 m²</p>
-                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang rapat berkapasitas 50 orang dengan sistem video conference HD dan proyektor 4K.</p>
-                                    <div class="flex gap-2 flex-wrap">
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Video Conference</span>
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Proyektor 4K</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Ruang Tata Usaha -->
-                            <div class="swiper-slide">
-                                <div class="space-y-4">
-                                    <img src="<?= base_url('images/bg-balatkop3.jpeg') ?>" alt="Ruang Tata Usaha" class="w-full rounded-lg h-96 object-cover">
-                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Tata Usaha</h3>
-                                    <p class="text-gray-700"><strong>Lantai:</strong> 8</p>
-                                    <p class="text-gray-700"><strong>Luas:</strong> 100 m²</p>
-                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang administratif dengan area kerja modern dan filing system terintegrasi.</p>
-                                    <div class="flex gap-2 flex-wrap">
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Filing System</span>
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Printer</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Ruang Keuangan -->
-                            <div class="swiper-slide">
-                                <div class="space-y-4">
-                                    <img src="<?= base_url('images/bg-balatkop4.jpeg') ?>" alt="Ruang Keuangan" class="w-full rounded-lg h-96 object-cover">
-                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Keuangan</h3>
-                                    <p class="text-gray-700"><strong>Lantai:</strong> 7</p>
-                                    <p class="text-gray-700"><strong>Luas:</strong> 90 m²</p>
-                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang keuangan dengan sistem keamanan berlapis dan safe deposit box.</p>
-                                    <div class="flex gap-2 flex-wrap">
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Safe Deposit</span>
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Keamanan 24/7</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Ruang Arsip -->
-                            <div class="swiper-slide">
-                                <div class="space-y-4">
-                                    <img src="<?= base_url('images/bg-balatkop1.jpeg') ?>" alt="Ruang Arsip" class="w-full rounded-lg h-96 object-cover">
-                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Arsip</h3>
-                                    <p class="text-gray-700"><strong>Lantai:</strong> 6</p>
-                                    <p class="text-gray-700"><strong>Luas:</strong> 150 m²</p>
-                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang penyimpanan dokumen dengan sistem pendingin dan kelembaban terkontrol.</p>
-                                    <div class="flex gap-2 flex-wrap">
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Pendingin</span>
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Terintegrasi</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                    </div>
-
-                    <button onclick="closeBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition mt-6">
-                        Tutup
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Gedung Pendukung - Rooms as Swipes -->
-        <div id="modalPendukung" class="hidden fixed inset-0 bg-gradient-to-r from-green-600/40 to-green-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6" style="cursor: move;">
-                    <h2 class="text-3xl font-bold text-green-600">🏛️ Gedung Pendukung</h2>
-                    <button onclick="closeBuildingModal('pendukung')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
-                </div>
-                <div class="p-6">
-                    <!-- Swiper: Ruangan Gedung Pendukung -->
-                    <div class="relative" style="position: relative;">
-                    <div class="swiper" id="swiperRuanganPendukung">
-                        <div class="swiper-wrapper">
-                            <!-- Ruang Perpustakaan -->
-                            <div class="swiper-slide">
-                                <div class="space-y-4">
-                                    <img src="<?= base_url('images/bg-balatkop2.jpeg') ?>" alt="Ruang Perpustakaan" class="w-full rounded-lg h-96 object-cover">
-                                    <h3 class="text-2xl font-bold text-green-600">Ruang Perpustakaan</h3>
-                                    <p class="text-gray-700"><strong>Lantai:</strong> 1</p>
-                                    <p class="text-gray-700"><strong>Luas:</strong> 200 m²</p>
-                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Perpustakaan modern dengan koleksi buku lengkap, area baca nyaman, dan sistem digital terintegrasi.</p>
-                                    <div class="flex gap-2 flex-wrap">
-                                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">E-Book</span>
-                                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">WiFi</span>
-                                    </div>
-                                </div>
-                            </div>
-
-    
-         
-        <!-- fasilitas publik -->
+        <!-- Modal -->        
         <!-- Modal Kesehatan -->
         <div id="modalKesehatan" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
             <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
@@ -935,7 +803,7 @@
             },
             });
             // modal open close
-            function openModal(facility) {
+                function openModal(facility) {
                 const modal = document.getElementById('modal' + facility.charAt(0).toUpperCase() + facility.slice(1));
                 if (modal) {
                     modal.classList.remove('hidden');
