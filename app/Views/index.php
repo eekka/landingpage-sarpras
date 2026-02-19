@@ -74,13 +74,21 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide flex">
                             <div class="swiper-item flex">
-                                Selamat Datang di Sarana Prasarana Kami
                             </div>
                             <div class="swiper-title">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, officia!</p>
                             </div>
                         </div>
-                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">
+                            <div class="flex">
+                                <div class="w-1/2">
+                                    <img src="<?= base_url('images/bg-balatkop1.jpeg') ?>" alt="Slide 2" class="w-full h-full object-cover rounded-2xl shadow-lg">
+                                </div>
+                                <div class="w-1/2">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, voluptatem?
+                                </div>
+                            </div>
+                        </div>
                         <div class="swiper-slide">Slide 3</div>
                         <div class="swiper-slide">Slide 4</div>
                         <div class="swiper-slide">Slide 5</div>
@@ -330,43 +338,43 @@
         <!-- /gallery section -->
 
         <!-- kontak Section -->
-        <section id="kontak" class="py-20 bg-linear-to-r from-blue-600 via-green-600 to-yellow-600 text-white relative overflow-hidden">
-            <div>
+        <section id="kontak" class="py-20 bg-blue-600 text-white relative overflow-hidden">
+            <div class="w-1/2">
                 <div class="absolute inset-0 opacity-10">
                     <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
                     <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/2 translate-y-1/2"></div>
                 </div>
-                <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Tertarik untuk Menggunakan Layanan Kami?</h2>
-                    <p class="text-xl md:text-2xl mb-10 text-gray-100">Hubungi tim kami untuk informasi lebih lanjut</p>
-                    <a href="https://wa.me/6289670131732" target="_blank" class="inline-flex items-center gap-3 bg-white text-purple-600 px-10 py-4 rounded-full font-bold hover:bg-gray-100 hover:scale-105 transition-all shadow-2xl">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                        </svg>
-                        Hubungi Kami Sekarang
-                    </a>
+                <div class="relative flex w-full mx-auto sm:px-6 lg:px-8 text-center">
+                    <div class="w-1/2 flex-1">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6">Tertarik untuk Menggunakan Layanan Kami?</h2>
+                        <p class="text-xl md:text-2xl mb-10 text-gray-100">Kunjungi atau Hubungi tim kami untuk informasi lebih lanjut</p>
+                        <a href="https://wa.me/6289670131732" target="_blank" class="inline-flex items-center gap-3 bg-white text-purple-600 px-10 py-4 rounded-full font-bold hover:bg-gray-100 hover:scale-105 transition-all shadow-2xl">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            Hubungi Kami Sekarang
+                        </a>
+                    </div>                             
                 </div>
-            </div>
-            <div>
                 <!-- Lokasi Kami Section - Full Width -->
-                <div class="mb-8">
-                    <h3 class="text-xl font-bold mb-4 text-white">Lokasi Kami</h3>
-                    <div class="relative w-full h-64 rounded-lg overflow-hidden shadow-lg">
+                <div class="w-1/2 flex-2">
+                    <div class="justify-center">
+                        <h3 class="text-xl font-bold mb-4 text-white"></h3>
+                    </div>
+                    <div class="relative w-full h-64 overflow-hidden shadow-lg">
                         <iframe src="https://maps.google.com/maps?q=Balatkop+UMKM,+Semarang&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-                </div>
+                </div> 
             </div>
         </section>
         <!-- /kontak -->
 
         <!-- footer -->
         <footer class="bg-gray-900 text-white py-16">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 justify-center">
                 <!-- Footer Content - 4 Columns Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-                    
                     <!-- Column 1: Jam Operasional -->
                     <div class="flex flex-col">
                         <h3 class="text-xl font-bold mb-6 text-white">Jam Operasional</h3>
@@ -389,10 +397,6 @@
                             <li class="flex items-start gap-2">
                                 <span class="text-lg flex-shrink-0">📍</span>
                                 <span>JL BERDIKARI RAYA No.9, Srondol Kulon, Banyumanik, Semarang City, Central Java 50263</span>
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-lg flex-shrink-0">📞</span>
-                                <span>(0XX) XXXX-XXXX</span>
                             </li>
                             <li class="flex items-center gap-2">
                                 <span class="text-lg flex-shrink-0">📧</span>
@@ -448,12 +452,447 @@
                 <!-- Copyright Section -->
                 <hr class="border-gray-800 mb-8">
                 <div class="text-center text-gray-400 text-sm">
-                    <p>© 2026 Sarana dan Prasarana - Instansi Pemerintah. Semua hak dilindungi.</p>
+                    <p>© 2026 Sarana dan Prasarana Balatkop UKM Jateng.</p>
                 </div>
-
             </div>
         </footer>
         <!-- /footer -->
+
+        <!-- Modal -->   
+        <!-- gedung dan ruangan -->
+        <!-- Modal Gedung Utama - Rooms as Swipes -->
+        <div id="modalUtama" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6" style="cursor: move;">
+                    <h2 class="text-3xl font-bold text-blue-600">🏢 Gedung Utama</h2>
+                    <button onclick="closeBuildingModal('utama')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div class="p-6">
+                    <!-- Swiper: Ruangan Gedung Utama -->
+                    <div class="relative" style="position: relative;">
+                    <div class="swiper" id="swiperRuanganUtama">
+                        <div class="swiper-wrapper">
+                            <!-- Ruang Direktur -->
+                            <div class="swiper-slide">
+                                <div class="space-y-4">
+                                    <img src="<?= base_url('images/bg-balatkop1.jpeg') ?>" alt="Ruang Direktur" class="w-full rounded-lg h-96 object-cover">
+                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Direktur</h3>
+                                    <p class="text-gray-700"><strong>Lantai:</strong> 10</p>
+                                    <p class="text-gray-700"><strong>Luas:</strong> 80 m²</p>
+                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang kerja ekskutif dengan fasilitas lengkap, AC central, dan pemandangan kota yang luas.</p>
+                                    <div class="flex gap-2 flex-wrap">
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">AC</span>
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">WiFi</span>
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Parkir</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ruang Rapat Utama -->
+                            <div class="swiper-slide">
+                                <div class="space-y-4">
+                                    <img src="<?= base_url('images/bg-balatkop2.jpeg') ?>" alt="Ruang Rapat Utama" class="w-full rounded-lg h-96 object-cover">
+                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Rapat Utama</h3>
+                                    <p class="text-gray-700"><strong>Lantai:</strong> 9</p>
+                                    <p class="text-gray-700"><strong>Luas:</strong> 120 m²</p>
+                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang rapat berkapasitas 50 orang dengan sistem video conference HD dan proyektor 4K.</p>
+                                    <div class="flex gap-2 flex-wrap">
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Video Conference</span>
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Proyektor 4K</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ruang Tata Usaha -->
+                            <div class="swiper-slide">
+                                <div class="space-y-4">
+                                    <img src="<?= base_url('images/bg-balatkop3.jpeg') ?>" alt="Ruang Tata Usaha" class="w-full rounded-lg h-96 object-cover">
+                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Tata Usaha</h3>
+                                    <p class="text-gray-700"><strong>Lantai:</strong> 8</p>
+                                    <p class="text-gray-700"><strong>Luas:</strong> 100 m²</p>
+                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang administratif dengan area kerja modern dan filing system terintegrasi.</p>
+                                    <div class="flex gap-2 flex-wrap">
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Filing System</span>
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Printer</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ruang Keuangan -->
+                            <div class="swiper-slide">
+                                <div class="space-y-4">
+                                    <img src="<?= base_url('images/bg-balatkop4.jpeg') ?>" alt="Ruang Keuangan" class="w-full rounded-lg h-96 object-cover">
+                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Keuangan</h3>
+                                    <p class="text-gray-700"><strong>Lantai:</strong> 7</p>
+                                    <p class="text-gray-700"><strong>Luas:</strong> 90 m²</p>
+                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang keuangan dengan sistem keamanan berlapis dan safe deposit box.</p>
+                                    <div class="flex gap-2 flex-wrap">
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Safe Deposit</span>
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Keamanan 24/7</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ruang Arsip -->
+                            <div class="swiper-slide">
+                                <div class="space-y-4">
+                                    <img src="<?= base_url('images/bg-balatkop1.jpeg') ?>" alt="Ruang Arsip" class="w-full rounded-lg h-96 object-cover">
+                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Arsip</h3>
+                                    <p class="text-gray-700"><strong>Lantai:</strong> 6</p>
+                                    <p class="text-gray-700"><strong>Luas:</strong> 150 m²</p>
+                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang penyimpanan dokumen dengan sistem pendingin dan kelembaban terkontrol.</p>
+                                    <div class="flex gap-2 flex-wrap">
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Pendingin</span>
+                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Terintegrasi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    </div>
+
+                    <button onclick="closeBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition mt-6">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Gedung Pendukung - Rooms as Swipes -->
+        <div id="modalPendukung" class="hidden fixed inset-0 bg-gradient-to-r from-green-600/40 to-green-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6" style="cursor: move;">
+                    <h2 class="text-3xl font-bold text-green-600">🏛️ Gedung Pendukung</h2>
+                    <button onclick="closeBuildingModal('pendukung')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div class="p-6">
+                    <!-- Swiper: Ruangan Gedung Pendukung -->
+                    <div class="relative" style="position: relative;">
+                    <div class="swiper" id="swiperRuanganPendukung">
+                        <div class="swiper-wrapper">
+                            <!-- Ruang Perpustakaan -->
+                            <div class="swiper-slide">
+                                <div class="space-y-4">
+                                    <img src="<?= base_url('images/bg-balatkop2.jpeg') ?>" alt="Ruang Perpustakaan" class="w-full rounded-lg h-96 object-cover">
+                                    <h3 class="text-2xl font-bold text-green-600">Ruang Perpustakaan</h3>
+                                    <p class="text-gray-700"><strong>Lantai:</strong> 1</p>
+                                    <p class="text-gray-700"><strong>Luas:</strong> 200 m²</p>
+                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Perpustakaan modern dengan koleksi buku lengkap, area baca nyaman, dan sistem digital terintegrasi.</p>
+                                    <div class="flex gap-2 flex-wrap">
+                                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">E-Book</span>
+                                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">WiFi</span>
+                                    </div>
+                                </div>
+                            </div>
+
+    
+         
+        <!-- fasilitas publik -->
+        <!-- Modal Kesehatan -->
+        <div id="modalKesehatan" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
+                    <h2 class="text-3xl font-bold text-blue-600">🏥 Kesehatan</h2>
+                    <button onclick="closeModal('kesehatan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div class="p-6">
+                    <img src="https://via.placeholder.com/600x400?text=Klinik+Kesehatan" alt="Kesehatan" class="w-full rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Fasilitas Kesehatan Terlengkap</h3>
+                    <p class="text-gray-700 mb-6">Klinik kesehatan kami dilengkapi dengan peralatan medis modern dan tim profesional yang berpengalaman untuk memberikan pelayanan kesehatan terbaik.</p>
+                    
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Alat Medis yang Tersedia:</h4>
+                    <ul class="grid grid-cols-2 gap-3 mb-6">
+                        <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> CT Scan</li>
+                        <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> X-Ray Digital</li>
+                        <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> USG 4D</li>
+                        <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> EKG</li>
+                        <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Lab Darah Otomatis</li>
+                        <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Alat Vakum</li>
+                        <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Monitor Pasien 24 Jam</li>
+                        <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Defibrillator</li>
+                    </ul>
+
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Layanan Tersedia:</h4>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Pemeriksaan Umum</li>
+                        <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Layanan Darurat 24 Jam</li>
+                        <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Program Vaksinasi</li>
+                        <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Konsultasi Spesialis</li>
+                        <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Pemeriksaan Laboratorium</li>
+                    </ul>
+
+                    <button onclick="closeModal('kesehatan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Perpustakaan -->
+        <div id="modalPerpustakaan" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
+                    <h2 class="text-3xl font-bold text-green-600">📚 Perpustakaan</h2>
+                    <button onclick="closeModal('perpustakaan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div class="p-6">
+                    <img src="https://via.placeholder.com/600x400?text=Perpustakaan" alt="Perpustakaan" class="w-full rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold text-green-600 mb-4">Perpustakaan Modern & Nyaman</h3>
+                    <p class="text-gray-700 mb-6">Perpustakaan kami menyediakan koleksi buku lengkap dari berbagai bidang ilmu dengan suasana belajar yang nyaman dan mendukung.</p>
+                    
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Koleksi Tersedia:</h4>
+                    <ul class="grid grid-cols-2 gap-3 mb-6">
+                        <li class="flex items-center text-gray-700"><span class="text-green-600 mr-2">✓</span> Buku Fiksi (5.000+)</li>
+                        <li class="flex items-center text-gray-700"><span class="text-green-600 mr-2">✓</span> Buku Non-Fiksi (8.000+)</li>
+                        <li class="flex items-center text-gray-700"><span class="text-green-600 mr-2">✓</span> Referensi (3.000+)</li>
+                        <li class="flex items-center text-gray-700"><span class="text-green-600 mr-2">✓</span> E-Book Digital</li>
+                        <li class="flex items-center text-gray-700"><span class="text-green-600 mr-2">✓</span> Jurnal Ilmiah</li>
+                        <li class="flex items-center text-gray-700"><span class="text-green-600 mr-2">✓</span> Media Audiovisual</li>
+                    </ul>
+
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Fasilitas:</h4>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start text-gray-700"><span class="text-green-600 mr-2">•</span> Ruang Baca Nyaman dengan AC</li>
+                        <li class="flex items-start text-gray-700"><span class="text-green-600 mr-2">•</span> Area Diskusi Kelompok</li>
+                        <li class="flex items-start text-gray-700"><span class="text-green-600 mr-2">•</span> Komputer untuk Penelitian</li>
+                        <li class="flex items-start text-gray-700"><span class="text-green-600 mr-2">•</span> WiFi Gratis</li>
+                        <li class="flex items-start text-gray-700"><span class="text-green-600 mr-2">•</span> Sistem Peminjaman Digital</li>
+                    </ul>
+
+                    <button onclick="closeModal('perpustakaan')" class="w-full bg-green-600 text-white py-3 rounded-lg font-bold hover:bg-green-700 transition">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Kantin -->
+        <div id="modalKantin" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
+                    <h2 class="text-3xl font-bold text-yellow-600">🍽️ Kantin</h2>
+                    <button onclick="closeModal('kantin')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div class="p-6">
+                    <img src="https://via.placeholder.com/600x400?text=Kantin+Modern" alt="Kantin" class="w-full rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold text-yellow-600 mb-4">Kantin Modern & Higienis</h3>
+                    <p class="text-gray-700 mb-6">Kantin kami menawarkan menu makanan dan minuman variatif dengan jaminan kualitas, kebersihan, dan kesegaran bahan makanan terjamin.</p>
+                    
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Menu Tersedia:</h4>
+                    <ul class="grid grid-cols-2 gap-3 mb-6">
+                        <li class="flex items-center text-gray-700"><span class="text-yellow-600 mr-2">✓</span> Nasi & Lauk Pauk</li>
+                        <li class="flex items-center text-gray-700"><span class="text-yellow-600 mr-2">✓</span> Mie & Pasta</li>
+                        <li class="flex items-center text-gray-700"><span class="text-yellow-600 mr-2">✓</span> Menu Vegetarian</li>
+                        <li class="flex items-center text-gray-700"><span class="text-yellow-600 mr-2">✓</span> Makanan Ringan & Snack</li>
+                        <li class="flex items-center text-gray-700"><span class="text-yellow-600 mr-2">✓</span> Minuman Segar</li>
+                        <li class="flex items-center text-gray-700"><span class="text-yellow-600 mr-2">✓</span> Kopi & Teh Premium</li>
+                    </ul>
+
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Fasilitas:</h4>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start text-gray-700"><span class="text-yellow-600 mr-2">•</span> Tempat Duduk AC & Nyaman</li>
+                        <li class="flex items-start text-gray-700"><span class="text-yellow-600 mr-2">•</span> Dapur Terstandar Internasional</li>
+                        <li class="flex items-start text-gray-700"><span class="text-yellow-600 mr-2">•</span> Pembayaran Cash & Digital</li>
+                        <li class="flex items-start text-gray-700"><span class="text-yellow-600 mr-2">•</span> Harga Terjangkau & Bersaing</li>
+                        <li class="flex items-start text-gray-700"><span class="text-yellow-600 mr-2">•</span> Buka Setiap Hari Kerja</li>
+                    </ul>
+
+                    <button onclick="closeModal('kantin')" class="w-full bg-yellow-600 text-white py-3 rounded-lg font-bold hover:bg-yellow-700 transition">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Parkir -->
+        <div id="modalParkir" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
+                    <h2 class="text-3xl font-bold text-red-600">🅿️ Parkir</h2>
+                    <button onclick="closeModal('parkir')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div class="p-6">
+                    <img src="https://via.placeholder.com/600x400?text=Lahan+Parkir" alt="Parkir" class="w-full rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold text-red-600 mb-4">Lahan Parkir Luas & Aman</h3>
+                    <p class="text-gray-700 mb-6">Fasilitas parkir kami dirancang modern dengan sistem keamanan berlapis untuk menjamin kendaraan Anda aman dan terpantau 24 jam.</p>
+                    
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Kapasitas:</h4>
+                    <ul class="grid grid-cols-2 gap-3 mb-6">
+                        <li class="flex items-center text-gray-700"><span class="text-red-600 mr-2">✓</span> Mobil: 500 Unit</li>
+                        <li class="flex items-center text-gray-700"><span class="text-red-600 mr-2">✓</span> Motor: 800 Unit</li>
+                        <li class="flex items-center text-gray-700"><span class="text-red-600 mr-2">✓</span> Bus: 20 Unit</li>
+                        <li class="flex items-center text-gray-700"><span class="text-red-600 mr-2">✓</span> Tempat untuk Difabel</li>
+                    </ul>
+
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Fasilitas Keamanan:</h4>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start text-gray-700"><span class="text-red-600 mr-2">•</span> CCTV 24 Jam Full Coverage</li>
+                        <li class="flex items-start text-gray-700"><span class="text-red-600 mr-2">•</span> Petugas Keamanan Berjaga</li>
+                        <li class="flex items-start text-gray-700"><span class="text-red-600 mr-2">•</span> Sistem Gate Elektronik</li>
+                        <li class="flex items-start text-gray-700"><span class="text-red-600 mr-2">•</span> Pencahayaan LED Terang</li>
+                        <li class="flex items-start text-gray-700"><span class="text-red-600 mr-2">•</span> Tarif Terjangkau Harian/Bulanan</li>
+                    </ul>
+
+                    <button onclick="closeModal('parkir')" class="w-full bg-red-600 text-white py-3 rounded-lg font-bold hover:bg-red-700 transition">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Lab Komputer -->
+        <div id="modalLab" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
+                    <h2 class="text-3xl font-bold text-purple-600">💻 Lab Komputer</h2>
+                    <button onclick="closeModal('lab')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div class="p-6">
+                    <img src="https://via.placeholder.com/600x400?text=Lab+Komputer" alt="Lab Komputer" class="w-full rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold text-purple-600 mb-4">Lab Komputer Terkini</h3>
+                    <p class="text-gray-700 mb-6">Laboratorium komputer kami dilengkapi dengan perangkat terbaru dan software profesional untuk mendukung pembelajaran dan riset.</p>
+                    
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Spesifikasi Perangkat:</h4>
+                    <ul class="grid grid-cols-2 gap-3 mb-6">
+                        <li class="flex items-center text-gray-700"><span class="text-purple-600 mr-2">✓</span> 100 Unit Komputer i7</li>
+                        <li class="flex items-center text-gray-700"><span class="text-purple-600 mr-2">✓</span> RAM 16GB DDR4</li>
+                        <li class="flex items-center text-gray-700"><span class="text-purple-600 mr-2">✓</span> SSD 512GB</li>
+                        <li class="flex items-center text-gray-700"><span class="text-purple-600 mr-2">✓</span> Monitor 24 Inch 144Hz</li>
+                        <li class="flex items-center text-gray-700"><span class="text-purple-600 mr-2">✓</span> Server Rendering Powerful</li>
+                        <li class="flex items-center text-gray-700"><span class="text-purple-600 mr-2">✓</span> Printer 3D</li>
+                    </ul>
+
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Software Tersedia:</h4>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start text-gray-700"><span class="text-purple-600 mr-2">•</span> Microsoft Office Suite Lengkap</li>
+                        <li class="flex items-start text-gray-700"><span class="text-purple-600 mr-2">•</span> Adobe Creative Cloud (Photoshop, Premiere, AE)</li>
+                        <li class="flex items-start text-gray-700"><span class="text-purple-600 mr-2">•</span> IDE Pemrograman (VS Code, PyCharm)</li>
+                        <li class="flex items-start text-gray-700"><span class="text-purple-600 mr-2">•</span> CAD & 3D Design (AutoCAD, Blender)</li>
+                        <li class="flex items-start text-gray-700"><span class="text-purple-600 mr-2">•</span> WiFi 1Gbps & Internet Cepat</li>
+                    </ul>
+
+                    <button onclick="closeModal('lab')" class="w-full bg-purple-600 text-white py-3 rounded-lg font-bold hover:bg-purple-700 transition">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Olahraga -->
+        <div id="modalOlahraga" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
+                    <h2 class="text-3xl font-bold text-pink-600">🏋️ Olahraga</h2>
+                    <button onclick="closeModal('olahraga')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div class="p-6">
+                    <img src="https://via.placeholder.com/600x400?text=Fasilitas+Olahraga" alt="Olahraga" class="w-full rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold text-pink-600 mb-4">Fasilitas Olahraga Lengkap</h3>
+                    <p class="text-gray-700 mb-6">Fasilitas olahraga kami dirancang untuk mendukung gaya hidup sehat dan kebugaran dengan peralatan modern dan profesional.</p>
+                    
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Sarana Olahraga:</h4>
+                    <ul class="grid grid-cols-2 gap-3 mb-6">
+                        <li class="flex items-center text-gray-700"><span class="text-pink-600 mr-2">✓</span> Gym Lengkap Modern</li>
+                        <li class="flex items-center text-gray-700"><span class="text-pink-600 mr-2">✓</span> Lapangan Badminton (4)</li>
+                        <li class="flex items-center text-gray-700"><span class="text-pink-600 mr-2">✓</span> Lapangan Tennis (2)</li>
+                        <li class="flex items-center text-gray-700"><span class="text-pink-600 mr-2">✓</span> Lapangan Futsal</li>
+                        <li class="flex items-center text-gray-700"><span class="text-pink-600 mr-2">✓</span> Kolam Renang Olympic</li>
+                        <li class="flex items-center text-gray-700"><span class="text-pink-600 mr-2">✓</span> Studio Yoga & Aerobik</li>
+                    </ul>
+
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Peralatan & Layanan:</h4>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start text-gray-700"><span class="text-pink-600 mr-2">•</span> Peralatan Gym Terbaru & Lengkap</li>
+                        <li class="flex items-start text-gray-700"><span class="text-pink-600 mr-2">•</span> Personal Trainer Bersertifikat</li>
+                        <li class="flex items-start text-gray-700"><span class="text-pink-600 mr-2">•</span> Loker & Shower Room</li>
+                        <li class="flex items-start text-gray-700"><span class="text-pink-600 mr-2">•</span> Program Membership Fleksibel</li>
+                        <li class="flex items-start text-gray-700"><span class="text-pink-600 mr-2">•</span> Kelas Group Fitness Gratis</li>
+                    </ul>
+
+                    <button onclick="closeModal('olahraga')" class="w-full bg-pink-600 text-white py-3 rounded-lg font-bold hover:bg-pink-700 transition">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Transportasi -->
+        <div id="modalTransportasi" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
+                    <h2 class="text-3xl font-bold text-indigo-600">🚗 Transportasi</h2>
+                    <button onclick="closeModal('transportasi')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div class="p-6">
+                    <img src="https://via.placeholder.com/600x400?text=Layanan+Transportasi" alt="Transportasi" class="w-full rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">Layanan Transportasi Terpadu</h3>
+                    <p class="text-gray-700 mb-6">Layanan transportasi kami memberikan kemudahan akses dengan berbagai pilihan moda transportasi yang terintegrasi dan nyaman.</p>
+                    
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Layanan Shuttle:</h4>
+                    <ul class="grid grid-cols-2 gap-3 mb-6">
+                        <li class="flex items-center text-gray-700"><span class="text-indigo-600 mr-2">✓</span> Shuttle Pagi & Sore</li>
+                        <li class="flex items-center text-gray-700"><span class="text-indigo-600 mr-2">✓</span> 30 Unit Bus Modern</li>
+                        <li class="flex items-center text-gray-700"><span class="text-indigo-600 mr-2">✓</span> AC & WiFi Gratis</li>
+                        <li class="flex items-center text-gray-700"><span class="text-indigo-600 mr-2">✓</span> Rute Coverage Luas</li>
+                    </ul>
+
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Akses Transportasi Publik:</h4>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start text-gray-700"><span class="text-indigo-600 mr-2">•</span> Stasiun Kereta Jarak 500m</li>
+                        <li class="flex items-start text-gray-700"><span class="text-indigo-600 mr-2">•</span> Terminal Bus Kota Dekat</li>
+                        <li class="flex items-start text-gray-700"><span class="text-indigo-600 mr-2">•</span> Halte Busway Terdekat 200m</li>
+                        <li class="flex items-start text-gray-700"><span class="text-indigo-600 mr-2">•</span> Tarif Shuttle Terjangkau</li>
+                        <li class="flex items-start text-gray-700"><span class="text-indigo-600 mr-2">•</span> Aplikasi Mobile Booking</li>
+                    </ul>
+
+                    <button onclick="closeModal('transportasi')" class="w-full bg-indigo-600 text-white py-3 rounded-lg font-bold hover:bg-indigo-700 transition">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Keamanan -->
+        <div id="modalKeamanan" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+            <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
+                    <h2 class="text-3xl font-bold text-teal-600">🔒 Keamanan</h2>
+                    <button onclick="closeModal('keamanan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                </div>
+                <div class="p-6">
+                    <img src="https://via.placeholder.com/600x400?text=Sistem+Keamanan" alt="Keamanan" class="w-full rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold text-teal-600 mb-4">Sistem Keamanan Berlapis</h3>
+                    <p class="text-gray-700 mb-6">Sistem keamanan kami menggunakan teknologi terkini dengan monitoring 24 jam untuk menjamin keamanan dan kenyamanan semua pengguna.</p>
+                    
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Peralatan Keamanan:</h4>
+                    <ul class="grid grid-cols-2 gap-3 mb-6">
+                        <li class="flex items-center text-gray-700"><span class="text-teal-600 mr-2">✓</span> CCTV 4K (120 Unit)</li>
+                        <li class="flex items-center text-gray-700"><span class="text-teal-600 mr-2">✓</span> Recording 24 Jam</li>
+                        <li class="flex items-center text-gray-700"><span class="text-teal-600 mr-2">✓</span> Sistem Alarm Otomatis</li>
+                        <li class="flex items-center text-gray-700"><span class="text-teal-600 mr-2">✓</span> Metal Detector</li>
+                        <li class="flex items-center text-gray-700"><span class="text-teal-600 mr-2">✓</span> Access Card System</li>
+                        <li class="flex items-center text-gray-700"><span class="text-teal-600 mr-2">✓</span> Biometric Fingerprint</li>
+                    </ul>
+
+                    <h4 class="text-xl font-bold text-gray-800 mb-3">Tim & Layanan Keamanan:</h4>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start text-gray-700"><span class="text-teal-600 mr-2">•</span> Petugas Keamanan 24/7 Berjaga</li>
+                        <li class="flex items-start text-gray-700"><span class="text-teal-600 mr-2">•</span> Tim Response Cepat Emergency</li>
+                        <li class="flex items-start text-gray-700"><span class="text-teal-600 mr-2">•</span> Asuransi Keamanan Penuh</li>
+                        <li class="flex items-start text-gray-700"><span class="text-teal-600 mr-2">•</span> Koordinasi dengan Kepolisian</li>
+                        <li class="flex items-start text-gray-700"><span class="text-teal-600 mr-2">•</span> Program Keselamatan Berkala</li>
+                    </ul>
+
+                    <button onclick="closeModal('keamanan')" class="w-full bg-teal-600 text-white py-3 rounded-lg font-bold hover:bg-teal-700 transition">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal -->
 
         <!-- Script -->
         <!-- Swiper --> 
@@ -495,6 +934,45 @@
                 el: '.swiper-scrollbar',
             },
             });
+            // modal open close
+            function openModal(facility) {
+                const modal = document.getElementById('modal' + facility.charAt(0).toUpperCase() + facility.slice(1));
+                if (modal) {
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+
+            function closeModal(facility) {
+                const modal = document.getElementById('modal' + facility.charAt(0).toUpperCase() + facility.slice(1));
+                if (modal) {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+            }
+
+            // Close modal when clicking outside
+            document.addEventListener('click', function(event) {
+                const modals = document.querySelectorAll('[id^="modal"]');
+                modals.forEach(modal => {
+                    if (event.target === modal) {
+                        modal.classList.add('hidden');
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    const modals = document.querySelectorAll('[id^="modal"]');
+                    modals.forEach(modal => {
+                        modal.classList.add('hidden');
+                        document.body.style.overflow = 'auto';
+                    });
+                }
+            });
+
         </script>
         <!-- /Script -->
     </body>
