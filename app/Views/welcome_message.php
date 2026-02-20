@@ -233,116 +233,116 @@
     </nav>
 
     <!-- Hero Section with Carousel -->
-    <section id="home" class="relative h-screen overflow-hidden">   
-        <div id="heroCarousel" class="carousel slide absolute inset-0" data-ride="carousel" data-interval="5000">
-            <!-- Indicators -->
-            <ol class="carousel-indicators z-20">
-                <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#heroCarousel" data-slide-to="1"></li>
-                <li data-target="#heroCarousel" data-slide-to="2"></li>
-                <li data-target="#heroCarousel" data-slide-to="3"></li>
-            </ol>
-            <!-- Slides -->
-            <div class="carousel-inner h-full">
-                <div class="carousel-item active h-full">
-                <img src="<?= base_url('images/bg-balatkop1.jpeg') ?>" class="d-block w-full h-full object-cover" alt="First Slide">
-                <div class="absolute inset-0 bg-linear-to-r from-blue-900/60 via-blue-800/50 to-transparent z-10"></div>
-                <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-auto">
-                    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
-                    <!-- Slide 1 -->
-                    <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl">
-                        <h2 class="text-5xl md:text-7xl font-bold mb-6 fade-in-up text-white drop-shadow-lg leading-tight">
-                        <span class="bg-linear-to-r from-yellow-300 via-yellow-200 to-blue-200 bg-clip-text text-transparent">
-                            Sarana dan Prasarana
-                        </span>
-                        <br>
-                        <span class="text-white">BalatKop UKM Jateng</span>
-                        </h2>
-                        <div class="w-24 h-1 bg-linear-to-r from-yellow-400 to-blue-400 rounded-full mb-8"></div>
-                        <p class="text-lg md:text-xl mb-8 text-gray-100 fade-in-up drop-shadow-md leading-relaxed" style="animation-delay: 0.2s">
-                        Mendukung kelancaran operasional instansi pemerintah dengan fasilitas modern dan lengkap
-                        </p>
-                        <button onclick="document.getElementById('tentang').scrollIntoView({behavior: 'smooth'})" class="bg-linear-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-blue-900 px-10 py-4 rounded-full font-bold hover:scale-105 transition-all shadow-2xl fade-in-up backdrop-blur-sm" style="animation-delay: 0.4s">
-                        Jelajahi Sekarang →
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="carousel-item h-full">
-                <img src="<?= base_url('images/bg-balatkop2.jpeg') ?>" class="d-block w-full h-full object-cover" alt="Ruang Kelas">
-                <div class="absolute inset-0 bg-linear-to-r from-purple-900/60 via-purple-800/50 to-transparent z-10"></div>
-                <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-auto">
-                    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
-                    <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl">
-                        <h2 class="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">Ruang Kelas Modern</h2>
-                        <div class="w-24 h-1 bg-linear-to-r from-purple-400 to-pink-400 rounded-full mb-8"></div>
-                        <p class="text-lg md:text-xl mb-8 text-gray-100 drop-shadow-md leading-relaxed">
-                        Fasilitas pembelajaran dengan teknologi terkini dan kenyamanan maksimal
-                        </p>
-                        <button onclick="document.getElementById('fasilitas').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-purple-400 to-pink-500 hover:from-purple-500 hover:to-pink-600 text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-all shadow-2xl backdrop-blur-sm">
-                        Lihat Fasilitas →
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="carousel-item h-full">
-                <img src="<?= base_url('images/bg-balatkop3.jpeg') ?>" class="d-block w-full h-full object-cover" alt="Ruang Rapat">
-                <div class="absolute inset-0 bg-linear-to-r from-emerald-900/60 via-emerald-800/50 to-transparent z-10"></div>
-                <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-auto">
-                    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
-                    <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl">
-                        <h2 class="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">Ruang Rapat Profesional</h2>
-                        <div class="w-24 h-1 bg-linear-to-r from-emerald-400 to-cyan-400 rounded-full mb-8"></div>
-                        <p class="text-lg md:text-xl mb-8 text-gray-100 drop-shadow-md leading-relaxed">
-                        Tempat ideal untuk diskusi dan kolaborasi dengan perlengkapan lengkap
-                        </p>
-                        <button onclick="document.getElementById('tentang').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-emerald-400 to-cyan-500 hover:from-emerald-500 hover:to-cyan-600 text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-all shadow-2xl backdrop-blur-sm">
-                        Pelajari Lebih Lanjut →
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="carousel-item h-full">
-                <img src="<?= base_url('images/bg-balatkop4.jpeg') ?>" class="d-block w-full h-full object-cover" alt="Aula">
-                <div class="absolute inset-0 bg-linear-to-r from-orange-900/60 via-orange-800/50 to-transparent z-10"></div>
-                <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-auto">
-                    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
-                    <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl">
-                        <h2 class="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">Aula Serbaguna</h2>
-                        <div class="w-24 h-1 bg-linear-to-r from-orange-400 to-red-400 rounded-full mb-8"></div>
-                        <p class="text-lg md:text-xl mb-8 text-gray-100 drop-shadow-md leading-relaxed">
-                        Ruang multifungsi dengan kapasitas besar untuk berbagai acara
-                        </p>
-                        <button onclick="document.getElementById('galeri').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-all shadow-2xl backdrop-blur-sm">
-                        Jelajahi Galeri →
-                        </button>
-                    </div>
-                    </div>
+<section id="home" class="relative h-screen overflow-hidden">   
+    <div id="heroCarousel" class="carousel slide absolute inset-0" data-ride="carousel" data-interval="5000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators z-20">
+            <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#heroCarousel" data-slide-to="1"></li>
+            <li data-target="#heroCarousel" data-slide-to="2"></li>
+            <li data-target="#heroCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- Slides -->
+        <div class="carousel-inner h-full">
+            <div class="carousel-item active h-full">
+            <img src="<?= base_url('images/bg-balatkop1.jpeg') ?>" class="d-block w-full h-full object-cover" alt="First Slide">
+            <div class="absolute inset-0 bg-linear-to-r from-blue-900/60 via-blue-800/50 to-transparent z-10"></div>
+            <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-auto">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+                <!-- Slide 1 -->
+                <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl">
+                    <h2 class="text-5xl md:text-7xl font-bold mb-6 fade-in-up text-white drop-shadow-lg leading-tight">
+                    <span class="bg-linear-to-r from-yellow-300 via-yellow-200 to-blue-200 bg-clip-text text-transparent">
+                        Sarana dan Prasarana
+                    </span>
+                    <br>
+                    <span class="text-white">BalatKop UKM Jateng</span>
+                    </h2>
+                    <div class="w-24 h-1 bg-linear-to-r from-yellow-400 to-blue-400 rounded-full mb-8"></div>
+                    <p class="text-lg md:text-xl mb-8 text-gray-100 fade-in-up drop-shadow-md leading-relaxed" style="animation-delay: 0.2s">
+                    Mendukung kelancaran operasional instansi pemerintah dengan fasilitas modern dan lengkap
+                    </p>
+                    <button onclick="document.getElementById('tentang').scrollIntoView({behavior: 'smooth'})" class="bg-linear-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-blue-900 px-10 py-4 rounded-full font-bold hover:scale-105 transition-all shadow-2xl fade-in-up backdrop-blur-sm" style="animation-delay: 0.4s">
+                    Jelajahi Sekarang →
+                    </button>
                 </div>
                 </div>
             </div>
-            <!-- Controls -->
-            <a class="carousel-control-prev z-20" href="#heroCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next z-20" href="#heroCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            </div>
+
+            <div class="carousel-item h-full">
+            <img src="<?= base_url('images/bg-balatkop2.jpeg') ?>" class="d-block w-full h-full object-cover" alt="Ruang Kelas">
+            <div class="absolute inset-0 bg-linear-to-r from-purple-900/60 via-purple-800/50 to-transparent z-10"></div>
+            <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-auto">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+                <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl">
+                    <h2 class="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">Ruang Kelas Modern</h2>
+                    <div class="w-24 h-1 bg-linear-to-r from-purple-400 to-pink-400 rounded-full mb-8"></div>
+                    <p class="text-lg md:text-xl mb-8 text-gray-100 drop-shadow-md leading-relaxed">
+                    Fasilitas pembelajaran dengan teknologi terkini dan kenyamanan maksimal
+                    </p>
+                    <button onclick="document.getElementById('fasilitas').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-purple-400 to-pink-500 hover:from-purple-500 hover:to-pink-600 text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-all shadow-2xl backdrop-blur-sm">
+                    Lihat Fasilitas →
+                    </button>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="carousel-item h-full">
+            <img src="<?= base_url('images/bg-balatkop3.jpeg') ?>" class="d-block w-full h-full object-cover" alt="Ruang Rapat">
+            <div class="absolute inset-0 bg-linear-to-r from-emerald-900/60 via-emerald-800/50 to-transparent z-10"></div>
+            <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-auto">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+                <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl">
+                    <h2 class="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">Ruang Rapat Profesional</h2>
+                    <div class="w-24 h-1 bg-linear-to-r from-emerald-400 to-cyan-400 rounded-full mb-8"></div>
+                    <p class="text-lg md:text-xl mb-8 text-gray-100 drop-shadow-md leading-relaxed">
+                    Tempat ideal untuk diskusi dan kolaborasi dengan perlengkapan lengkap
+                    </p>
+                    <button onclick="document.getElementById('tentang').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-emerald-400 to-cyan-500 hover:from-emerald-500 hover:to-cyan-600 text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-all shadow-2xl backdrop-blur-sm">
+                    Pelajari Lebih Lanjut →
+                    </button>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="carousel-item h-full">
+            <img src="<?= base_url('images/bg-balatkop4.jpeg') ?>" class="d-block w-full h-full object-cover" alt="Aula">
+            <div class="absolute inset-0 bg-linear-to-r from-orange-900/60 via-orange-800/50 to-transparent z-10"></div>
+            <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-auto">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+                <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl">
+                    <h2 class="text-5xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">Aula Serbaguna</h2>
+                    <div class="w-24 h-1 bg-linear-to-r from-orange-400 to-red-400 rounded-full mb-8"></div>
+                    <p class="text-lg md:text-xl mb-8 text-gray-100 drop-shadow-md leading-relaxed">
+                    Ruang multifungsi dengan kapasitas besar untuk berbagai acara
+                    </p>
+                    <button onclick="document.getElementById('galeri').scrollIntoView({behavior: 'smooth'})" class="bg-gradient-to-r from-orange-400 to-red-500 hover:from-orange-500 hover:to-red-600 text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-all shadow-2xl backdrop-blur-sm">
+                    Jelajahi Galeri →
+                    </button>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 float-animation z-20">
-            <svg class="w-6 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-        </div>
-    </section>
+        <!-- Controls -->
+        <a class="carousel-control-prev z-20" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next z-20" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 float-animation z-20">
+        <svg class="w-6 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
+</section>
 
     <!-- About Section -->
     <section id="tentang py=20" >
@@ -1328,7 +1328,11 @@
                             <p class="text-white text-sm">07:00 - 16:00 WIB</p>
                         </div>
                         <div>
-                            <p class="text-gray-400 text-sm"><span class="font-semibold">Sabtu & Minggu:</span></p>
+                            <p class="text-gray-400 text-sm"><span class="font-semibold">Sabtu:</span></p>
+                            <p class="text-white text-sm">07:00 - 12:00 WIB</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm"><span class="font-semibold">Minggu:</span></p>
                             <p class="text-white text-sm">Tutup</p>
                         </div>
                     </div>
@@ -1905,6 +1909,6 @@
             });
         });
     </script>
-    </script>
+</script>
 </body>
 </html>
