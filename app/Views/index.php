@@ -11,19 +11,66 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <!-- Swiper JS -->
         <link href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/output.css">
     </head>
     <body class="bg-blue-100">
+         <style>
+            /* font */
+            /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"); */
+            /* menu navbar-humbergermenu */
+            .nav-link {
+            position: relative;
+            }
+            .nav-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s;
+            }
+            .nav-link:hover::after {
+            width: 100%;
+            }
+            .mobile-menu {
+            display: none;
+            }
+            .mobile-menu.active {
+            display: block;
+            }
+
+            /* swiper */
+
+            .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+
+            .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+
+            .swiper-item {
+            font-size: 0.5rem;
+            }
+        </style>
+
         <!-- whatsapp -->
         <a class="fixed bottom-6 right-6 z-50 group" href="https://wa.me/6281234567890?text=Halo%20Admin%20Balatkop,%20saya%20ingin%20tanya%20mengenai%20sarana%20prasarana..."target="_blank">                
-            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>                
-            <div class="relative bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+            <span class="absolute inline-flex h-2 w-2 rounded-full opacity-75"></span>                
+            <div class="relative bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center group-hover:scale-110">
                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>                   
-                <span class="absolute right-16 bg-gray-800 text-white text-xs px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl">
-                    Tanya Admin Balatkop
-                </span>
             </div>
         </a>
         <!-- navbar -->
@@ -86,41 +133,77 @@
         <!-- /navbar -->
         
         <!-- Section Hero -->
-         <section id="home" class="pt-36 flex items-center justify-center h-screen w-full">
-            <div class="h-screen w-full bg-white">
-                <!-- Slides -->
-                <div class="swiper mySwiper">
+         <section id="home" class="pt-36 flex items-center justify-center h-screen w-full overflow-hidden">
+                <div class="h-screen w-full overflow-hidden relative swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide flex">
-                            <div class="swiper-item flex">
-                            </div>
-                            <div class="swiper-title">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, officia!</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="flex">
-                                <div class="w-1/2">
-                                    <img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="Slide 2" class="w-full h-full object-cover rounded-2xl shadow-lg">
-                                </div>
-                                <div class="w-1/2">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, voluptatem?
-                                </div>
+                    <!-- slide -->
+                        <!-- 1 -->
+                        <div class="swiper-slide h-screen w-full relative">
+                            <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white text-center px-4">
+                                <h1 class="text-9xl md:text-6xl font font-bold mb-4 uppercase">Selamat Datang di <span class="text-blue-800">Sarana Prasarana</span>  Balatkop Jateng</h1>
+                                <p class="text-sm md:text-2xl mb-8">Mendukung Operasional Instansi Pemerintah dengan Fasilitas Terbaik</p>
+                                <a href="#tentang" class="uppercase inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-2xl">
+                                    Jelajahi Sekarang
+                                </a>
                             </div>
                         </div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-                        <div class="swiper-slide">Slide 7</div>
-                        <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
+                        <!-- 2 -->
+                        <div class="swiper-slide h-screen w-full relative">
+                            <!-- <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover"> -->
+                            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white text-center px-4">
+                                <h1 class="text-9xl md:text-6xl font font-bold mb-4 uppercase">Balatkop UKM Jateng</h1>
+                                <p class="text-sm md:text-2xl mb-8">Sebuah instansi pelatihan yang memberikan pelatihan dan pendampingan terbaik untuk UKM di Jawa Tengah</p>
+                                <a href="#tentang" class="uppercase inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-2xl">
+                                    Cari Tahu!
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="swiper-slide h-screen w-full relative">
+                            <!-- <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover"> -->
+                            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white text-center px-4">
+                                <h1 class="text-9xl md:text-6xl font font-bold mb-4 uppercase">Ruang Rapat</h1>
+                                <p class="text-sm md:text-2xl mb-8">Ruang rapat dengan berbagai fasilitas penunjang kegiatan</p>
+                                <a href="#tentang" class="uppercase inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-2xl">
+                                    Lihat Detail
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="swiper-slide h-screen w-full relative">
+                            <!-- <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover"> -->
+                            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white text-center px-4">
+                                <h1 class="text-9xl md:text-6xl font font-bold mb-4 uppercase">Gedung Aula</h1>
+                                <p class="text-sm md:text-2xl mb-8">Ruangan dengan daya tampung besar serta fasilitas fasilitas yang dijamin memuaskan</p>
+                                <a href="#tentang" class="uppercase inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-2xl">
+                                    Lihat Detail
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="swiper-slide h-screen w-full relative">
+                            <!-- <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover"> -->
+                            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white text-center px-4">
+                                <h1 class="text-9xl md:text-6xl font font-bold mb-4 uppercase">Ruang Kelas</h1>
+                                <p class="text-sm md:text-2xl mb-8">Ruangan dengan berbagai fasilitas yang sesuai dengan kegiatan yang dilaksanakan</p>
+                                <a href="#tentang" class="uppercase inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-2xl">
+                                    Lihat Detail
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 6 -->
                     </div>
-                    <div class="swiper-scrollbar"></div>
-                </div>
+                <!-- indikator -->
+                <div class="swiper-scrollbar"></div>
             </div>
-         </section>
+        </div>
+        </section>
         <!-- /Section Hero -->
+        <!-- Hero Slider Section -->
+        <section id="home" class="w-full h-screen overflow-hidden">
+
+        </section>
 
         <!-- About Section -->
         <section id="tentang"class="pt-36" >
@@ -365,6 +448,40 @@
         </section>
         <!-- /fasilitas section -->
 
+        <!-- kontak Section -->
+        <section id="kontak" class="py-20 bg-blue-600 text-white relative overflow-hidden">
+            <div class="w-1/2">
+                <div class="absolute inset-0 opacity-10">
+                    <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+                    <div class="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full translate-x-1/2 translate-y-1/2"></div>
+                </div>
+                <div class="relative flex w-full mx-auto sm:px-6 lg:px-8 text-center">
+                    <div class="w-1/2 flex-1">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6">Tertarik untuk Menggunakan Layanan Kami?</h2>
+                        <p class="text-xl md:text-2xl mb-10 text-gray-100">Kunjungi atau Hubungi tim kami untuk informasi lebih lanjut</p>
+                        <a href="https://wa.me/6289670131732" target="_blank" class="inline-flex items-center gap-3 bg-white text-purple-600 px-10 py-4 rounded-full font-bold hover:bg-gray-100 hover:scale-105 transition-all shadow-2xl">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            Hubungi Kami Sekarang
+                        </a>
+                    </div>                             
+                </div>
+                <!-- Lokasi Kami Section - Full Width -->
+                <div class="w-1/2 flex-2">
+                    <div class="justify-center">
+                        <h3 class="text-xl font-bold mb-4 text-white"></h3>
+                    </div>
+                    <div class="relative w-full h-64 overflow-hidden shadow-lg">
+                        <iframe src="https://maps.google.com/maps?q=Balatkop+UMKM,+Semarang&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- /kontak -->
+
+
             <!-- Gallery Section -->
             <section id="galeri" class="py-20">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -563,78 +680,80 @@
                                 </div>
                             </div>
 
-                            <!-- Ruang Rapat Utama -->
-                            <div class="swiper-slide">
-                                <div class="space-y-4">
-                                    <img src="<?= base_url('images/bg-balatkop2.jpeg') ?>" alt="Ruang Rapat Utama" class="w-full rounded-lg h-96 object-cover">
-                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Rapat Utama</h3>
-                                    <p class="text-gray-700"><strong>Lantai:</strong> 9</p>
-                                    <p class="text-gray-700"><strong>Luas:</strong> 120 m²</p>
-                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang rapat berkapasitas 50 orang dengan sistem video conference HD dan proyektor 4K.</p>
-                                    <div class="flex gap-2 flex-wrap">
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Video Conference</span>
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Proyektor 4K</span>
+                                <!-- Ruang Rapat Utama -->
+                                <div class="swiper-slide">
+                                    <div class="space-y-4">
+                                        <img src="<?= base_url('images/bg-balatkop2.jpeg') ?>" alt="Ruang Rapat Utama" class="w-full rounded-lg h-96 object-cover">
+                                        <h3 class="text-2xl font-bold text-blue-600">Ruang Rapat Utama</h3>
+                                        <p class="text-gray-700"><strong>Lantai:</strong> 9</p>
+                                        <p class="text-gray-700"><strong>Luas:</strong> 120 m²</p>
+                                        <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang rapat berkapasitas 50 orang dengan sistem video conference HD dan proyektor 4K.</p>
+                                        <div class="flex gap-2 flex-wrap">
+                                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Video Conference</span>
+                                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Proyektor 4K</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Ruang Tata Usaha -->
-                            <div class="swiper-slide">
-                                <div class="space-y-4">
-                                    <img src="<?= base_url('images/bg-balatkop3.jpeg') ?>" alt="Ruang Tata Usaha" class="w-full rounded-lg h-96 object-cover">
-                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Tata Usaha</h3>
-                                    <p class="text-gray-700"><strong>Lantai:</strong> 8</p>
-                                    <p class="text-gray-700"><strong>Luas:</strong> 100 m²</p>
-                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang administratif dengan area kerja modern dan filing system terintegrasi.</p>
-                                    <div class="flex gap-2 flex-wrap">
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Filing System</span>
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Printer</span>
+                                <!-- Ruang Tata Usaha -->
+                                <div class="swiper-slide">
+                                    <div class="space-y-4">
+                                        <img src="<?= base_url('images/bg-balatkop3.jpeg') ?>" alt="Ruang Tata Usaha" class="w-full rounded-lg h-96 object-cover">
+                                        <h3 class="text-2xl font-bold text-blue-600">Ruang Tata Usaha</h3>
+                                        <p class="text-gray-700"><strong>Lantai:</strong> 8</p>
+                                        <p class="text-gray-700"><strong>Luas:</strong> 100 m²</p>
+                                        <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang administratif dengan area kerja modern dan filing system terintegrasi.</p>
+                                        <div class="flex gap-2 flex-wrap">
+                                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Filing System</span>
+                                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Printer</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Ruang Keuangan -->
-                            <div class="swiper-slide">
-                                <div class="space-y-4">
-                                    <img src="<?= base_url('images/bg-balatkop4.jpeg') ?>" alt="Ruang Keuangan" class="w-full rounded-lg h-96 object-cover">
-                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Keuangan</h3>
-                                    <p class="text-gray-700"><strong>Lantai:</strong> 7</p>
-                                    <p class="text-gray-700"><strong>Luas:</strong> 90 m²</p>
-                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang keuangan dengan sistem keamanan berlapis dan safe deposit box.</p>
-                                    <div class="flex gap-2 flex-wrap">
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Safe Deposit</span>
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Keamanan 24/7</span>
+                                <!-- Ruang Keuangan -->
+                                <div class="swiper-slide">
+                                    <div class="space-y-4">
+                                        <img src="<?= base_url('images/bg-balatkop4.jpeg') ?>" alt="Ruang Keuangan" class="w-full rounded-lg h-96 object-cover">
+                                        <h3 class="text-2xl font-bold text-blue-600">Ruang Keuangan</h3>
+                                        <p class="text-gray-700"><strong>Lantai:</strong> 7</p>
+                                        <p class="text-gray-700"><strong>Luas:</strong> 90 m²</p>
+                                        <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang keuangan dengan sistem keamanan berlapis dan safe deposit box.</p>
+                                        <div class="flex gap-2 flex-wrap">
+                                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Safe Deposit</span>
+                                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Keamanan 24/7</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Ruang Arsip -->
-                            <div class="swiper-slide">
-                                <div class="space-y-4">
-                                    <img src="<?= base_url('images/bg-balatkop1.jpeg') ?>" alt="Ruang Arsip" class="w-full rounded-lg h-96 object-cover">
-                                    <h3 class="text-2xl font-bold text-blue-600">Ruang Arsip</h3>
-                                    <p class="text-gray-700"><strong>Lantai:</strong> 6</p>
-                                    <p class="text-gray-700"><strong>Luas:</strong> 150 m²</p>
-                                    <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang penyimpanan dokumen dengan sistem pendingin dan kelembaban terkontrol.</p>
-                                    <div class="flex gap-2 flex-wrap">
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Pendingin</span>
-                                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Terintegrasi</span>
+                                <!-- Ruang Arsip -->
+                                <div class="swiper-slide">
+                                    <div class="space-y-4">
+                                        <img src="<?= base_url('images/bg-balatkop1.jpeg') ?>" alt="Ruang Arsip" class="w-full rounded-lg h-96 object-cover">
+                                        <h3 class="text-2xl font-bold text-blue-600">Ruang Arsip</h3>
+                                        <p class="text-gray-700"><strong>Lantai:</strong> 6</p>
+                                        <p class="text-gray-700"><strong>Luas:</strong> 150 m²</p>
+                                        <p class="text-gray-700"><strong>Deskripsi:</strong> Ruang penyimpanan dokumen dengan sistem pendingin dan kelembaban terkontrol.</p>
+                                        <div class="flex gap-2 flex-wrap">
+                                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Pendingin</span>
+                                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Terintegrasi</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                    </div>
+                        </div>
 
-                    <button onclick="closeBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition mt-6">
-                        Tutup
-                    </button>
+                        <button onclick="closeBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition mt-6">
+                            Tutup
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            </div>
 
         <!-- Modal Gedung Pendukung - Rooms as Swipes -->
         <div id="modalPendukung" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
@@ -722,7 +841,7 @@
         </div>
 
         <!-- Modal Layanan Publik - Rooms as Swipes -->
-        <div id="modalPublik" class="hidden fixed inset-0 bg-gradient-to-r from-purple-600/40 to-purple-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
+        <div id="modalPublik" class="hidden fixed inset-0 bg-linear-to-r from-purple-600/40 to-purple-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
             <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
                 <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6" style="cursor: move;">
                     <h2 class="text-3xl font-bold text-purple-600">🏪 Layanan Publik</h2>
@@ -1199,7 +1318,7 @@
                 });
             });
             // Swiper
-            const swiper = new Swiper('.swiper', {
+            const swiper = new window.Swiper('.swiper', {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
