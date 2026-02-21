@@ -147,58 +147,73 @@
                         <!-- 1 -->
                         <div class="swiper-slide h-screen w-full relative">
                             <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white text-center px-4">
-                                <h1 class="text-9xl md:text-6xl font font-bold mb-4 uppercase">Selamat Datang di <span class="text-blue-800">Sarana Prasarana</span>  Balatkop Jateng</h1>
-                                <p class="text-sm md:text-2xl mb-8">Mendukung Operasional Instansi Pemerintah dengan Fasilitas Terbaik</p>
-                                <a href="#tentang" class="uppercase inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-2xl">
-                                    Jelajahi Sekarang
-                                </a>
+                            <div class="absolute inset-0 flex flex-col justify-center bg-black/70 text-white text-left p-4">
+                                <div class=" md:max-w-2/3 lg:max-w-1/2">
+                                    <p class="text-2xl">Slide 1</p>
+                                    <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Selamat Datang di <span class="text-blue-800">Sarana Prasarana</span>  Balatkop Jateng</h1>
+                                    <p class="text-sm mt-2 md:text-lg mb-8">Mendukung Operasional Instansi Pemerintah dengan Fasilitas Terbaik</p>
+                                    <a href="#tentang" class="mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none border-2 border-white px-8 py-4  hover:scale-102 transition-all shadow-2xl">
+                                        Jelajahi Sekarang
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <!-- 2 -->
                         <div class="swiper-slide h-screen w-full relative">
                             <!-- <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover"> -->
-                            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white text-center px-4">
-                                <h1 class="text-9xl md:text-6xl font font-bold mb-4 uppercase">Balatkop UKM Jateng</h1>
-                                <p class="text-sm md:text-2xl mb-8">Sebuah instansi pelatihan yang memberikan pelatihan dan pendampingan terbaik untuk UKM di Jawa Tengah</p>
-                                <a href="#tentang" class="uppercase inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-2xl">
-                                    Cari Tahu!
-                                </a>
+                            <div class="absolute inset-0 flex flex-col justify-center bg-black/70 text-white text-left p-4">
+                                <div class=" md:max-w-2/3 lg:max-w-1/2">
+                                    <p class="text-2xl">Slide 2</p>
+                                    <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Balatkop UKM Jateng</h1>
+                                    <p class="text-sm mt-2 md:text-lg mb-8">Sebuah instansi pelatihan yang memberikan pelatihan dan pendampingan terbaik untuk UKM di Jawa Tengah</p>
+                                    <a href="#tentang" class="mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none border-2 border-white px-8 py-4  hover:scale-102 transition-all shadow-2xl">
+                                        Cari Tahu Lebih Lanjut!
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </div>                         
                         <!-- 3 -->
                         <div class="swiper-slide h-screen w-full relative">
-                            <!-- <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover"> -->
-                            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white text-center px-4">
-                                <h1 class="text-9xl md:text-6xl font font-bold mb-4 uppercase">Ruang Rapat</h1>
-                                <p class="text-sm md:text-2xl mb-8">Ruang rapat dengan berbagai fasilitas penunjang kegiatan</p>
-                                <a href="#tentang" class="uppercase inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-2xl">
-                                    Lihat Detail
-                                </a>
+                            <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex flex-col justify-center bg-black/70 text-white text-left p-4">
+                                <div class=" md:max-w-2/3 lg:max-w-1/2">
+                                    <p class="text-2xl">Slide 3</p>
+                                    <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang Rapat</h1>
+                                    <p class="text-sm mt-2 md:text-lg mb-8">Ruang rapat dengan berbagai fasilitas penunjang kegiatan</p>
+                                    <a href="#tentang" class="mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none border-2 border-white px-8 py-4  hover:scale-102 transition-all shadow-2xl">
+                                        Lihat Detail
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </div>                         
                         <!-- 4 -->
                         <div class="swiper-slide h-screen w-full relative">
-                            <!-- <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover"> -->
-                            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white text-center px-4">
-                                <h1 class="text-9xl md:text-6xl font font-bold mb-4 uppercase">Gedung Aula</h1>
-                                <p class="text-sm md:text-2xl mb-8">Ruangan dengan daya tampung besar serta fasilitas fasilitas yang dijamin memuaskan</p>
-                                <a href="#tentang" class="uppercase inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-2xl">
-                                    Lihat Detail
-                                </a>
+                            <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex flex-col justify-center bg-black/70 text-white text-left p-4">
+                                <div class=" md:max-w-2/3 lg:max-w-1/2">
+                                    <p class="text-2xl">Slide 4</p>
+                                    <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Gedung Aula</h1>
+                                    <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan daya tampung besar serta fasilitas fasilitas yang dijamin memuaskan</p>
+                                    <a href="#tentang" class="mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none border-2 border-white px-8 py-4  hover:scale-102 transition-all shadow-2xl">
+                                        Lihat Detail
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </div>                             
                         <!-- 5 -->
                         <div class="swiper-slide h-screen w-full relative">
-                            <!-- <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover"> -->
-                            <div class="absolute inset-0 flex flex-col items-center justify-center bg-black/70 text-white text-center px-4">
-                                <h1 class="text-9xl md:text-6xl font font-bold mb-4 uppercase">Ruang Kelas</h1>
-                                <p class="text-sm md:text-2xl mb-8">Ruangan dengan berbagai fasilitas yang sesuai dengan kegiatan yang dilaksanakan</p>
-                                <a href="#tentang" class="uppercase inline-flex items-center gap-3 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 hover:scale-105 transition-all shadow-2xl">
-                                    Lihat Detail
-                                </a>
+                            <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex flex-col justify-center bg-black/70 text-white text-left p-4">
+                                <div class=" md:max-w-2/3 lg:max-w-1/2">
+                                    <p class="text-2xl">Slide 5</p>
+                                    <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang Kelas</h1>
+                                    <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan berbagai fasilitas yang sesuai dengan kegiatan yang dilaksanakan</p>
+                                    <a href="#tentang" class="mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none border-2 border-white px-8 py-4  hover:scale-102 transition-all shadow-2xl">
+                                        Lihat Detail
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </div>   
                         <!-- 6 -->
                     </div>
                 <!-- indikator -->
