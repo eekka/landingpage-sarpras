@@ -188,6 +188,48 @@
                 animation: float 2s ease-in-out infinite;
             }
 
+            /* Force hover text color for CTA when Bootstrap text-white is present */
+            .hover-text-amber:hover {
+                color: #fbbf24 !important; /* amber-400 */
+            }
+
+            /* Scroll reveal helpers */
+            @keyframes fadeUpSoft {
+                from { opacity: 0; transform: translateY(18px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .reveal-on-scroll {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+            .reveal-on-scroll.show {
+                opacity: 1;
+                animation: fadeUpSoft 0.7s ease-out forwards;
+            }
+
+            /* Highlight facility card icon on hover/click/focus */
+            .facility-card:hover .card-icon,
+            .facility-card:active .card-icon,
+            .facility-card:focus-visible .card-icon {
+                color: #2563eb; /* blue-600 */
+            }
+
+            /* Highlight facility title text on hover/click/focus */
+            .facility-card:hover .facility-title,
+            .facility-card:active .facility-title,
+            .facility-card:focus-visible .facility-title {
+                color: #2563eb; /* blue-600 */
+            }
+
+            /* Remove underline from brand text */
+            .brand-link {
+                text-decoration: none;
+            }
+            .brand-link:hover,
+            .brand-link:focus-visible {
+                text-decoration: none;
+            }
+
         </style>
 
         <!-- whatsapp -->
@@ -205,13 +247,13 @@
                 <div class="flex justify-between items-center h-20">
                     <!-- logo -->
                     <div class="flex items-center gap-3 slide-in">
-                        <a href="#home" class="flex items-center group">
+                        <a href="#home" class="flex items-center group brand-link">
                             <div class="w-12 h-12 rounded-full flex items-center justify-center mr-3 group-hover:scale-110 transition-transform">
                                 <img src="<?= base_url('images/core/logo11.png') ?>" alt="Logo BalatKop" class="w-12 h-12 mr-2 inline-block rounded-full">
                             </div>
                             <div class="flex flex-col leading-tight">
-                                <span style="font-family: 'Lora', serif; font-weight: 600; font-size: 2.0rem;" class="text-blue-600">Sarana-Prasarana</span>
-                                <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; font-size: 0.75rem; letter-spacing: 0.03em;" class="text-gray-500">Balatkop UKMK Jateng</span>
+                                <span style="font-family: 'Lora', serif; font-weight: 600;" class="text-blue-600 text-2xl md:text-3xl lg:text-4xl">Sarana-Prasarana</span>
+                                <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; letter-spacing: 0.03em;" class="text-gray-800 text-xs md:text-sm">Balatkop UKMK Jateng</span>
                             </div>
                         </a>
                     </div>
@@ -344,10 +386,12 @@
 
         <!-- About Section -->
         <section id="tentang"class="pt-36" >
-            <div class="max-w-7xl mx-auto md:px-4 sm:px-6 lg:px-8 bg-white rounded-3xl shadow p-8 mt-6">
-                <p class="text-3xl font-bold text-center heading-modern bounce-3s section-title-fancy">Tentang Sarana Prasarana Kami</p>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 reveal-on-scroll">
+                <p class="text-3xl font-bold heading-modern bounce-3s section-title-fancy">Tentang Sarana Prasarana Kami</p>
+            </div>
+            <div class="max-w-7xl mx-auto md:px-4 sm:px-6 lg:px-8 bg-white rounded-3xl shadow p-8 mt-2 reveal-on-scroll">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="space-y-6 reveal-left">
+                    <div class="space-y-6 reveal-left reveal-on-scroll">
                         <h3 class="text-3xl font-bold text-blue-600">Deskripsi Umum</h3>
                         <p class="text-gray-700 text-lg leading-relaxed">
                             Sarana dan prasarana kami dirancang untuk mendukung penuh kelancaran operasional instansi pemerintah. 
@@ -367,7 +411,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="relative reveal-right">
+                    <div class="relative reveal-right reveal-on-scroll">
                         <div class="absolute inset-0 bg-linear-to-br from-blue-400 to-purple-600 rounded-2xl transform rotate-3"></div>
                         <div class="relative bg-transparent rounded-2xl overflow-hidden shadow-2xl transform -rotate-1 hover:rotate-0 transition-transform h-96 flex items-center justify-center">
                             <img id="aboutAutoImage" src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="About Image" class="w-full h-full object-cover about-auto-image">
@@ -380,11 +424,11 @@
 
         <!-- Gedung section -->
         <section class="py-10" id="fasilitas">
-            <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <p class="text-3xl font-bold text-center heading-modern bounce-3s section-title-fancy">Gedung dan Ruangan</p>
+            <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+                <p class="text-3xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Gedung dan Ruangan</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <!-- Building Cards -->
-                    <div class="bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col">
+                    <div class="bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                         <div class="h-70 flex items-center justify-center">
                             <img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="Gedung Office" class="w-full h-full object-cover block">
                         </div>
@@ -409,11 +453,11 @@
                                     <span>Arsip, keuangan, dan administrasi</span>
                                 </li>
                             </ul>
-                            <button onclick="openBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto">Lihat Detail</button>
+                            <button onclick="openBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col">
+                    <div class="bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                         <div class="h-70 bg-blue-500 flex items-center justify-center">
                             <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Ruangan Pendukung" class="w-full h-full object-cover block">
                         </div>
@@ -438,11 +482,11 @@
                                     <span>Seminar hall + sound system</span>
                                 </li>
                             </ul>
-                            <button onclick="openBuildingModal('pendukung')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto">Lihat Detail</button>
+                            <button onclick="openBuildingModal('pendukung')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col">
+                    <div class="bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                         <div class="h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
                                 <source src="<?= base_url('images/core/Aula%20Anggrek.mp4') ?>" type="video/mp4">
@@ -469,7 +513,7 @@
                                     <span>Ruang konsultasi privat</span>
                                 </li>
                             </ul>
-                            <button onclick="openBuildingModal('publik')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto">Lihat Detail</button>
+                            <button onclick="openBuildingModal('publik')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
                         </div>
                     </div>
                 </div>
@@ -479,13 +523,13 @@
 
         <!-- Fasilitas Section -->
         <section id="fasilitas" class="py-20 ">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <p class="text-3xl font-bold text-center heading-modern bounce-3s section-title-fancy">Fasilitas Lengkap</p>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+                <p class="text-3xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Fasilitas Lengkap</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Fasilitas Card - Kesehatan -->
-                    <button onclick="openModal('kesehatan')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-1">
+                    <button onclick="openModal('kesehatan')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-1 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
                             </svg>
                         </div>
@@ -494,9 +538,9 @@
                     </button>
 
                     <!-- Fasilitas Card - Perpustakaan -->
-                    <button onclick="openModal('perpustakaan')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-2">
+                    <button onclick="openModal('perpustakaan')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-2 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
                                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                             </svg>
@@ -506,9 +550,9 @@
                     </button>
 
                     <!-- Fasilitas Card - Kantin -->
-                    <button onclick="openModal('kantin')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-3">
+                    <button onclick="openModal('kantin')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-3 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
                                 <path d="M7 2v20"/>
                                 <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
@@ -519,9 +563,9 @@
                     </button>
 
                     <!-- Fasilitas Card - Parkir -->
-                    <button onclick="openModal('parkir')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-4">
+                    <button onclick="openModal('parkir')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-4 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="3" y="3" width="18" height="18" rx="2"/>
                                 <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
                             </svg>
@@ -530,9 +574,9 @@
                         <p class="text-sm facility-description">Lahan parkir luas dengan sistem keamanan modern</p>
                     </button>
 
-                    <button onclick="openModal('lab')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-5">
+                    <button onclick="openModal('lab')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-5 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="3" width="20" height="14" rx="2"/>
                                 <path d="M8 21h8M12 17v4"/>
                             </svg>
@@ -541,9 +585,9 @@
                         <p class="text-sm facility-description">Laboratorium komputer dengan perangkat terkini</p>
                     </button>
                     <!-- Fasilitas Card - Mushola -->
-                    <button onclick="openModal('mushola')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-6">
+                    <button onclick="openModal('mushola')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-6 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 21h18"/>
                                 <path d="M5 21V11l7-6 7 6v10"/>
                                 <circle cx="12" cy="5" r="1.5" fill="currentColor"/>
@@ -557,9 +601,9 @@
                     </button>
 
                     <!-- Fasilitas Card - Transportasi -->
-                    <button onclick="openModal('transportasi')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-7">
+                    <button onclick="openModal('transportasi')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-7 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M19 17H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14l2 4v4a2 2 0 0 1-2 2z"/>
                                 <circle cx="7.5" cy="17" r="1.5"/>
                                 <circle cx="16.5" cy="17" r="1.5"/>
@@ -571,9 +615,9 @@
                     </button>
 
                     <!-- Fasilitas Card - Keamanan -->
-                    <button onclick="openModal('keamanan')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-8">
+                    <button onclick="openModal('keamanan')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-8 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                                 <path d="m9 12 2 2 4-4"/>
                             </svg>
@@ -589,59 +633,59 @@
 
             <!-- Gallery Section -->
             <section id="galeri" class="py-20">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <p class="text-3xl font-bold text-center heading-modern bounce-3s section-title-fancy">Galeri Foto</p>
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+                    <p class="text-3xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Galeri Foto</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-1">
+                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-1 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" data-alt="Gedung Utama">
                             <img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="Gedung Utama" class="absolute inset-0 w-full h-full object-cover gallery-img">
                             <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity flex items-end p-4">
                                 <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Gedung Utama</span>
                             </div>
                         </div>
                         
-                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-2">
+                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-2 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruangan">
                             <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Ruangan" class="absolute inset-0 w-full h-full object-cover gallery-img">
                             <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity flex items-end p-4">
                                 <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruangan</span>
                             </div>
                         </div>
                         
-                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-3">
+                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-3 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" data-alt="Lobby">
                             <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Lobby" class="absolute inset-0 w-full h-full object-cover gallery-img">
                             <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity flex items-end p-4">
                                 <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Lobby</span>
                             </div>
                         </div>
                         
-                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-4">
+                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-4 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" data-alt="Fasilitas">
                             <img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" alt="Fasilitas" class="absolute inset-0 w-full h-full object-cover gallery-img">
                             <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity flex items-end p-4">
                                 <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Fasilitas</span>
                             </div>
                         </div>
                         
-                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-5">
+                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-5 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop5.jpeg') ?>" data-alt="Kantin">
                             <img src="<?= base_url('images/core/bg-balatkop5.jpeg') ?>" alt="Kantin" class="absolute inset-0 w-full h-full object-cover gallery-img">
                             <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity flex items-end p-4">
                                 <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Kantin</span>
                             </div>
                         </div>
                         
-                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-6">
+                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-6 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Meeting">
                             <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Ruang Meeting" class="absolute inset-0 w-full h-full object-cover gallery-img">
                             <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity flex items-end p-4">
                                 <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Meeting</span>
                             </div>
                         </div>
                         
-                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-7">
+                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-7 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/mushola.jpg') ?>" data-alt="Mushola">
                             <img src="<?= base_url('images/core/mushola.jpg') ?>" alt="Mushola" class="absolute inset-0 w-full h-full object-cover gallery-img">
                             <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity flex items-end p-4">
                                 <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Lab</span>
                             </div>
                         </div>
                         
-                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-8">
+                        <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-8 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/timbalatkop2.jpeg') ?>" data-alt="Parkir">
                             <img src="<?= base_url('images/core/timbalatkop2.jpeg') ?>" alt="Parkir" class="absolute inset-0 w-full h-full object-cover gallery-img">
                             <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity flex items-end p-4">
                                 <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Parkir</span>
@@ -651,6 +695,13 @@
                 </div>
             </section>
         <!-- /gallery section -->
+
+        <!-- Lightbox for gallery -->
+        <div id="galleryLightbox" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+            <div class="relative max-w-4xl w-full">
+                <img id="galleryLightboxImg" src="" alt="" class="w-full h-auto max-h-[75vh] rounded-2xl shadow-2xl transform transition duration-300 opacity-0 scale-90">
+            </div>
+        </div>
 
         
         <!-- kontak Section -->
@@ -797,9 +848,19 @@
                 <!-- Scrollable content panels (synced with slide) -->
                 <div>
                     <div class="p-6 modal-info-utama modal-info-block" data-slide="0">
-                        <h3 class="text-2xl font-bold text-blue-700 modal-title-fancy mb-3">Ruang Direktur</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 80 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 8 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Ruang Direktur</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 80 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 8 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Direktur telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Ruang Direktur<br>Dimensi ruangan 80 m2</p>
                         <ul class="modal-info-list">
@@ -813,9 +874,19 @@
                         </ul>
                     </div>
                     <div class="p-6 modal-info-utama modal-info-block hidden" data-slide="1">
-                        <h3 class="text-2xl font-bold text-blue-700 modal-title-fancy mb-3">Ruang Rapat Utama</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 120 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 50 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Ruang Rapat Utama</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 120 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 50 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Rapat Utama telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Ruang Rapat Utama<br>Dimensi ruangan 120 m2</p>
                         <ul class="modal-info-list">
@@ -829,9 +900,19 @@
                         </ul>
                     </div>
                     <div class="p-6 modal-info-utama modal-info-block hidden" data-slide="2">
-                        <h3 class="text-2xl font-bold text-blue-700 modal-title-fancy mb-3">Ruang Tata Usaha</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 100 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 30 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Ruang Tata Usaha</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 100 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 30 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Tata Usaha telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Ruang Tata Usaha<br>Dimensi ruangan 100 m2</p>
                         <ul class="modal-info-list">
@@ -845,9 +926,19 @@
                         </ul>
                     </div>
                     <div class="p-6 modal-info-utama modal-info-block hidden" data-slide="3">
-                        <h3 class="text-2xl font-bold text-blue-700 modal-title-fancy mb-3">Ruang Keuangan</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 90 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 20 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Ruang Keuangan</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 90 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 20 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Keuangan telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Ruang Keuangan<br>Dimensi ruangan 90 m2</p>
                         <ul class="modal-info-list">
@@ -861,9 +952,19 @@
                         </ul>
                     </div>
                     <div class="p-6 modal-info-utama modal-info-block hidden" data-slide="4">
-                        <h3 class="text-2xl font-bold text-blue-700 modal-title-fancy mb-3">Ruang Arsip</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 150 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 15 guests</p>
+                        <div class="flex flex-col items-start">
+                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Ruang Arsip</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 150 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 15 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Arsip telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Ruang Arsip<br>Dimensi ruangan 150 m2</p>
                         <ul class="modal-info-list">
@@ -901,9 +1002,19 @@
                 </div>
                 <div>
                     <div class="p-6 modal-info-pendukung modal-info-block" data-slide="0">
-                        <h3 class="text-2xl font-bold text-green-700 modal-title-fancy mb-3">Ruang Perpustakaan</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 200 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 60 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Ruang Perpustakaan</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 200 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 60 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Perpustakaan telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Ruang Perpustakaan<br>Dimensi ruangan 200 m2</p>
                         <ul class="modal-info-list">
@@ -917,9 +1028,19 @@
                         </ul>
                     </div>
                     <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="1">
-                        <h3 class="text-2xl font-bold text-green-700 modal-title-fancy mb-3">Ruang Kolaborasi</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 150 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 40 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Ruang Kolaborasi</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 150 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 40 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Kolaborasi telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Ruang Kolaborasi<br>Dimensi ruangan 150 m2</p>
                         <ul class="modal-info-list">
@@ -933,9 +1054,19 @@
                         </ul>
                     </div>
                     <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="2">
-                        <h3 class="text-2xl font-bold text-green-700 modal-title-fancy mb-3">Ruang Meeting A</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 80 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 25 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Ruang Meeting A</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 80 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 25 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Meeting A telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Ruang Meeting A<br>Dimensi ruangan 80 m2</p>
                         <ul class="modal-info-list">
@@ -949,9 +1080,19 @@
                         </ul>
                     </div>
                     <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="3">
-                        <h3 class="text-2xl font-bold text-green-700 modal-title-fancy mb-3">Ruang Seminar</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 250 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 100 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Ruang Seminar</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 250 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 100 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Seminar telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Ruang Seminar<br>Dimensi ruangan 250 m2</p>
                         <ul class="modal-info-list">
@@ -989,9 +1130,19 @@
                 </div>
                 <div>
                     <div class="p-6 modal-info-publik modal-info-block" data-slide="0">
-                        <h3 class="text-2xl font-bold text-purple-700 modal-title-fancy mb-3">Ruang Tunggu Publik</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 300 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 120 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Ruang Tunggu Publik</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 300 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 120 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Tunggu Publik telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Ruang Tunggu Publik<br>Dimensi ruangan 300 m2</p>
                         <ul class="modal-info-list">
@@ -1005,9 +1156,19 @@
                         </ul>
                     </div>
                     <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="1">
-                        <h3 class="text-2xl font-bold text-purple-700 modal-title-fancy mb-3">Loket Pelayanan 1</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 40 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 10 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Loket Pelayanan 1</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 40 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 10 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Loket Pelayanan 1 telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Loket Pelayanan 1<br>Dimensi ruangan 40 m2</p>
                         <ul class="modal-info-list">
@@ -1021,9 +1182,19 @@
                         </ul>
                     </div>
                     <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="2">
-                        <h3 class="text-2xl font-bold text-purple-700 modal-title-fancy mb-3">Loket Pelayanan 2</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 40 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 10 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Loket Pelayanan 2</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 40 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 10 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Loket Pelayanan 2 telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Loket Pelayanan 2<br>Dimensi ruangan 40 m2</p>
                         <ul class="modal-info-list">
@@ -1037,9 +1208,19 @@
                         </ul>
                     </div>
                     <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="3">
-                        <h3 class="text-2xl font-bold text-purple-700 modal-title-fancy mb-3">Ruang Konsultasi</h3>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Ukuran:</strong> 20 sqm</p>
-                        <p class="text-gray-600 text-sm mb-1 keep-strong"><strong>Kapasitas:</strong> 5 guests</p>
+                        <div class="flex flex-col items-start">
+                            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <h3 class="text-2xl font-bold text-center">Ruang Konsultasi</h3>
+                            </div>
+                            <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                <p class="text-gray-700 text-sm mb-1">
+                                    <span class="font-bold">Ukuran :</span> 20 sqm
+                                </p>
+                                <p class="text-gray-700 text-sm">
+                                    <span class="font-bold">Kapasitas :</span> 5 guests
+                                </p>
+                            </div>
+                        </div>
                         <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Konsultasi telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                         <p class="text-gray-600 text-sm mb-3">Ruang Konsultasi<br>Dimensi ruangan 20 m2</p>
                         <ul class="modal-info-list">
@@ -1646,7 +1827,8 @@
                         entries.forEach((entry) => {
                             if (entry.isIntersecting) {
                                 entry.target.classList.add('is-visible');
-                                revealObserver.unobserve(entry.target);
+                            } else {
+                                entry.target.classList.remove('is-visible');
                             }
                         });
                     },
@@ -1660,7 +1842,8 @@
                         entries.forEach((entry) => {
                             if (entry.isIntersecting) {
                                 entry.target.classList.add('drawn', 'in-view');
-                                titleObserver.unobserve(entry.target);
+                            } else {
+                                entry.target.classList.remove('drawn', 'in-view');
                             }
                         });
                     },
@@ -1668,6 +1851,77 @@
                 );
 
                 titleTargets.forEach((el) => titleObserver.observe(el));
+            })();
+
+            // Scroll reveal for Tailwind-styled blocks
+            (function () {
+                const targets = document.querySelectorAll('.reveal-on-scroll');
+                if (!('IntersectionObserver' in window) || !targets.length) return;
+
+                const obs = new IntersectionObserver(
+                    (entries) => {
+                        entries.forEach((entry) => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('show');
+                            } else {
+                                entry.target.classList.remove('show');
+                            }
+                        });
+                    },
+                    { threshold: 0.15 }
+                );
+
+                targets.forEach((el) => obs.observe(el));
+            })();
+
+            // Gallery lightbox
+            (function () {
+                const items = document.querySelectorAll('.gallery-item');
+                const lightbox = document.getElementById('galleryLightbox');
+                const lightboxImg = document.getElementById('galleryLightboxImg');
+                const lightboxClose = document.getElementById('galleryLightboxClose');
+                if (!items.length || !lightbox || !lightboxImg) return;
+
+                const openLightbox = (src, alt) => {
+                    lightboxImg.src = src;
+                    lightboxImg.alt = alt || '';
+                    lightbox.classList.remove('hidden');
+                    requestAnimationFrame(() => {
+                        lightbox.classList.add('flex');
+                        lightboxImg.classList.remove('opacity-0', 'scale-95');
+                        lightboxImg.classList.add('opacity-100', 'scale-100');
+                    });
+                };
+
+                const closeLightbox = () => {
+                    lightboxImg.classList.add('opacity-0', 'scale-95');
+                    lightboxImg.classList.remove('opacity-100', 'scale-100');
+                    setTimeout(() => {
+                        lightbox.classList.add('hidden');
+                        lightbox.classList.remove('flex');
+                        lightboxImg.src = '';
+                    }, 200);
+                };
+
+                items.forEach((item) => {
+                    item.addEventListener('click', () => {
+                        const src = item.getAttribute('data-img');
+                        const alt = item.getAttribute('data-alt');
+                        if (!src) return;
+                        openLightbox(src, alt);
+                    });
+                });
+
+                lightbox?.addEventListener('click', (e) => {
+                    if (e.target === lightbox) closeLightbox();
+                });
+
+                lightboxClose?.addEventListener('click', closeLightbox);
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+                        closeLightbox();
+                    }
+                });
             })();
 
         </script>
