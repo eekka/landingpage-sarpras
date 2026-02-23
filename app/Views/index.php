@@ -18,6 +18,7 @@
             /* menu navbar-humbergermenu */
             .nav-link {
             position: relative;
+            text-decoration: none;
             }
             .nav-link::after {
             content: "";
@@ -254,13 +255,15 @@
 
             /* Hero button custom styles */
             .hero-cta-btn {
-                background-color: #2563eb;
+                background-color: transparent;
+                border: 2px solid white;
                 color: white;
                 transition: all 0.3s ease;
             }
             .hero-cta-btn:hover {
-                background-color: #2563eb;
-                color: #fbbf24 !important;
+                background-color: #fff;
+                color: #000 !important;
+                border: 2px solid black;
                 transform: scale(1.05) translateY(-5px);
                 box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.4);
                 animation: float-hover 1.5s ease-in-out infinite;
@@ -349,20 +352,20 @@
         </nav>
         <!-- /navbar -->
         
-        <!-- Section Hero -->
+        <!-- Hero section -->
          <section id="home" class=" flex items-center justify-center h-screen w-full overflow-hidden">
                 <div class="h-screen w-full overflow-hidden relative swiper mySwiper">
                     <div class="swiper-wrapper">
                     <!-- slide -->
                         <!-- 1 -->
-                        <div class="swiper-slide h-screen w-full relative">
-                            <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover">
+                        <div class="swiper-slide h-screen w-full relative bg-black">
+                            <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                             <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
-                                <div class="md:max-w-2/3 lg:max-w-1/2">
-                                    <p class="text-2xl">Slide 1</p>
-                                    <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Selamat Datang di <span class="text-blue-800">Sarana Prasarana</span>  Balatkop Jateng</h1>
-                                    <p class="text-sm mt-2 md:text-lg mb-8">Mendukung Operasional Instansi Pemerintah dengan Fasilitas Terbaik</p>
-                                    <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 rounded-full shadow-2xl focus-visible:animate-pulse active:scale-95">
+                                <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15 ">
+                                    <p class="text-2xl reveal-left reveal-on-scroll">Slide 1</p>
+                                    <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase reveal-left reveal-on-scroll">Selamat Datang di <span class="text-blue-800">Sarana Prasarana</span>  Balatkop Jateng</h1>
+                                    <p class="text-sm mt-2 md:text-lg mb-8 reveal-left reveal-on-scroll">Mendukung Operasional Instansi Pemerintah dengan Fasilitas Terbaik</p>
+                                    <a href="#tentang" class="reveal-left reveal-on-scroll hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                         Jelajahi Sekarang
                                     </a>
                                 </div>
@@ -370,7 +373,7 @@
                         </div>
                         <!-- 2 -->
                         <div class="swiper-slide h-screen w-full relative">
-                            <!-- <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover"> -->
+                            <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover">
                             <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                                 <div class="md:max-w-2/3 lg:max-w-1/2">
                                     <p class="text-2xl">Slide 2</p>
@@ -404,7 +407,7 @@
                                     <p class="text-2xl">Slide 4</p>
                                     <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Gedung Aula</h1>
                                     <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan daya tampung besar serta fasilitas fasilitas yang dijamin memuaskan</p>
-                                    <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 rounded-full shadow-2xl focus-visible:animate-pulse active:scale-95">
+                                    <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                         Lihat Detail
                                     </a>
                                 </div>
@@ -418,7 +421,7 @@
                                     <p class="text-2xl">Slide 5</p>
                                     <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang Kelas</h1>
                                     <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan berbagai fasilitas yang sesuai dengan kegiatan yang dilaksanakan</p>
-                                    <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 rounded-full shadow-2xl focus-visible:animate-pulse active:scale-95">
+                                    <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                         Lihat Detail
                                     </a>
                                 </div>
@@ -427,7 +430,13 @@
                         <!-- 6 -->
                     </div>
                 <!-- indikator -->
-                <div class="swiper-scrollbar"></div>
+                <div class="swiper-scrollbar">
+                    <ul class="swiper-pagination">
+                     <!-- <li class="swiper-button"> Lorem ipsum dolor sit amet.</li>
+                        <li> </li>
+
+                    </ul>    -->
+                </div>
             </div>
         </div>
         </section>
@@ -472,7 +481,7 @@
         <!-- /about section -->
 
         <!-- Gedung section -->
-        <section class="py-10" id="fasilitas">
+        <section class="py-10 pt-26" id="fasilitas">
             <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
                 <p class="text-3xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Gedung dan Ruangan</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -781,25 +790,25 @@
                         <h3 class="text-xl font-bold mb-6 text-white">Ikuti Kami</h3>
                         <div class="d-flex flex-column gap-3">
                             <a href="https://www.instagram.com/balatkopukmjateng?igsh=MW1sNWpqNTdndHNmaA==" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-gray-400 hover:text-pink-500 transition duration-300 text-decoration-none">
-                                <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
                                 </svg>
                                 <span class="text-sm">balatkopukmjateng</span>
                             </a>
                             <a href="https://www.facebook.com/share/1MekEv6wAC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-gray-400 hover:text-blue-600 transition duration-300 text-decoration-none">
-                                <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                                 </svg>
                                 <span class="text-sm">Balatkopukmjateng</span>
                             </a>
                             <a href="https://x.com/balatkopukmjtg?s=21" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-gray-400 hover:text-gray-100 transition duration-300 text-decoration-none">
-                                <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.6l-5.165-6.744L2.881 21.25H.577l7.732-8.835L.126 2.25h6.775l4.978 6.586L17.414 2.25h.83zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                                 </svg>
                                 <span class="text-sm">balatkopukmjtg</span>
                             </a>
                             <a href="https://www.tiktok.com/@balatkopukmjateng?_r=1&_t=ZS-93J5ZQopP8v" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-gray-400 hover:text-cyan-400 transition duration-300 text-decoration-none">
-                                <svg class="w-6 h-6 flex-shrink-0" fill="none" viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 shrink-0" fill="none" viewBox="0 0 24 24">
                                     <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" fill="url(#tiktokGradient)"/>
                                     <defs>
                                         <linearGradient id="tiktokGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -811,7 +820,7 @@
                                 <span class="text-sm">balatkopukmjateng</span>
                             </a>
                             <a href="https://youtube.com/@balatkopjateng?si=4KCNmm5Q9VOJD2Wq" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-gray-400 hover:text-red-600 transition duration-300 text-decoration-none">
-                                <svg class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                                 </svg>
                                 <span class="text-sm">BALATKOP JATENG</span>
@@ -843,15 +852,15 @@
                         <h3 class="text-xl font-bold mb-6 text-white">Kontak</h3>
                         <ul class="text-gray-400 text-sm space-y-3 list-unstyled">
                             <li class="d-flex align-items-start gap-2">
-                                <span class="text-lg flex-shrink-0">📍</span>
+                                <span class="text-lg shrink-0">📍</span>
                                 <span>JL BERDIKARI RAYA No.9, Srondol Kulon, Banyumanik, Semarang City, Central Java 50263</span>
                             </li>
                             <li class="flex items-center gap-2">
-                            <span class="text-lg flex-shrink-0">📞</span>
+                            <span class="text-lg shrink-0">📞</span>
                             <span>(0XX) XXXX-XXXX</span>
                         </li>
                             <li class="d-flex align-items-center gap-2">
-                                <span class="text-lg flex-shrink-0">📧</span>
+                                <span class="text-lg shrink-0">📧</span>
                                 <span>balatkopukm.jateng@gmail.com</span>
                             </li>
                         </ul>
