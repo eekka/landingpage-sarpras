@@ -34,9 +34,80 @@
             }
             .mobile-menu {
             display: none;
+            background: #ffffff;
+            border-radius: 0.75rem;
+            padding: 0.4rem 0.5rem 0.7rem;
             }
             .mobile-menu.active {
             display: block;
+            }
+
+            @media (max-width: 767px) {
+                .mobile-menu {
+                    border-radius: 0;
+                }
+
+                .mobile-menu.active {
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    width: min(76vw, 360px);
+                    min-height: calc(100vh - 5rem);
+                    padding: 1rem 0.75rem 1.25rem;
+                    overflow-y: auto;
+                    box-shadow: -8px 10px 24px -16px rgba(0, 0, 0, 0.45);
+                    z-index: 60;
+                }
+            }
+
+            #mobileMenu a {
+                display: block;
+                color: #111827;
+                text-decoration: none;
+                font-weight: 600;
+                border-radius: 0.5rem;
+                padding-left: 0.6rem;
+                padding-right: 0.6rem;
+                transition: background-color 0.2s ease, transform 0.2s ease;
+            }
+
+            #mobileMenu a .mobile-link-text {
+                position: relative;
+                display: inline-block;
+            }
+
+            #mobileMenu a .mobile-link-text::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                width: 0;
+                height: 2px;
+                background-color: currentColor;
+                transition: width 0.25s ease;
+            }
+
+            #mobileMenu a:hover,
+            #mobileMenu a:focus-visible,
+            #mobileMenu a:active,
+            #mobileMenu a.is-pressing,
+            #mobileMenu a.is-selected {
+                color: #111827;
+                background-color: #f3f4f6;
+                text-decoration: none;
+                transform: translateX(4px);
+            }
+
+            #mobileMenu a:hover .mobile-link-text::after,
+            #mobileMenu a:focus-visible .mobile-link-text::after,
+            #mobileMenu a:active .mobile-link-text::after,
+            #mobileMenu a.is-pressing .mobile-link-text::after,
+            #mobileMenu a.is-selected .mobile-link-text::after {
+                width: 100%;
+            }
+
+            #mobileMenu a.is-pressing .mobile-link-text::after {
+                transition-duration: 0.18s;
             }
 
             /* swiper */
@@ -292,7 +363,7 @@
         </a>
         <!-- navbar -->
         <nav class="bg-white shadow-lg sticky top-0 z-50 backdrop-blur-lg bg-opacity-90">
-            <div class="px-2 lg:px-8">         
+            <div class="px-2 lg:px-8 relative">         
                 <div class="flex justify-between items-center h-20">
                     <!-- logo -->
                     <div class="flex items-center gap-3 slide-in">
@@ -339,11 +410,11 @@
                 </div>
                 <!-- Mobile Menu -->
                 <div id="mobileMenu" class="mobile-menu md:hidden pb-4">
-                    <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600 transition">Beranda</a>
-                    <a href="#tentang" class="block py-2 text-gray-700 hover:text-blue-600 transition">Tentang</a>
-                    <a href="#fasilitas" class="block py-2 text-gray-700 hover:text-blue-600 transition">Fasilitas</a>
-                    <a href="#galeri" class="block py-2 text-gray-700 hover:text-blue-600 transition">Galeri</a>
-                    <a href="#kontak" class="block py-2 text-gray-700 hover:text-blue-600 transition">Kontak</a>
+                    <a href="#home" class="block py-2 transition"><span class="mobile-link-text">Beranda</span></a>
+                    <a href="#tentang" class="block py-2 transition"><span class="mobile-link-text">Tentang</span></a>
+                    <a href="#fasilitas" class="block py-2 transition"><span class="mobile-link-text">Fasilitas</span></a>
+                    <a href="#galeri" class="block py-2 transition"><span class="mobile-link-text">Galeri</span></a>
+                    <a href="#kontak" class="block py-2 transition"><span class="mobile-link-text">Kontak</span></a>
                 </div>
             </div>
         </nav>
@@ -1675,9 +1746,55 @@
                 menu.classList.toggle('active');
             }
             /* tutup menu saat menu diclick */
-            document.querySelectorAll('#mobileMenu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    document.getElementById('mobileMenu').classList.remove('active');
+            const mobileMenuLinks = document.querySelectorAll('#mobileMenu a');
+
+            function setMobileMenuSelection(activeLink) {
+                mobileMenuLinks.forEach(item => item.classList.remove('is-selected'));
+                activeLink.classList.add('is-selected');
+            }
+
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('pointerdown', () => {
+                    link.classList.add('is-pressing');
+                    setMobileMenuSelection(link);
+                });
+
+                link.addEventListener('touchstart', () => {
+                    link.classList.add('is-pressing');
+                    setMobileMenuSelection(link);
+                }, { passive: true });
+
+                link.addEventListener('pointercancel', () => {
+                    link.classList.remove('is-pressing');
+                });
+
+                link.addEventListener('touchcancel', () => {
+                    link.classList.remove('is-pressing');
+                }, { passive: true });
+
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+
+                    const menu = document.getElementById('mobileMenu');
+                    const href = link.getAttribute('href');
+
+                    setMobileMenuSelection(link);
+
+                    setTimeout(() => {
+                        menu.classList.remove('active');
+                        link.classList.remove('is-pressing');
+
+                        if (href && href.startsWith('#')) {
+                            const target = document.querySelector(href);
+                            if (target) {
+                                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            } else {
+                                window.location.hash = href;
+                            }
+                        } else if (href) {
+                            window.location.href = href;
+                        }
+                    }, 260);
                 });
             });
             // Swiper (Hero)
