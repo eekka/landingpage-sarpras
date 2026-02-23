@@ -344,6 +344,49 @@
                 box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.4);
                 animation: float-hover 1.5s ease-in-out infinite;
             }
+            /* Swiper hero indicators (text + underline) */
+            .swiper-pagination { list-style: none; padding: 0; margin: 0; }
+            .swiper-pagination li {
+                position: relative;
+                cursor: pointer;
+                padding: 6px 10px;
+                opacity: 0.85;
+                transition: opacity 0.22s ease, transform 0.22s ease;
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .swiper-pagination li .label { font-weight:600; }
+            .swiper-pagination li .underline {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -4px;
+                height: 1px;
+                background: #fff;
+                transform-origin: center;
+                transform: scaleX(0);
+                transition: transform 0.45s cubic-bezier(.2,.9,.2,1);
+                border-radius: 3px;
+            }
+            .swiper-pagination li.active {
+                opacity: 1;
+                transform: translateY(-2px);
+            }
+            .swiper-pagination li.active .underline {
+                transform: scaleX(1);
+            }
+
+            /* Hero text animation - initial state */
+            .hero-anim {
+                opacity: 0;
+                transform: translateY(14px);
+                transition: opacity 0.6s ease, transform 0.6s ease;
+            }
+            .hero-anim.in {
+                opacity: 1;
+                transform: translateY(0);
+            }
             .hero-cta-btn:active,
             .hero-cta-btn:focus-visible {
                 animation: pulse 1s ease-in-out;
@@ -509,11 +552,11 @@
                 <!-- indikator -->
                 <div class="absolute bottom-0 left-0 right-0 w-full flex justify-center p-4">
                     <ul class="swiper-pagination flex absolute bottom-4 mb-5 justify-center w-full gap-4 p-4 text-white">
-                        <li class="swiper-button nav-link"> slide 1</li>
-                        <li class="swiper-button nav-link"> slide 2</li>
-                        <li class="swiper-button nav-link"> slide 3</li>
-                        <li class="swiper-button nav-link"> slide 4</li>
-                        <li class="swiper-button nav-link"> slide 5</li>
+                        <li class="nav-link" data-index="0"><span class="label">Slide 1</span><span class="underline"></span></li>
+                        <li class="nav-link" data-index="1"><span class="label">Slide 2</span><span class="underline"></span></li>
+                        <li class="nav-link" data-index="2"><span class="label">Slide 3</span><span class="underline"></span></li>
+                        <li class="nav-link" data-index="3"><span class="label">Slide 4</span><span class="underline"></span></li>
+                        <li class="nav-link" data-index="4"><span class="label">Slide 5</span><span class="underline"></span></li>
                     </ul>   
                 </div>
             </div>
@@ -774,9 +817,9 @@
 
 
         <!-- Gallery Section -->
-        <section id="galeri" class="py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-                <p class="text-4xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Galeri Foto</p>
+        <section id="galeri" class="pt-20">
+            <div class="w-full bg-blue-800 p-10 mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+                <p class="text-4xl font-bold text-center heading-modern bounce-3s section-title-fancy text-white reveal-on-scroll">Galeri Foto</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-1 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" data-alt="Gedung Utama">
                         <img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="Gedung Utama" class="absolute inset-0 w-full h-full object-cover gallery-img">
@@ -847,7 +890,7 @@
 
         
         <!-- kontak Section -->
-        <section id="kontak" class="py-20 bg-blue-600 text-white relative overflow-hidden">
+        <section id="kontak" class="py-20 bg-blue-800 text-white relative overflow-hidden">
             <div class="">
                 <div class="absolute inset-0 opacity-10">
                     <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
@@ -1816,26 +1859,61 @@
                 });
             });
             // Swiper (Hero)
-            const swiperButtons = document.querySelectorAll('.swiper-button');
             const swiper = new window.Swiper('.mySwiper', {
                 effect: 'fade',
                 speed: 1000,
-                autoplay: { delay: 5000, disableOnInteraction: false },
+                autoplay: { delay: 5000, disableOnInteraction: true },
                 loop: true,
-                pagination: {
-                    el: '.swiper-scrollbar',
-                },
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                },
+                slidesPerView: 1,
+                allowTouchMove: true,
             });
 
-            swiperButtons.forEach( (button, index) => {
-                button.addEventListener("click", () => {
-                    swiper.slideToLoop(index);
+            // Build indicator mapping
+            const indicatorList = document.querySelectorAll('.swiper-pagination li');
+
+            function setActiveIndicator(idx) {
+                indicatorList.forEach((it, i) => {
+                    it.classList.toggle('active', i === idx);
+                });
+            }
+
+            // Animate hero text lines when slide becomes visible
+            function animateSlideTexts(slideEl) {
+                // remove in-class from all hero text elements first
+                document.querySelectorAll('.hero-anim.in').forEach(el => el.classList.remove('in'));
+                if (!slideEl) return;
+                const targets = slideEl.querySelectorAll('h1, p, .hero-cta-btn, .text-lg');
+                targets.forEach((el, i) => {
+                    if (!el.classList.contains('hero-anim')) el.classList.add('hero-anim');
+                    setTimeout(() => el.classList.add('in'), i * 120);
+                });
+            }
+
+            // on init and slide changes
+            swiper.on('init', function() {
+                setTimeout(()=> setActiveIndicator(swiper.realIndex), 50);
+                animateSlideTexts(swiper.slides[swiper.activeIndex]);
+            });
+
+            swiper.on('slideChangeTransitionStart', function() {
+                setActiveIndicator(swiper.realIndex);
+            });
+
+            swiper.on('slideChangeTransitionEnd', function() {
+                animateSlideTexts(swiper.slides[swiper.activeIndex]);
+            });
+
+            // click on indicators to change slide
+            indicatorList.forEach((btn, idx) => {
+                btn.addEventListener('click', () => {
+                    swiper.slideToLoop(idx);
                     swiper.autoplay.stop();
+                    setActiveIndicator(idx);
                 });
             });
+
+            // trigger init handlers
+            swiper.init && swiper.init();
             
     
             // Helper: sync content panels with active slide
