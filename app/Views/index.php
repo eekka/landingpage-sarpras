@@ -344,6 +344,49 @@
                 box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.4);
                 animation: float-hover 1.5s ease-in-out infinite;
             }
+            /* Swiper hero indicators (text + underline) */
+            .swiper-pagination { list-style: none; padding: 0; margin: 0; }
+            .swiper-pagination li {
+                position: relative;
+                cursor: pointer;
+                padding: 6px 10px;
+                opacity: 0.85;
+                transition: opacity 0.22s ease, transform 0.22s ease;
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .swiper-pagination li .label { font-weight:600; }
+            .swiper-pagination li .underline {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -4px;
+                height: 1px;
+                background: #fff;
+                transform-origin: center;
+                transform: scaleX(0);
+                transition: transform 0.45s cubic-bezier(.2,.9,.2,1);
+                border-radius: 3px;
+            }
+            .swiper-pagination li.active {
+                opacity: 1;
+                transform: translateY(-2px);
+            }
+            .swiper-pagination li.active .underline {
+                transform: scaleX(1);
+            }
+
+            /* Hero text animation - initial state */
+            .hero-anim {
+                opacity: 0;
+                transform: translateY(14px);
+                transition: opacity 0.6s ease, transform 0.6s ease;
+            }
+            .hero-anim.in {
+                opacity: 1;
+                transform: translateY(0);
+            }
             .hero-cta-btn:active,
             .hero-cta-btn:focus-visible {
                 animation: pulse 1s ease-in-out;
@@ -438,8 +481,8 @@
                         <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
-                                <p class="text-2xl reveal-left reveal-on-scroll">Slide 1</p>
-                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase reveal-left reveal-on-scroll">Selamat Datang di <span class="text-blue-800">Sarana Prasarana</span>  Balatkop Jateng</h1>
+                                <p class="text-lg reveal-left reveal-on-scroll">Slide 1</p>
+                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase reveal-left reveal-on-scroll">Selamat Datang di <span class="text-blue-800 text-shadow-2xs text-shadow-white">Sarana Prasarana</span>  Balatkop Jateng</h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8 reveal-left reveal-on-scroll">Mendukung Operasional Instansi Pemerintah dengan Fasilitas Terbaik</p>
                                 <a href="#tentang" class="reveal-left reveal-on-scroll hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                     Jelajahi Sekarang
@@ -452,7 +495,7 @@
                         <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
-                                <p class="text-2xl">Slide 2</p>
+                                <p class="text-lg">Slide 2</p>
                                 <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Balatkop UKM Jateng</h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Sebuah instansi pelatihan yang memberikan pelatihan dan pendampingan terbaik untuk UKM di Jawa Tengah</p>
                                 <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
@@ -466,7 +509,7 @@
                         <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
-                                <p class="text-2xl">Slide 3</p>
+                                <p class="text-lg">Slide 3</p>
                                 <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang Rapat</h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Ruang rapat dengan berbagai fasilitas penunjang kegiatan</p>
                                 <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
@@ -480,7 +523,7 @@
                         <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
-                                <p class="text-2xl">Slide 4</p>
+                                <p class="text-lg">Slide 4</p>
                                 <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Gedung Aula</h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan daya tampung besar serta fasilitas fasilitas yang dijamin memuaskan</p>
                                 <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
@@ -494,7 +537,7 @@
                         <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
-                                <p class="text-2xl">Slide 5</p>
+                                <p class="text-lg">Slide 5</p>
                                 <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang Kelas</h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan berbagai fasilitas yang sesuai dengan kegiatan yang dilaksanakan</p>
                                 <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
@@ -508,12 +551,12 @@
 
                 <!-- indikator -->
                 <div class="absolute bottom-0 left-0 right-0 w-full flex justify-center p-4">
-                    <ul class="swiper-pagination flex absolute bottom-0 justify-center w-full gap-4 p-4 text-white">
-                        <li class="swiper-button nav-link"> slide 1</li>
-                        <li class="swiper-button nav-link"> slide 2</li>
-                        <li class="swiper-button nav-link"> slide 3</li>
-                        <li class="swiper-button nav-link"> slide 4</li>
-                        <li class="swiper-button nav-link"> slide 5</li>
+                    <ul class="swiper-pagination flex absolute bottom-4 mb-5 justify-center w-full gap-4 p-4 text-white">
+                        <li class="nav-link" data-index="0"><span class="label">Slide 1</span><span class="underline"></span></li>
+                        <li class="nav-link" data-index="1"><span class="label">Slide 2</span><span class="underline"></span></li>
+                        <li class="nav-link" data-index="2"><span class="label">Slide 3</span><span class="underline"></span></li>
+                        <li class="nav-link" data-index="3"><span class="label">Slide 4</span><span class="underline"></span></li>
+                        <li class="nav-link" data-index="4"><span class="label">Slide 5</span><span class="underline"></span></li>
                     </ul>   
                 </div>
             </div>
@@ -774,9 +817,9 @@
 
 
         <!-- Gallery Section -->
-        <section id="galeri" class="py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-                <p class="text-4xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Galeri Foto</p>
+        <section id="galeri" class="pt-20">
+            <div class="w-full bg-blue-800 p-10 mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+                <p class="text-4xl font-bold text-center heading-modern bounce-3s section-title-fancy text-white reveal-on-scroll">Galeri Foto</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-1 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" data-alt="Gedung Utama">
                         <img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="Gedung Utama" class="absolute inset-0 w-full h-full object-cover gallery-img">
@@ -847,7 +890,7 @@
 
         
         <!-- kontak Section -->
-        <section id="kontak" class="py-20 bg-blue-600 text-white relative overflow-hidden">
+        <section id="kontak" class="py-20 bg-blue-800 text-white relative overflow-hidden">
             <div class="">
                 <div class="absolute inset-0 opacity-10">
                     <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
@@ -856,7 +899,7 @@
                 <div class="relative flex w-full mx-auto sm:px-6 lg:px-8 text-center">
                     <div class="flex-1">
                         <h2 class="text-4xl md:text-5xl font-bold mb-6">Tertarik untuk Menggunakan Layanan Kami?</h2>
-                        <p class="text-xl md:text-2xl mb-10 text-gray-100"><span class="font text-white">Kunjungi atau hubungi</span> tim kami untuk informasi lebih lanjut</p>
+                        <p class="text-xl md:text-2xl mb-10 text-gray-100"><span class="font text-white">Kunjungi Balai Pelatihan Koperasi dan UKM Jateng atau hubungi</span> tim kami untuk informasi lebih lanjut</p>
                     </div>                             
                 </div>
             </div>
@@ -877,19 +920,19 @@
                                 <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
                                 </svg>
-                                <span class="text-sm">balatkopukmjateng</span>
+                                <span class="text-sm text-white">balatkopukmjateng</span>
                             </a>
                             <a href="https://www.facebook.com/share/1MekEv6wAC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-gray-400 hover:text-blue-600 transition duration-300 text-decoration-none">
                                 <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                                 </svg>
-                                <span class="text-sm">Balatkopukmjateng</span>
+                                <span class="text-sm text-white">Balatkopukmjateng</span>
                             </a>
                             <a href="https://x.com/balatkopukmjtg?s=21" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-gray-400 hover:text-gray-100 transition duration-300 text-decoration-none">
                                 <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.6l-5.165-6.744L2.881 21.25H.577l7.732-8.835L.126 2.25h6.775l4.978 6.586L17.414 2.25h.83zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                                 </svg>
-                                <span class="text-sm">balatkopukmjtg</span>
+                                <span class="text-sm text-white">balatkopukmjtg</span>
                             </a>
                             <a href="https://www.tiktok.com/@balatkopukmjateng?_r=1&_t=ZS-93J5ZQopP8v" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-gray-400 hover:text-cyan-400 transition duration-300 text-decoration-none">
                                 <svg class="w-6 h-6 shrink-0" fill="none" viewBox="0 0 24 24">
@@ -901,13 +944,13 @@
                                         </linearGradient>
                                     </defs>
                                 </svg>
-                                <span class="text-sm">balatkopukmjateng</span>
+                                <span class="text-sm text-white">balatkopukmjateng</span>
                             </a>
                             <a href="https://youtube.com/@balatkopjateng?si=4KCNmm5Q9VOJD2Wq" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-gray-400 hover:text-red-600 transition duration-300 text-decoration-none">
                                 <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                                 </svg>
-                                <span class="text-sm">BALATKOP JATENG</span>
+                                <span class="text-sm text-white">BALATKOP JATENG</span>
                             </a>
                         </div>
                     </div>
@@ -921,11 +964,7 @@
                                 <p class="text-white text-sm">07:00 - 16:00 WIB</p>
                             </div>
                             <div>
-                                <p class="text-gray-400 text-sm"><span class="font-semibold">Sabtu:</span></p>
-                                <p class="text-white text-sm">07:00 - 12:00 WIB</p>
-                            </div>
-                            <div>
-                                <p class="text-gray-400 text-sm"><span class="font-semibold">Minggu:</span></p>
+                                <p class="text-gray-400 text-sm"><span class="font-semibold">Sabtu & Minggu:</span></p>
                                 <p class="text-white text-sm">Tutup</p>
                             </div>
                         </div>
@@ -1820,26 +1859,61 @@
                 });
             });
             // Swiper (Hero)
-            const swiperButtons = document.querySelectorAll('.swiper-button');
             const swiper = new window.Swiper('.mySwiper', {
                 effect: 'fade',
                 speed: 1000,
-                autoplay: { delay: 5000, disableOnInteraction: false },
+                autoplay: { delay: 5000, disableOnInteraction: true },
                 loop: true,
-                pagination: {
-                    el: '.swiper-scrollbar',
-                },
-                scrollbar: {
-                    el: '.swiper-scrollbar',
-                },
+                slidesPerView: 1,
+                allowTouchMove: true,
             });
 
-            swiperButtons.forEach( (button, index) => {
-                button.addEventListener("click", () => {
-                    swiper.slideToLoop(index);
+            // Build indicator mapping
+            const indicatorList = document.querySelectorAll('.swiper-pagination li');
+
+            function setActiveIndicator(idx) {
+                indicatorList.forEach((it, i) => {
+                    it.classList.toggle('active', i === idx);
+                });
+            }
+
+            // Animate hero text lines when slide becomes visible
+            function animateSlideTexts(slideEl) {
+                // remove in-class from all hero text elements first
+                document.querySelectorAll('.hero-anim.in').forEach(el => el.classList.remove('in'));
+                if (!slideEl) return;
+                const targets = slideEl.querySelectorAll('h1, p, .hero-cta-btn, .text-lg');
+                targets.forEach((el, i) => {
+                    if (!el.classList.contains('hero-anim')) el.classList.add('hero-anim');
+                    setTimeout(() => el.classList.add('in'), i * 120);
+                });
+            }
+
+            // on init and slide changes
+            swiper.on('init', function() {
+                setTimeout(()=> setActiveIndicator(swiper.realIndex), 50);
+                animateSlideTexts(swiper.slides[swiper.activeIndex]);
+            });
+
+            swiper.on('slideChangeTransitionStart', function() {
+                setActiveIndicator(swiper.realIndex);
+            });
+
+            swiper.on('slideChangeTransitionEnd', function() {
+                animateSlideTexts(swiper.slides[swiper.activeIndex]);
+            });
+
+            // click on indicators to change slide
+            indicatorList.forEach((btn, idx) => {
+                btn.addEventListener('click', () => {
+                    swiper.slideToLoop(idx);
                     swiper.autoplay.stop();
+                    setActiveIndicator(idx);
                 });
             });
+
+            // trigger init handlers
+            swiper.init && swiper.init();
             
     
             // Helper: sync content panels with active slide
