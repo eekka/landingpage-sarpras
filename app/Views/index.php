@@ -507,7 +507,7 @@
         <!-- About Section -->
         <section id="tentang"class="pt-36" >
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 reveal-on-scroll">
-                <p class="text-3xl font-bold heading-modern bounce-3s section-title-fancy">Tentang Sarana Prasarana Kami</p>
+                <p class="text-4xl font-bold heading-modern bounce-3s section-title-fancy">Tentang Sarana Prasarana Kami</p>
             </div>
             <div class="max-w-7xl mx-auto md:px-4 sm:px-6 lg:px-8 bg-white rounded-3xl shadow p-8 mt-2 reveal-on-scroll">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -544,13 +544,16 @@
 
         <!-- Gedung section -->
         <section class="py-10" id="fasilitas">
-            <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-                <p class="text-3xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Gedung dan Ruangan</p>
+            <div class="w-full px-0 reveal-on-scroll">
+                <div class="bg-blue-800 p-6 md:p-10 shadow-inner" style="border-radius: 0;">
+                <p class="text-4xl font-extrabold text-center text-white heading-modern bounce-3s section-title-fancy reveal-on-scroll mb-6">Gedung dan Ruangan</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <!-- Building Cards -->
                     <div class="bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                         <div class="h-70 flex items-center justify-center">
-                            <img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="Gedung Office" class="w-full h-full object-cover block">
+                            <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
+                                <source src="<?= base_url('images/core/office1.mp4') ?>" type="video/mp4">
+                            </video>
                         </div>
                         <div class="p-6 flex flex-col flex-1">
                             <h3 class="text-2xl font-bold text-blue-600 mb-2">Gedung Office</h3>
@@ -579,10 +582,12 @@
 
                     <div class="bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                         <div class="h-70 bg-blue-500 flex items-center justify-center">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Ruangan Pendukung" class="w-full h-full object-cover block">
+                            <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
+                                <source src="<?= base_url('images/core/Asrama1.mp4') ?>" type="video/mp4">
+                            </video>
                         </div>
                         <div class="p-6 flex flex-col flex-1">
-                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Ruangan Pendukung</h3>
+                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Asrama Matahari</h3>
                             <div class="space-y-2 mb-1">
                                 <div class="flex items-center text-gray-700">
                                     <p class="text-gray-600">Ruang pendukung yang ada di Balatkop</p>
@@ -637,6 +642,7 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </section>
         <!-- /gedung section -->
@@ -644,7 +650,7 @@
         <!-- Fasilitas Section -->
         <section id="fasilitas" class="py-20 ">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-                <p class="text-3xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Fasilitas Lengkap</p>
+                <p class="text-4xl text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Fasilitas Lengkap</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Fasilitas Card - Kesehatan -->
                     <button onclick="openModal('kesehatan')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-1 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
@@ -754,7 +760,7 @@
             <!-- Gallery Section -->
             <section id="galeri" class="py-20">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-                    <p class="text-3xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Galeri Foto</p>
+                    <p class="text-4xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Galeri Foto</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-1 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" data-alt="Gedung Utama">
                             <img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="Gedung Utama" class="absolute inset-0 w-full h-full object-cover gallery-img">
