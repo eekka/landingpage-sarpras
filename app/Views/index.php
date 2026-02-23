@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="./css/output.css">
     </head>
     <body class="bg-blue-100">
-         <style>
+        <style>
             /* menu navbar-humbergermenu */
             .nav-link {
             position: relative;
@@ -207,6 +207,28 @@
                 animation: fadeUpSoft 0.7s ease-out forwards;
             }
 
+            /* Side slide variants for About section */
+            @keyframes slideInLeft {
+                from { opacity: 0; transform: translateX(-50px); }
+                to { opacity: 1; transform: translateX(0); }
+            }
+            @keyframes slideInRight {
+                from { opacity: 0; transform: translateX(50px); }
+                to { opacity: 1; transform: translateX(0); }
+            }
+            .reveal-left {
+                transform: translateX(-50px);
+            }
+            .reveal-right {
+                transform: translateX(50px);
+            }
+            .reveal-left.show {
+                animation: slideInLeft 0.8s ease-out forwards;
+            }
+            .reveal-right.show {
+                animation: slideInRight 0.8s ease-out forwards;
+            }
+
             /* Highlight facility card icon on hover/click/focus */
             .facility-card:hover .card-icon,
             .facility-card:active .card-icon,
@@ -228,6 +250,33 @@
             .brand-link:hover,
             .brand-link:focus-visible {
                 text-decoration: none;
+            }
+
+            /* Hero button custom styles */
+            .hero-cta-btn {
+                background-color: #2563eb;
+                color: white;
+                transition: all 0.3s ease;
+            }
+            .hero-cta-btn:hover {
+                background-color: #2563eb;
+                color: #fbbf24 !important;
+                transform: scale(1.05) translateY(-5px);
+                box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.4);
+                animation: float-hover 1.5s ease-in-out infinite;
+            }
+            .hero-cta-btn:active,
+            .hero-cta-btn:focus-visible {
+                animation: pulse 1s ease-in-out;
+                transform: scale(0.95);
+            }
+            @keyframes pulse {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0.5; }
+            }
+            @keyframes float-hover {
+                0%, 100% { transform: scale(1.05) translateY(-5px); }
+                50% { transform: scale(1.05) translateY(-10px); }
             }
 
         </style>
@@ -307,13 +356,13 @@
                     <!-- slide -->
                         <!-- 1 -->
                         <div class="swiper-slide h-screen w-full relative">
-                            <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 flex flex-col justify-center bg-black/70 text-white text-left p-4">
-                                <div class=" md:max-w-2/3 lg:max-w-1/2">
+                            <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
+                                <div class="md:max-w-2/3 lg:max-w-1/2">
                                     <p class="text-2xl">Slide 1</p>
                                     <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Selamat Datang di <span class="text-blue-800">Sarana Prasarana</span>  Balatkop Jateng</h1>
                                     <p class="text-sm mt-2 md:text-lg mb-8">Mendukung Operasional Instansi Pemerintah dengan Fasilitas Terbaik</p>
-                                    <a href="#tentang" class="mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none border-2 border-white px-8 py-4  hover:scale-102 transition-all shadow-2xl">
+                                    <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 rounded-full shadow-2xl focus-visible:animate-pulse active:scale-95">
                                         Jelajahi Sekarang
                                     </a>
                                 </div>
@@ -322,12 +371,12 @@
                         <!-- 2 -->
                         <div class="swiper-slide h-screen w-full relative">
                             <!-- <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover"> -->
-                            <div class="absolute inset-0 flex flex-col justify-center bg-black/70 text-white text-left p-4">
-                                <div class=" md:max-w-2/3 lg:max-w-1/2">
+                            <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
+                                <div class="md:max-w-2/3 lg:max-w-1/2">
                                     <p class="text-2xl">Slide 2</p>
                                     <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Balatkop UKM Jateng</h1>
                                     <p class="text-sm mt-2 md:text-lg mb-8">Sebuah instansi pelatihan yang memberikan pelatihan dan pendampingan terbaik untuk UKM di Jawa Tengah</p>
-                                    <a href="#tentang" class="mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none border-2 border-white px-8 py-4  hover:scale-102 transition-all shadow-2xl">
+                                    <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 rounded-full shadow-2xl focus-visible:animate-pulse active:scale-95">
                                         Cari Tahu Lebih Lanjut!
                                     </a>
                                 </div>
@@ -335,13 +384,13 @@
                         </div>                         
                         <!-- 3 -->
                         <div class="swiper-slide h-screen w-full relative">
-                            <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 flex flex-col justify-center bg-black/70 text-white text-left p-4">
-                                <div class=" md:max-w-2/3 lg:max-w-1/2">
+                            <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
+                                <div class="md:max-w-2/3 lg:max-w-1/2">
                                     <p class="text-2xl">Slide 3</p>
                                     <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang Rapat</h1>
                                     <p class="text-sm mt-2 md:text-lg mb-8">Ruang rapat dengan berbagai fasilitas penunjang kegiatan</p>
-                                    <a href="#tentang" class="mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none border-2 border-white px-8 py-4  hover:scale-102 transition-all shadow-2xl">
+                                    <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 rounded-full shadow-2xl focus-visible:animate-pulse active:scale-95">
                                         Lihat Detail
                                     </a>
                                 </div>
@@ -349,13 +398,13 @@
                         </div>                         
                         <!-- 4 -->
                         <div class="swiper-slide h-screen w-full relative">
-                            <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 flex flex-col justify-center bg-black/70 text-white text-left p-4">
-                                <div class=" md:max-w-2/3 lg:max-w-1/2">
+                            <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
+                                <div class="md:max-w-2/3 lg:max-w-1/2">
                                     <p class="text-2xl">Slide 4</p>
                                     <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Gedung Aula</h1>
                                     <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan daya tampung besar serta fasilitas fasilitas yang dijamin memuaskan</p>
-                                    <a href="#tentang" class="mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none border-2 border-white px-8 py-4  hover:scale-102 transition-all shadow-2xl">
+                                    <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 rounded-full shadow-2xl focus-visible:animate-pulse active:scale-95">
                                         Lihat Detail
                                     </a>
                                 </div>
@@ -363,13 +412,13 @@
                         </div>                             
                         <!-- 5 -->
                         <div class="swiper-slide h-screen w-full relative">
-                            <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 flex flex-col justify-center bg-black/70 text-white text-left p-4">
-                                <div class=" md:max-w-2/3 lg:max-w-1/2">
+                            <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
+                                <div class="md:max-w-2/3 lg:max-w-1/2">
                                     <p class="text-2xl">Slide 5</p>
                                     <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang Kelas</h1>
                                     <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan berbagai fasilitas yang sesuai dengan kegiatan yang dilaksanakan</p>
-                                    <a href="#tentang" class="mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none border-2 border-white px-8 py-4  hover:scale-102 transition-all shadow-2xl">
+                                    <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-[250px] justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 rounded-full shadow-2xl focus-visible:animate-pulse active:scale-95">
                                         Lihat Detail
                                     </a>
                                 </div>
