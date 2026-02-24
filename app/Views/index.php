@@ -456,6 +456,44 @@
                 font-size: 0.9rem;
             }
 
+            .flow-alur-title {
+                font-size: clamp(1.6rem, 2.2vw, 2.2rem);
+                line-height: 1.2;
+            }
+
+            .flow-alur-subtitle {
+                font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+                line-height: 1.55;
+                max-width: 760px;
+                margin: 0.75rem auto 0;
+            }
+
+            .flow-alur-grid {
+                gap: 1rem;
+            }
+
+            .flow-alur-panel {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .flow-alur-image {
+                width: min(100%, 620px);
+                max-height: clamp(250px, 42vh, 430px);
+                height: auto;
+                object-fit: contain;
+                display: block;
+            }
+
+            @media (min-width: 1024px) {
+                .flow-alur-image-online {
+                    width: 100%;
+                    max-width: 100%;
+                    max-height: none;
+                }
+            }
+
             .facility-highlight-btn:hover,
             .facility-highlight-btn:focus-visible {
                 background: #ffffff;
@@ -476,6 +514,14 @@
                 .facility-highlight-logo img {
                     width: 56px;
                     height: 56px;
+                }
+
+                .flow-alur-image {
+                    max-height: clamp(200px, 36vh, 300px);
+                }
+
+                .flow-alur-subtitle {
+                    margin-top: 0.6rem;
                 }
             }
 
@@ -1189,61 +1235,17 @@
             <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-5xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
                     <div class="static md:sticky md:top-0 z-20 bg-white px-6 py-4 text-center">
-                        <h2 class="inline-block text-2xl sm:text-3xl font-bold text-blue-700 border-b-4 border-blue-600 pb-1" style="color:#1d4ed8 !important;">Alur Penyewaan</h2>
+                        <h2 class="inline-block font-bold text-black border-b-4 pb-1 flow-alur-title">Alur Penyewaan</h2>
+                        <p class="text-gray-600 mb-0 text-center flow-alur-subtitle">Silakan pilih alur sesuai kebutuhan: via online atau via offline.</p>
                     </div>
                     <div class="p-6">
-                        <p class="text-gray-600 mb-4 lg:w-1/2">Silakan pilih alur sesuai kebutuhan: via online atau via offline.</p>
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                            <section class="flow-mini-card">
-                                <h3 class="text-xl font-bold text-blue-600 mb-3">Via Online</h3>
-                                <ol class="flow-mini-list" aria-label="Langkah via online">
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8"/></svg></span>
-                                        <p class="flow-mini-text">Isi formulir permohonan penyewaan melalui website.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m9 15 8.5-8.5a2.1 2.1 0 1 0-3-3L6 12v3h3Z"/></svg></span>
-                                        <p class="flow-mini-text">Unggah dokumen persyaratan yang diminta.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg></span>
-                                        <p class="flow-mini-text">Tunggu verifikasi dari admin.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
-                                        <p class="flow-mini-text">Lakukan pembayaran setelah disetujui.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span>
-                                        <p class="flow-mini-text">Terima konfirmasi jadwal dan bukti penyewaan.</p>
-                                    </li>
-                                </ol>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 flow-alur-grid">
+                            <section class="flow-alur-panel">
+                                <img src="<?= base_url('images/core/online.png') ?>" alt="Alur Penyewaan Online" class="flow-alur-image flow-alur-image-online rounded-xl">
                             </section>
 
-                            <section class="flow-mini-card">
-                                <h3 class="text-xl font-bold text-blue-600 mb-3">Via Offline</h3>
-                                <ol class="flow-mini-list" aria-label="Langkah via offline">
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/></svg></span>
-                                        <p class="flow-mini-text">Datang ke kantor pengelola sarana prasarana.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 2h8"/><path d="M7 6h10"/><rect x="4" y="10" width="16" height="11" rx="2"/></svg></span>
-                                        <p class="flow-mini-text">Ambil dan isi formulir permohonan penyewaan.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 7h16v10H4z"/><path d="m8 11 2 2 4-4"/></svg></span>
-                                        <p class="flow-mini-text">Serahkan berkas persyaratan ke petugas.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M2 9h20"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg></span>
-                                        <p class="flow-mini-text">Lakukan pembayaran di loket yang tersedia.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span>
-                                        <p class="flow-mini-text">Dapatkan bukti penyewaan dan informasi jadwal.</p>
-                                    </li>
-                                </ol>
+                            <section class="flow-alur-panel">
+                                <img src="<?= base_url('images/core/offline.png') ?>" alt="Alur Penyewaan Offline" class="flow-alur-image rounded-xl">
                             </section>
                         </div>
 
