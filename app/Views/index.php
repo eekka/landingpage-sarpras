@@ -772,16 +772,16 @@
 
         <!-- Gedung section -->
         <section class="py-10 pt-26" id="fasilitas">
-            <div class="w-full px-0 reveal-on-scroll">
+            <div class="container mx-auto px-4 reveal-on-scroll">
                 <div class="bg-blue-800 p-6 md:p-10 shadow-inner" style="border-radius: 0;">
                     <p class="text-4xl font-extrabold text-center text-white heading-modern bounce-3s section-title-fancy reveal-on-scroll mb-6">Gedung dan Ruangan</p>
                     <!-- Swiper -->
                         <div class="swiper2 mySwiper2 overflow-hidden">
                             <div class="swiper-wrapper">
                                 <!-- Aula -->
-                                <div class="swiper-slide">                            
-                                    <div class="max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
-                                        <div class="h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                                <div class="swiper-slide flex justify-center px-4">                            
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                        <div class="h-52 md:h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
                                                 <source src="<?= base_url('images/core/Aula%20Anggrek.mp4') ?>" type="video/mp4">
                                             </video>
@@ -812,9 +812,9 @@
                                     </div>
                                 </div>
                                 <!-- Ruang Kelas -->
-                                <div class="swiper-slide">                                
-                                    <div class=" max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
-                                        <div class="h-70 flex items-center justify-center">
+                                <div class="swiper-slide flex justify-center px-4">                                
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                        <div class="h-52 md:h-70 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
                                                 <source src="<?= base_url('images/core/office1.mp4') ?>" type="video/mp4">
                                             </video>
@@ -845,9 +845,9 @@
                                     </div>
                                 </div>
                                 <!-- Asrama -->
-                                <div class="swiper-slide">                                
-                                    <div class="max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
-                                        <div class="h-70 bg-blue-500 flex items-center justify-center">
+                                <div class="swiper-slide flex justify-center px-4">                                
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                        <div class="h-52 md:h-70 bg-blue-500 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
                                                 <source src="<?= base_url('images/core/Asrama1.mp4') ?>" type="video/mp4">
                                             </video>
@@ -878,9 +878,9 @@
                                     </div>
                                 </div>
                                 <!-- Aula -->
-                                <div class="swiper-slide">                            
-                                    <div class="max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
-                                        <div class="h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                                <div class="swiper-slide flex justify-center px-4">                            
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                        <div class="h-52 md:h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
                                                 <source src="<?= base_url('images/core/Aula%20Anggrek.mp4') ?>" type="video/mp4">
                                             </video>
@@ -2244,6 +2244,24 @@
                 loop: false,
                 slidesPerView: 3,
                 spaceBetween: 40,
+                // responsive behaviour
+                breakpoints: {
+                    // when window width is >= 0px
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    // >= 640px (sm)
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    // >= 1024px (lg)
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                },
                 // use coverflow for 3d effect if desired, otherwise remove
                 effect: "coverflow",
                 coverflowEffect: {
