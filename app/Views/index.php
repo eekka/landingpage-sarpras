@@ -270,6 +270,12 @@
                 color: #fbbf24 !important; /* amber-400 */
             }
 
+            .hover-text-gold:hover,
+            .hover-text-gold:focus-visible,
+            .hover-text-gold:active {
+                color: #fbbf24 !important;
+            }
+
             /* Scroll reveal helpers */
             @keyframes fadeUpSoft {
                 from { opacity: 0; transform: translateY(18px); }
@@ -1242,7 +1248,7 @@
                         </div>
 
                         <div class="mt-4">
-                            <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">Tutup</button>
+                            <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
                         </div>
                     </div>
                 </div>
@@ -1401,7 +1407,7 @@
                         </div>
                     </div>
                     <div class="p-4 border-t">
-                        <button onclick="closeBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition">Tutup</button>
+                        <button onclick="closeBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
@@ -1529,7 +1535,7 @@
                         </div>
                     </div>
                     <div class="p-4 border-t">
-                        <button onclick="closeBuildingModal('pendukung')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition">Tutup</button>
+                        <button onclick="closeBuildingModal('pendukung')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
@@ -1657,7 +1663,7 @@
                         </div>
                     </div>
                     <div class="p-4 border-t">
-                        <button onclick="closeBuildingModal('publik')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition">Tutup</button>
+                        <button onclick="closeBuildingModal('publik')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
@@ -1703,7 +1709,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Pemeriksaan Laboratorium</li>
                         </ul>
 
-                        <button onclick="closeModal('kesehatan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        <button onclick="closeModal('kesehatan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -1749,7 +1755,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Sistem Peminjaman Digital</li>
                         </ul>
 
-                        <button onclick="closeModal('perpustakaan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        <button onclick="closeModal('perpustakaan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -1796,7 +1802,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Buka Setiap Hari Kerja</li>
                         </ul>
 
-                        <button onclick="closeModal('kantin')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        <button onclick="closeModal('kantin')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -1840,7 +1846,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Tarif Terjangkau Harian/Bulanan</li>
                         </ul>
 
-                        <button onclick="closeModal('parkir')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        <button onclick="closeModal('parkir')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -1886,7 +1892,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> WiFi 1Gbps & Internet Cepat</li>
                         </ul>
 
-                        <button onclick="closeModal('lab')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        <button onclick="closeModal('lab')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -1935,7 +1941,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Kebersihan terjaga dengan petugas rutin</li>
                         </ul>
 
-                        <button onclick="closeModal('mushola')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        <button onclick="closeModal('mushola')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -1981,7 +1987,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Aplikasi Mobile Booking</li>
                         </ul>
 
-                        <button onclick="closeModal('transportasi')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        <button onclick="closeModal('transportasi')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -2027,7 +2033,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Program Keselamatan Berkala</li>
                         </ul>
 
-                        <button onclick="closeModal('keamanan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                        <button onclick="closeModal('keamanan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
