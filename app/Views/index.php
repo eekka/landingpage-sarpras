@@ -133,7 +133,7 @@
             .swiper-item {
             font-size: 0.5rem;
             }
-
+            
             /* font title */
 
             .section-title-fancy {
@@ -176,8 +176,18 @@
                 font-size: 10px;
                 font-weight: 800;
             }
+            .modal-img-swiper {
+                /* allow partial neighbors to be visible */
+                overflow: visible;
+            }
+            .modal-img-swiper {
+                /* allow partial neighbors to be visible */
+                overflow: visible;
+            }
             .modal-img-swiper .swiper-slide {
                 display: block;
+                /* don't force full width, letting Swiper calculate based on slidesPerView */
+                width: auto;
             }
 
             .modal-img-swiper .swiper-pagination-fraction {
@@ -325,7 +335,6 @@
             .facility-card:focus-visible .facility-title {
                 color: #2563eb; /* blue-600 */
             }
-
             .facility-highlight-banner {
                 overflow: hidden;
                 border-radius: 1rem;
@@ -525,6 +534,7 @@
                 }
             }
 
+
             /* Remove underline from brand text */
             .brand-link {
                 text-decoration: none;
@@ -715,9 +725,9 @@
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg">Slide 3</p>
-                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang Rapat</h1>
+                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang Kelas & Rapat</h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Ruang rapat dengan berbagai fasilitas penunjang kegiatan</p>
-                                <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
+                                <a href="#fasilitas" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                     Lihat Detail
                                 </a>
                             </div>
@@ -731,7 +741,7 @@
                                 <p class="text-lg">Slide 4</p>
                                 <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Gedung Aula</h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan daya tampung besar serta fasilitas fasilitas yang dijamin memuaskan</p>
-                                <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
+                                <a href="#fasilitas" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                     Lihat Detail
                                 </a>
                             </div>
@@ -743,9 +753,9 @@
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg">Slide 5</p>
-                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang Kelas</h1>
+                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Laboratorium</h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan berbagai fasilitas yang sesuai dengan kegiatan yang dilaksanakan</p>
-                                <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
+                                <a href="#fasilitas" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                     Lihat Detail
                                 </a>
                             </div>
@@ -808,111 +818,155 @@
 
         <!-- Gedung section -->
         <section class="py-10 pt-26" id="fasilitas">
-            <div class="w-full px-0 reveal-on-scroll">
+            <div class="container mx-auto px-4 reveal-on-scroll">
                 <div class="bg-blue-800 p-6 md:p-10 shadow-inner" style="border-radius: 0;">
-                <p class="text-4xl font-extrabold text-center text-white heading-modern bounce-3s section-title-fancy reveal-on-scroll mb-6">Gedung dan Ruangan</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <!-- Building Cards -->
-                    <div class="bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
-                        <div class="h-70 flex items-center justify-center">
-                            <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
-                                <source src="<?= base_url('images/core/office1.mp4') ?>" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="p-6 flex flex-col flex-1">
-                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Gedung Office</h3>
-                            <div class="space-y-2 mb-1">
-                                <div class="flex items-center text-gray-700">
-                                    <p class="text-gray-600">Bangunan utama dimana karyawan bekerja</p>
+                    <p class="text-4xl font-extrabold text-center text-white heading-modern bounce-3s section-title-fancy reveal-on-scroll mb-6">Gedung dan Ruangan</p>
+                    <!-- Swiper -->
+                        <div class="swiper2 mySwiper2 overflow-hidden">
+                            <div class="swiper-wrapper">
+                                <!-- Aula -->
+                                <div class="swiper-slide flex justify-center px-4">                            
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                        <div class="h-52 md:h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                                            <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
+                                                <source src="<?= base_url('images/core/Aula%20Anggrek.mp4') ?>" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="p-6 flex flex-col flex-1">
+                                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Gedung Aula</h3>
+                                            <div class="space-y-2 mb-1">
+                                                <div class="flex items-center text-gray-700">
+                                                    <p class="text-gray-600">Gedung besar yang dapat digunakan untuk melakukan berbagai kegiatan</p> 
+                                                </div>
+                                            </div>
+                                            <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>
+                                                    <span>Ruang tunggu publik luas</span>
+                                                </li>
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h6"/></svg>
+                                                    <span>Loket informasi & verifikasi</span>
+                                                </li>
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M4 20a8 8 0 0 1 16 0"/></svg>
+                                                    <span>Ruang konsultasi privat</span>
+                                                </li>
+                                            </ul>
+                                            <button onclick="openBuildingModal('publik')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Ruang Kelas -->
+                                <div class="swiper-slide flex justify-center px-4">                                
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                        <div class="h-52 md:h-70 flex items-center justify-center">
+                                            <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
+                                                <source src="<?= base_url('images/core/office1.mp4') ?>" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="p-6 flex flex-col flex-1">
+                                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Ruang Kelas</h3>
+                                            <div class="space-y-2 mb-1">
+                                                <div class="flex items-center text-gray-700">
+                                                    <p class="text-gray-600">Bangunan utama dimana karyawan bekerja</p>
+                                                </div>
+                                            </div>
+                                            <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10h6"/><path d="M9 14h6"/></svg>
+                                                    <span>Ruang Direktur & Tata Usaha</span>
+                                                </li>
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>
+                                                    <span>Ruang Rapat + Video Conference</span>
+                                                </li>
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4"/><path d="M20 11H4"/><path d="M20 15H4"/><path d="M20 19H4"/></svg>
+                                                    <span>Arsip, keuangan, dan administrasi</span>
+                                                </li>
+                                            </ul>
+                                            <button onclick="openBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Asrama -->
+                                <div class="swiper-slide flex justify-center px-4">                                
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                        <div class="h-52 md:h-70 bg-blue-500 flex items-center justify-center">
+                                            <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
+                                                <source src="<?= base_url('images/core/Asrama1.mp4') ?>" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="p-6 flex flex-col flex-1">
+                                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Asrama Matahari</h3>
+                                            <div class="space-y-2 mb-1">
+                                                <div class="flex items-center text-gray-700">
+                                                    <p class="text-gray-600">Ruang pendukung yang ada di Balatkop</p>
+                                                </div>
+                                            </div>
+                                            <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5.5A1.5 1.5 0 0 1 5.5 4H20"/><path d="M8 7h8"/><path d="M8 11h8"/><path d="M8 15h6"/></svg>
+                                                    <span>Perpustakaan modern & e-book</span>
+                                                </li>
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h8"/><path d="M12 8v8"/><circle cx="12" cy="12" r="9"/></svg>
+                                                    <span>Ruang kolaborasi & meeting</span>
+                                                </li>
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M7 20V9l5-3 5 3v11"/></svg>
+                                                    <span>Seminar hall + sound system</span>
+                                                </li>
+                                            </ul>
+                                            <button onclick="openBuildingModal('pendukung')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Aula -->
+                                <div class="swiper-slide flex justify-center px-4">                            
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                        <div class="h-52 md:h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                                            <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
+                                                <source src="<?= base_url('images/core/Aula%20Anggrek.mp4') ?>" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div class="p-6 flex flex-col flex-1">
+                                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Laboratorium</h3>
+                                            <div class="space-y-2 mb-1">
+                                                <div class="flex items-center text-gray-700">
+                                                    <p class="text-gray-600">Gedung besar yang dapat digunakan untuk melakukan berbagai kegiatan</p> 
+                                                </div>
+                                            </div>
+                                            <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>
+                                                    <span>Ruang tunggu publik luas</span>
+                                                </li>
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h6"/></svg>
+                                                    <span>Loket informasi & verifikasi</span>
+                                                </li>
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M4 20a8 8 0 0 1 16 0"/></svg>
+                                                    <span>Ruang konsultasi privat</span>
+                                                </li>
+                                            </ul>
+                                            <button onclick="openBuildingModal('publik')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
-                                <li class="feature-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10h6"/><path d="M9 14h6"/></svg>
-                                    <span>Ruang Direktur & Tata Usaha</span>
-                                </li>
-                                <li class="feature-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>
-                                    <span>Ruang Rapat + Video Conference</span>
-                                </li>
-                                <li class="feature-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4"/><path d="M20 11H4"/><path d="M20 15H4"/><path d="M20 19H4"/></svg>
-                                    <span>Arsip, keuangan, dan administrasi</span>
-                                </li>
-                            </ul>
-                            <button onclick="openBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
-                        </div>
+                            <div class="swiper-pagination"></div>
+                        </div>    
                     </div>
-
-                    <div class="bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
-                        <div class="h-70 bg-blue-500 flex items-center justify-center">
-                            <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
-                                <source src="<?= base_url('images/core/Asrama1.mp4') ?>" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="p-6 flex flex-col flex-1">
-                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Asrama Matahari</h3>
-                            <div class="space-y-2 mb-1">
-                                <div class="flex items-center text-gray-700">
-                                    <p class="text-gray-600">Ruang pendukung yang ada di Balatkop</p>
-                                </div>
-                            </div>
-                            <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
-                                <li class="feature-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5.5A1.5 1.5 0 0 1 5.5 4H20"/><path d="M8 7h8"/><path d="M8 11h8"/><path d="M8 15h6"/></svg>
-                                    <span>Perpustakaan modern & e-book</span>
-                                </li>
-                                <li class="feature-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h8"/><path d="M12 8v8"/><circle cx="12" cy="12" r="9"/></svg>
-                                    <span>Ruang kolaborasi & meeting</span>
-                                </li>
-                                <li class="feature-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M7 20V9l5-3 5 3v11"/></svg>
-                                    <span>Seminar hall + sound system</span>
-                                </li>
-                            </ul>
-                            <button onclick="openBuildingModal('pendukung')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
-                        <div class="h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
-                            <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
-                                <source src="<?= base_url('images/core/Aula%20Anggrek.mp4') ?>" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="p-6 flex flex-col flex-1">
-                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Gedung Aula</h3>
-                            <div class="space-y-2 mb-1">
-                                <div class="flex items-center text-gray-700">
-                                    <p class="text-gray-600">Gedung besar yang dapat digunakan untuk melakukan berbagai kegiatan</p> 
-                                </div>
-                            </div>
-                            <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
-                                <li class="feature-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>
-                                    <span>Ruang tunggu publik luas</span>
-                                </li>
-                                <li class="feature-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h6"/></svg>
-                                    <span>Loket informasi & verifikasi</span>
-                                </li>
-                                <li class="feature-item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M4 20a8 8 0 0 1 16 0"/></svg>
-                                    <span>Ruang konsultasi privat</span>
-                                </li>
-                            </ul>
-                            <button onclick="openBuildingModal('publik')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
-                        </div>
-                    </div>
-                </div>
                 </div>
             </div>
         </section>
         <!-- /gedung section -->
 
         <!-- Fasilitas Section -->
-        <section id="fasilitas" class="pt-10 pb-20 ">
+        <section id="fasilitas" class="py-20 ">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
                 <div class="facility-highlight-banner mb-10 reveal-on-scroll">
                     <div class="row g-0 align-items-stretch">
@@ -1246,6 +1300,75 @@
 
                             <section class="flow-alur-panel">
                                 <img src="<?= base_url('images/core/offline.png') ?>" alt="Alur Penyewaan Offline" class="flow-alur-image rounded-xl">
+                            </section>
+                        </div>
+
+                        <div class="mt-4">
+                            <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">Tutup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Alur Penyewaan -->
+            <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+                <div class="bg-white rounded-2xl max-w-5xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
+                    <div class="static md:sticky md:top-0 z-20 bg-white px-6 py-4 text-center">
+                        <h2 class="inline-block text-2xl sm:text-3xl font-bold text-blue-700 border-b-4 border-blue-600 pb-1" style="color:#1d4ed8 !important;">Alur Penyewaan</h2>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4 lg:w-1/2">Silakan pilih alur sesuai kebutuhan: via online atau via offline.</p>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            <section class="flow-mini-card">
+                                <h3 class="text-xl font-bold text-blue-600 mb-3">Via Online</h3>
+                                <ol class="flow-mini-list" aria-label="Langkah via online">
+                                    <li class="flow-mini-item">
+                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8"/></svg></span>
+                                        <p class="flow-mini-text">Isi formulir permohonan penyewaan melalui website.</p>
+                                    </li>
+                                    <li class="flow-mini-item">
+                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m9 15 8.5-8.5a2.1 2.1 0 1 0-3-3L6 12v3h3Z"/></svg></span>
+                                        <p class="flow-mini-text">Unggah dokumen persyaratan yang diminta.</p>
+                                    </li>
+                                    <li class="flow-mini-item">
+                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg></span>
+                                        <p class="flow-mini-text">Tunggu verifikasi dari admin.</p>
+                                    </li>
+                                    <li class="flow-mini-item">
+                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+                                        <p class="flow-mini-text">Lakukan pembayaran setelah disetujui.</p>
+                                    </li>
+                                    <li class="flow-mini-item">
+                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span>
+                                        <p class="flow-mini-text">Terima konfirmasi jadwal dan bukti penyewaan.</p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section class="flow-mini-card">
+                                <h3 class="text-xl font-bold text-blue-600 mb-3">Via Offline</h3>
+                                <ol class="flow-mini-list" aria-label="Langkah via offline">
+                                    <li class="flow-mini-item">
+                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/></svg></span>
+                                        <p class="flow-mini-text">Datang ke kantor pengelola sarana prasarana.</p>
+                                    </li>
+                                    <li class="flow-mini-item">
+                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 2h8"/><path d="M7 6h10"/><rect x="4" y="10" width="16" height="11" rx="2"/></svg></span>
+                                        <p class="flow-mini-text">Ambil dan isi formulir permohonan penyewaan.</p>
+                                    </li>
+                                    <li class="flow-mini-item">
+                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 7h16v10H4z"/><path d="m8 11 2 2 4-4"/></svg></span>
+                                        <p class="flow-mini-text">Serahkan berkas persyaratan ke petugas.</p>
+                                    </li>
+                                    <li class="flow-mini-item">
+                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M2 9h20"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg></span>
+                                        <p class="flow-mini-text">Lakukan pembayaran di loket yang tersedia.</p>
+                                    </li>
+                                    <li class="flow-mini-item">
+                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span>
+                                        <p class="flow-mini-text">Dapatkan bukti penyewaan dan informasi jadwal.</p>
+                                    </li>
+                                </ol>
                             </section>
                         </div>
 
@@ -2116,6 +2239,44 @@
                 slidesPerView: 1,
                 allowTouchMove: true,
             });
+            // swiper Building
+            const swiper2 = new window.Swiper(".mySwiper2", {
+                grabCursor: true,
+                centeredSlides: true,
+                loop: false,
+                slidesPerView: 3,
+                spaceBetween: 40,
+                // responsive behaviour
+                breakpoints: {
+                    // when window width is >= 0px
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    // >= 640px (sm)
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    },
+                    // >= 1024px (lg)
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                },
+                // use coverflow for 3d effect if desired, otherwise remove
+                effect: "coverflow",
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: 0,
+                    depth: 120,
+                    modifier: 1,
+                    slideShadows: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                });
 
             // Build indicator mapping
             const indicatorList = document.querySelectorAll('.swiper-pagination li');
@@ -2176,6 +2337,9 @@
             const modalSwipers = {
                 RuanganUtama: new window.Swiper('#swiperRuanganUtama', {
                     loop: true,
+                    slidesPerView: 1.2,
+                    centeredSlides: true,
+                    spaceBetween: 24,
                     autoplay: { delay: 3000, disableOnInteraction: true },
                     pagination: { el: '#swiperRuanganUtama .swiper-pagination', type: 'fraction' },
                     navigation: {
@@ -2190,6 +2354,9 @@
                 }),
                 RuanganPendukung: new window.Swiper('#swiperRuanganPendukung', {
                     loop: true,
+                    slidesPerView: 1.2,
+                    centeredSlides: true,
+                    spaceBetween: 24,
                     autoplay: { delay: 3000, disableOnInteraction: true },
                     pagination: { el: '#swiperRuanganPendukung .swiper-pagination', type: 'fraction' },
                     navigation: {
@@ -2204,6 +2371,9 @@
                 }),
                 RuanganPublik: new window.Swiper('#swiperRuanganPublik', {
                     loop: true,
+                    slidesPerView: 1.2,
+                    centeredSlides: true,
+                    spaceBetween: 24,
                     autoplay: { delay: 3000, disableOnInteraction: true },
                     pagination: { el: '#swiperRuanganPublik .swiper-pagination', type: 'fraction' },
                     navigation: {
