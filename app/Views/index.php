@@ -826,15 +826,15 @@
         <!-- /about section -->
 
         <!-- Gedung section -->
-        <section class="py-10 pt-26" id="fasilitas">
-            <div class="container mx-auto px-4 reveal-on-scroll">
-                <div class="bg-blue-800 p-6 md:p-10 shadow-inner" style="border-radius: 0;">
+        <section class="pt-26" id="fasilitas">
+            <div class="mx-auto reveal-on-scroll">
+                <div class="bg-blue-950 p-6 md:p-10 shadow-inner" style="border-radius: 0;">
                     <p class="text-4xl font-extrabold text-center text-white heading-modern bounce-3s section-title-fancy reveal-on-scroll mb-6">Gedung dan Ruangan</p>
                     <!-- Swiper -->
                         <div class="swiper2 mySwiper2 overflow-hidden">
                             <div class="swiper-wrapper">
                                 <!-- Aula -->
-                                <div class="swiper-slide flex justify-center px-4">                            
+                                <div class="swiper-slide flex justify-center">                            
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
@@ -862,12 +862,12 @@
                                                     <span>Ruang konsultasi privat</span>
                                                 </li>
                                             </ul>
-                                            <button onclick="openBuildingModal('publik')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                            <button onclick="openBuildingModal('aula')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Ruang Kelas -->
-                                <div class="swiper-slide flex justify-center px-4">                                
+                                <!-- Ruang Kelas/Rapat -->
+                                <div class="swiper-slide flex justify-center">                                
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
@@ -875,7 +875,7 @@
                                             </video>
                                         </div>
                                         <div class="p-6 flex flex-col flex-1">
-                                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Ruang Kelas</h3>
+                                            <h3 class="text-2xl font-bold text-blue-600 mb-2">Ruang Kelas | Rapat</h3>
                                             <div class="space-y-2 mb-1">
                                                 <div class="flex items-center text-gray-700">
                                                     <p class="text-gray-600">Bangunan utama dimana karyawan bekerja</p>
@@ -895,12 +895,12 @@
                                                     <span>Arsip, keuangan, dan administrasi</span>
                                                 </li>
                                             </ul>
-                                            <button onclick="openBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                            <button onclick="openBuildingModal('ruang')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Asrama -->
-                                <div class="swiper-slide flex justify-center px-4">                                
+                                <div class="swiper-slide flex justify-center">                                
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 bg-blue-500 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
@@ -928,12 +928,12 @@
                                                     <span>Seminar hall + sound system</span>
                                                 </li>
                                             </ul>
-                                            <button onclick="openBuildingModal('pendukung')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                            <button onclick="openBuildingModal('asrama')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Aula -->
-                                <div class="swiper-slide flex justify-center px-4">                            
+                                <!-- Laboratorium -->
+                                <div class="swiper-slide flex justify-center">                            
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
@@ -961,12 +961,12 @@
                                                     <span>Ruang konsultasi privat</span>
                                                 </li>
                                             </ul>
-                                            <button onclick="openBuildingModal('publik')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                            <button onclick="openBuildingModal('laboratorium')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <div class="swiper-pagination mt-5"></div>
                         </div>    
                     </div>
                 </div>
@@ -1294,7 +1294,7 @@
         <!-- /footer -->
 
         <!-- Modal --> 
-            <!-- Modal Alur Penyewaan -->
+        <!-- Modal Alur Penyewaan -->
             <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-none w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel" style="max-width:min(96vw, 1600px);">
                     <div class="static md:sticky md:top-0 z-20 bg-white px-6 py-4 text-center">
@@ -1389,8 +1389,8 @@
             </div>
 
             <!-- gedung -->
-            <!-- Modal Gedung Utama -->
-            <div id="modalUtama" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+        <!-- Modal Gedung Aula -->
+            <div id="modalAula" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
                     <!-- Image slider - full width -->
                     <div class="relative">
@@ -1541,13 +1541,13 @@
                         </div>
                     </div>
                     <div class="p-4 border-t">
-                        <button onclick="closeBuildingModal('utama')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
+                        <button onclick="closeBuildingModal('aula')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Modal Gedung Pendukung -->
-            <div id="modalPendukung" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <!-- Modal Ruang Kelas | Rapat -->
+            <div id="modalRuang" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
                     <div class="relative">
                         <div class="swiper modal-img-swiper" id="swiperRuanganPendukung" style="height: 360px;">
@@ -1669,13 +1669,13 @@
                         </div>
                     </div>
                     <div class="p-4 border-t">
-                        <button onclick="closeBuildingModal('pendukung')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
+                        <button onclick="closeBuildingModal('ruang')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Modal Layanan Publik -->
-            <div id="modalPublik" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <!-- Modal Asrama -->
+            <div id="modalAsrama" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
                     <div class="relative">
                         <div class="swiper modal-img-swiper" id="swiperRuanganPublik" style="height: 360px;">
@@ -1797,12 +1797,141 @@
                         </div>
                     </div>
                     <div class="p-4 border-t">
-                        <button onclick="closeBuildingModal('publik')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
+                        <button onclick="closeBuildingModal('asrama')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
 
-            <!-- fasilitas -->
+            <!-- Modal Laboratorium -->
+            <div id="modalLaboratorium" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
+                    <div class="relative">
+                        <div class="swiper modal-img-swiper" id="swiperRuanganPublik" style="height: 360px;">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="p-6 modal-info-publik modal-info-block" data-slide="0">
+                            <div class="flex flex-col items-start">
+                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                    <h3 class="text-2xl font-bold text-center">Ruang Tunggu Publik</h3>
+                                </div>
+                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                    <p class="text-gray-700 text-sm mb-1">
+                                        <span class="font-bold">Ukuran :</span> 300 sqm
+                                    </p>
+                                    <p class="text-gray-700 text-sm">
+                                        <span class="font-bold">Kapasitas :</span> 120 guests
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Tunggu Publik telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
+                            <p class="text-gray-600 text-sm mb-3">Ruang Tunggu Publik<br>Dimensi ruangan 300 m2</p>
+                            <ul class="modal-info-list">
+                                <li>Terletak di lantai 1</li>
+                                <li>Akses langsung menuju pintu masuk utama gedung</li>
+                                <li>Teater set up menampung 120 orang</li>
+                                <li>Classroom set up menampung 100 orang</li>
+                                <li>U shape set up menampung 80 orang</li>
+                                <li>Boardroom set up menampung 60 orang</li>
+                                <li>Round table set up menampung 100 orang</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="1">
+                            <div class="flex flex-col items-start">
+                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                    <h3 class="text-2xl font-bold text-center">Loket Pelayanan 1</h3>
+                                </div>
+                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                    <p class="text-gray-700 text-sm mb-1">
+                                        <span class="font-bold">Ukuran :</span> 40 sqm
+                                    </p>
+                                    <p class="text-gray-700 text-sm">
+                                        <span class="font-bold">Kapasitas :</span> 10 guests
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Loket Pelayanan 1 telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
+                            <p class="text-gray-600 text-sm mb-3">Loket Pelayanan 1<br>Dimensi ruangan 40 m2</p>
+                            <ul class="modal-info-list">
+                                <li>Terletak di lantai 1</li>
+                                <li>Akses langsung menuju pintu masuk utama gedung</li>
+                                <li>Teater set up menampung 10 orang</li>
+                                <li>Classroom set up menampung 8 orang</li>
+                                <li>U shape set up menampung 6 orang</li>
+                                <li>Boardroom set up menampung 6 orang</li>
+                                <li>Round table set up menampung 8 orang</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="2">
+                            <div class="flex flex-col items-start">
+                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                    <h3 class="text-2xl font-bold text-center">Loket Pelayanan 2</h3>
+                                </div>
+                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                    <p class="text-gray-700 text-sm mb-1">
+                                        <span class="font-bold">Ukuran :</span> 40 sqm
+                                    </p>
+                                    <p class="text-gray-700 text-sm">
+                                        <span class="font-bold">Kapasitas :</span> 10 guests
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Loket Pelayanan 2 telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
+                            <p class="text-gray-600 text-sm mb-3">Loket Pelayanan 2<br>Dimensi ruangan 40 m2</p>
+                            <ul class="modal-info-list">
+                                <li>Terletak di lantai 1</li>
+                                <li>Akses langsung menuju pintu masuk utama gedung</li>
+                                <li>Teater set up menampung 10 orang</li>
+                                <li>Classroom set up menampung 8 orang</li>
+                                <li>U shape set up menampung 6 orang</li>
+                                <li>Boardroom set up menampung 6 orang</li>
+                                <li>Round table set up menampung 8 orang</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="3">
+                            <div class="flex flex-col items-start">
+                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                    <h3 class="text-2xl font-bold text-center">Ruang Konsultasi</h3>
+                                </div>
+                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                    <p class="text-gray-700 text-sm mb-1">
+                                        <span class="font-bold">Ukuran :</span> 20 sqm
+                                    </p>
+                                    <p class="text-gray-700 text-sm">
+                                        <span class="font-bold">Kapasitas :</span> 5 guests
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Konsultasi telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
+                            <p class="text-gray-600 text-sm mb-3">Ruang Konsultasi<br>Dimensi ruangan 20 m2</p>
+                            <ul class="modal-info-list">
+                                <li>Terletak di lantai 1</li>
+                                <li>Akses langsung menuju pintu masuk utama gedung</li>
+                                <li>Teater set up menampung 5 orang</li>
+                                <li>Classroom set up menampung 4 orang</li>
+                                <li>U shape set up menampung 3 orang</li>
+                                <li>Boardroom set up menampung 4 orang</li>
+                                <li>Round table set up menampung 4 orang</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-4 border-t">
+                        <button onclick="closeBuildingModal('laboratorium')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- fasilitas -->
             <!-- Modal Kesehatan -->
             <div id="modalKesehatan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
@@ -2273,15 +2402,7 @@
                         spaceBetween: 40,
                     },
                 },
-                // use coverflow for 3d effect if desired, otherwise remove
-                effect: "coverflow",
-                coverflowEffect: {
-                    rotate: 20,
-                    stretch: 0,
-                    depth: 120,
-                    modifier: 1,
-                    slideShadows: false,
-                },
+
                 pagination: {
                     el: ".swiper-pagination",
                 },
@@ -2439,9 +2560,10 @@
             // Building Modal Functions
             function openBuildingModal(building) {
                 const modalIds = {
-                    'utama': 'modalUtama',
-                    'pendukung': 'modalPendukung',
-                    'publik': 'modalPublik'
+                    'aula': 'modalAula',
+                    'ruang': 'modalRuang',
+                    'asrama': 'modalAsrama',
+                    'laboratorium': 'modalLaboratorium'
                 };
                 const modal = document.getElementById(modalIds[building]);
                 if (modal) {
@@ -2457,9 +2579,10 @@
 
             function closeBuildingModal(building) {
                 const modalIds = {
-                    'utama': 'modalUtama',
-                    'pendukung': 'modalPendukung',
-                    'publik': 'modalPublik'
+                    'aula': 'modalAula',
+                    'ruang': 'modalRuang',
+                    'asrama': 'modalAsrama',
+                    'laboratorium': 'modalLaboratorium'
                 };
                 const modal = document.getElementById(modalIds[building]);
                 if (modal) {
