@@ -496,9 +496,18 @@
             }
 
             @media (min-width: 1024px) {
+                .flow-alur-grid {
+                    align-items: stretch;
+                }
+
+                .flow-alur-panel {
+                    height: clamp(300px, 46vh, 500px);
+                }
+
+                .flow-alur-image,
                 .flow-alur-image-online {
                     width: 100%;
-                    max-width: 100%;
+                    height: 100%;
                     max-height: none;
                 }
             }
@@ -507,12 +516,12 @@
             .facility-highlight-btn:focus-visible {
                 background: #ffffff;
                 color: #1d4ed8;
-                text-decoration: none;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             text-decoration: none;
             }
 
             @media (max-width: 767px) {
                 .facility-highlight-content {
-                    padding: 1.35rem;
+                    padding: 1.35rem;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
                 }
 
                 .facility-highlight-logo {
@@ -1287,9 +1296,9 @@
         <!-- Modal --> 
             <!-- Modal Alur Penyewaan -->
             <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-2xl max-w-5xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
+                <div class="bg-white rounded-2xl max-w-none w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel" style="max-width:min(96vw, 1600px);">
                     <div class="static md:sticky md:top-0 z-20 bg-white px-6 py-4 text-center">
-                        <h2 class="inline-block font-bold text-black border-b-4 pb-1 flow-alur-title">Alur Penyewaan</h2>
+                        <h2 class="inline-block font-bold text-black flow-alur-title">Alur Penyewaan</h2>
                         <p class="text-gray-600 mb-0 text-center flow-alur-subtitle">Silakan pilih alur sesuai kebutuhan: via online atau via offline.</p>
                     </div>
                     <div class="p-6">
@@ -1304,7 +1313,7 @@
                         </div>
 
                         <div class="mt-4">
-                            <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">Tutup</button>
+                            <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
                         </div>
                     </div>
                 </div>
@@ -1312,9 +1321,9 @@
 
             <!-- Modal Alur Penyewaan -->
             <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-2xl max-w-5xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
+                <div class="bg-white rounded-2xl max-w-none w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel" style="max-width:min(96vw, 1600px);">
                     <div class="static md:sticky md:top-0 z-20 bg-white px-6 py-4 text-center">
-                        <h2 class="inline-block text-2xl sm:text-3xl font-bold text-blue-700 border-b-4 border-blue-600 pb-1" style="color:#1d4ed8 !important;">Alur Penyewaan</h2>
+                        <h2 class="inline-block text-2xl sm:text-3xl font-bold text-blue-700" style="color:#1d4ed8 !important;">Alur Penyewaan</h2>
                     </div>
                     <div class="p-6">
                         <p class="text-gray-600 mb-4 lg:w-1/2">Silakan pilih alur sesuai kebutuhan: via online atau via offline.</p>
