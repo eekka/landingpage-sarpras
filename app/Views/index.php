@@ -834,7 +834,7 @@
                         <div class="swiper2 mySwiper2 overflow-hidden">
                             <div class="swiper-wrapper">
                                 <!-- Aula -->
-                                <div class="swiper-slide flex justify-center">                            
+                                <div class="w-max-xl h-auto swiper-slide flex justify-center">                            
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
@@ -867,7 +867,7 @@
                                     </div>
                                 </div>
                                 <!-- Ruang Kelas/Rapat -->
-                                <div class="swiper-slide flex justify-center">                                
+                                <div class="w-max-xl h-auto md: swiper-slide flex justify-center">                                
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
@@ -900,7 +900,7 @@
                                     </div>
                                 </div>
                                 <!-- Asrama -->
-                                <div class="swiper-slide flex justify-center">                                
+                                <div class="w-max-xl h-auto swiper-slide flex justify-center">                                
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 bg-blue-500 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
@@ -933,7 +933,7 @@
                                     </div>
                                 </div>
                                 <!-- Laboratorium -->
-                                <div class="swiper-slide flex justify-center">                            
+                                <div class="w-max-xl h-auto swiper-slide flex justify-center">                            
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
@@ -1392,27 +1392,24 @@
         <!-- Modal Gedung Aula -->
             <div id="modalAula" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
-                    <!-- Image slider - full width -->
+                    <!-- Gambar slide -->
                     <div class="relative">
                         <div class="swiper modal-img-swiper" id="swiperRuanganUtama" style="height: 360px;">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover"></div>
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop5.jpeg') ?>" class="w-full h-full object-cover"></div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>
                     </div>
-                    <!-- Scrollable content panels (synced with slide) -->
+                    <!-- isi konten -->
                     <div>
                         <div class="p-6 modal-info-utama modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Direktur</h3>
+                                    <h3 class="text-2xl font-bold text-center">Aula Anggrek</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
@@ -1438,7 +1435,7 @@
                         <div class="p-6 modal-info-utama modal-info-block hidden" data-slide="1">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Rapat Utama</h3>
+                                    <h3 class="text-2xl font-bold text-center">Aula Teratai</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
@@ -1461,84 +1458,6 @@
                                 <li>Round table set up menampung 40 orang</li>
                             </ul>
                         </div>
-                        <div class="p-6 modal-info-utama modal-info-block hidden" data-slide="2">
-                            <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Tata Usaha</h3>
-                                </div>
-                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
-                                    <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 100 sqm
-                                    </p>
-                                    <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 30 guests
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Tata Usaha telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Tata Usaha<br>Dimensi ruangan 100 m2</p>
-                            <ul class="modal-info-list">
-                                <li>Terletak di lantai 8</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 30 orang</li>
-                                <li>Classroom set up menampung 25 orang</li>
-                                <li>U shape set up menampung 20 orang</li>
-                                <li>Boardroom set up menampung 15 orang</li>
-                                <li>Round table set up menampung 20 orang</li>
-                            </ul>
-                        </div>
-                        <div class="p-6 modal-info-utama modal-info-block hidden" data-slide="3">
-                            <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Keuangan</h3>
-                                </div>
-                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
-                                    <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 90 sqm
-                                    </p>
-                                    <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 20 guests
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Keuangan telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Keuangan<br>Dimensi ruangan 90 m2</p>
-                            <ul class="modal-info-list">
-                                <li>Terletak di lantai 7</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 20 orang</li>
-                                <li>Classroom set up menampung 15 orang</li>
-                                <li>U shape set up menampung 12 orang</li>
-                                <li>Boardroom set up menampung 10 orang</li>
-                                <li>Round table set up menampung 15 orang</li>
-                            </ul>
-                        </div>
-                        <div class="p-6 modal-info-utama modal-info-block hidden" data-slide="4">
-                            <div class="flex flex-col items-start">
-                                    <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Arsip</h3>
-                                </div>
-                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
-                                    <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 150 sqm
-                                    </p>
-                                    <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 15 guests
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Arsip telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Arsip<br>Dimensi ruangan 150 m2</p>
-                            <ul class="modal-info-list">
-                                <li>Terletak di lantai 6</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 15 orang</li>
-                                <li>Classroom set up menampung 10 orang</li>
-                                <li>U shape set up menampung 8 orang</li>
-                                <li>Boardroom set up menampung 8 orang</li>
-                                <li>Round table set up menampung 10 orang</li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="p-4 border-t">
                         <button onclick="closeBuildingModal('aula')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
@@ -1549,13 +1468,13 @@
             <!-- Modal Ruang Kelas | Rapat -->
             <div id="modalRuang" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
+                    <!-- gambar -->
                     <div class="relative">
                         <div class="swiper modal-img-swiper" id="swiperRuanganPendukung" style="height: 360px;">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover"></div>
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"></div>
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover"></div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
@@ -1566,7 +1485,7 @@
                         <div class="p-6 modal-info-pendukung modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Perpustakaan</h3>
+                                    <h3 class="text-2xl font-bold text-center">Ruang Mawar</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
@@ -1592,7 +1511,7 @@
                         <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="1">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Kolaborasi</h3>
+                                    <h3 class="text-2xl font-bold text-center">Ruang Dahlia</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
@@ -1618,7 +1537,7 @@
                         <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="2">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Meeting A</h3>
+                                    <h3 class="text-2xl font-bold text-center">Ruang Bougenville</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
@@ -1641,32 +1560,6 @@
                                 <li>Round table set up menampung 20 orang</li>
                             </ul>
                         </div>
-                        <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="3">
-                            <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Seminar</h3>
-                                </div>
-                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
-                                    <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 250 sqm
-                                    </p>
-                                    <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 100 guests
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Seminar telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Seminar<br>Dimensi ruangan 250 m2</p>
-                            <ul class="modal-info-list">
-                                <li>Terletak di lantai 3</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 100 orang</li>
-                                <li>Classroom set up menampung 80 orang</li>
-                                <li>U shape set up menampung 60 orang</li>
-                                <li>Boardroom set up menampung 50 orang</li>
-                                <li>Round table set up menampung 70 orang</li>
-                            </ul>
-                        </div>
                     </div>
                     <div class="p-4 border-t">
                         <button onclick="closeBuildingModal('ruang')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
@@ -1682,8 +1575,6 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"></div>
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover"></div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
@@ -1694,7 +1585,7 @@
                         <div class="p-6 modal-info-publik modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Tunggu Publik</h3>
+                                    <h3 class="text-2xl font-bold text-center">Kamar</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
@@ -1741,58 +1632,6 @@
                                 <li>U shape set up menampung 6 orang</li>
                                 <li>Boardroom set up menampung 6 orang</li>
                                 <li>Round table set up menampung 8 orang</li>
-                            </ul>
-                        </div>
-                        <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="2">
-                            <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Loket Pelayanan 2</h3>
-                                </div>
-                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
-                                    <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 40 sqm
-                                    </p>
-                                    <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 10 guests
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Loket Pelayanan 2 telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Loket Pelayanan 2<br>Dimensi ruangan 40 m2</p>
-                            <ul class="modal-info-list">
-                                <li>Terletak di lantai 1</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 10 orang</li>
-                                <li>Classroom set up menampung 8 orang</li>
-                                <li>U shape set up menampung 6 orang</li>
-                                <li>Boardroom set up menampung 6 orang</li>
-                                <li>Round table set up menampung 8 orang</li>
-                            </ul>
-                        </div>
-                        <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="3">
-                            <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Konsultasi</h3>
-                                </div>
-                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
-                                    <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 20 sqm
-                                    </p>
-                                    <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 5 guests
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Konsultasi telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Konsultasi<br>Dimensi ruangan 20 m2</p>
-                            <ul class="modal-info-list">
-                                <li>Terletak di lantai 1</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 5 orang</li>
-                                <li>Classroom set up menampung 4 orang</li>
-                                <li>U shape set up menampung 3 orang</li>
-                                <li>Boardroom set up menampung 4 orang</li>
-                                <li>Round table set up menampung 4 orang</li>
                             </ul>
                         </div>
                     </div>
@@ -1811,7 +1650,6 @@
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"></div>
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"></div>
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover"></div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
@@ -1822,7 +1660,7 @@
                         <div class="p-6 modal-info-publik modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Tunggu Publik</h3>
+                                    <h3 class="text-2xl font-bold text-center">Laboratorium Batik</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
@@ -1848,7 +1686,7 @@
                         <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="1">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Loket Pelayanan 1</h3>
+                                    <h3 class="text-2xl font-bold text-center">Laboratorium Tata Boga</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
@@ -1895,32 +1733,6 @@
                                 <li>U shape set up menampung 6 orang</li>
                                 <li>Boardroom set up menampung 6 orang</li>
                                 <li>Round table set up menampung 8 orang</li>
-                            </ul>
-                        </div>
-                        <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="3">
-                            <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Konsultasi</h3>
-                                </div>
-                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
-                                    <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 20 sqm
-                                    </p>
-                                    <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 5 guests
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Konsultasi telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Konsultasi<br>Dimensi ruangan 20 m2</p>
-                            <ul class="modal-info-list">
-                                <li>Terletak di lantai 1</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 5 orang</li>
-                                <li>Classroom set up menampung 4 orang</li>
-                                <li>U shape set up menampung 3 orang</li>
-                                <li>Boardroom set up menampung 4 orang</li>
-                                <li>Round table set up menampung 4 orang</li>
                             </ul>
                         </div>
                     </div>
@@ -2380,7 +2192,6 @@
             // swiper Building
             const swiper2 = new window.Swiper(".mySwiper2", {
                 grabCursor: true,
-                centeredSlides: true,
                 loop: false,
                 slidesPerView: 3,
                 spaceBetween: 40,
@@ -2467,7 +2278,7 @@
             const modalSwipers = {
                 RuanganUtama: new window.Swiper('#swiperRuanganUtama', {
                     loop: true,
-                    slidesPerView: 1.2,
+                    slidesPerView: 1,
                     centeredSlides: true,
                     spaceBetween: 24,
                     autoplay: { delay: 3000, disableOnInteraction: true },
