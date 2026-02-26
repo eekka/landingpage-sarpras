@@ -365,11 +365,20 @@
   .z-20 {
     z-index: 20;
   }
+  .z-30 {
+    z-index: 30;
+  }
   .z-40 {
     z-index: 40;
   }
   .z-50 {
     z-index: 50;
+  }
+  .z-60 {
+    z-index: 60;
+  }
+  .z-99 {
+    z-index: 99;
   }
   .container {
     width: 100%;
@@ -536,6 +545,9 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -547,6 +559,9 @@
   }
   .w-62\.5 {
     width: calc(var(--spacing) * 62.5);
+  }
+  .w-94 {
+    width: calc(var(--spacing) * 94);
   }
   .w-96 {
     width: calc(var(--spacing) * 96);
@@ -1230,9 +1245,6 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
-  }
-  .py-10 {
-    padding-block: calc(var(--spacing) * 10);
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
