@@ -1391,10 +1391,10 @@
             <!-- gedung -->
         <!-- Modal Gedung Aula -->
             <div id="modalAula" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
+                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
                     <!-- Gambar slide -->
                     <div class="relative">
-                        <div class="swiper modal-img-swiper" id="swiperRuanganUtama" style="height: 360px;">
+                        <div class="swiper modal-img-swiper" id="swiperAula" style="height: 360px;">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover"></div>
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover"></div>
@@ -1470,8 +1470,8 @@
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
                     <!-- gambar -->
                     <div class="relative">
-                        <div class="swiper modal-img-swiper" id="swiperRuanganPendukung" style="height: 360px;">
-                            <div class="swiper-wrapper">
+                        <div class="swiper modal-img-swiper overflow-x-hidden" id="swiperRuang" style="height: 360px;">
+                            <div class="swiper-wrapper ">
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover"></div>
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"></div>
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"></div>
@@ -1571,7 +1571,7 @@
             <div id="modalAsrama" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
                     <div class="relative">
-                        <div class="swiper modal-img-swiper" id="swiperRuanganPublik" style="height: 360px;">
+                        <div class="swiper modal-img-swiper" id="swiperAsrama" style="height: 360px;">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"></div>
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"></div>
@@ -1645,7 +1645,7 @@
             <div id="modalLaboratorium" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
                     <div class="relative">
-                        <div class="swiper modal-img-swiper" id="swiperRuanganPublik" style="height: 360px;">
+                        <div class="swiper modal-img-swiper" id="swiperLaboratorium" style="height: 360px;">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"></div>
                                 <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"></div>
@@ -2274,18 +2274,19 @@
                 });
             }
 
-            // Swiper (Modal Gedung) - full-image style, fraction pagination, 3s autoplay
+            // Swiper (Modal Gedung) 
             const modalSwipers = {
-                RuanganUtama: new window.Swiper('#swiperRuanganUtama', {
-                    loop: true,
-                    slidesPerView: 1,
+                Aula: new window.Swiper('#swiperAula', {
+                    loop: false,
+                    initialSlide: 0,
+                    slidesPerView: 1.2,
                     centeredSlides: true,
                     spaceBetween: 24,
                     autoplay: { delay: 3000, disableOnInteraction: true },
-                    pagination: { el: '#swiperRuanganUtama .swiper-pagination', type: 'fraction' },
+                    pagination: { el: '#swiperAula .swiper-pagination', type: 'fraction' },
                     navigation: {
-                        nextEl: '#swiperRuanganUtama .swiper-button-next',
-                        prevEl: '#swiperRuanganUtama .swiper-button-prev',
+                        nextEl: '#swiperAula .swiper-button-next',
+                        prevEl: '#swiperAula .swiper-button-prev',
                     },
                     on: {
                         realIndexChange: function(swiper) {
@@ -2293,16 +2294,17 @@
                         }
                     }
                 }),
-                RuanganPendukung: new window.Swiper('#swiperRuanganPendukung', {
-                    loop: true,
+                Ruang: new window.Swiper('#swiperRuang', {
+                    loop: false,
+                    initialSlide: 0,
                     slidesPerView: 1.2,
                     centeredSlides: true,
                     spaceBetween: 24,
                     autoplay: { delay: 3000, disableOnInteraction: true },
-                    pagination: { el: '#swiperRuanganPendukung .swiper-pagination', type: 'fraction' },
+                    pagination: { el: '#swiperRuang .swiper-pagination', type: 'fraction' },
                     navigation: {
-                        nextEl: '#swiperRuanganPendukung .swiper-button-next',
-                        prevEl: '#swiperRuanganPendukung .swiper-button-prev',
+                        nextEl: '#swiperRuang .swiper-button-next',
+                        prevEl: '#swiperRuang .swiper-button-prev',
                     },
                     on: {
                         realIndexChange: function(swiper) {
@@ -2310,20 +2312,39 @@
                         }
                     }
                 }),
-                RuanganPublik: new window.Swiper('#swiperRuanganPublik', {
-                    loop: true,
+                Asrama: new window.Swiper('#swiperAsrama', {
+                    loop: false,
+                    initialSlide: 0,
                     slidesPerView: 1.2,
                     centeredSlides: true,
                     spaceBetween: 24,
                     autoplay: { delay: 3000, disableOnInteraction: true },
-                    pagination: { el: '#swiperRuanganPublik .swiper-pagination', type: 'fraction' },
+                    pagination: { el: '#swiperAsrama .swiper-pagination', type: 'fraction' },
                     navigation: {
-                        nextEl: '#swiperRuanganPublik .swiper-button-next',
-                        prevEl: '#swiperRuanganPublik .swiper-button-prev',
+                        nextEl: '#swiperAsrama .swiper-button-next',
+                        prevEl: '#swiperAsrama .swiper-button-prev',
                     },
                     on: {
                         realIndexChange: function(swiper) {
                             syncModalContent(document.querySelectorAll('.modal-info-publik'), swiper.realIndex);
+                        }
+                    }
+                }),
+                Laboratorium: new window.Swiper('#swiperLaboratorium', {
+                    loop: false,
+                    initialSlide: 0,
+                    slidesPerView: 1.2,
+                    centeredSlides: true,
+                    spaceBetween: 24,
+                    autoplay: { delay: 3000, disableOnInteraction: true },
+                    pagination: { el: '#swiperLaboratorium .swiper-pagination', type: 'fraction' },
+                    navigation: {
+                        nextEl: '#swiperLaboratorium .swiper-button-next',
+                        prevEl: '#swiperLaboratorium .swiper-button-prev',
+                    },
+                    on: {
+                        realIndexChange: function(swiper) {
+                            syncModalContent(document.querySelectorAll('.modal-info-laboratorium'), swiper.realIndex);
                         }
                     }
                 }),
@@ -2383,7 +2404,10 @@
                     // ensure swiper updates after modal becomes visible
                     const key = 'Ruangan' + building.charAt(0).toUpperCase() + building.slice(1);
                     if (modalSwipers[key] && typeof modalSwipers[key].update === 'function') {
-                        setTimeout(() => modalSwipers[key].update(), 50);
+                        setTimeout(() => {
+                            modalSwipers[key].update();
+                            modalSwipers[key].slideTo(0, 0); 
+                        }, 250);
                     }
                 }
             }
