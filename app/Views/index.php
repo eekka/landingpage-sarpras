@@ -16,6 +16,12 @@
     <body class="bg-blue-100">
         <style>
             /* menu navbar-humbergermenu */
+            .nav-link:hover,
+            .nav-link:focus,
+            .nav-link:active {
+                color: #FFD700 !important;
+                transition: color 0.2s;
+            }
             .nav-link {
             position: relative;
             text-decoration: none;
@@ -637,8 +643,8 @@
             </div>
         </a>
         <!-- navbar -->
-        <nav class="bg-white shadow-lg sticky top-0 z-50 backdrop-blur-lg bg-opacity-90">
-            <div class="px-2 lg:px-8 relative">         
+        <nav class="bg-blue-950 shadow-lg sticky top-0 z-50">
+            <div class="px-2 lg:px-8 relative">
                 <div class="flex justify-between items-center h-20">
                     <!-- logo -->
                     <div class="flex items-center gap-3 slide-in">
@@ -647,8 +653,12 @@
                                 <img src="<?= base_url('images/core/logo11.png') ?>" alt="Logo BalatKop" class="w-12 h-12 mr-2 inline-block rounded-full">
                             </div>
                             <div class="flex flex-col leading-tight">
-                                <span style="font-family: 'Lora', serif; font-weight: 600;" class="text-blue-600 text-2xl md:text-3xl lg:text-4xl">Sarana-Prasarana</span>
-                                <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; letter-spacing: 0.03em;" class="text-gray-800 text-xs md:text-sm">Balatkop UKMK Jateng</span>
+                                <span style="font-family: 'Lora', serif; font-weight: 600;" class="text-2xl md:text-3xl lg:text-4xl">
+                                    <span style="color: #fff;">Sarana-</span><span style="color: #FFD700;">Prasarana</span>
+                                </span>
+                                <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; letter-spacing: 0.03em;" class="text-xs md:text-sm">
+                                    <span style="color: #FFD700;">Balatkop</span> <span style="color: #fff;">UKMK Jateng</span>
+                                </span>
                             </div>
                         </a>
                     </div>
@@ -656,11 +666,11 @@
                     <div class="flex items-center gap-6">
                         <!-- menu -->
                         <div class="hidden md:flex space-x-8">
-                            <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Beranda</a>
-                            <a href="#tentang" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Tentang</a>
-                            <a href="#fasilitas" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Fasilitas</a>
-                            <a href="#galeri" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Galeri</a>
-                            <a href="#kontak" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Kontak</a>
+                            <a href="#home" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">Beranda</a>
+                            <a href="#tentang" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">Tentang</a>
+                            <a href="#fasilitas" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">Fasilitas</a>
+                            <a href="#galeri" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">Galeri</a>
+                            <a href="#kontak" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">Kontak</a>
                         </div>
                         <!-- icon night mode  --> 
                         <div>
@@ -675,8 +685,8 @@
                         </div>
                         <!-- humberger --> 
                         <div>
-                            <button onclick="toggleMenu()" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition">
-                                <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <button onclick="toggleMenu()" class="md:hidden p-2 rounded-lg bg-blue-950 border border-gray-300 transition">
+                                <svg class="w-6 h-6" fill="none" stroke="#fff" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                                 </svg>
                             </button>
@@ -792,15 +802,15 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 reveal-on-scroll">
                 <p class="text-4xl font-bold heading-modern bounce-3s section-title-fancy">Tentang Sarana Prasarana Kami</p>
             </div>
-            <div class="max-w-7xl mx-auto md:px-4 sm:px-6 lg:px-8 bg-white rounded-3xl shadow p-8 mt-2 reveal-on-scroll">
+            <div class="max-w-7xl mx-auto md:px-4 sm:px-6 lg:px-8 bg-blue-950 rounded-3xl shadow p-8 mt-2 reveal-on-scroll">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="space-y-6 reveal-left reveal-on-scroll">
-                        <h3 class="text-3xl font-bold text-blue-600">Deskripsi Umum</h3>
-                        <p class="text-gray-700 text-lg leading-relaxed">
+                        <h3 class="text-3xl font-bold text-white">Deskripsi <span style="color:#FFD700;">Umum</span></h3>
+                        <p class="text-white text-lg leading-relaxed">
                             Sarana dan prasarana kami dirancang untuk mendukung penuh kelancaran operasional instansi pemerintah. 
                             Dengan infrastruktur modern dan fasilitas lengkap, kami berkomitmen memberikan layanan terbaik kepada masyarakat.
                         </p>
-                        <p class="text-gray-700 text-lg leading-relaxed">
+                        <p class="text-white text-lg leading-relaxed">
                             Setiap fasilitas telah direncanakan dengan matang untuk memastikan kenyamanan pengguna dan efisiensi kerja maksimal.
                         </p>
                         <div class="flex gap-4 pt-4">
@@ -815,7 +825,7 @@
                         </div>
                     </div>
                     <div class="relative reveal-right reveal-on-scroll">
-                        <div class="absolute inset-0 bg-linear-to-br from-blue-400 to-purple-600 rounded-2xl transform rotate-3"></div>
+                        <div class="absolute inset-0 bg-gray-300 rounded-2xl transform rotate-3"></div>
                         <div class="relative bg-transparent rounded-2xl overflow-hidden shadow-2xl transform -rotate-1 hover:rotate-0 transition-transform h-96 flex items-center justify-center">
                             <img id="aboutAutoImage" src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="About Image" class="w-full h-full object-cover about-auto-image">
                         </div>
@@ -1001,7 +1011,7 @@
                     <!-- Fasilitas Card - Kesehatan -->
                     <button onclick="openModal('kesehatan')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-1 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-00 group-active:text-blue-950 group-focus-visible:text-blue-950" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
                             </svg>
                         </div>
@@ -1105,8 +1115,8 @@
 
         <!-- Gallery Section -->
         <section id="galeri" class="pt-20">
-            <div class="w-full bg-blue-800 p-10 mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-                <p class="text-4xl font-bold text-center heading-modern bounce-3s section-title-fancy text-white reveal-on-scroll">Galeri Foto</p>
+            <div class="w-full bg-blue-950 p-10 mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+                <p class="text-4xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll"><span style="color: #fff;">Galeri</span> <span style="color: #FFD700;">Foto</span></p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-1 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" data-alt="Gedung Utama">
                         <img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="Gedung Utama" class="absolute inset-0 w-full h-full object-cover gallery-img">
@@ -1185,9 +1195,14 @@
                 </div>
                 <div class="relative flex w-full mx-auto sm:px-6 lg:px-8 text-center">
                     <div class="flex-1">
-                        <h2 class="text-4xl md:text-5xl font-bold mb-6">Tertarik untuk Menggunakan Layanan Kami?</h2>
-                        <p class="text-xl md:text-2xl mb-10 text-gray-100"><span class="font text-white">Kunjungi Balai Pelatihan Koperasi dan UKM Jateng atau hubungi</span> tim kami untuk informasi lebih lanjut</p>
-                    </div>                             
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6">Tertarik untuk Menggunakan <span style="color:#FFD700;">Layanan Kami?</span></h2>
+                        <p class="text-xl md:text-2xl mb-10 text-gray-100">
+                            <span class="font text-white">Kunjungi </span>
+                            <span class="font" style="color:#FFD700;">Balai Pelatihan Koperasi dan UKM Jateng</span>
+                            <span class="font text-white"> atau hubungi tim kami untuk </span>
+                            <span style="color:#FFD700;">informasi lebih lanjut</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1201,7 +1216,7 @@
                 <div class="row g-5 mb-5">
                     <!-- Column 1: Ikuti Kami (Social Media) -->
                     <div class="col-md-3">
-                        <h3 class="text-xl font-bold mb-6 text-white">Ikuti Kami</h3>
+                        <h3 class="text-xl font-bold mb-6 text-white">Ikuti <span style="color:#FFD700;">Kami</span></h3>
                         <div class="d-flex flex-column gap-3">
                             <a href="https://www.instagram.com/balatkopukmjateng?igsh=MW1sNWpqNTdndHNmaA==" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-gray-400 hover:text-pink-500 transition duration-300 text-decoration-none">
                                 <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -1244,7 +1259,7 @@
 
                     <!-- Column 2: Jam Operasional -->
                     <div class="col-md-3">
-                        <h3 class="text-xl font-bold mb-6 text-white">Jam Operasional</h3>
+                        <h3 class="text-xl font-bold mb-6 text-white">Jam <span style="color:#FFD700;">Operasional</span></h3>
                         <div class="space-y-4">
                             <div>
                                 <p class="text-gray-400 text-sm"><span class="font-semibold">Senin - Jumat:</span></p>
@@ -1259,7 +1274,7 @@
 
                     <!-- Column 3: Kontak -->
                     <div class="col-md-3">
-                        <h3 class="text-xl font-bold mb-6 text-white">Kontak</h3>
+                        <h3 class="text-xl font-bold mb-6"><span style="color:#FFD700;">Kontak</span></h3>
                         <ul class="text-gray-400 text-sm space-y-3 list-unstyled">
                             <li class="d-flex align-items-start gap-2">
                                 <span class="text-lg shrink-0">📍</span>
@@ -1278,7 +1293,7 @@
                 </div>
 
                 <div class="mt-10">
-                    <h3 class="text-xl font-bold mb-4 text-white">Lokasi Kami</h3>
+                    <h3 class="text-xl font-bold mb-4 text-white"><span style="color:#FFD700;">Lokasi</span> Kami</h3>
                     <div class="relative w-full rounded-lg overflow-hidden shadow-lg border border-gray-800/40" style="height: 350px;">
                         <iframe src="https://maps.google.com/maps?q=Balatkop+UMKM,+Semarang&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
