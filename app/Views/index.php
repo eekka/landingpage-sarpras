@@ -643,7 +643,7 @@
             </div>
         </a>
         <!-- navbar -->
-        <nav class="bg-blue-950 shadow-lg sticky top-0 z-50">
+        <nav class="bg-blue-950 shadow-lg sticky top-0 z-30">
             <div class="px-2 lg:px-8 relative">
                 <div class="flex justify-between items-center h-20">
                     <!-- logo -->
@@ -1405,14 +1405,23 @@
 
             <!-- gedung -->
         <!-- Modal Gedung Aula -->
-            <div id="modalAula" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
+            <div id="modalAula" class="hidden fixed inset-0 z-30 modal-overlay flex items-center justify-center p-4">
+                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
                     <!-- Gambar slide -->
                     <div class="relative">
-                        <div class="swiper modal-img-swiper" id="swiperRuanganUtama" style="height: 360px;">
+                        <div class="swiper modal-img-swiper" id="swiperAula" style="height: 360px;">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" data-alt="Aula - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula - Gambar 1</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Aula - Gambar 2"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula - Gambar 2</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
@@ -1421,6 +1430,7 @@
                     </div>
                     <!-- isi konten -->
                     <div>
+                        <!-- aula anggrek -->
                         <div class="p-6 modal-info-utama modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
@@ -1435,6 +1445,49 @@
                                     </p>
                                 </div>
                             </div>
+                            <!-- gambar2 -->
+                            <div class="swiperimg mySwiperimg">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                            
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                                                                                                            
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+
                             <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Direktur telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                             <p class="text-gray-600 text-sm mb-3">Ruang Direktur<br>Dimensi ruangan 80 m2</p>
                             <ul class="modal-info-list">
@@ -1447,6 +1500,7 @@
                                 <li>Round table set up menampung 6 orang</li>
                             </ul>
                         </div>
+                        <!-- aula teratai -->
                         <div class="p-6 modal-info-utama modal-info-block hidden" data-slide="1">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
@@ -1460,6 +1514,48 @@
                                         <span class="font-bold">Kapasitas :</span> 50 guests
                                     </p>
                                 </div>
+                            </div>
+                            <!-- gambar2 -->
+                            <div class="swiperimg mySwiperimg">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                            
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                                                                                                            
+                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                             <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Rapat Utama telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                             <p class="text-gray-600 text-sm mb-3">Ruang Rapat Utama<br>Dimensi ruangan 120 m2</p>
@@ -1481,15 +1577,15 @@
             </div>
 
             <!-- Modal Ruang Kelas | Rapat -->
-            <div id="modalRuang" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
+            <div id="modalRuang" class="hidden fixed inset-0 z-30 modal-overlay flex items-center justify-center p-4">
+                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
                     <!-- gambar -->
                     <div class="relative">
-                        <div class="swiper modal-img-swiper" id="swiperRuanganPendukung" style="height: 360px;">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"></div>
+                        <div class="swiper modal-img-swiper overflow-x-hidden" id="swiperRuang" style="height: 360px;">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"><span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span></div></div>
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" data-alt="Ruang Kelas - Gambar 2"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"><span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 2</span></div></div>
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" data-alt="Ruang Kelas - Gambar 3"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"><span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 3</span></div></div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
@@ -1497,6 +1593,7 @@
                         </div>
                     </div>
                     <div>
+                        <!-- mawar -->
                         <div class="p-6 modal-info-pendukung modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
@@ -1511,6 +1608,48 @@
                                     </p>
                                 </div>
                             </div>
+                            <!-- gambar2 -->
+                            <div class="swiperimg mySwiperimg">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                            
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                                                                                                            
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
                             <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Perpustakaan telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                             <p class="text-gray-600 text-sm mb-3">Ruang Perpustakaan<br>Dimensi ruangan 200 m2</p>
                             <ul class="modal-info-list">
@@ -1523,6 +1662,7 @@
                                 <li>Round table set up menampung 40 orang</li>
                             </ul>
                         </div>
+                        <!-- dahlia -->
                         <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="1">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
@@ -1537,6 +1677,48 @@
                                     </p>
                                 </div>
                             </div>
+                            <!-- gambar2 -->
+                            <div class="swiperimg mySwiperimg">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                            
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                                                                                                            
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
                             <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Kolaborasi telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                             <p class="text-gray-600 text-sm mb-3">Ruang Kolaborasi<br>Dimensi ruangan 150 m2</p>
                             <ul class="modal-info-list">
@@ -1549,6 +1731,7 @@
                                 <li>Round table set up menampung 30 orang</li>
                             </ul>
                         </div>
+                        <!-- bougenville -->
                         <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="2">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
@@ -1562,6 +1745,48 @@
                                         <span class="font-bold">Kapasitas :</span> 25 guests
                                     </p>
                                 </div>
+                            </div>
+                            <!-- gambar2 -->
+                            <div class="swiperimg mySwiperimg">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                            
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                                                                                                            
+                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                             <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Meeting A telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                             <p class="text-gray-600 text-sm mb-3">Ruang Meeting A<br>Dimensi ruangan 80 m2</p>
@@ -1583,13 +1808,13 @@
             </div>
 
             <!-- Modal Asrama -->
-            <div id="modalAsrama" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalAsrama" class="hidden fixed inset-0 z-30 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
                     <div class="relative">
-                        <div class="swiper modal-img-swiper" id="swiperRuanganPublik" style="height: 360px;">
+                        <div class="swiper modal-img-swiper" id="swiperAsrama" style="height: 360px;">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" data-alt="Asrama - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"><span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Asrama - Gambar 1</span></div></div>
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" data-alt="Asrama - Gambar 2"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"><span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Asrama - Gambar 2</span></div></div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
@@ -1597,6 +1822,7 @@
                         </div>
                     </div>
                     <div>
+                        <!-- kamar -->
                         <div class="p-6 modal-info-publik modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
@@ -1610,6 +1836,48 @@
                                         <span class="font-bold">Kapasitas :</span> 120 guests
                                     </p>
                                 </div>
+                            </div>
+                            <!-- gambar2 -->
+                            <div class="swiperimg mySwiperimg">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                            
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                                                                                                            
+                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                             <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Tunggu Publik telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                             <p class="text-gray-600 text-sm mb-3">Ruang Tunggu Publik<br>Dimensi ruangan 300 m2</p>
@@ -1657,14 +1925,14 @@
             </div>
 
             <!-- Modal Laboratorium -->
-            <div id="modalLaboratorium" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalLaboratorium" class="hidden fixed inset-0 z-30 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
                     <div class="relative">
-                        <div class="swiper modal-img-swiper" id="swiperRuanganPublik" style="height: 360px;">
+                        <div class="swiper modal-img-swiper" id="swiperLaboratorium" style="height: 360px;">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"></div>
-                                <div class="swiper-slide"><img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover"></div>
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" data-alt="Laboratorium - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"><span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium - Gambar 1</span></div></div>
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" data-alt="Laboratorium - Gambar 2"><img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"><span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium - Gambar 2</span></div></div>
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" data-alt="Laboratorium - Gambar 3"><img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"><span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium - Gambar 3</span></div></div>
                             </div>
                             <div class="swiper-pagination"></div>
                             <div class="swiper-button-prev"></div>
@@ -1672,6 +1940,7 @@
                         </div>
                     </div>
                     <div>
+                        <!-- batik -->
                         <div class="p-6 modal-info-publik modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
@@ -1686,6 +1955,48 @@
                                     </p>
                                 </div>
                             </div>
+                            <!-- gambar2 -->
+                            <div class="swiperimg mySwiperimg">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                            
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                                                                                                            
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
                             <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Tunggu Publik telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                             <p class="text-gray-600 text-sm mb-3">Ruang Tunggu Publik<br>Dimensi ruangan 300 m2</p>
                             <ul class="modal-info-list">
@@ -1698,6 +2009,7 @@
                                 <li>Round table set up menampung 100 orang</li>
                             </ul>
                         </div>
+                        <!-- tata boga -->
                         <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="1">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
@@ -1711,6 +2023,48 @@
                                         <span class="font-bold">Kapasitas :</span> 10 guests
                                     </p>
                                 </div>
+                            </div>
+                            <!-- gambar2 -->
+                            <div class="swiperimg mySwiperimg">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                            
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                        </div>
+                                    </div>                                                                                                            
+                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                             <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Loket Pelayanan 1 telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
                             <p class="text-gray-600 text-sm mb-3">Loket Pelayanan 1<br>Dimensi ruangan 40 m2</p>
@@ -2204,6 +2558,17 @@
                 slidesPerView: 1,
                 allowTouchMove: true,
             });
+
+            // Swiper (Hero)
+            const swiperimg = new window.Swiper('.mySwiperimg', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+
             // swiper Building
             const swiper2 = new window.Swiper(".mySwiper2", {
                 grabCursor: true,
@@ -2289,18 +2654,19 @@
                 });
             }
 
-            // Swiper (Modal Gedung) - full-image style, fraction pagination, 3s autoplay
+            // Swiper (Modal Gedung) 
             const modalSwipers = {
-                RuanganUtama: new window.Swiper('#swiperRuanganUtama', {
-                    loop: true,
-                    slidesPerView: 1,
+                Aula: new window.Swiper('#swiperAula', {
+                    loop: false,
+                    initialSlide: 0,
+                    slidesPerView: 1.2,
                     centeredSlides: true,
                     spaceBetween: 24,
                     autoplay: { delay: 3000, disableOnInteraction: true },
-                    pagination: { el: '#swiperRuanganUtama .swiper-pagination', type: 'fraction' },
+                    pagination: { el: '#swiperAula .swiper-pagination', type: 'fraction' },
                     navigation: {
-                        nextEl: '#swiperRuanganUtama .swiper-button-next',
-                        prevEl: '#swiperRuanganUtama .swiper-button-prev',
+                        nextEl: '#swiperAula .swiper-button-next',
+                        prevEl: '#swiperAula .swiper-button-prev',
                     },
                     on: {
                         realIndexChange: function(swiper) {
@@ -2308,16 +2674,17 @@
                         }
                     }
                 }),
-                RuanganPendukung: new window.Swiper('#swiperRuanganPendukung', {
-                    loop: true,
+                Ruang: new window.Swiper('#swiperRuang', {
+                    loop: false,
+                    initialSlide: 0,
                     slidesPerView: 1.2,
                     centeredSlides: true,
                     spaceBetween: 24,
                     autoplay: { delay: 3000, disableOnInteraction: true },
-                    pagination: { el: '#swiperRuanganPendukung .swiper-pagination', type: 'fraction' },
+                    pagination: { el: '#swiperRuang .swiper-pagination', type: 'fraction' },
                     navigation: {
-                        nextEl: '#swiperRuanganPendukung .swiper-button-next',
-                        prevEl: '#swiperRuanganPendukung .swiper-button-prev',
+                        nextEl: '#swiperRuang .swiper-button-next',
+                        prevEl: '#swiperRuang .swiper-button-prev',
                     },
                     on: {
                         realIndexChange: function(swiper) {
@@ -2325,20 +2692,39 @@
                         }
                     }
                 }),
-                RuanganPublik: new window.Swiper('#swiperRuanganPublik', {
-                    loop: true,
+                Asrama: new window.Swiper('#swiperAsrama', {
+                    loop: false,
+                    initialSlide: 0,
                     slidesPerView: 1.2,
                     centeredSlides: true,
                     spaceBetween: 24,
                     autoplay: { delay: 3000, disableOnInteraction: true },
-                    pagination: { el: '#swiperRuanganPublik .swiper-pagination', type: 'fraction' },
+                    pagination: { el: '#swiperAsrama .swiper-pagination', type: 'fraction' },
                     navigation: {
-                        nextEl: '#swiperRuanganPublik .swiper-button-next',
-                        prevEl: '#swiperRuanganPublik .swiper-button-prev',
+                        nextEl: '#swiperAsrama .swiper-button-next',
+                        prevEl: '#swiperAsrama .swiper-button-prev',
                     },
                     on: {
                         realIndexChange: function(swiper) {
                             syncModalContent(document.querySelectorAll('.modal-info-publik'), swiper.realIndex);
+                        }
+                    }
+                }),
+                Laboratorium: new window.Swiper('#swiperLaboratorium', {
+                    loop: false,
+                    initialSlide: 0,
+                    slidesPerView: 1.2,
+                    centeredSlides: true,
+                    spaceBetween: 24,
+                    autoplay: { delay: 3000, disableOnInteraction: true },
+                    pagination: { el: '#swiperLaboratorium .swiper-pagination', type: 'fraction' },
+                    navigation: {
+                        nextEl: '#swiperLaboratorium .swiper-button-next',
+                        prevEl: '#swiperLaboratorium .swiper-button-prev',
+                    },
+                    on: {
+                        realIndexChange: function(swiper) {
+                            syncModalContent(document.querySelectorAll('.modal-info-laboratorium'), swiper.realIndex);
                         }
                     }
                 }),
@@ -2398,7 +2784,10 @@
                     // ensure swiper updates after modal becomes visible
                     const key = 'Ruangan' + building.charAt(0).toUpperCase() + building.slice(1);
                     if (modalSwipers[key] && typeof modalSwipers[key].update === 'function') {
-                        setTimeout(() => modalSwipers[key].update(), 50);
+                        setTimeout(() => {
+                            modalSwipers[key].update();
+                            modalSwipers[key].slideTo(0, 0); 
+                        }, 250);
                     }
                 }
             }
