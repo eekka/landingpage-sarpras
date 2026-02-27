@@ -15,6 +15,12 @@
     </head>
     <body class="bg-blue-100">
         <style>
+            .facility-highlight-btn-blue:hover,
+            .facility-highlight-btn-blue:focus,
+            .facility-highlight-btn-blue:active {
+                color: #1e40af !important;
+                border-color: #1e40af !important;
+            }
             /* menu navbar-humbergermenu */
             .nav-link:hover,
             .nav-link:focus,
@@ -74,17 +80,19 @@
                 text-decoration: none;
                 font-weight: 600;
                 border-radius: 0.5rem;
-                padding-left: 0.6rem;
-                padding-right: 0.6rem;
-                transition: background-color 0.2s ease, transform 0.2s ease;
-            }
-
-            #mobileMenu a .mobile-link-text {
-                position: relative;
-                display: inline-block;
-            }
-
-            #mobileMenu a .mobile-link-text::after {
+                .mobile-menu.active {
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    left: 0;
+                    width: 100vw;
+                    min-height: calc(100vh - 5rem);
+                    padding: 1rem 0.75rem 1.25rem;
+                    overflow-y: auto;
+                    box-shadow: -8px 10px 24px -16px rgba(0, 0, 0, 0.45);
+                    z-index: 60;
+                    border-radius: 0;
+                }
                 content: "";
                 position: absolute;
                 left: 0;
@@ -800,7 +808,17 @@
         <!-- About Section -->
         <section id="tentang"class="pt-36" >
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-4 reveal-on-scroll">
-                <p class="text-4xl font-bold heading-modern bounce-3s section-title-fancy">Tentang Sarana Prasarana Kami</p>
+                <div class="bg-blue-950 rounded-2xl px-4 py-2 shadow text-center mx-auto" style="white-space:nowrap; display:inline-block; margin-left:auto; margin-right:auto;">
+                    <span class="font-bold heading-modern bounce-3s section-title-fancy text-white" style="font-size:2rem;">Tentang Sarana </span>
+                    <span class="font-bold heading-modern bounce-3s section-title-fancy" style="color:#FFD700;font-size:2rem;">Prasarana Kami</span>
+                </div>
+                <style>
+                @media (max-width: 600px) {
+                    .section-title-fancy {
+                        font-size: 1.2rem !important;
+                    }
+                }
+                </style>
             </div>
             <div class="max-w-7xl mx-auto md:px-4 sm:px-6 lg:px-8 bg-blue-950 rounded-3xl shadow p-8 mt-2 reveal-on-scroll">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -987,7 +1005,7 @@
         <!-- Fasilitas Section -->
         <section id="fasilitas" class="py-20 ">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-                <div class="facility-highlight-banner mb-10 reveal-on-scroll">
+                <div class="facility-highlight-banner mb-10 reveal-on-scroll" style="background:#172554;">
                     <div class="row g-0 align-items-stretch">
                         <div class="col-md-5">
                             <div class="facility-highlight-media">
@@ -1000,18 +1018,26 @@
                         </div>
                         <div class="col-md-7 d-flex align-items-center">
                             <div class="facility-highlight-content">
-                                <h3>Pesan mudah<br>nikmati harga terbaik</h3>
-                                <button type="button" onclick="openModal('alurPenyewaan')" class="facility-highlight-btn">Alur Penyewaan</button>
+                                <h3>
+                                    Pesan <span style="color:#FFD700;">mudah</span><br>
+                                    <span style="color:#FFD700;">nikmati</span> harga <span style="color:#FFD700;">terbaik</span>
+                                </h3>
+                                <button type="button" onclick="openModal('alurPenyewaan')" class="facility-highlight-btn facility-highlight-btn-blue">Alur Penyewaan</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p class="text-4xl text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">Fasilitas Lengkap</p>
+                <div class="flex justify-center mb-4">
+                    <div class="bg-blue-950 rounded-2xl px-4 py-2 shadow inline-block text-center">
+                            <span class="text-4xl font-bold heading-modern bounce-3s section-title-fancy text-white whitespace-nowrap" style="font-size:2rem;">Fasilitas Lengkap</span>
+                        <div style="height:4px;background:#FFD700;margin-top:8px;border-radius:2px;"></div>
+                    </div>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Fasilitas Card - Kesehatan -->
-                    <button onclick="openModal('kesehatan')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-1 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
+                    <button onclick="openModal('kesehatan')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-1 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-00 group-active:text-blue-950 group-focus-visible:text-blue-950" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon" style="color:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
                             </svg>
                         </div>
@@ -1020,9 +1046,9 @@
                     </button>
 
                     <!-- Fasilitas Card - Perpustakaan -->
-                    <button onclick="openModal('perpustakaan')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-2 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
+                    <button onclick="openModal('perpustakaan')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-2 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon" style="color:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
                                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                             </svg>
@@ -1032,9 +1058,9 @@
                     </button>
 
                     <!-- Fasilitas Card - Kantin -->
-                    <button onclick="openModal('kantin')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-3 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
+                    <button onclick="openModal('kantin')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-3 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
                                 <path d="M7 2v20"/>
                                 <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
@@ -1045,9 +1071,9 @@
                     </button>
 
                     <!-- Fasilitas Card - Parkir -->
-                    <button onclick="openModal('parkir')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-4 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
+                    <button onclick="openModal('parkir')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-4 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="3" y="3" width="18" height="18" rx="2"/>
                                 <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
                             </svg>
@@ -1056,9 +1082,9 @@
                         <p class="text-sm facility-description">Lahan parkir luas dengan sistem keamanan modern</p>
                     </button>
 
-                    <button onclick="openModal('lab')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-5 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
+                    <button onclick="openModal('lab')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-5 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="3" width="20" height="14" rx="2"/>
                                 <path d="M8 21h8M12 17v4"/>
                             </svg>
@@ -1067,12 +1093,12 @@
                         <p class="text-sm facility-description">Laboratorium komputer dengan perangkat terkini</p>
                     </button>
                     <!-- Fasilitas Card - Mushola -->
-                    <button onclick="openModal('mushola')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-6 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
+                    <button onclick="openModal('mushola')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-6 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 21h18"/>
                                 <path d="M5 21V11l7-6 7 6v10"/>
-                                <circle cx="12" cy="5" r="1.5" fill="currentColor"/>
+                                <circle cx="12" cy="5" r="1.5" fill="#FFD700"/>
                                 <path d="M12 3v2.5"/>
                                 <path d="M8 13h8v8H8z"/>
                                 <path d="M12 8.5c-2.5 0-4 1.5-4 3v1.5h8V11.5c0-1.5-1.5-3-4-3z"/>
@@ -1083,12 +1109,12 @@
                     </button>
 
                     <!-- Fasilitas Card - Transportasi -->
-                    <button onclick="openModal('transportasi')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-7 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
+                    <button onclick="openModal('transportasi')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-7 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M19 17H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14l2 4v4a2 2 0 0 1-2 2z"/>
-                                <circle cx="7.5" cy="17" r="1.5"/>
-                                <circle cx="16.5" cy="17" r="1.5"/>
+                                <circle cx="7.5" cy="17" r="1.5" fill="#FFD700"/>
+                                <circle cx="16.5" cy="17" r="1.5" fill="#FFD700"/>
                                 <path d="M3 9h18"/>
                             </svg>
                         </div>
@@ -1097,9 +1123,9 @@
                     </button>
 
                     <!-- Fasilitas Card - Keamanan -->
-                    <button onclick="openModal('keamanan')" class="bg-white rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-8 reveal-on-scroll hover:scale-105 focus-visible:animate-pulse group">
+                    <button onclick="openModal('keamanan')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-8 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon text-slate-700 transition-colors duration-200 group-hover:text-blue-600 group-active:text-blue-600 group-focus-visible:text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                                 <path d="m9 12 2 2 4-4"/>
                             </svg>
@@ -1200,7 +1226,7 @@
                             <span class="font text-white">Kunjungi </span>
                             <span class="font" style="color:#FFD700;">Balai Pelatihan Koperasi dan UKM Jateng</span>
                             <span class="font text-white"> atau hubungi tim kami untuk </span>
-                            <span style="color:#FFD700;">informasi lebih lanjut</span>
+                            <span class="font text-white">informasi </span><span class="font" style="color:#FFD700;">lebih lanjut</span>
                         </p>
                     </div>
                 </div>
@@ -1216,7 +1242,7 @@
                 <div class="row g-5 mb-5">
                     <!-- Column 1: Ikuti Kami (Social Media) -->
                     <div class="col-md-3">
-                        <h3 class="text-xl font-bold mb-6 text-white">Ikuti <span style="color:#FFD700;">Kami</span></h3>
+                        <h3 class="text-xl font-bold mb-6 text-white" style="display:inline-block;border-bottom:3px solid #FFD700;padding-bottom:0.2em;">Ikuti <span style="color:#fff;">Kami</span></h3>
                         <div class="d-flex flex-column gap-3">
                             <a href="https://www.instagram.com/balatkopukmjateng?igsh=MW1sNWpqNTdndHNmaA==" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-2 text-gray-400 hover:text-pink-500 transition duration-300 text-decoration-none">
                                 <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -1259,7 +1285,7 @@
 
                     <!-- Column 2: Jam Operasional -->
                     <div class="col-md-3">
-                        <h3 class="text-xl font-bold mb-6 text-white">Jam <span style="color:#FFD700;">Operasional</span></h3>
+                        <h3 class="text-xl font-bold mb-6 text-white" style="display:inline-block;border-bottom:3px solid #FFD700;padding-bottom:0.2em;">Jam <span style="color:#fff;">Operasional</span></h3>
                         <div class="space-y-4">
                             <div>
                                 <p class="text-gray-400 text-sm"><span class="font-semibold">Senin - Jumat:</span></p>
@@ -1274,7 +1300,7 @@
 
                     <!-- Column 3: Kontak -->
                     <div class="col-md-3">
-                        <h3 class="text-xl font-bold mb-6"><span style="color:#FFD700;">Kontak</span></h3>
+                        <h3 class="text-xl font-bold mb-6 text-white" style="display:inline-block;border-bottom:3px solid #FFD700;padding-bottom:0.2em;">Kontak</h3>
                         <ul class="text-gray-400 text-sm space-y-3 list-unstyled">
                             <li class="d-flex align-items-start gap-2">
                                 <span class="text-lg shrink-0">📍</span>
@@ -1293,14 +1319,14 @@
                 </div>
 
                 <div class="mt-10">
-                    <h3 class="text-xl font-bold mb-4 text-white"><span style="color:#FFD700;">Lokasi</span> Kami</h3>
+                    <h3 class="text-xl font-bold mb-4 text-white" style="display:inline-block;border-bottom:3px solid #FFD700;padding-bottom:0.2em;">Lokasi Kami</h3>
                     <div class="relative w-full rounded-lg overflow-hidden shadow-lg border border-gray-800/40" style="height: 350px;">
                         <iframe src="https://maps.google.com/maps?q=Balatkop+UMKM,+Semarang&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
                 <!-- Copyright Section -->
-                <hr class="border-gray-800 mb-8">
+                <hr class="border-gray-8teks 00 mb-8">
                 <div class="text-center text-gray-400 text-sm">
                     <p>© 2026 Sarana dan Prasarana Balatkop UKM Jateng.</p>
                 </div>
@@ -1308,12 +1334,14 @@
         </footer>
         <!-- /footer -->
 
-        <!-- Modal --> 
+        <!-- Modal -->
         <!-- Modal Alur Penyewaan -->
             <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-none w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel" style="max-width:min(96vw, 1600px);">
                     <div class="static md:sticky md:top-0 z-20 bg-white px-6 py-4 text-center">
-                        <h2 class="inline-block font-bold text-black flow-alur-title">Alur Penyewaan</h2>
+                        <div style="display:inline-block;background:#172554;padding:0.7em 2em;border-radius:0.7em;">
+                            <h2 class="inline font-bold flow-alur-title" style="color:#fff;">Alur <span style="color:#FFD700;">Penyewaan</span></h2>
+                        </div>
                         <p class="text-gray-600 mb-0 text-center flow-alur-subtitle">Silakan pilih alur sesuai kebutuhan: via online atau via offline.</p>
                     </div>
                     <div class="p-6">
