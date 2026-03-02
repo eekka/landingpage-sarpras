@@ -881,7 +881,7 @@
                                 <!-- Aula -->
                                 <div class="w-max-xl h-auto swiper-slide flex justify-center">                            
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
-                                        <div class="h-52 md:h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                                        <div class="h-52 md:h-70 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
                                                 <source src="<?= base_url('images/core/Aula%20Anggrek.mp4') ?>" type="video/mp4">
                                             </video>
@@ -907,7 +907,7 @@
                                                     <span>Kapasitas 200+ orang</span>
                                                 </li>
                                             </ul>
-                                            <button onclick="openBuildingModal('aula')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                            <button onclick="openBuildingModal('aula')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
                                         </div>
                                     </div>
                                 </div>
@@ -923,31 +923,31 @@
                                             <h3 class="text-2xl font-bold text-blue-600 mb-2">Ruang Kelas | Rapat</h3>
                                             <div class="space-y-2 mb-1">
                                                 <div class="flex items-center text-gray-700">
-                                                    <p class="text-gray-600">Bangunan utama dimana karyawan bekerja</p>
+                                                    <p class="text-gray-600">Area fungsionalitas yang dilengkapi dengan berbaagi perangkat pendukung.</p>
                                                 </div>
                                             </div>
                                             <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
                                                 <li class="feature-item">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10h6"/><path d="M9 14h6"/></svg>
-                                                    <span>Ruang Direktur & Tata Usaha</span>
+                                                    <span>Rapat Formal & Corporate Meeting</span>
                                                 </li>
                                                 <li class="feature-item">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>
-                                                    <span>Ruang Rapat + Video Conference</span>
+                                                    <span>Workshop & Pelatihan Kelas</span>
                                                 </li>
                                                 <li class="feature-item">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4"/><path d="M20 11H4"/><path d="M20 15H4"/><path d="M20 19H4"/></svg>
-                                                    <span>Arsip, keuangan, dan administrasi</span>
+                                                    <span>Sosialisasi & Seminar Kecil</span>
                                                 </li>
                                             </ul>
-                                            <button onclick="openBuildingModal('ruang')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                            <button onclick="openBuildingModal('ruang')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Asrama -->
                                 <div class="w-max-xl h-auto swiper-slide flex justify-center">                                
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
-                                        <div class="h-52 md:h-70 bg-blue-500 flex items-center justify-center">
+                                        <div class="h-52 md:h-70 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
                                                 <source src="<?= base_url('images/core/Asrama1.mp4') ?>" type="video/mp4">
                                             </video>
@@ -956,7 +956,7 @@
                                             <h3 class="text-2xl font-bold text-blue-600 mb-2">Asrama Matahari</h3>
                                             <div class="space-y-2 mb-1">
                                                 <div class="flex items-center text-gray-700">
-                                                    <p class="text-gray-600">Asrama dan fasilitas pedukung yang ada di Balatkop</p>
+                                                    <p class="text-gray-600">Asrama dan fasilitas pedukung yang ada di Balatkop.</p>
                                                 </div>
                                             </div>
                                             <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
@@ -973,14 +973,14 @@
                                                     <span>Seminar hall + sound system</span>
                                                 </li>
                                             </ul>
-                                            <button onclick="openBuildingModal('asrama')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                            <button onclick="openBuildingModal('asrama')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Laboratorium -->
                                 <div class="w-max-xl h-auto swiper-slide flex justify-center">                            
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
-                                        <div class="h-52 md:h-70 bg-blue-500 gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                                        <div class="h-52 md:h-70 flex items-center justify-center">
                                             <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
                                                 <source src="<?= base_url('images/core/Aula%20Anggrek.mp4') ?>" type="video/mp4">
                                             </video>
@@ -989,7 +989,7 @@
                                             <h3 class="text-2xl font-bold text-blue-600 mb-2">Laboratorium</h3>
                                             <div class="space-y-2 mb-1">
                                                 <div class="flex items-center text-gray-700">
-                                                    <p class="text-gray-600">Gedung besar yang dapat digunakan untuk melakukan berbagai kegiatan</p> 
+                                                    <p class="text-gray-600">Gedung dengan beragam fungsi yang berbeda-beda, tergantung dengan kebutuhan.</p> 
                                                 </div>
                                             </div>
                                             <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
@@ -1006,7 +1006,7 @@
                                                     <span>Ruang konsultasi privat</span>
                                                 </li>
                                             </ul>
-                                            <button onclick="openBuildingModal('laboratorium')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
+                                            <button onclick="openBuildingModal('laboratorium')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1378,7 +1378,7 @@
                         </div>
 
                         <div class="mt-4">
-                            <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
+                            <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                         </div>
                     </div>
                 </div>
@@ -1447,7 +1447,7 @@
                         </div>
 
                         <div class="mt-4">
-                            <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
+                            <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                         </div>
                     </div>
                 </div>
@@ -1483,7 +1483,7 @@
                         <!-- aula anggrek -->
                         <div class="p-6 modal-info-utama modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
-                                <div class="justify-between bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">            
+                                <div class="justify-between bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">            
                                     <h3 class="text-2xl font-bold text-center">Aula Anggrek</h3>                                    
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
@@ -1552,7 +1552,7 @@
                         <!-- aula teratai -->
                         <div class="p-6 modal-info-utama modal-info-block hidden" data-slide="1">
                             <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Aula Teratai</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
@@ -1622,7 +1622,7 @@
                         </div>
                     </div>
                     <div class="p-4 border-t">
-                        <button onclick="closeBuildingModal('aula')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
+                        <button onclick="closeBuildingModal('aula')" class="w-full bg-blue-950 text-white py-3 rounded-xl font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
@@ -1647,7 +1647,7 @@
                         <!-- mawar -->
                         <div class="p-6 modal-info-pendukung modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Ruang Mawar</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
@@ -1716,7 +1716,7 @@
                         <!-- dahlia -->
                         <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="1">
                             <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Ruang Dahlia</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
@@ -1784,7 +1784,7 @@
                         <!-- bougenville -->
                         <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="2">
                             <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Ruang Bougenville</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
@@ -1850,7 +1850,7 @@
                         </div>
                     </div>
                     <div class="p-4 border-t">
-                        <button onclick="closeBuildingModal('ruang')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
+                        <button onclick="closeBuildingModal('ruang')" class="w-full bg-blue-950 text-white py-3 rounded-xl font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
@@ -1873,7 +1873,7 @@
                         <!-- kamar -->
                         <div class="p-6 modal-info-publik modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Kamar Asrama</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
@@ -1945,7 +1945,7 @@
                         </div>
                         <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="1">
                             <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Loket Pelayanan 1</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
@@ -1971,7 +1971,7 @@
                         </div>
                     </div>
                     <div class="p-4 border-t">
-                        <button onclick="closeBuildingModal('asrama')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
+                        <button onclick="closeBuildingModal('asrama')" class="w-full bg-blue-950 text-white py-3 rounded-xl font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
@@ -1995,7 +1995,7 @@
                         <!-- batik -->
                         <div class="p-6 modal-info-publik modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Laboratorium Batik</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
@@ -2064,7 +2064,7 @@
                         <!-- tata boga -->
                         <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="1">
                             <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Laboratorium Tata Boga</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
@@ -2132,7 +2132,7 @@
                         </div>
                         <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="2">
                             <div class="flex flex-col items-start">
-                                <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
+                                <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Loket Pelayanan 2</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
@@ -2158,7 +2158,7 @@
                         </div>
                     </div>
                     <div class="p-4 border-t">
-                        <button onclick="closeBuildingModal('laboratorium')" class="w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition hover-text-gold">Tutup</button>
+                        <button onclick="closeBuildingModal('laboratorium')" class="w-full bg-blue-950 text-white py-3 rounded-xl font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
@@ -2251,7 +2251,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Sistem Peminjaman Digital</li>
                         </ul>
 
-                        <button onclick="closeModal('perpustakaan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
+                        <button onclick="closeModal('perpustakaan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -2298,7 +2298,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Buka Setiap Hari Kerja</li>
                         </ul>
 
-                        <button onclick="closeModal('kantin')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
+                        <button onclick="closeModal('kantin')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -2342,7 +2342,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Tarif Terjangkau Harian/Bulanan</li>
                         </ul>
 
-                        <button onclick="closeModal('parkir')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
+                        <button onclick="closeModal('parkir')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -2388,7 +2388,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> WiFi 1Gbps & Internet Cepat</li>
                         </ul>
 
-                        <button onclick="closeModal('lab')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
+                        <button onclick="closeModal('lab')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -2437,7 +2437,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Kebersihan terjaga dengan petugas rutin</li>
                         </ul>
 
-                        <button onclick="closeModal('mushola')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
+                        <button onclick="closeModal('mushola')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -2483,7 +2483,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Aplikasi Mobile Booking</li>
                         </ul>
 
-                        <button onclick="closeModal('transportasi')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
+                        <button onclick="closeModal('transportasi')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -2529,7 +2529,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Program Keselamatan Berkala</li>
                         </ul>
 
-                        <button onclick="closeModal('keamanan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
+                        <button onclick="closeModal('keamanan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
