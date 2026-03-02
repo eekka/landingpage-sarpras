@@ -724,10 +724,27 @@
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg reveal-left reveal-on-scroll">Slide 1</p>
-                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase reveal-left reveal-on-scroll">Selamat Datang di <span class="text-blue-800 text-shadow-2xs text-shadow-white">Sarana Prasarana</span>  Balatkop Jateng</h1>
-                                <p class="text-sm mt-2 md:text-lg mb-8 reveal-left reveal-on-scroll">Siap melayani kebutuhan koperasi, UKM, dan masyarakat Provinsi Jawa Tenga!</p>
+                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase reveal-left reveal-on-scroll">
+                                    <span style="color:#FFD700;">Selamat Datang di </span>
+                                    <span style="color:#fff;">Sarana Prasarana</span>
+                                    <span style="color:#FFD700;"> Balatkop UKMK Jateng</span>
+                                </h1>
+                                <p class="text-sm mt-2 md:text-lg mb-8 reveal-left reveal-on-scroll">Siap melayani kebutuhan koperasi, UKM, dan masyarakat Provinsi Jawa Tengah</p>
                                 <a href="#tentang" class="reveal-left reveal-on-scroll hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                     Jelajahi Sekarang
+                                </a>
+                                <style>
+                                    .hero-cta-btn {
+                                        background-color: #172554 !important;
+                                        border: 2px solid #172554 !important;
+                                        color: #FFD700 !important;
+                                    }
+                                    .hero-cta-btn:hover {
+                                        background-color: #FFD700 !important;
+                                        color: #172554 !important;
+                                        border: 2px solid #FFD700 !important;
+                                    }
+                                </style>
                                 </a>
                             </div>
                         </div>
@@ -738,7 +755,7 @@
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg">Slide 2</p>
-                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Balatkop UKM Jateng</h1>
+                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase"><span style="color:#fff;">BALATKOP</span> <span style="color:#FFD700;">UKMK JATENG</span></h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Sebuah instansi pelatihan yang memberikan pelatihan dan pendampingan terbaik untuk koperasi dan UKM di Provinsi Jawa Tengah.</p>
                                 <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                     Cari Tahu Lebih Lanjut!
@@ -752,21 +769,21 @@
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg">Slide 3</p>
-                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang Kelas & Rapat</h1>
+                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Ruang <span style="color:#FFD700;">KELAS & RAPAT</span></h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan berbagai fasilitas penunjang acara baik untuk kegiatan pelatihan maupun pertemuan.</p>
                                 <a href="#fasilitas" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                     Lihat Detail
                                 </a>
                             </div>
                         </div>
-                    </div>                         
+                    </div>  
                     <!-- 4 -->
                     <div class="swiper-slide h-screen w-full relative bg-black">
                         <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg">Slide 4</p>
-                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Gedung Aula</h1>
+                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Gedung <span style="color:#FFD700;">AULA</span></h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Ruangan dengan daya tampung yang besar serta fasilitas-fasilitas yang dijamin memuaskan.</p>
                                 <a href="#fasilitas" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                     Lihat Detail
@@ -780,7 +797,7 @@
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg">Slide 5</p>
-                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">Laboratorium</h1>
+                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase"><span style="color:#FFD700;">LABORATORIUM</span></h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Ruangan pelatihan dengan berbagai fasilitas yang sesuai dengan acara atau kegiatan yang dilaksanakan.</p>
                                 <a href="#fasilitas" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                     Lihat Detail
@@ -857,7 +874,7 @@
         <section class="pt-26" id="fasilitas">
             <div class="mx-auto reveal-on-scroll">
                 <div class="bg-blue-950 p-6 md:p-10 shadow-inner" style="border-radius: 0;">
-                    <p class="text-4xl font-extrabold text-center text-white heading-modern bounce-3s section-title-fancy reveal-on-scroll mb-6">Gedung dan Ruangan</p>
+                    <p class="text-4xl font-extrabold text-center text-white heading-modern bounce-3s section-title-fancy reveal-on-scroll mb-6">Gedung | <span style="color:#FFD700;"> Ruangan</span></p>
                     <!-- Swiper -->
                         <div class="swiper2 mySwiper2 overflow-hidden">
                             <div class="swiper-wrapper">
@@ -1333,7 +1350,7 @@
                 <!-- Copyright Section -->
                 <hr class="border-gray-8teks 00 mb-8">
                 <div class="text-center text-gray-400 text-sm">
-                    <p>© 2026 Sarana dan Prasarana Balatkop UKM Jateng. Created by KaHa</p>
+                    <p>© 2026 Sarana dan Prasarana Balatkop UKMK Jateng. Created by Handy & Eka</p>
                 </div>
             </div>
         </footer>
