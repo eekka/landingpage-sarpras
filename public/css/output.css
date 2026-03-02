@@ -789,6 +789,10 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
   .border-blue-300 {
     border-color: var(--color-blue-300);
   }
@@ -812,6 +816,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
     }
+  }
+  .border-yellow-400 {
+    border-color: var(--color-yellow-400);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -1448,6 +1455,9 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .whitespace-nowrap {
+    white-space: nowrap;
+  }
   .text-black {
     color: var(--color-black);
   }
@@ -1516,6 +1526,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .text-yellow-400 {
+    color: var(--color-yellow-400);
   }
   .text-yellow-600 {
     color: var(--color-yellow-600);
@@ -1659,13 +1672,6 @@
       }
     }
   }
-  .group-hover\:text-blue-600 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-blue-600);
-      }
-    }
-  }
   .group-hover\:opacity-30 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1678,26 +1684,6 @@
       @media (hover: hover) {
         opacity: 100%;
       }
-    }
-  }
-  .group-focus-visible\:text-blue-600 {
-    &:is(:where(.group):focus-visible *) {
-      color: var(--color-blue-600);
-    }
-  }
-  .group-focus-visible\:text-blue-950 {
-    &:is(:where(.group):focus-visible *) {
-      color: var(--color-blue-950);
-    }
-  }
-  .group-active\:text-blue-600 {
-    &:is(:where(.group):active *) {
-      color: var(--color-blue-600);
-    }
-  }
-  .group-active\:text-blue-950 {
-    &:is(:where(.group):active *) {
-      color: var(--color-blue-950);
     }
   }
   .group-active\:opacity-100 {
@@ -1726,6 +1712,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-blue-700);
+      }
+    }
+  }
+  .hover\:bg-blue-950 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-blue-950);
       }
     }
   }
@@ -1856,6 +1849,13 @@
       }
     }
   }
+  .hover\:text-\[\#FFD700\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #FFD700;
+      }
+    }
+  }
   .hover\:text-blue-600 {
     &:hover {
       @media (hover: hover) {
@@ -1914,6 +1914,17 @@
       }
     }
   }
+  .focus\:text-\[\#FFD700\] {
+    &:focus {
+      color: #FFD700;
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
+    }
+  }
   .focus-visible\:animate-pulse {
     &:focus-visible {
       animation: var(--animate-pulse);
@@ -1956,6 +1967,12 @@
       line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
+  .sm\:text-sm {
+    @media (width >= 40rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
   .md\:sticky {
     @media (width >= 48rem) {
       position: sticky;
@@ -1964,16 +1981,6 @@
   .md\:top-0 {
     @media (width >= 48rem) {
       top: calc(var(--spacing) * 0);
-    }
-  }
-  .md\:right-2 {
-    @media (width >= 48rem) {
-      right: calc(var(--spacing) * 2);
-    }
-  }
-  .md\:bottom-2 {
-    @media (width >= 48rem) {
-      bottom: calc(var(--spacing) * 2);
     }
   }
   .md\:z-0 {
@@ -1991,11 +1998,6 @@
       display: none;
     }
   }
-  .md\:h-4 {
-    @media (width >= 48rem) {
-      height: calc(var(--spacing) * 4);
-    }
-  }
   .md\:h-10 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 10);
@@ -2004,11 +2006,6 @@
   .md\:h-70 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 70);
-    }
-  }
-  .md\:w-4 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 4);
     }
   }
   .md\:w-10 {

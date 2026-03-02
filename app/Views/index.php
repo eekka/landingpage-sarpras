@@ -13,7 +13,7 @@
         <link href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/output.css">
     </head>
-    <body class="bg-blue-100">
+    <body class="bg-blue-100 overflow-x-hidden">
         <style>
             .facility-highlight-btn-blue:hover,
             .facility-highlight-btn-blue:focus,
@@ -340,19 +340,19 @@
             .facility-card:hover .card-icon,
             .facility-card:active .card-icon,
             .facility-card:focus-visible .card-icon {
-                color: #2563eb; /* blue-600 */
+                color: #FFD700; /* gold */
             }
 
             /* Highlight facility title text on hover/click/focus */
             .facility-card:hover .facility-title,
             .facility-card:active .facility-title,
             .facility-card:focus-visible .facility-title {
-                color: #2563eb; /* blue-600 */
+                color: #FFD700; /* gold */
             }
             .facility-highlight-banner {
                 overflow: hidden;
                 border-radius: 1rem;
-                background: #1d4ed8;
+                background: #FFD700;
                 box-shadow: 0 18px 34px -20px rgba(15, 23, 42, 0.6);
             }
 
@@ -664,7 +664,7 @@
                                 <span style="font-family: 'Lora', serif; font-weight: 600;" class="text-2xl md:text-3xl lg:text-4xl">
                                     <span style="color: #fff;">Sarana-</span><span style="color: #FFD700;">Prasarana</span>
                                 </span>
-                                <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; letter-spacing: 0.03em;" class="text-xs md:text-sm">
+                                <span style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 400; letter-spacing: 0.03em;" class="text-xs sm:text-sm md:text-sm">
                                     <span style="color: #FFD700;">Balatkop</span> <span style="color: #fff;">UKMK Jateng</span>
                                 </span>
                             </div>
@@ -715,7 +715,7 @@
         
         <!-- Hero section -->
          <section id="home" class=" flex items-center justify-center h-screen w-full overflow-hidden">
-            <div class="h-screen w-full overflow-hidden relative swiper mySwiper">
+            <div class="h-screen w-full overflow-x-hidden relative swiper mySwiper">
                 <!-- slide -->
                 <div class="swiper-wrapper">                    
                     <!-- 1 -->
@@ -896,15 +896,15 @@
                                             <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
                                                 <li class="feature-item">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>
-                                                    <span>Ruang tunggu publik luas</span>
+                                                    <span>Ruangan luas</span>
                                                 </li>
                                                 <li class="feature-item">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 9h8"/><path d="M8 13h6"/></svg>
-                                                    <span>Loket informasi & verifikasi</span>
+                                                    <span>Fasilitas pendukung</span>
                                                 </li>
                                                 <li class="feature-item">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M4 20a8 8 0 0 1 16 0"/></svg>
-                                                    <span>Ruang konsultasi privat</span>
+                                                    <span>Kapasitas 200+ orang</span>
                                                 </li>
                                             </ul>
                                             <button onclick="openBuildingModal('aula')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition mt-auto hover:scale-105 focus-visible:animate-pulse hover-text-amber">Lihat Detail</button>
@@ -956,7 +956,7 @@
                                             <h3 class="text-2xl font-bold text-blue-600 mb-2">Asrama Matahari</h3>
                                             <div class="space-y-2 mb-1">
                                                 <div class="flex items-center text-gray-700">
-                                                    <p class="text-gray-600">Ruang pendukung yang ada di Balatkop</p>
+                                                    <p class="text-gray-600">Asrama dan fasilitas pedukung yang ada di Balatkop</p>
                                                 </div>
                                             </div>
                                             <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
@@ -1047,7 +1047,7 @@
                 <div class="flex justify-center mb-4">
                     <div class="bg-blue-950 rounded-2xl px-4 py-2 shadow inline-block text-center">
                             <span class="text-4xl font-bold heading-modern bounce-3s section-title-fancy text-white whitespace-nowrap" style="font-size:2rem;">Fasilitas Lengkap</span>
-                        <div style="height:4px;background:#FFD700;margin-top:8px;border-radius:2px;"></div>
+                        <div class="h-2 border-b-2 border-yellow-400"></div>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -1463,13 +1463,13 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" data-alt="Aula - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula - Gambar 1</span>
+                                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                     </div>
                                 </div>
                                 
                                 <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Aula - Gambar 2"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula - Gambar 2</span>
+                                        <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
                                     </div>
                                 </div>
                             </div>
@@ -1488,10 +1488,10 @@
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 80 sqm
+                                        <span class="font-bold">Ukuran :</span> (80) m<sup>2</sup>
                                     </p>
                                     <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 8 guests
+                                        <span class="font-bold">Kapasitas :</span> 200± orang
                                     </p>
                                 </div>
                             </div>
@@ -1538,16 +1538,15 @@
                                 <div class="swiper-pagination"></div>
                             </div>
 
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Direktur telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Direktur<br>Dimensi ruangan 80 m2</p>
+                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran menengah tidak akan sulit karena Aula Anggrek telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
+                            <p class="text-gray-600 text-sm mb-3">Aula Anggrek<br> Aula anggrek berada di lantai 2 Gedung Asrama Matahari.</p>
                             <ul class="modal-info-list">
-                                <li>Terletak di lantai 10</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 8 orang</li>
-                                <li>Classroom set up menampung 6 orang</li>
-                                <li>U shape set up menampung 5 orang</li>
-                                <li>Boardroom set up menampung 8 orang</li>
-                                <li>Round table set up menampung 6 orang</li>
+                                <li>Aula anggrek berada di lantai 2 Gedung Asrama Matahari</li>
+                                <li>Memiliki kapasitas 200± orang</li>
+                                <li>LCD dan proyektor</li>
+                                <li>Sound system lengkap</li>
+                                <li>Meja dan kursi peserta serta narasumber</li>
+                                <li>Ruang monitor</li>
                             </ul>
                         </div>
                         <!-- aula teratai -->
@@ -1558,10 +1557,10 @@
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 120 sqm
+                                        <span class="font-bold">Ukuran :</span> (120) m<sup>2</sup>
                                     </p>
                                     <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 50 guests
+                                        <span class="font-bold">Kapasitas :</span> 300+ orang
                                     </p>
                                 </div>
                             </div>
@@ -1607,16 +1606,18 @@
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Rapat Utama telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Rapat Utama<br>Dimensi ruangan 120 m2</p>
+                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran besar dengan daya tampung yang banyak tidak akan sulit lagi karena Aula Teratai telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
+                            <p class="text-gray-600 text-sm mb-3">Aula teratai :<br>Dimensi ruangan 120 m2</p>
                             <ul class="modal-info-list">
-                                <li>Terletak di lantai 9</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 50 orang</li>
-                                <li>Classroom set up menampung 40 orang</li>
-                                <li>U shape set up menampung 30 orang</li>
-                                <li>Boardroom set up menampung 25 orang</li>
-                                <li>Round table set up menampung 40 orang</li>
+                                <li>Aula teratai berada di Gedung Tengah Balatkop</li>
+                                <li>Memiliki kapasitas 300± orang.</li>
+                                <li>Dipergunakan untuk pembukaan pelatihan maupun acara formail lainnya.</li>
+                                <li>Meja dan kursi peserta serta narasumber</li>
+                                <li>LCD dan proyektor</li>
+                                <li>Sound system lengkap</li>
+                                <li>Toilet</li>
+                                <li>Ruang transit</li>
+                                <li>Ruang monitor</li>
                             </ul>
                         </div>
                     </div>
@@ -1651,10 +1652,10 @@
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 200 sqm
+                                        <span class="font-bold">Ukuran :</span> 25m<sup>2</sup>
                                     </p>
                                     <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 60 guests
+                                        <span class="font-bold">Kapasitas :</span> 25± orang
                                     </p>
                                 </div>
                             </div>
@@ -1700,16 +1701,16 @@
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Perpustakaan telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Perpustakaan<br>Dimensi ruangan 200 m2</p>
+                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Ruang Mawar dirancang bagi Anda yang mengutamakan kedekatan komunikasi dan privasi maksimal. Dengan kapasitas yang lebih sedikit, ruangan ini menghilangkan jarak antara narasumber dan audiens, menciptakan suasana diskusi yang hangat namun tetap profesional. Sangat ideal untuk pengambilan keputusan strategis atau pelatihan intensif.</p>
+                            <p class="text-gray-600 text-sm mb-3">Ruang Mawar<br>Dimensi ruangan 25m<sup>2</sup></p>
                             <ul class="modal-info-list">
-                                <li>Terletak di lantai 1</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 60 orang</li>
-                                <li>Classroom set up menampung 45 orang</li>
-                                <li>U shape set up menampung 35 orang</li>
-                                <li>Boardroom set up menampung 30 orang</li>
-                                <li>Round table set up menampung 40 orang</li>
+                                <li>Terletak di lantai 1, tepatnya ada di gedung kantor Balatkop Jateng</li>
+                                <li>Akses yang mudah dimana ruangan berada di sebelah area parkir</li>
+                                <li>Kapasitas ruangan yang dapat menampung 25± orang</li>
+                                <li>Suasana tenang dan fokus, ideal untuk diskusi mendalam yang membutuhkan privasi lebih terjaga.</li>
+                                <li>LCD & Proyektor</li>
+                                <li>Sound system yang lengkap</li>
+                                <li>Meja dan kursi yang nyaman</li>
                             </ul>
                         </div>
                         <!-- dahlia -->
@@ -1723,7 +1724,7 @@
                                         <span class="font-bold">Ukuran :</span> 150 sqm
                                     </p>
                                     <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 40 guests
+                                        <span class="font-bold">Kapasitas :</span> 40± guests
                                     </p>
                                 </div>
                             </div>
@@ -1769,16 +1770,15 @@
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Kolaborasi telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Kolaborasi<br>Dimensi ruangan 150 m2</p>
+                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Ruang Dahlia adalah pilihan utama untuk acara yang membutuhkan kapasitas lebih luas dan atmosfer yang serius. Dengan pengaturan tempat duduk yang rapi dan ruang gerak yang lega, ruangan ini memastikan setiap peserta tetap fokus pada narasumber tanpa merasa sesak..</p>
+                            <p class="text-gray-600 text-sm mb-3">Ruang Dahlia<br>Dimensi ruangan 50 m<sup>2</sup></p>
                             <ul class="modal-info-list">
-                                <li>Terletak di lantai 1-2</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 40 orang</li>
-                                <li>Classroom set up menampung 30 orang</li>
-                                <li>U shape set up menampung 25 orang</li>
-                                <li>Boardroom set up menampung 20 orang</li>
-                                <li>Round table set up menampung 30 orang</li>
+                                <li>Akses yang mudah, dimana ruangan ini terletak di dekat area parkir</li>                            
+                                <li>Ruang paling luas, ideal untuk presentasi formal dengan jumlah audiens yang besar.</li>
+                                <li>Kapasitas ruangan dapat menampung 40± orang</li>
+                                <li>LCD & Proyektor berkualitas tinggi</li>
+                                <li>Sound system jernih</li>
+                                <li>Meja dan kursi untuk peserta dan narasumber yang ergonomis</li>
                             </ul>
                         </div>
                         <!-- bougenville -->
@@ -1789,10 +1789,10 @@
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 80 sqm
+                                        <span class="font-bold">Ukuran :</span> 40 m<sup>2</sup>
                                     </p>
                                     <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 25 guests
+                                        <span class="font-bold">Kapasitas :</span> 30± guests
                                     </p>
                                 </div>
                             </div>
@@ -1838,16 +1838,14 @@
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Meeting A telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Meeting A<br>Dimensi ruangan 80 m2</p>
+                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Bougenville dirancang untuk interaksi yang lebih intens. Ukurannya yang pas membuat komunikasi dua arah antara narasumber dan peserta menjadi lebih akrab dan efisien. Sangat cocok untuk acara yang membutuhkan durasi pertemuan lebih lama dan memerlukan kenyamanan ekstra.</p>
+                            <p class="text-gray-600 text-sm mb-3">Ruang Bougenville:<br>Dimensi ruangan 40 m<sup>2</sup></p>
                             <ul class="modal-info-list">
-                                <li>Terletak di lantai 2</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 25 orang</li>
-                                <li>Classroom set up menampung 20 orang</li>
-                                <li>U shape set up menampung 15 orang</li>
-                                <li>Boardroom set up menampung 14 orang</li>
-                                <li>Round table set up menampung 20 orang</li>
+                                <li>Terletak di gedung kantor Balatkop UKM Jateng, tepatnya ada di lantai 2</li>
+                                <li>Keseimbangan antara ruang gerak dan privasi, mendukung kolaborasi tim yang lebih efektif</li>
+                                <li>LCD & Proyektor</li>
+                                <li>Sound system lengkap</li>
+                                <li>Serta set meja dan kursi siap pakai</li>
                             </ul>
                         </div>
                     </div>
@@ -1876,14 +1874,14 @@
                         <div class="p-6 modal-info-publik modal-info-block" data-slide="0">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-600 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Kamar</h3>
+                                    <h3 class="text-2xl font-bold text-center">Kamar Asrama</h3>
                                 </div>
                                 <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                     <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 300 sqm
+                                        <span class="font-bold">Ukuran :</span> 5m<sup>2</sup>
                                     </p>
                                     <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 120 guests
+                                        <span class="font-bold">Kapasitas :</span> 4 orang
                                     </p>
                                 </div>
                             </div>
@@ -1929,16 +1927,20 @@
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari tempat pertemuan berukuran kecil dan menengah tidak akan sulit karena Ruang Tunggu Publik telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                            <p class="text-gray-600 text-sm mb-3">Ruang Tunggu Publik<br>Dimensi ruangan 300 m2</p>
+                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Mencari akomodasi rombongan yang tetap mengutamakan privasi dan fasilitas lengkap? Asrama Matahari adalah jawaban bagi instansi, komunitas, atau keluarga besar yang memerlukan hunian kolektif dengan standar kenyamanan hotel. Dengan total 46 kamar yang didesain modern, kami siap menyambut rombongan Anda dalam suasana yang hangat dan tertata rapi.</p>
+                            <p class="text-gray-600 text-sm mb-3">Kamar Tidur<br>Dimensi ruangan 5m<sup>2</sup></p>
                             <ul class="modal-info-list">
-                                <li>Terletak di lantai 1</li>
-                                <li>Akses langsung menuju pintu masuk utama gedung</li>
-                                <li>Teater set up menampung 120 orang</li>
-                                <li>Classroom set up menampung 100 orang</li>
-                                <li>U shape set up menampung 80 orang</li>
-                                <li>Boardroom set up menampung 60 orang</li>
-                                <li>Round table set up menampung 100 orang</li>
+                                <li>Terletak di Asrama Matahari</li>
+                                <li>Akses langsung menuju pintu masuk dekat dengan area parkir</li>
+                                <li>terdapat 46 kamar dengan kapasitas setiap kamar 4 orang</li>
+                                <li>4 Bed (Lengkap dengan bantal & selimut bersih di setiap kamar)</li>
+                                <li>Kamar Mandi Dalam dilengkapi dengan Shower</li>
+                                <li>Full AC untuk kenyamanan istirahat maksimal</li>
+                                <li>TV di setiap kamar sebagai sarana relaksasi</li>
+                                <li>3 Titik Lampu (Pengaturan cahaya yang fleksibel sesuai kebutuhan)</li>
+                                <li>Sirkulasi udara yang baik</li>
+                                <li>Layanan pembersihan kamar</li>
+                                <li>Rak Laci fungsional untuk barang bawaan peserta</li>
                             </ul>
                         </div>
                         <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="1">
@@ -2178,7 +2180,7 @@
                         <button onclick="closeModal('kesehatan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="https://via.placeholder.com/600x400?text=Klinik+Kesehatan" alt="Kesehatan" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Kesehatan" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Fasilitas Kesehatan Terlengkap</h3>
                         <p class="text-gray-700 mb-6">Klinik kesehatan kami dilengkapi dengan peralatan medis modern dan tim profesional yang berpengalaman untuk memberikan pelayanan kesehatan terbaik.</p>
                         
@@ -2226,7 +2228,7 @@
                         <button onclick="closeModal('perpustakaan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="https://via.placeholder.com/600x400?text=Perpustakaan" alt="Perpustakaan" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Perpustakaan" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Perpustakaan Modern & Nyaman</h3>
                         <p class="text-gray-700 mb-6">Perpustakaan kami menyediakan koleksi buku lengkap dari berbagai bidang ilmu dengan suasana belajar yang nyaman dan mendukung.</p>
                         
@@ -2273,7 +2275,7 @@
                         <button onclick="closeModal('kantin')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="https://via.placeholder.com/600x400?text=Kantin+Modern" alt="Kantin" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg')?>" alt="Kantin" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Kantin Modern & Higienis</h3>
                         <p class="text-gray-700 mb-6">Kantin kami menawarkan menu makanan dan minuman variatif dengan jaminan kualitas, kebersihan, dan kesegaran bahan makanan terjamin.</p>
                         
@@ -2319,7 +2321,7 @@
                         <button onclick="closeModal('parkir')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="https://via.placeholder.com/600x400?text=Lahan+Parkir" alt="Parkir" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg')?>" alt="Parkir" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Lahan Parkir Luas & Aman</h3>
                         <p class="text-gray-700 mb-6">Fasilitas parkir kami dirancang modern dengan sistem keamanan berlapis untuk menjamin kendaraan Anda aman dan terpantau 24 jam.</p>
                         
@@ -2363,7 +2365,7 @@
                         <button onclick="closeModal('lab')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="https://via.placeholder.com/600x400?text=Lab+Komputer" alt="Lab Komputer" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Lab Komputer" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Lab Komputer Terkini</h3>
                         <p class="text-gray-700 mb-6">Laboratorium komputer kami dilengkapi dengan perangkat terbaru dan software profesional untuk mendukung pembelajaran dan riset.</p>
                         
@@ -2460,7 +2462,7 @@
                         <button onclick="closeModal('transportasi')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="https://via.placeholder.com/600x400?text=Layanan+Transportasi" alt="Transportasi" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Transportasi" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Layanan Transportasi Terpadu</h3>
                         <p class="text-gray-700 mb-6">Layanan transportasi kami memberikan kemudahan akses dengan berbagai pilihan moda transportasi yang terintegrasi dan nyaman.</p>
                         
@@ -2504,7 +2506,7 @@
                         <button onclick="closeModal('keamanan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="https://via.placeholder.com/600x400?text=Sistem+Keamanan" alt="Keamanan" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Keamanan" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Sistem Keamanan Berlapis</h3>
                         <p class="text-gray-700 mb-6">Sistem keamanan kami menggunakan teknologi terkini dengan monitoring 24 jam untuk menjamin keamanan dan kenyamanan semua pengguna.</p>
                         
