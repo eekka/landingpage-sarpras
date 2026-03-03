@@ -950,7 +950,7 @@
                                             </div>
                                             <ul class="space-y-3 mb-4 text-sm text-gray-700 feature-list">
                                                 <li class="feature-item">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10h6"/><path d="M9 14h6"/></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M7 21V9l5-3 5 3v11"/></svg>
                                                     <span>Rapat Formal & Corporate Meeting</span>
                                                 </li>
                                                 <li class="feature-item">
@@ -1147,18 +1147,13 @@
                         <p class="text-sm facility-description">Mushola bersih dan nyaman dengan fasilitas ibadah lengkap</p>
                     </button>
 
-                    <!-- Fasilitas Card - Transportasi -->
-                    <button onclick="openModal('transportasi')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-7 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
+                    <!-- Fasilitas Card - Smoking Area -->
+                    <button onclick="openModal('smokingarea')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-7 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
                         <div class="facility-hero mb-5">
-                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M19 17H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14l2 4v4a2 2 0 0 1-2 2z"/>
-                                <circle cx="7.5" cy="17" r="1.5" fill="#FFD700"/>
-                                <circle cx="16.5" cy="17" r="1.5" fill="#FFD700"/>
-                                <path d="M3 9h18"/>
-                            </svg>
+                            <img src="https://img.icons8.com/?size=100&id=8060&format=png&color=000000" alt="Smoking Icon" width="32" height="32" style="filter: brightness(0) saturate(100%) invert(77%) sepia(80%) saturate(500%) hue-rotate(0deg);" />
                         </div>
-                        <h3 class="text-xl font-bold facility-title mb-2">Transportasi</h3>
-                        <p class="text-sm facility-description">Shuttle service dan akses transportasi publik mudah</p>
+                        <h3 class="text-xl font-bold facility-title mb-2">Smoking Area</h3>
+                        <p class="text-sm facility-description">Area khusus merokok yang nyaman dan terpisah dari ruang utama</p>
                     </button>
 
                     <!-- Fasilitas Card - Keamanan -->
@@ -1513,49 +1508,58 @@
                                         <p class="flow-mini-text">Unggah dokumen persyaratan yang diminta.</p>
                                     </li>
                                     <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="9"/></svg></span>
-                                        <p class="flow-mini-text">Tunggu verifikasi dari admin.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
-                                        <p class="flow-mini-text">Lakukan pembayaran setelah disetujui.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span>
-                                        <p class="flow-mini-text">Terima konfirmasi jadwal dan bukti penyewaan.</p>
-                                    </li>
-                                </ol>
-                            </section>
+                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>
+                                                    <span>Ruang tunggu publik luas</span>
+                                                </li>
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v10H4z"/><path d="m8 11 2 2 4-4"/></svg>
+                                                    <span>Loket informasi & verifikasi</span>
+                                                </li>
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9h20"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg>
+                                                    <span>Lakukan pembayaran setelah disetujui.</span>
+                                                </li>
+                                                <li class="feature-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+                                                    <span>Terima konfirmasi jadwal dan bukti penyewaan.</span>
+                                                </li>
+                                            </ol>
+                                            <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
+                                        </div>
+                                    </div>
 
-                            <section class="flow-mini-card">
-                                <h3 class="text-xl font-bold text-blue-600 mb-3">Via Offline</h3>
-                                <ol class="flow-mini-list" aria-label="Langkah via offline">
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/></svg></span>
-                                        <p class="flow-mini-text">Datang ke kantor pengelola sarana prasarana.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 2h8"/><path d="M7 6h10"/><rect x="4" y="10" width="16" height="11" rx="2"/></svg></span>
-                                        <p class="flow-mini-text">Ambil dan isi formulir permohonan penyewaan.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 7h16v10H4z"/><path d="m8 11 2 2 4-4"/></svg></span>
-                                        <p class="flow-mini-text">Serahkan berkas persyaratan ke petugas.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M2 9h20"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg></span>
-                                        <p class="flow-mini-text">Lakukan pembayaran di loket yang tersedia.</p>
-                                    </li>
-                                    <li class="flow-mini-item">
-                                        <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></span>
-                                        <p class="flow-mini-text">Dapatkan bukti penyewaan dan informasi jadwal.</p>
-                                    </li>
-                                </ol>
-                            </section>
-                        </div>
+                                    <section class="flow-mini-card">
+                                        <h3 class="text-xl font-bold text-blue-600 mb-3">Via Offline</h3>
+                                        <ol class="flow-mini-list" aria-label="Langkah via offline">
+                                            <li class="flow-mini-item">
+                                                <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V8l7-4 7 4v13"/></svg></span>
+                                                <p class="flow-mini-text">Datang ke kantor pengelola sarana prasarana.</p>
+                                            </li>
+                                            <li class="flow-mini-item">
+                                                <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M8 2h8"/><path d="M7 6h10"/><rect x="4" y="10" width="16" height="11" rx="2"/></svg>
+                                                <p class="flow-mini-text">Ambil dan isi formulir permohonan penyewaan.</p>
+                                            </li>
+                                            <li class="flow-mini-item">
+                                                <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v10H4z"/><path d="m8 11 2 2 4-4"/></svg>
+                                                <p class="flow-mini-text">Serahkan berkas persyaratan ke petugas.</p>
+                                            </li>
+                                            <li class="flow-mini-item">
+                                                <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M2 9h20"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg>
+                                                <p class="flow-mini-text">Lakukan pembayaran di loket yang tersedia.</p>
+                                            </li>
+                                            <li class="flow-mini-item">
+                                                <span class="flow-mini-step" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 12 2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+                                                <p class="flow-mini-text">Dapatkan bukti penyewaan dan informasi jadwal.</p>
+                                            </li>
+                                        </ol>
+                                        <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
+                                    </section>
+                                </div>
 
-                        <div class="mt-4">
-                            <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
+                                <div class="mt-4">
+                                    <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2552,48 +2556,27 @@
                 </div>
             </div>
 
-            <!-- Modal Transportasi -->
-            <div id="modalTransportasi" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <!-- Modal Smoking Area -->
+            <div id="modalSmokingarea" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M19 17H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14l2 4v4a2 2 0 0 1-2 2z"/>
-                                    <circle cx="7.5" cy="17" r="1.5"/>
-                                    <circle cx="16.5" cy="17" r="1.5"/>
-                                    <path d="M3 9h18"/>
-                                </svg>
+                                <img src="https://img.icons8.com/?size=100&id=8060&format=png&color=000000" alt="Smoking Icon" width="32" height="32" style="filter: brightness(0) saturate(100%) invert(77%) sepia(80%) saturate(500%) hue-rotate(0deg);" />
                             </span>
-                            <span>Transportasi</span>
+                            <span>Smoking Area</span>
                         </h2>
-                        <button onclick="closeModal('transportasi')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                        <button onclick="closeModal('smokingarea')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Transportasi" class="w-full rounded-lg mb-6">
-                        <h3 class="text-2xl font-bold text-blue-600 mb-4">Layanan Transportasi Terpadu</h3>
-                        <p class="text-gray-700 mb-6">Layanan transportasi kami memberikan kemudahan akses dengan berbagai pilihan moda transportasi yang terintegrasi dan nyaman.</p>
-                        
-                        <h4 class="text-xl font-bold text-gray-800 mb-3">Layanan Shuttle:</h4>
+                        <img src="<?= base_url('images/core/rokok.png') ?>" alt="Smoking Area" class="w-full rounded-lg mb-6">
+                        <h3 class="text-2xl font-bold text-blue-600 mb-4">Area Merokok Nyaman</h3>
                         <ul class="grid grid-cols-2 gap-3 mb-6">
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Shuttle Pagi & Sore</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> 30 Unit Bus Modern</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> AC & WiFi Gratis</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Rute Coverage Luas</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Ventilasi udara baik</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Fasilitas duduk dan meja</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Area terpisah dari ruang utama</li>
                         </ul>
-
-                        <h4 class="text-xl font-bold text-gray-800 mb-3">Akses Transportasi Publik:</h4>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Stasiun Kereta Jarak 500m</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Terminal Bus Kota Dekat</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Halte Busway Terdekat 200m</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Tarif Shuttle Terjangkau</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Aplikasi Mobile Booking</li>
-                        </ul>
-
-                        <button onclick="closeModal('transportasi')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">
-                            Tutup
-                        </button>
+                        <button onclick="closeModal('smokingarea')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
@@ -2614,7 +2597,7 @@
                         <button onclick="closeModal('keamanan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Keamanan" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/keamanan.png') ?>" alt="Keamanan" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Sistem Keamanan Berlapis</h3>
                         <p class="text-gray-700 mb-6">Sistem keamanan kami menggunakan teknologi terkini dengan monitoring 24 jam untuk menjamin keamanan dan kenyamanan semua pengguna.</p>
                         
