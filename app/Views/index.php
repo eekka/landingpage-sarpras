@@ -720,14 +720,14 @@
                 <div class="swiper-wrapper">                    
                     <!-- 1 -->
                     <div class="swiper-slide h-screen w-full relative bg-black">
-                        <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
+                        <img src="<?= base_url('images/core/slide1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg reveal-left reveal-on-scroll">Slide 1</p>
                                 <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase reveal-left reveal-on-scroll">
                                     <span style="color:#FFD700;">Selamat Datang di </span>
                                     <span style="color:#fff;">Sarana Prasarana</span>
-                                    <span style="color:#FFD700;"> Balatkop UKMK Jateng</span>
+                                    <span style="color:#FFD700;"> Balatkop UKMK</span><span style="color:#FFD700; margin-left:8px;">JATENG</span>
                                 </h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8 reveal-left reveal-on-scroll">Siap melayani kebutuhan koperasi, UKM, dan masyarakat Provinsi Jawa Tengah</p>
                                 <a href="#tentang" class="reveal-left reveal-on-scroll hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
@@ -751,11 +751,15 @@
                     </div>
                     <!-- 2 -->
                     <div class="swiper-slide h-screen w-full relative bg-black">
-                        <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
+                        <img src="<?= base_url('images/core/slide2.png') ?>" alt="Slide 2" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg">Slide 2</p>
-                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase"><span style="color:#fff;">BALATKOP</span> <span style="color:#FFD700;">UKMK JATENG</span></h1>
+                                <h1 class="text-9xl leading-8 mt-4 md:text-6xl font font-bold mb-4 uppercase">
+                                    <span style="color:#fff;">BALATKOP</span>
+                                    <span style="color:#FFD700;">UKMK</span>
+                                    <span style="color:#FFD700; margin-left:8px;">JATENG</span>
+                                </h1>
                                 <p class="text-sm mt-2 md:text-lg mb-8">Sebuah instansi pelatihan yang memberikan pelatihan dan pendampingan terbaik untuk koperasi dan UKM di Provinsi Jawa Tengah.</p>
                                 <a href="#tentang" class="hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                     Cari Tahu Lebih Lanjut!
@@ -765,7 +769,7 @@
                     </div>                         
                     <!-- 3 -->
                     <div class="swiper-slide h-screen w-full relative bg-black">
-                        <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
+                        <img src="<?= base_url('images/core/slide3.png') ?>" alt="Slide 3" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg">Slide 3</p>
@@ -779,7 +783,7 @@
                     </div>  
                     <!-- 4 -->
                     <div class="swiper-slide h-screen w-full relative bg-black">
-                        <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
+                        <img src="<?= base_url('images/core/slide4.png') ?>" alt="Slide 4" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg">Slide 4</p>
@@ -793,7 +797,7 @@
                     </div>                             
                     <!-- 5 -->
                     <div class="swiper-slide h-screen w-full relative bg-black">
-                        <img src="<?= base_url('images/core/tam1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
+                        <img src="<?= base_url('images/core/slide5.png') ?>" alt="Slide 5" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg">Slide 5</p>
@@ -2228,7 +2232,7 @@
                         <button onclick="closeModal('perpustakaan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Perpustakaan" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/perpus2.png') ?>" alt="Perpustakaan" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Perpustakaan Modern & Nyaman</h3>
                         <p class="text-gray-700 mb-6">Perpustakaan kami menyediakan koleksi buku lengkap dari berbagai bidang ilmu dengan suasana belajar yang nyaman dan mendukung.</p>
                         
@@ -2365,7 +2369,7 @@
                         <button onclick="closeModal('lab')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Lab Komputer" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/komputer.jpg') ?>" alt="Lab Komputer" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Lab Komputer Terkini</h3>
                         <p class="text-gray-700 mb-6">Laboratorium komputer kami dilengkapi dengan perangkat terbaru dan software profesional untuk mendukung pembelajaran dan riset.</p>
                         
