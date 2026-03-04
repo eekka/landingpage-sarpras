@@ -1079,16 +1079,17 @@
                     </button>
 
                     <!-- Fasilitas Card - Kantin -->
-                    <button onclick="openModal('kantin')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-3 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
+                    <button onclick="openModal('ruangtransit')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-3 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
                         <div class="facility-hero mb-5">
                             <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
-                                <path d="M7 2v20"/>
-                                <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/>
+                                <rect x="2" y="7" width="20" height="13" rx="2"/>
+                                <path d="M6 7V5a4 4 0 0 1 8 0v2"/>
+                                <path d="M9 13h6"/>
+                                <path d="M9 16h6"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold facility-title mb-2">Kantin</h3>
-                        <p class="text-sm facility-description">Kantin modern dengan menu variatif dan higienis</p>
+                        <h3 class="text-xl font-bold facility-title mb-2">Ruang Transit</h3>
+                        <p class="text-sm facility-description">Ruang transit nyaman untuk istirahat dan persiapan sebelum kegiatan utama</p>
                     </button>
 
                     <!-- Fasilitas Card - Parkir -->
@@ -1103,15 +1104,15 @@
                         <p class="text-sm facility-description">Lahan parkir luas dengan sistem keamanan modern</p>
                     </button>
 
-                    <button onclick="openModal('lab')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-5 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
+                    <button onclick="openModal('ruangtunggu')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-5 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
                         <div class="facility-hero mb-5">
                             <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2"/>
-                                <path d="M8 21h8M12 17v4"/>
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold facility-title mb-2">Lab Komputer</h3>
-                        <p class="text-sm facility-description">Laboratorium komputer dengan perangkat terkini</p>
+                        <h3 class="text-xl font-bold facility-title mb-2">Ruang Tunggu</h3>
+                        <p class="text-sm facility-description">Ruang tunggu modern dengan fasilitas nyaman dan lengkap untuk peserta</p>
                     </button>
                     <!-- Fasilitas Card - Mushola -->
                     <button onclick="openModal('mushola')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-6 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
@@ -1721,35 +1722,9 @@
                                 <li>Meja dan kursi yang nyaman</li>
                             </ul>
                         </div>
-                        <!-- dahlia -->
-                        <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="1">
-                            <div class="flex flex-col items-start">
-                                <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
-                                    <h3 class="text-2xl font-bold text-center">Ruang Dahlia</h3>
-                                </div>
-                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
-                                    <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 150 sqm
-                                    </p>
-                                    <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 40± guests
-                                    </p>
                                 </div>
                             </div>
-                            <!-- gambar2 -->
-                            <div class="swiperimg mySwiperimg">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                                        </div>
+                        </div>
                                     </div>                            
                                     <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
                                         <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
@@ -2188,7 +2163,7 @@
                         <button onclick="closeModal('kesehatan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Kesehatan" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/ruang-laktasi.png') ?>" alt="Kesehatan" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Fasilitas Kesehatan Terlengkap</h3>
                         <p class="text-gray-700 mb-6">Klinik kesehatan kami dilengkapi dengan peralatan medis modern dan tim profesional yang berpengalaman untuk memberikan pelayanan kesehatan terbaik.</p>
                         
@@ -2213,7 +2188,7 @@
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Pemeriksaan Laboratorium</li>
                         </ul>
 
-                        <button onclick="closeModal('kesehatan')" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition hover-text-gold">
+                        <button onclick="closeModal('kesehatan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">
                             Tutup
                         </button>
                     </div>
@@ -2329,7 +2304,7 @@
                         <button onclick="closeModal('parkir')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg')?>" alt="Parkir" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/parkir.png') ?>" alt="Parkir" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Lahan Parkir Luas & Aman</h3>
                         <p class="text-gray-700 mb-6">Fasilitas parkir kami dirancang modern dengan sistem keamanan berlapis untuk menjamin kendaraan Anda aman dan terpantau 24 jam.</p>
                         
@@ -2458,7 +2433,7 @@
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
-                                <img src="https://img.icons8.com/?size=100&id=8060&format=png&color=000000" alt="Smoking Icon" width="32" height="32" style="filter: brightness(0) saturate(100%) invert(77%) sepia(80%) saturate(500%) hue-rotate(0deg);" />
+                                <img src="https://img.icons8.com/?size=100&id=8060&format=png&color=2563eb" alt="Smoking Icon" width="32" height="32" class="text-blue-600" />
                             </span>
                             <span>Smoking Area</span>
                         </h2>
@@ -2467,6 +2442,7 @@
                     <div class="p-6">
                         <img src="<?= base_url('images/core/rokok.png') ?>" alt="Smoking Area" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Area Merokok Nyaman</h3>
+                        <p class="text-gray-700 mb-4">Area khusus yang dirancang untuk memberikan kenyamanan bagi peserta yang ingin merokok dengan ventilasi baik dan terpisah dari ruang utama.</p>
                         <ul class="grid grid-cols-2 gap-3 mb-6">
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Ventilasi udara baik</li>
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Fasilitas duduk dan meja</li>
@@ -2477,13 +2453,75 @@
                 </div>
             </div>
 
+            <!-- Modal Ruang Transit -->
+            <div id="modalRuangtransit" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4 overflow-y-auto">
+                <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel my-auto sm:my-8">
+                    <div class="sticky top-0 bg-white border-b flex justify-between items-center p-4 sm:p-6">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 flex items-center gap-2 sm:gap-3">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
+                                <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="13" rx="2"/>
+                                    <path d="M6 7V5a4 4 0 0 1 8 0v2"/>
+                                    <path d="M9 13h6"/>
+                                    <path d="M9 16h6"/>
+                                </svg>
+                            </span>
+                            <span>Ruang Transit</span>
+                        </h2>
+                        <button onclick="closeModal('ruangtransit')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <img src="<?= base_url('images/core/ruang transit.png') ?>" alt="Ruang Transit" class="w-full rounded-lg mb-4 sm:mb-6">
+                        <h3 class="text-xl sm:text-2xl font-bold text-blue-600 mb-3 sm:mb-4">Ruang Transit Nyaman</h3>
+                        <p class="text-gray-700 text-sm sm:text-base mb-4 sm:mb-6">Ruang transit yang dirancang untuk memberikan kenyamanan kepada peserta sebelum kegiatan utama dimulai dengan fasilitas lengkap dan suasana yang tenang.</p>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-4 sm:mb-6">
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Tempat istirahat sebelum acara</li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Fasilitas sofa & meja</li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Area privat & tenang</li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Dekat dengan ruang utama</li>
+                        </ul>
+                        <button onclick="closeModal('ruangtransit')" class="w-full bg-blue-950 text-white py-2 sm:py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold text-sm sm:text-base">Tutup</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Ruang Tunggu -->
+            <div id="modalRuangtunggu" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4 overflow-y-auto">
+                <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel my-auto sm:my-8">
+                    <div class="sticky top-0 bg-white border-b flex justify-between items-center p-4 sm:p-6">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 flex items-center gap-2 sm:gap-3">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
+                                <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                    <polyline points="9 22 9 12 15 12 15 22"/>
+                                </svg>
+                            </span>
+                            <span>Ruang Tunggu</span>
+                        </h2>
+                        <button onclick="closeModal('ruangtunggu')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+                    </div>
+                    <div class="p-4 sm:p-6">
+                        <img src="<?= base_url('images/core/ruang tunggu.png') ?>" alt="Ruang Tunggu" class="w-full rounded-lg mb-4 sm:mb-6">
+                        <h3 class="text-xl sm:text-2xl font-bold text-blue-600 mb-3 sm:mb-4">Ruang Tunggu Nyaman</h3>
+                        <p class="text-gray-700 text-sm sm:text-base mb-4 sm:mb-6">Ruang tunggu yang dirancang modern dan nyaman untuk peserta menunggu kegiatan dengan fasilitas lengkap.</p>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-4 sm:mb-6">
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Kursi dan sofa nyaman</li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Ber-AC dan berventilasi baik</li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Area terbuka dengan layar informasi</li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Lokasi strategis</li>
+                        </ul>
+                        <button onclick="closeModal('ruangtunggu')" class="w-full bg-blue-950 text-white py-2 sm:py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold text-sm sm:text-base">Tutup</button>
+                    </div>
+                </div>
+            </div>
+
             <!-- Modal Keamanan -->
             <div id="modalKeamanan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg class="text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                                     <path d="m9 12 2 2 4-4"/>
                                 </svg>
