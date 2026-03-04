@@ -904,9 +904,7 @@
                                 <div class="w-max-xl h-auto swiper-slide flex justify-center">                            
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
-                                            <video class="w-full h-full object-cover block" autoplay muted loop playsinline>
-                                                <source src="<?= base_url('images/core/Aula%20Anggrek.mp4') ?>" type="video/mp4">
-                                            </video>
+                                            <img src="<?= base_url('images/gedung%20aula/teratai.JPG') ?>" alt="Gedung Aula" class="w-full h-full object-cover block">
                                         </div>
                                         <div class="p-6 flex flex-col flex-1">
                                             <h3 class="text-2xl font-bold text-blue-600 mb-2">Gedung Aula</h3>
@@ -1453,7 +1451,7 @@
 
         <!-- Modal -->
         <!-- Modal Alur Penyewaan -->
-            <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-none w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel" style="max-width:min(96vw, 1600px);">
                     <div class="static md:sticky md:top-0 z-20 bg-white px-6 py-4 text-center">
                         <div style="display:inline-block;background:#172554;padding:0.7em 2em;border-radius:0.7em;">
@@ -1480,7 +1478,7 @@
             </div>
 
             <!-- Modal Alur Penyewaan -->
-            <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-none w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel" style="max-width:min(96vw, 1600px);">
                     <div class="static md:sticky md:top-0 z-20 bg-white px-6 py-4 text-center">
                         <h2 class="inline-block text-2xl sm:text-3xl font-bold text-blue-700" style="color:#1d4ed8 !important;">Alur Penyewaan</h2>
@@ -1558,20 +1556,20 @@
 
             <!-- gedung -->
             <!-- Modal Gedung Aula -->
-            <div id="modalAula" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalAula" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
                     <!-- Gambar slide -->
                     <div class="relative">
                         <div class="swiper modal-img-swiper" id="swiperAula" style="height: 360px;">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" data-alt="Aula - Gambar 1">
-                                    <img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" class="w-full h-full object-cover">
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek.JPG') ?>" data-alt="Aula Anggrek">
+                                    <img src="<?= base_url('images/gedung%20aula/anggrek.JPG') ?>" class="w-full h-full object-cover">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Aula - Gambar 2">
-                                    <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/teratai.JPG') ?>" data-alt="Aula Teratai">
+                                    <img src="<?= base_url('images/gedung%20aula/teratai.JPG') ?>" class="w-full h-full object-cover">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
                                     </div>
@@ -1602,42 +1600,54 @@
                             <!-- gambar2 -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek.JPG') ?>" data-alt="Aula Anggrek - Gambar 1">
+                                        <img src="<?= base_url('images/gedung%20aula/anggrek.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek1.JPG') ?>" data-alt="Aula Anggrek - Gambar 2">
+                                        <img src="<?= base_url('images/gedung%20aula/anggrek1.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                                        </div>
-                                    </div>                            
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek2.JPG') ?>" data-alt="Aula Anggrek - Gambar 3">
+                                        <img src="<?= base_url('images/gedung%20aula/anggrek2.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek3.JPG') ?>" data-alt="Aula Anggrek - Gambar 4">
+                                        <img src="<?= base_url('images/gedung%20aula/anggrek3.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek4.JPG') ?>" data-alt="Aula Anggrek - Gambar 5">
+                                        <img src="<?= base_url('images/gedung%20aula/anggrek4.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
-                                    </div>                                                                                                            
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek5.JPG') ?>" data-alt="Aula Anggrek - Gambar 6">
+                                        <img src="<?= base_url('images/gedung%20aula/anggrek5.JPG') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek6.JPG') ?>" data-alt="Aula Anggrek - Gambar 7">
+                                        <img src="<?= base_url('images/gedung%20aula/anggrek6.JPG') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek7.JPG') ?>" data-alt="Aula Anggrek - Gambar 8">
+                                        <img src="<?= base_url('images/gedung%20aula/anggrek7.JPG') ?>" class="w-full h-full object-cover">
+                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -1671,42 +1681,30 @@
                             <!-- gambar2 -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/teratai.JPG') ?>" data-alt="Aula Teratai - Gambar 1">
+                                        <img src="<?= base_url('images/gedung%20aula/teratai.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/teratai1.JPG') ?>" data-alt="Aula Teratai - Gambar 2">
+                                        <img src="<?= base_url('images/gedung%20aula/teratai1.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                                        </div>
-                                    </div>                            
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/teratai2.JPG') ?>" data-alt="Aula Teratai - Gambar 3">
+                                        <img src="<?= base_url('images/gedung%20aula/teratai2.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/teratai3.JPG') ?>" data-alt="Aula Teratai - Gambar 4">
+                                        <img src="<?= base_url('images/gedung%20aula/teratai3.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                                        </div>
-                                    </div>                                                                                                            
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -1732,7 +1730,7 @@
             </div>
 
             <!-- Modal Ruang Kelas | Rapat -->
-            <div id="modalRuang" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalRuang" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
                     <!-- gambar slide -->
                     <div class="relative">
@@ -1954,7 +1952,7 @@
             </div>
 
             <!-- Modal Asrama -->
-            <div id="modalAsrama" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalAsrama" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
                     <div class="relative">
                         <!-- gambar slide -->
@@ -2197,7 +2195,7 @@
             </div>
 
             <!-- Modal Laboratorium -->
-            <div id="modalLaboratorium" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalLaboratorium" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
                     <div class="relative">
                         <div class="swiper modal-img-swiper" id="swiperLaboratorium" style="height: 360px;">
@@ -2507,7 +2505,7 @@
 
         <!-- fasilitas -->
             <!-- Modal Kesehatan -->
-            <div id="modalKesehatan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalKesehatan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
@@ -2545,7 +2543,7 @@
             </div>
 
             <!-- Modal Perpustakaan -->
-            <div id="modalPerpustakaan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalPerpustakaan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
@@ -2589,7 +2587,7 @@
             </div>
 
             <!-- Modal Kantin -->
-            <div id="modalKantin" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalKantin" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
@@ -2636,7 +2634,7 @@
             </div>
 
             <!-- Modal Parkir -->
-            <div id="modalParkir" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalParkir" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
@@ -2680,7 +2678,7 @@
             </div>
 
             <!-- Modal Lab Komputer -->
-            <div id="modalLab" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalLab" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
@@ -2726,7 +2724,7 @@
             </div>
 
             <!-- Modal Mushola -->
-            <div id="modalMushola" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalMushola" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
@@ -2774,7 +2772,7 @@
             </div>
 
             <!-- Modal Smoking Area -->
-            <div id="modalSmokingarea" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalSmokingarea" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
@@ -2800,7 +2798,7 @@
             </div>
 
             <!-- Modal Ruang Transit -->
-            <div id="modalRuangtransit" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4 overflow-y-auto">
+            <div id="modalRuangtransit" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4 overflow-y-auto">
                 <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel my-auto sm:my-8">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-4 sm:p-6">
                         <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 flex items-center gap-2 sm:gap-3">
@@ -2832,7 +2830,7 @@
             </div>
 
             <!-- Modal Ruang Tunggu -->
-            <div id="modalRuangtunggu" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4 overflow-y-auto">
+            <div id="modalRuangtunggu" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4 overflow-y-auto">
                 <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel my-auto sm:my-8">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-4 sm:p-6">
                         <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 flex items-center gap-2 sm:gap-3">
@@ -2862,7 +2860,7 @@
             </div>
 
             <!-- Modal Keamanan -->
-            <div id="modalKeamanan" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
+            <div id="modalKeamanan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
@@ -2904,7 +2902,7 @@
         <!-- /Modal -->
 
         <!-- Gallery Lightbox -->
-        <div id="galleryLightbox" class="hidden fixed inset-0 z-[100] items-center justify-center p-4 cursor-pointer" style="background-color: rgba(0, 0, 0, 0.3); backdrop-filter: blur(4px);">
+        <div id="galleryLightbox" class="hidden fixed inset-0 items-center justify-center p-4 cursor-pointer" style="background-color: rgba(0, 0, 0, 0.3); backdrop-filter: blur(4px); z-index: 99999 !important;">
             <img id="galleryLightboxImg" src="" alt="" class="max-w-4xl max-h-[75vh] w-auto h-auto object-contain opacity-0 scale-95 transition-all duration-200 cursor-default" onclick="event.stopPropagation()">
         </div>
         <!-- /Gallery Lightbox -->
