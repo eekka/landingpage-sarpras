@@ -1048,7 +1048,7 @@
                     <div class="row g-0 align-items-stretch">
                         <div class="col-md-5">
                             <div class="facility-highlight-media">
-                                <img src="<?= base_url('images/core/tam1.png') ?>" alt="Banner fasilitas">
+                                <img src="<?= base_url('images/core/slide1.png') ?>" alt="Banner fasilitas">
                                 <div class="facility-highlight-overlay"></div>
                                 <div class="facility-highlight-logo">
                                     <img src="<?= base_url('images/core/logo11.png') ?>" alt="Logo Balatkop">
@@ -1177,7 +1177,7 @@
         <section id="galeri" class="pt-20">
             <div class="w-full bg-blue-950 p-10 mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
                 <p class="text-4xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">
-                    <span class="text-white">Galeri</span><span style="color: #FFD700;">Foto</span>
+                    <span class="text-white">Galeri</span><span style="color: #FFD700;"> Foto</span>
                 </p>
                 
                 <!-- Swiper Marquee -->
@@ -1582,7 +1582,7 @@
                             <div class="swiper-button-next"></div>
                         </div>
                     </div>
-                    <!-- isi konten -->
+                    <!-- isi konten aula -->
                     <div>
                         <!-- aula anggrek -->
                         <div class="p-6 modal-info-utama modal-info-block" data-slide="0">
