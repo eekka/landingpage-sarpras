@@ -1181,7 +1181,7 @@
                 </p>
                 
                 <!-- Swiper Marquee -->
-                <div class="swiperGaleri marquee">
+                <div class="swiperGaleri swiperGaleriTop marquee">
                     <div class="swiper-wrapper marquee-wrapper">
                         <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
                             <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
@@ -1222,7 +1222,7 @@
                     </div>
                 </div>
 
-                <div class="swiperGaleri marquee mt-4">
+                <div class="swiperGaleri swiperGaleriBottom marquee mt-4">
                     <div class="swiper-wrapper marquee-wrapper">
                         <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
                             <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
@@ -2261,28 +2261,19 @@
                     </div>
                     <div class="p-6">
                         <img src="<?= base_url('images/core/ruang-laktasi.png') ?>" alt="Kesehatan" class="w-full rounded-lg mb-6">
-                        <h3 class="text-2xl font-bold text-blue-600 mb-4">Fasilitas Kesehatan Terlengkap</h3>
-                        <p class="text-gray-700 mb-6">Klinik kesehatan kami dilengkapi dengan peralatan medis modern dan tim profesional yang berpengalaman untuk memberikan pelayanan kesehatan terbaik.</p>
+                        <h3 class="text-2xl font-bold text-blue-600 mb-4">Ruang Laktasi | Klinik Pintar </h3>
+                        <p class="text-gray-700 mb-6">Klinik kesehatan kami dilengkapi dengan peralatan medis dan tim profesional yang berpengalaman untuk memberikan pelayanan kesehatan terbaik.</p>
                         
-                        <h4 class="text-xl font-bold text-gray-800 mb-3">Alat Medis yang Tersedia:</h4>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Fasilitas Tersedia:</h4>
                         <ul class="grid grid-cols-2 gap-3 mb-6">
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> CT Scan</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> X-Ray Digital</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> USG 4D</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> EKG</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Lab Darah Otomatis</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Alat Vakum</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Monitor Pasien 24 Jam</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Defibrillator</li>
-                        </ul>
-
-                        <h4 class="text-xl font-bold text-gray-800 mb-3">Layanan Tersedia:</h4>
-                        <ul class="space-y-2 mb-6">
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Pemeriksaan Umum</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Layanan Darurat 24 Jam</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Program Vaksinasi</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Konsultasi Spesialis</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Pemeriksaan Laboratorium</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Kotak P3k</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Kursi duduk nyaman </li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Tempat tidur nyaman</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Ventilasi udara baik</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Timbangan Digital</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Termometer</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Colokan listrik</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Tempat sampah</li>
                         </ul>
 
                         <button onclick="closeModal('kesehatan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">
@@ -2314,19 +2305,17 @@
                         
                         <h4 class="text-xl font-bold text-gray-800 mb-3">Koleksi Tersedia:</h4>
                         <ul class="grid grid-cols-2 gap-3 mb-6">
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Buku Fiksi (5.000+)</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Buku Non-Fiksi (8.000+)</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Referensi (3.000+)</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Buku Fiksi</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Buku Non-Fiksi</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Referensi cukup lengkap</li>
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> E-Book Digital</li>
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Jurnal Ilmiah</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Media Audiovisual</li>
                         </ul>
 
                         <h4 class="text-xl font-bold text-gray-800 mb-3">Fasilitas:</h4>
                         <ul class="space-y-2 mb-6">
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Ruang Baca Nyaman dengan AC</li>
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Area Diskusi Kelompok</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Komputer untuk Penelitian</li>
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> WiFi Gratis</li>
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Sistem Peminjaman Digital</li>
                         </ul>
@@ -2501,18 +2490,17 @@
                         
                         <h4 class="text-xl font-bold text-gray-800 mb-3">Fasilitas Mushola:</h4>
                         <ul class="grid grid-cols-2 gap-3 mb-6">
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Ruang sholat terpisah putra & putri</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Ruang sholat cukup luas</li>
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Karpet dan sajadah bersih</li>
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Tempat wudhu representatif</li>
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Mukena & sarung tersedia</li>
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> AC & ventilasi udara baik</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Jadwal sholat dan pengumuman digital</li>
                         </ul>
 
                         <h4 class="text-xl font-bold text-gray-800 mb-3">Kenyamanan Tambahan:</h4>
                         <ul class="space-y-2 mb-6">
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Pencahayaan lembut dan suasana tenang</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Rak penyimpanan alas kaki rapi</li>
+                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Rak penyimpanan Alat ibadah rapi</li>
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Akses mudah dari area utama gedung</li>
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Kebersihan terjaga dengan petugas rutin</li>
                         </ul>
@@ -2542,7 +2530,7 @@
                         <p class="text-gray-700 mb-4">Area khusus yang dirancang untuk memberikan kenyamanan bagi peserta yang ingin merokok dengan ventilasi baik dan terpisah dari ruang utama.</p>
                         <ul class="grid grid-cols-2 gap-3 mb-6">
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Ventilasi udara baik</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Fasilitas duduk dan meja</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Tempat duduk dibawah pohon</li>
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Area terpisah dari ruang utama</li>
                         </ul>
                         <button onclick="closeModal('smokingarea')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
@@ -2572,7 +2560,7 @@
                         <h3 class="text-xl sm:text-2xl font-bold text-blue-600 mb-3 sm:mb-4">Ruang Transit Nyaman</h3>
                         <p class="text-gray-700 text-sm sm:text-base mb-4 sm:mb-6">Ruang transit yang dirancang untuk memberikan kenyamanan kepada peserta sebelum kegiatan utama dimulai dengan fasilitas lengkap dan suasana yang tenang.</p>
                         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-4 sm:mb-6">
-                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Tempat istirahat sebelum acara</li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Ruangan Adem (AC)</li>
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Fasilitas sofa & meja</li>
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Area privat & tenang</li>
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Dekat dengan ruang utama</li>
@@ -2603,9 +2591,9 @@
                         <p class="text-gray-700 text-sm sm:text-base mb-4 sm:mb-6">Ruang tunggu yang dirancang modern dan nyaman untuk peserta menunggu kegiatan dengan fasilitas lengkap.</p>
                         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-4 sm:mb-6">
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Kursi dan sofa nyaman</li>
-                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Ber-AC dan berventilasi baik</li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Ruang adem</li>
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Area terbuka dengan layar informasi</li>
-                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Lokasi strategis</li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Lokasi gedung utama</li>
                         </ul>
                         <button onclick="closeModal('ruangtunggu')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                     </div>
@@ -2629,24 +2617,19 @@
                     </div>
                     <div class="p-6">
                         <img src="<?= base_url('images/core/keamanan.png') ?>" alt="Keamanan" class="w-full rounded-lg mb-6">
-                        <h3 class="text-2xl font-bold text-blue-600 mb-4">Sistem Keamanan Berlapis</h3>
+                        <h3 class="text-2xl font-bold text-blue-600 mb-4">Keamanan 24 Jam</h3>
                         <p class="text-gray-700 mb-6">Sistem keamanan kami menggunakan teknologi terkini dengan monitoring 24 jam untuk menjamin keamanan dan kenyamanan semua pengguna.</p>
                         
                         <h4 class="text-xl font-bold text-gray-800 mb-3">Peralatan Keamanan:</h4>
                         <ul class="grid grid-cols-2 gap-3 mb-6">
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> CCTV 4K (120 Unit)</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Recording 24 Jam</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Sistem Alarm Otomatis</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Metal Detector</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Access Card System</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Biometric Fingerprint</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> CCTV 4K (12 Unit)</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Alat Pemadam api</li>
                         </ul>
 
                         <h4 class="text-xl font-bold text-gray-800 mb-3">Tim & Layanan Keamanan:</h4>
                         <ul class="space-y-2 mb-6">
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Petugas Keamanan 24/7 Berjaga</li>
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Tim Response Cepat Emergency</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Asuransi Keamanan Penuh</li>
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Koordinasi dengan Kepolisian</li>
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Program Keselamatan Berkala</li>
                         </ul>
@@ -2658,6 +2641,12 @@
                 </div>
             </div>
         <!-- /Modal -->
+
+        <!-- Gallery Lightbox -->
+        <div id="galleryLightbox" class="hidden fixed inset-0 z-[100] items-center justify-center p-4 cursor-pointer" style="background-color: rgba(0, 0, 0, 0.3); backdrop-filter: blur(4px);">
+            <img id="galleryLightboxImg" src="" alt="" class="max-w-4xl max-h-[75vh] w-auto h-auto object-contain opacity-0 scale-95 transition-all duration-200 cursor-default" onclick="event.stopPropagation()">
+        </div>
+        <!-- /Gallery Lightbox -->
 
         <!-- Script -->
         <!-- Swiper --> 
@@ -2745,26 +2734,57 @@
             });
             
             // // Swiper (galeri)
-            document.addEventListener('DOMContentLoaded', function() {
-                const swiperGaleri = new Swiper('.swiperGaleri', {
+            let swiperGaleriTop, swiperGaleriBottom;
+            function initGallerySwipers() {
+                if (swiperGaleriTop) swiperGaleriTop.destroy(true, true);
+                if (swiperGaleriBottom) swiperGaleriBottom.destroy(true, true);
+
+                swiperGaleriTop = new Swiper('.swiperGaleriTop', {
                     slidesPerView: 'auto',
-                    spaceBetween: 16,
+                    spaceBetween: 15,
                     loop: true,
-                    speed: 4000,
+                    speed: 6000,
                     autoplay: {
                         delay: 0,
                         disableOnInteraction: false,
-                        pauseOnMouseEnter: true,
+                        pauseOnMouseEnter: false,
+                        reverseDirection: true,
                     },
                     freeMode: true,
                     freeModeMomentum: false,
                     grabCursor: true,
+                    allowTouchMove: true,
                     breakpoints: {
                         640: {
                             spaceBetween: 24
                         }
                     }
                 });
+
+                swiperGaleriBottom = new Swiper('.swiperGaleriBottom', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 12,
+                    loop: true,
+                    speed: 6000,
+                    autoplay: {
+                        delay: 0,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: false,
+                    },
+                    freeMode: true,
+                    freeModeMomentum: false,
+                    grabCursor: true,
+                    allowTouchMove: true,
+                    breakpoints: {
+                        640: {
+                            spaceBetween: 24
+                        }
+                    }
+                });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+                initGallerySwipers();
             });
             // swiper Building
             const swiper2 = new window.Swiper(".mySwiper2", {
@@ -3119,11 +3139,26 @@
                 const lightboxImg = document.getElementById('galleryLightboxImg');
                 const lightboxClose = document.getElementById('galleryLightboxClose');
                 if (!items.length || !lightbox || !lightboxImg) return;
+                
+                let isLightboxOpen = false;
 
                 const openLightbox = (src, alt) => {
                     lightboxImg.src = src;
                     lightboxImg.alt = alt || '';
                     lightbox.classList.remove('hidden');
+                    isLightboxOpen = true;
+                    console.log('openLightbox called - isLightboxOpen now true');
+                    
+                    // Stop autoplay kedua swiper
+                    if (swiperGaleriTop && swiperGaleriTop.autoplay) {
+                        swiperGaleriTop.autoplay.stop();
+                        console.log('swiperGaleriTop autoplay stopped');
+                    }
+                    if (swiperGaleriBottom && swiperGaleriBottom.autoplay) {
+                        swiperGaleriBottom.autoplay.stop();
+                        console.log('swiperGaleriBottom autoplay stopped');
+                    }
+                    
                     requestAnimationFrame(() => {
                         lightbox.classList.add('flex');
                         lightboxImg.classList.remove('opacity-0', 'scale-95');
@@ -3134,11 +3169,20 @@
                 const closeLightbox = () => {
                     lightboxImg.classList.add('opacity-0', 'scale-95');
                     lightboxImg.classList.remove('opacity-100', 'scale-100');
+                    isLightboxOpen = false;
+                    console.log('closeLightbox called - isLightboxOpen now false');
+                    
                     setTimeout(() => {
                         lightbox.classList.add('hidden');
                         lightbox.classList.remove('flex');
                         lightboxImg.src = '';
                     }, 200);
+                    
+                    // Recreate swipers supaya autoplay pasti jalan lagi
+                    setTimeout(() => {
+                        initGallerySwipers();
+                        console.log('Gallery swipers reinitialized after close');
+                    }, 250);
                 };
 
                 items.forEach((item) => {
@@ -3146,7 +3190,29 @@
                         const src = item.getAttribute('data-img');
                         const alt = item.getAttribute('data-alt');
                         if (!src) return;
+                        console.log('Image clicked - opening lightbox');
                         openLightbox(src, alt);
+                    });
+                    
+                    // Pause autoplay saat hover/mouseenter
+                    item.addEventListener('mouseenter', () => {
+                        console.log('Mouse enter on image - stopping autoplay');
+                        if (swiperGaleriTop && swiperGaleriTop.autoplay) {
+                            swiperGaleriTop.autoplay.stop();
+                        }
+                        if (swiperGaleriBottom && swiperGaleriBottom.autoplay) {
+                            swiperGaleriBottom.autoplay.stop();
+                        }
+                    });
+                    
+                    // Resume autoplay saat mouseleave (hanya jika lightbox tidak terbuka)
+                    item.addEventListener('mouseleave', () => {
+                        if (!isLightboxOpen) {
+                            console.log('Mouse leave - restarting gallery swipers');
+                            initGallerySwipers();
+                        } else {
+                            console.log('Mouse leave but lightbox open - NOT starting autoplay');
+                        }
                     });
                 });
 
