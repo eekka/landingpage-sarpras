@@ -1545,21 +1545,20 @@
                                         </li>
                                     </ol>
                                     <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
-                                </div>
-                            </ol>
+                                </section>
+                            </div>
 
                             <div class="mt-4">
                                 <button onclick="closeModal('alurPenyewaan')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                             </div>
-                        
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- gedung -->
-        <!-- Modal Gedung Aula -->
-            <div id="modalAula" class="hidden fixed inset-0 z-30 modal-overlay flex items-center justify-center p-4">
+            <!-- Modal Gedung Aula -->
+            <div id="modalAula" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
                     <!-- Gambar slide -->
                     <div class="relative">
@@ -1732,7 +1731,7 @@
             </div>
 
             <!-- Modal Ruang Kelas | Rapat -->
-            <div id="modalRuang" class="hidden fixed inset-0 z-30 modal-overlay flex items-center justify-center p-4">
+            <div id="modalRuang" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
                     <!-- gambar -->
                     <div class="relative">
@@ -1817,38 +1816,41 @@
                                 <li>Meja dan kursi yang nyaman</li>
                             </ul>
                         </div>
+                        <!-- dahlia -->
+                        <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="1" style="display: none;">
+                            <div class="flex flex-col items-start">
+                                <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
+                                    <h3 class="text-2xl font-bold text-center">Ruang Dahlia</h3>
+                                </div>
+                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                    <p class="text-gray-700 text-sm mb-1">
+                                        <span class="font-bold">Ukuran :</span> 50 m<sup>2</sup>
+                                    </p>
+                                    <p class="text-gray-700 text-sm">
+                                        <span class="font-bold">Kapasitas :</span> 40± orang
+                                    </p>
                                 </div>
                             </div>
-                        </div>
-                                    </div>                            
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <!-- gambar2 -->
+                            <div class="swiperimg mySwiperimg">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Dahlia - Gambar 1">
                                         <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Dahlia - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" data-alt="Ruang Dahlia - Gambar 2">
+                                        <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Dahlia - Gambar 2</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                                        </div>
-                                    </div>                                                                                                            
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
-                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Ruang Dahlia adalah pilihan utama untuk acara yang membutuhkan kapasitas lebih luas dan atmosfer yang serius. Dengan pengaturan tempat duduk yang rapi dan ruang gerak yang lega, ruangan ini memastikan setiap peserta tetap fokus pada narasumber tanpa merasa sesak..</p>
+
+                            <p class="text-gray-600 text-sm mb-3 modal-info-desc">Ruang Dahlia adalah pilihan utama untuk acara yang membutuhkan kapasitas lebih luas dan atmosfer yang serius. Dengan pengaturan tempat duduk yang rapi dan ruang gerak yang lega, ruangan ini memastikan setiap peserta tetap fokus pada narasumber tanpa merasa sesak.</p>
                             <p class="text-gray-600 text-sm mb-3">Ruang Dahlia<br>Dimensi ruangan 50 m<sup>2</sup></p>
                             <ul class="modal-info-list">
                                 <li>Akses yang mudah, dimana ruangan ini terletak di dekat area parkir</li>                            
@@ -1860,7 +1862,7 @@
                             </ul>
                         </div>
                         <!-- bougenville -->
-                        <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="2">
+                        <div class="p-6 modal-info-pendukung modal-info-block hidden" data-slide="2" style="display: none;">
                             <div class="flex flex-col items-start">
                                 <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Ruang Bougenville</h3>
@@ -1934,7 +1936,7 @@
             </div>
 
             <!-- Modal Asrama -->
-            <div id="modalAsrama" class="hidden fixed inset-0 z-30 modal-overlay flex items-center justify-center p-4">
+            <div id="modalAsrama" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
                     <div class="relative">
                         <div class="swiper modal-img-swiper" id="swiperAsrama" style="height: 360px;">
@@ -2055,7 +2057,7 @@
             </div>
 
             <!-- Modal Laboratorium -->
-            <div id="modalLaboratorium" class="hidden fixed inset-0 z-30 modal-overlay flex items-center justify-center p-4">
+            <div id="modalLaboratorium" class="hidden fixed inset-0 z-50 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel">
                     <div class="relative">
                         <div class="swiper modal-img-swiper" id="swiperLaboratorium" style="height: 360px;">
@@ -2554,7 +2556,7 @@
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-4 sm:p-6">
                         <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 flex items-center gap-2 sm:gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
-                                <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg class="text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <rect x="2" y="7" width="20" height="13" rx="2"/>
                                     <path d="M6 7V5a4 4 0 0 1 8 0v2"/>
                                     <path d="M9 13h6"/>
@@ -2575,7 +2577,7 @@
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Area privat & tenang</li>
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Dekat dengan ruang utama</li>
                         </ul>
-                        <button onclick="closeModal('ruangtransit')" class="w-full bg-blue-950 text-white py-2 sm:py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold text-sm sm:text-base">Tutup</button>
+                        <button onclick="closeModal('ruangtransit')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
@@ -2586,7 +2588,7 @@
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-4 sm:p-6">
                         <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 flex items-center gap-2 sm:gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
-                                <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg class="text-blue-600" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                                     <polyline points="9 22 9 12 15 12 15 22"/>
                                 </svg>
@@ -2605,7 +2607,7 @@
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Area terbuka dengan layar informasi</li>
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Lokasi strategis</li>
                         </ul>
-                        <button onclick="closeModal('ruangtunggu')" class="w-full bg-blue-950 text-white py-2 sm:py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold text-sm sm:text-base">Tutup</button>
+                        <button onclick="closeModal('ruangtunggu')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                     </div>
                 </div>
             </div>
@@ -2845,7 +2847,9 @@
             // Helper: sync content panels with active slide
             function syncModalContent(panels, realIndex) {
                 panels.forEach(function(panel) {
-                    panel.classList.toggle('hidden', parseInt(panel.dataset.slide) !== realIndex);
+                    const shouldHide = parseInt(panel.dataset.slide) !== realIndex;
+                    panel.classList.toggle('hidden', shouldHide);
+                    panel.style.display = shouldHide ? 'none' : '';
                 });
             }
 
