@@ -147,6 +147,24 @@
             .swiper-item {
             font-size: 0.5rem;
             }
+            /* swiper galeri */
+            .swiperGaleri .swiper-wrapper {
+                transition-timing-function: linear !important;
+            }
+
+            .swiperGaleri .swiper-slide {
+                width: auto;
+                flex-shrink: 0;
+            }
+
+            .swiperGaleri .swiper-slide img {
+                max-width: 280px;
+                transition: transform 0.3s ease;
+            }
+
+            .swiperGaleri .swiper-slide:hover img {
+                transform: scale(1.05);
+            }
             
             /* font title */
 
@@ -1158,8 +1176,96 @@
         <!-- Gallery Section -->
         <section id="galeri" class="pt-20">
             <div class="w-full bg-blue-950 p-10 mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-                <p class="text-4xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll"><span style="color: #fff;">Galeri</span> <span style="color: #FFD700;">Foto</span></p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <p class="text-4xl font-bold text-center heading-modern bounce-3s section-title-fancy reveal-on-scroll">
+                    <span style="color: #fff;">Galeri</span> 
+                    <span style="color: #FFD700;">Foto</span>
+                </p>
+                
+                <!-- Swiper Marquee -->
+                <div class="swiperGaleri marquee">
+                    <div class="swiper-wrapper marquee-wrapper">
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>                            
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>                                                                                                            
+                    </div>
+                </div>
+
+                <div class="swiperGaleri marquee mt-4">
+                    <div class="swiper-wrapper marquee-wrapper">
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>                            
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
+                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
+                            </div>
+                        </div>                                                                                                            
+                    </div>
+                </div>                
+            </div>
+        </section>
+                       <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-1 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" data-alt="Gedung Utama">
                         <img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="Gedung Utama" class="absolute inset-0 w-full h-full object-cover gallery-img">
                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
@@ -1215,9 +1321,7 @@
                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Parkir</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </div> -->
         <!-- /gallery section -->
 
         <!-- Lightbox for gallery -->
@@ -2646,7 +2750,29 @@
                     clickable: true,
                 },
             });
-
+            
+            // // Swiper (galeri)
+            document.addEventListener('DOMContentLoaded', function() {
+                const swiperGaleri = new Swiper('.swiperGaleri', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 16,
+                    loop: true,
+                    speed: 4000,
+                    autoplay: {
+                        delay: 0,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                    },
+                    freeMode: true,
+                    freeModeMomentum: false,
+                    grabCursor: true,
+                    breakpoints: {
+                        640: {
+                            spaceBetween: 24
+                        }
+                    }
+                });
+            });
             // swiper Building
             const swiper2 = new window.Swiper(".mySwiper2", {
                 grabCursor: true,
