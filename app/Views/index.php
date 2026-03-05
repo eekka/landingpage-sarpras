@@ -2591,9 +2591,8 @@
                         
                         <h4 class="text-xl font-bold text-gray-800 mb-3">Kapasitas:</h4>
                         <ul class="grid grid-cols-2 gap-3 mb-6">
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Mobil: 500 Unit</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Motor: 800 Unit</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Bus: 20 Unit</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Mobil: 50 Unit</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Motor: 80 Unit</li>
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Tempat untuk Difabel</li>
                         </ul>
 
@@ -2601,9 +2600,6 @@
                         <ul class="space-y-2 mb-6">
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> CCTV 24 Jam Full Coverage</li>
                             <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Petugas Keamanan Berjaga</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Sistem Gate Elektronik</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Pencahayaan LED Terang</li>
-                            <li class="flex items-start text-gray-700"><span class="text-blue-600 mr-2">•</span> Tarif Terjangkau Harian/Bulanan</li>
                         </ul>
 
                         <button onclick="closeModal('parkir')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">
@@ -2788,7 +2784,7 @@
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Kursi dan sofa nyaman</li>
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Ruang adem</li>
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Area terbuka dengan layar informasi</li>
-                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Lokasi gedung utama</li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Lokasi di gedung utama</li>
                         </ul>
                         <button onclick="closeModal('ruangtunggu')" class="w-full bg-blue-950 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
                     </div>
