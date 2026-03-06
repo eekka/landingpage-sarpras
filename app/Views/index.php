@@ -1769,7 +1769,7 @@
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-scroll overflow-x-hidden shadow-2xl modal-panel">
                     <!-- gambar slide -->
                     <div class="relative">
-                        <div class="swiper modal-img-swiper overflow-x-hidden" id="swiperRuang" style="height: 360px;">
+                        <div class="swiper modal-img-swiper py-4 overflow-x-hidden" id="swiperRuang" style="height: 360px;">
                             <div class="swiper-wrapper ">
                                 <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
                                     <img src="<?= base_url('images/ruang/mawar/m.jpg') ?>" class="w-full h-full object-cover">
@@ -2054,7 +2054,7 @@
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-scroll overflow-x-hidden shadow-2xl modal-panel">
                     <div class="relative">
                         <!-- gambar slide -->
-                        <div class="swiper modal-img-swiper" id="swiperAsrama" style="height: 360px;">
+                        <div class="swiper modal-img-swiper py-4" id="swiperAsrama" style="height: 360px;">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/kamar/asrama.JPG') ?>" data-alt="Asrama Matahari - Gambar Utama">
                                     <img src="<?= base_url('images/asrama/kamar/asrama.JPG') ?>" class="w-full h-full object-cover">
@@ -2285,7 +2285,7 @@
             <div id="modalLaboratorium" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-scroll overflow-x-hidden shadow-2xl modal-panel">
                     <div class="relative">
-                        <div class="swiper modal-img-swiper" id="swiperLaboratorium" style="height: 360px;">
+                        <div class="swiper modal-img-swiper py-4" id="swiperLaboratorium" style="height: 360px;">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('/images/lab/lab-batik.png') ?>" data-alt="Laboratorium Batik">
                                     <img src="<?= base_url('/images/lab/lab-batik.png') ?>" class="w-full h-full object-cover">
