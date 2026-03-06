@@ -674,6 +674,44 @@
                 background-color: white;
             }
 
+            /* Lightbox tanpa animasi */
+            #galleryLightbox img {
+                transition: none !important;
+            }
+
+            /* ===== Gallery Marquee — pure CSS animation ===== */
+            .gallery-marquee-outer {
+                overflow: hidden;
+                width: 100%;
+            }
+            .gallery-scroll-track {
+                display: flex;
+                width: max-content;
+                /* bawah: gerak ke kiri */
+                animation: gallery-scroll 40s linear infinite;
+            }
+            /* atas: gerak ke kanan (reverse) */
+            .gallery-marquee-outer.gallery-top .gallery-scroll-track {
+                animation-direction: reverse;
+            }
+            @keyframes gallery-scroll {
+                from { transform: translateX(0); }
+                to   { transform: translateX(-50%); }
+            }
+            .gallery-scroll-group {
+                display: flex;
+                gap: 16px;
+                flex-shrink: 0;
+                padding-right: 16px; /* gap di sambungan antar group */
+            }
+            .gallery-marquee-outer .gallery-item {
+                flex-shrink: 0;
+            }
+            /* PAUSE — hanya ubah animation-play-state, 100% reliable */
+            .gallery-marquee-outer.gallery-paused .gallery-scroll-track {
+                animation-play-state: paused;
+            }
+
         </style>
 
         <!-- whatsapp -->
@@ -972,6 +1010,7 @@
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg>
                                                     <span>Workshop & Pelatihan Kelas</span>
                                                 </li>
+                                                
                                                 <li class="feature-item">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="text-blue-600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4"/><path d="M20 11H4"/><path d="M20 15H4"/><path d="M20 19H4"/></svg>
                                                     <span>Sosialisasi & Seminar Kecil</span>
@@ -1191,86 +1230,48 @@
                     <span class="text-white">Galeri</span><span style="color: #FFD700;"> Foto</span>
                 </p>
                 
-                <!-- Swiper Marquee -->
-                <div class="swiperGaleri swiperGaleriTop marquee">
-                    <div class="swiper-wrapper marquee-wrapper">
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
+                <!-- Galeri Marquee -->
+                <!-- Baris Atas (gerak kanan) -->
+                <div class="gallery-marquee-outer gallery-top mt-6">
+                    <div class="gallery-scroll-track">
+                        <div class="gallery-scroll-group">
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 2"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 3"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 4"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 5"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 6"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
-                        </div>                            
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
+                        <div class="gallery-scroll-group" aria-hidden="true">
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 2"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 3"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 4"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 5"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 6"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
-                        </div>                                                                                                            
                     </div>
                 </div>
 
-                <div class="swiperGaleri swiperGaleriBottom marquee mt-4">
-                    <div class="swiper-wrapper marquee-wrapper">
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
+                <!-- Baris Bawah (gerak kiri) -->
+                <div class="gallery-marquee-outer gallery-bottom mt-4">
+                    <div class="gallery-scroll-track">
+                        <div class="gallery-scroll-group">
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 2"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 3"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 4"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 5"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 6"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
-                        </div>                            
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
+                        <div class="gallery-scroll-group" aria-hidden="true">
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 2"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 3"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 4"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 5"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 6"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
-                        </div>
-                        <div class="swiper-slide marquee-slide w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                            <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                            </div>
-                        </div>                                                                                                            
                     </div>
                 </div>                
             </div>
@@ -2983,58 +2984,35 @@
                 },
             });
             
-            // // Swiper (galeri)
-            let swiperGaleriTop, swiperGaleriBottom;
-            function initGallerySwipers() {
-                if (swiperGaleriTop) swiperGaleriTop.destroy(true, true);
-                if (swiperGaleriBottom) swiperGaleriBottom.destroy(true, true);
+            // ===== Gallery Marquee =====
+            // Tidak pakai Swiper — pure CSS animation.
+            // Pause/resume cukup toggle class 'gallery-paused'.
+            let galleryPreviewOpen = false;
 
-                swiperGaleriTop = new Swiper('.swiperGaleriTop', {
-                    slidesPerView: 'auto',
-                    spaceBetween: 15,
-                    loop: true,
-                    speed: 6000,
-                    autoplay: {
-                        delay: 0,
-                        disableOnInteraction: false,
-                        pauseOnMouseEnter: false,
-                        reverseDirection: true,
-                    },
-                    freeMode: true,
-                    freeModeMomentum: false,
-                    grabCursor: true,
-                    allowTouchMove: true,
-                    breakpoints: {
-                        640: {
-                            spaceBetween: 24
-                        }
-                    }
+            function pauseGallery() {
+                document.querySelectorAll('.gallery-marquee-outer').forEach(function(el) {
+                    el.classList.add('gallery-paused');
                 });
+            }
 
-                swiperGaleriBottom = new Swiper('.swiperGaleriBottom', {
-                    slidesPerView: 'auto',
-                    spaceBetween: 12,
-                    loop: true,
-                    speed: 6000,
-                    autoplay: {
-                        delay: 0,
-                        disableOnInteraction: false,
-                        pauseOnMouseEnter: false,
-                    },
-                    freeMode: true,
-                    freeModeMomentum: false,
-                    grabCursor: true,
-                    allowTouchMove: true,
-                    breakpoints: {
-                        640: {
-                            spaceBetween: 24
-                        }
-                    }
+            function resumeGallery() {
+                if (galleryPreviewOpen) return;
+                document.querySelectorAll('.gallery-marquee-outer').forEach(function(el) {
+                    el.classList.remove('gallery-paused');
                 });
             }
 
             document.addEventListener('DOMContentLoaded', function() {
-                initGallerySwipers();
+                document.querySelectorAll('.gallery-marquee-outer').forEach(function(wrap) {
+                    wrap.addEventListener('mouseenter', function() {
+                        if (galleryPreviewOpen) return;
+                        wrap.classList.add('gallery-paused');
+                    });
+                    wrap.addEventListener('mouseleave', function() {
+                        if (galleryPreviewOpen) return;
+                        wrap.classList.remove('gallery-paused');
+                    });
+                });
             });
             // swiper Building
             const swiper2 = new window.Swiper(".mySwiper2", {
@@ -3382,88 +3360,42 @@
                 targets.forEach((el) => obs.observe(el));
             })();
 
-            // Gallery lightbox
+            // Gallery lightbox (event delegation agar clone slides dari loop juga bisa di-klik)
             (function () {
-                const items = document.querySelectorAll('.gallery-item');
                 const lightbox = document.getElementById('galleryLightbox');
                 const lightboxImg = document.getElementById('galleryLightboxImg');
                 const lightboxClose = document.getElementById('galleryLightboxClose');
-                if (!items.length || !lightbox || !lightboxImg) return;
-                
-                let isLightboxOpen = false;
+                if (!lightbox || !lightboxImg) return;
 
                 const openLightbox = (src, alt) => {
+                    galleryPreviewOpen = true;
+                    pauseGallery();
                     lightboxImg.src = src;
                     lightboxImg.alt = alt || '';
                     lightbox.classList.remove('hidden');
-                    isLightboxOpen = true;
-                    console.log('openLightbox called - isLightboxOpen now true');
-                    
-                    // Stop autoplay kedua swiper
-                    if (swiperGaleriTop && swiperGaleriTop.autoplay) {
-                        swiperGaleriTop.autoplay.stop();
-                        console.log('swiperGaleriTop autoplay stopped');
-                    }
-                    if (swiperGaleriBottom && swiperGaleriBottom.autoplay) {
-                        swiperGaleriBottom.autoplay.stop();
-                        console.log('swiperGaleriBottom autoplay stopped');
-                    }
-                    
-                    requestAnimationFrame(() => {
-                        lightbox.classList.add('flex');
-                        lightboxImg.classList.remove('opacity-0', 'scale-95');
-                        lightboxImg.classList.add('opacity-100', 'scale-100');
-                    });
+                    lightbox.classList.add('flex');
+                    lightboxImg.classList.remove('opacity-0', 'scale-95');
+                    lightboxImg.classList.add('opacity-100', 'scale-100');
                 };
 
                 const closeLightbox = () => {
+                    galleryPreviewOpen = false;
                     lightboxImg.classList.add('opacity-0', 'scale-95');
                     lightboxImg.classList.remove('opacity-100', 'scale-100');
-                    isLightboxOpen = false;
-                    console.log('closeLightbox called - isLightboxOpen now false');
-                    
-                    setTimeout(() => {
-                        lightbox.classList.add('hidden');
-                        lightbox.classList.remove('flex');
-                        lightboxImg.src = '';
-                    }, 200);
-                    
-                    // Recreate swipers supaya autoplay pasti jalan lagi
-                    setTimeout(() => {
-                        initGallerySwipers();
-                        console.log('Gallery swipers reinitialized after close');
-                    }, 250);
+                    lightbox.classList.add('hidden');
+                    lightbox.classList.remove('flex');
+                    lightboxImg.src = '';
+                    resumeGallery();
                 };
 
-                items.forEach((item) => {
-                    item.addEventListener('click', () => {
-                        const src = item.getAttribute('data-img');
-                        const alt = item.getAttribute('data-alt');
-                        if (!src) return;
-                        console.log('Image clicked - opening lightbox');
-                        openLightbox(src, alt);
-                    });
-                    
-                    // Pause autoplay saat hover/mouseenter
-                    item.addEventListener('mouseenter', () => {
-                        console.log('Mouse enter on image - stopping autoplay');
-                        if (swiperGaleriTop && swiperGaleriTop.autoplay) {
-                            swiperGaleriTop.autoplay.stop();
-                        }
-                        if (swiperGaleriBottom && swiperGaleriBottom.autoplay) {
-                            swiperGaleriBottom.autoplay.stop();
-                        }
-                    });
-                    
-                    // Resume autoplay saat mouseleave (hanya jika lightbox tidak terbuka)
-                    item.addEventListener('mouseleave', () => {
-                        if (!isLightboxOpen) {
-                            console.log('Mouse leave - restarting gallery swipers');
-                            initGallerySwipers();
-                        } else {
-                            console.log('Mouse leave but lightbox open - NOT starting autoplay');
-                        }
-                    });
+                // Event delegation: klik pada gallery-item manapun (termasuk clone)
+                document.addEventListener('click', (e) => {
+                    const item = e.target.closest('.gallery-item');
+                    if (!item) return;
+                    const src = item.getAttribute('data-img');
+                    const alt = item.getAttribute('data-alt');
+                    if (!src) return;
+                    openLightbox(src, alt);
                 });
 
                 lightbox?.addEventListener('click', (e) => {
