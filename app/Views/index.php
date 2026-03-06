@@ -2593,7 +2593,7 @@
                     <div class="p-6">
                         <img src="<?= base_url('images/core/ruang-laktasi.png') ?>" alt="Kesehatan" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Ruang Laktasi | Klinik Pintar </h3>
-                        <p class="text-gray-700 mb-6">Klinik kesehatan kami dilengkapi dengan peralatan medis dan tim profesional yang berpengalaman untuk memberikan pelayanan kesehatan terbaik.</p>
+                        <p class="text-gray-700 mb-6">Klinik kesehatan kami dilengkapi dengan P3 untuk memberikan pelayanan kesehatan pertama secara darurat dan .</p>
                         
                         <h4 class="text-xl font-bold text-gray-800 mb-3">Fasilitas Tersedia:</h4>
                         <ul class="grid grid-cols-2 gap-3 mb-6">
@@ -2854,7 +2854,7 @@
                     <div class="p-6">
                         <img src="<?= base_url('images/core/rokok.png') ?>" alt="Smoking Area" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Area Merokok Nyaman</h3>
-                        <p class="text-gray-700 mb-4">Area khusus yang dirancang untuk memberikan kenyamanan bagi peserta yang ingin merokok dengan ventilasi baik dan terpisah dari ruang utama.</p>
+                        <p class="text-gray-700 mb-4">Area khusus yang dirancang untuk memberikan kenyamanan bagi peserta yang ingin merokok di area terbuka dan terpisah dari ruang utama.</p>
                         <ul class="grid grid-cols-2 gap-3 mb-6">
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Ventilasi udara baik</li>
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Tempat duduk dibawah pohon</li>
@@ -2915,7 +2915,7 @@
                     <div class="p-4 sm:p-6">
                         <img src="<?= base_url('images/core/ruang tunggu.png') ?>" alt="Ruang Tunggu" class="w-full rounded-lg mb-4 sm:mb-6">
                         <h3 class="text-xl sm:text-2xl font-bold text-blue-600 mb-3 sm:mb-4">Ruang Tunggu Nyaman</h3>
-                        <p class="text-gray-700 text-sm sm:text-base mb-4 sm:mb-6">Ruang tunggu yang dirancang modern dan nyaman untuk peserta menunggu kegiatan dengan fasilitas lengkap.</p>
+                        <p class="text-gray-700 text-sm sm:text-base mb-4 sm:mb-6">Ruang tunggu yang dirancang modern dan nyaman untuk tamu yang sedang menunggu serta  dengan fasilitas yang disediakan.</p>
                         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-4 sm:mb-6">
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Kursi dan sofa nyaman</li>
                             <li class="flex items-center text-gray-700 text-sm sm:text-base"><span class="text-blue-600 mr-2">✓</span> Ruang adem</li>
@@ -2950,7 +2950,7 @@
                         <h4 class="text-xl font-bold text-gray-800 mb-3">Peralatan Keamanan:</h4>
                         <ul class="grid grid-cols-2 gap-3 mb-6">
                             <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> CCTV 4K (12 Unit)</li>
-                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Alat Pemadam api</li>
+                            <li class="flex items-center text-gray-700"><span class="text-blue-600 mr-2">✓</span> Alat Pemadam api (APAR)</li>
                         </ul>
 
                         <h4 class="text-xl font-bold text-gray-800 mb-3">Tim & Layanan Keamanan:</h4>
@@ -3119,19 +3119,15 @@
                 loop: false,
                 slidesPerView: 3,
                 spaceBetween: 40,
-                // responsive behaviour
                 breakpoints: {
-                    // when window width is >= 0px
                     0: {
                         slidesPerView: 1,
                         spaceBetween: 20,
                     },
-                    // >= 640px (sm)
                     640: {
                         slidesPerView: 2,
                         spaceBetween: 30,
                     },
-                    // >= 1024px (lg)
                     1024: {
                         slidesPerView: 3,
                         spaceBetween: 40,
