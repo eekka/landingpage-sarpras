@@ -152,6 +152,23 @@
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-8px); }
         }
+        
+        /* Fix scrollbar-induced layout shift in modals */
+        .modal-panel {
+            scrollbar-gutter: stable;
+        }
+
+        /* Ensure modal content doesn't shift when scrollbar appears/disappears */
+        .modal-overlay {
+            scrollbar-gutter: stable;
+        }
+
+        /* Ensure sticky headers stay fixed and aligned */
+        .modal-panel .sticky {
+            position: sticky;
+            z-index: 10;
+            background-color: white;
+        }
 </style>
 <body class="bg-white">
     <!--Background Ribbons-->
@@ -526,7 +543,7 @@
     <!-- MODALS -->
     <!-- Modal Kesehatan -->
     <div id="modalKesehatan" class="hidden flex fixed inset-0 bg-linear-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-blue-600">🏥 Kesehatan</h2>
                 <button onclick="closeModal('kesehatan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -566,7 +583,7 @@
 
     <!-- Modal Perpustakaan -->
     <div id="modalPerpustakaan" class="hidden flex fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-green-600">📚 Perpustakaan</h2>
                 <button onclick="closeModal('perpustakaan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -604,7 +621,7 @@
 
     <!-- Modal Kantin -->
     <div id="modalKantin" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-yellow-600">🍽️ Kantin</h2>
                 <button onclick="closeModal('kantin')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -642,7 +659,7 @@
 
     <!-- Modal Parkir -->
     <div id="modalParkir" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-red-600">🅿️ Parkir</h2>
                 <button onclick="closeModal('parkir')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -678,7 +695,7 @@
 
     <!-- Modal Lab Komputer -->
     <div id="modalLab" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-purple-600">💻 Lab Komputer</h2>
                 <button onclick="closeModal('lab')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -716,7 +733,7 @@
 
     <!-- Modal Olahraga -->
     <div id="modalOlahraga" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-pink-600">🏋️ Olahraga</h2>
                 <button onclick="closeModal('olahraga')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -754,7 +771,7 @@
 
     <!-- Modal Transportasi -->
     <div id="modalTransportasi" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-indigo-600">🚗 Transportasi</h2>
                 <button onclick="closeModal('transportasi')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -790,7 +807,7 @@
 
     <!-- Modal Keamanan -->
     <div id="modalKeamanan" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-teal-600">🔒 Keamanan</h2>
                 <button onclick="closeModal('keamanan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -829,7 +846,7 @@
     <!-- MODALS -->
     <!-- Modal Kesehatan -->
     <div id="modalKesehatan" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-blue-600">🏥 Kesehatan</h2>
                 <button onclick="closeModal('kesehatan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -869,7 +886,7 @@
 
     <!-- Modal Perpustakaan -->
     <div id="modalPerpustakaan" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-green-600">📚 Perpustakaan</h2>
                 <button onclick="closeModal('perpustakaan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -907,7 +924,7 @@
 
     <!-- Modal Kantin -->
     <div id="modalKantin" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-yellow-600">🍽️ Kantin</h2>
                 <button onclick="closeModal('kantin')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -945,7 +962,7 @@
 
     <!-- Modal Parkir -->
     <div id="modalParkir" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-red-600">🅿️ Parkir</h2>
                 <button onclick="closeModal('parkir')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -981,7 +998,7 @@
 
     <!-- Modal Lab Komputer -->
     <div id="modalLab" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-purple-600">💻 Lab Komputer</h2>
                 <button onclick="closeModal('lab')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -1019,7 +1036,7 @@
 
     <!-- Modal Olahraga -->
     <div id="modalOlahraga" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-pink-600">🏋️ Olahraga</h2>
                 <button onclick="closeModal('olahraga')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -1057,7 +1074,7 @@
 
     <!-- Modal Transportasi -->
     <div id="modalTransportasi" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-indigo-600">🚗 Transportasi</h2>
                 <button onclick="closeModal('transportasi')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -1093,7 +1110,7 @@
 
     <!-- Modal Keamanan -->
     <div id="modalKeamanan" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                 <h2 class="text-3xl font-bold text-teal-600">🔒 Keamanan</h2>
                 <button onclick="closeModal('keamanan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -1420,7 +1437,7 @@
     <!-- BUILDING MODALS -->
     <!-- Modal Gedung Utama - Rooms as Swipes -->
     <div id="modalUtama" class="hidden fixed inset-0 bg-gradient-to-r from-blue-600/40 to-blue-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6" style="cursor: move;">
                 <h2 class="text-3xl font-bold text-blue-600">🏢 Gedung Utama</h2>
                 <button onclick="closeBuildingModal('utama')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -1521,7 +1538,7 @@
 
     <!-- Modal Gedung Pendukung - Rooms as Swipes -->
     <div id="modalPendukung" class="hidden fixed inset-0 bg-gradient-to-r from-green-600/40 to-green-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6" style="cursor: move;">
                 <h2 class="text-3xl font-bold text-green-600">🏛️ Gedung Pendukung</h2>
                 <button onclick="closeBuildingModal('pendukung')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
@@ -1606,7 +1623,7 @@
 
     <!-- Modal Layanan Publik - Rooms as Swipes -->
     <div id="modalPublik" class="hidden fixed inset-0 bg-gradient-to-r from-purple-600/40 to-purple-800/40 backdrop-blur-sm z-40 flex items-center justify-center p-4">
-        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+        <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll">
             <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6" style="cursor: move;">
                 <h2 class="text-3xl font-bold text-purple-600">🏪 Layanan Publik</h2>
                 <button onclick="closeBuildingModal('publik')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
