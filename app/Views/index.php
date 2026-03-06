@@ -990,7 +990,7 @@
                                 <div class="w-max-xl h-auto md: swiper-slide flex justify-center">                                
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
-                                            <img class="w-full h-full object-cover block" src="<?= base_url('images/ruang/mawar/m.jpg') ?>" alt="Ruang Kelas | Rapat">
+                                            <img class="w-full h-full object-cover block" src="<?= base_url('images/ruang/bougenville/b.JPG') ?>" alt="Ruang Kelas | Rapat">
                                         </div>
                                         <div class="p-6 flex flex-col flex-1">
                                             <h3 class="text-2xl font-bold text-blue-600 mb-2">Ruang Kelas | Rapat</h3>
