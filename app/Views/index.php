@@ -657,6 +657,23 @@
                 50% { transform: scale(1.05) translateY(-10px); }
             }
 
+            /* Fix scrollbar-induced layout shift in modals */
+            .modal-panel {
+                scrollbar-gutter: stable;
+            }
+
+            /* Ensure modal content doesn't shift when scrollbar appears/disappears */
+            .modal-overlay {
+                scrollbar-gutter: stable;
+            }
+
+            /* Ensure sticky headers stay fixed and aligned */
+            .modal-panel .sticky {
+                position: sticky;
+                z-index: 10;
+                background-color: white;
+            }
+
         </style>
 
         <!-- whatsapp -->
@@ -965,7 +982,7 @@
                                     </div>
                                 </div>
                                 <!-- Asrama -->
-                                <div class="w-max-xl h-auto swiper-slide flex justify-center">                                
+                                <div class="w-max-xl h-auto swiper-slide flex justify-center">
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
                                             <img src="<?= base_url('images/asrama/kamar/asrama1.png') ?>" alt="Asrama Matahari" class="w-full h-full object-cover block">
@@ -1448,7 +1465,7 @@
         <!-- Modal -->
         <!-- Modal Alur Penyewaan -->
             <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-2xl max-w-none w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel" style="max-width:min(96vw, 1600px);">
+                <div class="bg-white rounded-2xl max-w-none w-full max-h-[90vh] overflow-y-scroll shadow-2xl modal-panel" style="max-width:min(96vw, 1600px);">
                     <div class="static md:sticky md:top-0 z-20 bg-white px-6 py-4 text-center">
                         <div style="display:inline-block;background:#172554;padding:0.7em 2em;border-radius:0.7em;">
                             <h2 class="inline font-bold flow-alur-title" style="color:#fff;">Alur <span style="color:#FFD700;">Penyewaan</span></h2>
@@ -1475,7 +1492,7 @@
 
             <!-- Modal Alur Penyewaan -->
             <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-2xl max-w-none w-full max-h-[90vh] overflow-y-auto shadow-2xl modal-panel" style="max-width:min(96vw, 1600px);">
+                <div class="bg-white rounded-2xl max-w-none w-full max-h-[90vh] overflow-y-scroll shadow-2xl modal-panel" style="max-width:min(96vw, 1600px);">
                     <div class="static md:sticky md:top-0 z-20 bg-white px-6 py-4 text-center">
                         <h2 class="inline-block text-2xl sm:text-3xl font-bold text-blue-700" style="color:#1d4ed8 !important;">Alur Penyewaan</h2>
                     </div>
@@ -1553,7 +1570,7 @@
             <!-- gedung -->
             <!-- Modal Gedung Aula -->
             <div id="modalAula" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
+                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-scroll overflow-x-hidden shadow-2xl modal-panel">
                     <!-- Gambar slide -->
                     <div class="relative">
                         <div class="swiper modal-img-swiper" id="swiperAula" style="height: 360px;">
@@ -1727,7 +1744,7 @@
 
             <!-- Modal Ruang Kelas | Rapat -->
             <div id="modalRuang" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
+                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-scroll overflow-x-hidden shadow-2xl modal-panel">
                     <!-- gambar slide -->
                     <div class="relative">
                         <div class="swiper modal-img-swiper overflow-x-hidden" id="swiperRuang" style="height: 360px;">
@@ -1991,7 +2008,7 @@
 
             <!-- Modal Asrama -->
             <div id="modalAsrama" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
+                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-scroll overflow-x-hidden shadow-2xl modal-panel">
                     <div class="relative">
                         <!-- gambar slide -->
                         <div class="swiper modal-img-swiper" id="swiperAsrama" style="height: 360px;">
@@ -2216,7 +2233,7 @@
 
             <!-- Modal Laboratorium -->
             <div id="modalLaboratorium" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl modal-panel">
+                <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-scroll overflow-x-hidden shadow-2xl modal-panel">
                     <div class="relative">
                         <div class="swiper modal-img-swiper" id="swiperLaboratorium" style="height: 360px;">
                             <div class="swiper-wrapper">
@@ -2484,7 +2501,7 @@
         <!-- fasilitas -->
             <!-- Modal Kesehatan -->
             <div id="modalKesehatan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
+                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
@@ -2522,7 +2539,7 @@
 
             <!-- Modal Perpustakaan -->
             <div id="modalPerpustakaan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
+                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
@@ -2566,7 +2583,7 @@
 
             <!-- Modal Kantin -->
             <div id="modalKantin" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
+                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
@@ -2613,7 +2630,7 @@
 
             <!-- Modal Parkir -->
             <div id="modalParkir" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
+                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
@@ -2653,7 +2670,7 @@
 
             <!-- Modal Lab Komputer -->
             <div id="modalLab" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
+                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
@@ -2699,7 +2716,7 @@
 
             <!-- Modal Mushola -->
             <div id="modalMushola" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
+                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
@@ -2747,7 +2764,7 @@
 
             <!-- Modal Smoking Area -->
             <div id="modalSmokingarea" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
+                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
@@ -2772,8 +2789,8 @@
             </div>
 
             <!-- Modal Ruang Transit -->
-            <div id="modalRuangtransit" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4 overflow-y-auto">
-                <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel my-auto sm:my-8">
+            <div id="modalRuangtransit" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4 overflow-y-scroll">
+                <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel my-auto sm:my-8">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-4 sm:p-6">
                         <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 flex items-center gap-2 sm:gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
@@ -2804,8 +2821,8 @@
             </div>
 
             <!-- Modal Ruang Tunggu -->
-            <div id="modalRuangtunggu" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4 overflow-y-auto">
-                <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel my-auto sm:my-8">
+            <div id="modalRuangtunggu" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4 overflow-y-scroll">
+                <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel my-auto sm:my-8">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-4 sm:p-6">
                         <h2 class="text-2xl sm:text-3xl font-bold text-blue-600 flex items-center gap-2 sm:gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
@@ -2835,7 +2852,7 @@
 
             <!-- Modal Keamanan -->
             <div id="modalKeamanan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
-                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto modal-panel">
+                <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-6">
                         <h2 class="text-3xl font-bold text-blue-600 flex items-center gap-3">
                             <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-blue-50 text-blue-600">
