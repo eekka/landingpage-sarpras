@@ -13,7 +13,7 @@
         <link href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/output.css">
     </head>
-    <body class="bg-blue-100 overflow-x-hidden">
+    <body class="bg-blue-100 overflow-x-hidden scroll-smooth">
         <style>
             .facility-highlight-btn-blue:hover,
             .facility-highlight-btn-blue:focus,
@@ -1238,7 +1238,6 @@
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 3"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 4"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 5"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 6"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                         <div class="gallery-scroll-group" aria-hidden="true">
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
@@ -1246,7 +1245,6 @@
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 3"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 4"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 5"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 6"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                     </div>
                 </div>
@@ -1255,20 +1253,20 @@
                 <div class="gallery-marquee-outer gallery-bottom mt-4">
                     <div class="gallery-scroll-track">
                         <div class="gallery-scroll-group">
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 2"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 3"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 4"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 5"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 6"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/asrama/kamar/asrama.JPG') ?>" data-alt="Ruang Kelas - Gambar 1"><img src="<?= base_url('images/asrama/kamar/asrama.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/asrama/r-makan/rm3.JPG') ?>" data-alt="Ruang Kelas - Gambar 2"><img src="<?= base_url('images/asrama/r-makan/rm3.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/asrama/r-transit/t2.JPG') ?>" data-alt="Ruang Kelas - Gambar 3"><img src="<?= base_url('images/asrama/r-transit/t2.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/gedung%20aula/anggrek2.JPG') ?>" data-alt="Ruang Kelas - Gambar 4"><img src="<?= base_url('images/gedung%20aula/anggrek2.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/gedung%20aula/teratai3.JPG') ?>" data-alt="Ruang Kelas - Gambar 5"><img src="<?= base_url('images/gedung%20aula/teratai3.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/ruang/bougenville/b3.JPG') ?>" data-alt="Ruang Kelas - Gambar 6"><img src="<?= base_url('images/ruang/bougenville/b3.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                         <div class="gallery-scroll-group" aria-hidden="true">
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 1"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 2"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 3"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 4"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 5"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Kelas - Gambar 6"><img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/ruang/dahlia/d4.JPG') ?>" data-alt="Ruang Kelas - Gambar 1"><img src="<?= base_url('images/ruang/dahlia/d4.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/ruang/mawar/m3.JPG') ?>" data-alt="Ruang Kelas - Gambar 2"><img src="<?= base_url('images/ruang/mawar/m3.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/lab/batik2.png') ?>" data-alt="Ruang Kelas - Gambar 3"><img src="<?= base_url('images/lab/batik2.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/lab/boga4.JPG') ?>" data-alt="Ruang Kelas - Gambar 4"><img src="<?= base_url('images/lab/boga4.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/lab/komputer2.JPG') ?>" data-alt="Ruang Kelas - Gambar 5"><img src="<?= base_url('images/lab/komputer2.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/lab/jahit4.png') ?>" data-alt="Ruang Kelas - Gambar 6"><img src="<?= base_url('images/lab/jahit4.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                     </div>
                 </div>                
@@ -2021,13 +2019,7 @@
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
-                                    </div>                                                                                                            
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b9.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/bougenville/b9.jpg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
-                                        </div>
-                                    </div>                                                                                                            
+                                    </div>                                                                                                          
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
