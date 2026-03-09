@@ -1334,7 +1334,7 @@
         <!-- /gallery section -->
 
         <!-- CTA -->
-        <section id="kontak" class="py-20 bg-blue-800 text-white relative overflow-hidden">
+        <section id="kontak" class="py-36 bg-blue-800 text-white relative overflow-hidden">
             <div class="">
                 <div class="absolute inset-0 opacity-10">
                     <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full -translate-x-1/2 -translate-y-1/2"></div>
@@ -1608,18 +1608,18 @@
                                 <div class="bg-blue-950 text-white p-2 rounded-lg mb-3 items-center justify-center">
                                     <h3 class="text-2xl font-bold p-0 text-center">Aula Anggrek</h3>
                                 </div>
-                                <div class="flex justify-between">
-                                    <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3 items-start">
+                                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-3">
+                                    <div class="w-full md:w-auto bg-blue-100 border border-blue-300 px-4 py-3 rounded-lg shadow-sm">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> (80) m<sup>2</sup>
+                                            <span class="font-bold text-blue-900">Ukuran :</span> (80) m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
-                                            <span class="font-bold">Kapasitas :</span> 200± orang
+                                            <span class="font-bold text-blue-900">Kapasitas :</span> 200± orang
                                         </p>
                                     </div>
-                                    <div class="flex justify-center">
-                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
-                                            <span class="text-lg sm:text-lg">Hubungi Kami</span>
+                                    <div class="w-full md:w-auto">
+                                        <a href="https://wa.me/6289670131732" target="_blank" class="w-full md:w-auto h-12 px-6 inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white text-decoration-none rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover-text-amber hover:shadow-xl group">
+                                            <span class="text-base">Hubungi Kami</span>
                                         </a>
                                     </div>
                                 </div>
@@ -1696,7 +1696,7 @@
                                 <div class="bg-blue-950 text-white p-2 rounded-lg mb-3 items-center justify-center">
                                     <h3 class="text-2xl font-bold p-0 text-center">Aula Teratai</h3>
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
                                             <span class="font-bold">Ukuran :</span> (120) m<sup>2</sup>
@@ -1705,8 +1705,8 @@
                                             <span class="font-bold">Kapasitas :</span> 300+ orang
                                         </p>
                                     </div>
-                                    <div class="flex justify-center">
-                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                                    <div class="w-fulll md:w-auto">
+                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover-text-amber hover:shadow-xl">
                                             <span class="text-lg sm:text-lg">Hubungi Kami</span>
                                         </a>
                                     </div>
@@ -1803,7 +1803,7 @@
                                 <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Ruang Mawar</h3>
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
                                             <span class="font-bold">Ukuran :</span> 25m<sup>2</sup>
@@ -1812,8 +1812,8 @@
                                             <span class="font-bold">Kapasitas :</span> 25± orang
                                         </p>
                                     </div>
-                                    <div class="flex justify-center">
-                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                                    <div class="w-full md:w-auto">
+                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover-text-amber hover:shadow-xl">
                                             <span class="text-lg sm:text-lg">Hubungi Kami</span>
                                         </a>
                                     </div>
@@ -1879,7 +1879,7 @@
                                 <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Ruang Dahlia</h3>
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
                                             <span class="font-bold">Ukuran :</span> 50 m<sup>2</sup>
@@ -1888,8 +1888,8 @@
                                             <span class="font-bold">Kapasitas :</span> 40± orang
                                         </p>
                                     </div>
-                                    <div class="flex justify-center">
-                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                                    <div class="w-full md:w-auto">
+                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover-text-amber hover:scale-105 shadow-lg hover:shadow-xl">
                                             <span class="text-lg sm:text-lg">Hubungi Kami</span>
                                         </a>
                                     </div>
@@ -1955,7 +1955,7 @@
                                 <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Ruang Bougenville</h3>
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
                                             <span class="font-bold">Ukuran :</span> 40 m<sup>2</sup>
@@ -1964,8 +1964,8 @@
                                             <span class="font-bold">Kapasitas :</span> 30± guests
                                         </p>
                                     </div>
-                                    <div class="flex justify-center">
-                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                                    <div class="w-full md:w-auto">
+                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 hover-text-amber shadow-lg hover:shadow-xl">
                                             <span class="text-lg sm:text-lg">Hubungi Kami</span>
                                         </a>
                                     </div>
@@ -2085,7 +2085,7 @@
                                 <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Kamar Asrama</h3>
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
                                             <span class="font-bold">Ukuran :</span> 5m<sup>2</sup>
@@ -2094,8 +2094,8 @@
                                             <span class="font-bold">Kapasitas :</span> 4 orang
                                         </p>
                                     </div>
-                                    <div class="flex justify-center">
-                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                                    <div class="w-full md:w-auto">
+                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover-text-amber hover:shadow-xl">
                                             <span class="text-lg sm:text-lg">Hubungi Kami</span>
                                         </a>
                                     </div>
@@ -2152,17 +2152,19 @@
 
                         <!-- Ruang Transit asrama -->
                         <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="1">
-                            <div class="flex flex-col items-start">
+                            <div class="flex flex-col">
                                 <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Ruang Transit Asrama</h3>
                                 </div>
-                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
-                                    <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 10m<sup>2</sup>
-                                    </p>
-                                    <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 6± orang
-                                    </p>
+                                <div>
+                                    <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                        <p class="text-gray-700 text-sm mb-1">
+                                            <span class="font-bold">Ukuran :</span> 10m<sup>2</sup>
+                                        </p>
+                                        <p class="text-gray-700 text-sm">
+                                            <span class="font-bold">Kapasitas :</span> 6± orang
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- gambar slide  -->
@@ -2212,17 +2214,19 @@
                     
                         <!-- Ruang Makan -->
                         <div class="p-6 modal-info-publik modal-info-block hidden" data-slide="2">
-                            <div class="flex flex-col items-start">
+                            <div class="flex flex-col">
                                 <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Ruang Makan</h3>
                                 </div>
-                                <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
-                                    <p class="text-gray-700 text-sm mb-1">
-                                        <span class="font-bold">Ukuran :</span> 60m<sup>2</sup>
-                                    </p>
-                                    <p class="text-gray-700 text-sm">
-                                        <span class="font-bold">Kapasitas :</span> 60± orangg
-                                    </p>
+                                <div>
+                                    <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
+                                        <p class="text-gray-700 text-sm mb-1">
+                                            <span class="font-bold">Ukuran :</span> 60m<sup>2</sup>
+                                        </p>
+                                        <p class="text-gray-700 text-sm">
+                                            <span class="font-bold">Kapasitas :</span> 80± orangg
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- gambar slide R.makan -->
@@ -2326,7 +2330,7 @@
                                 <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Laboratorium Batik</h3>
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
                                             <span class="font-bold">Ukuran :</span> 40m<sup>2</sup>
@@ -2335,8 +2339,8 @@
                                             <span class="font-bold">Kapasitas :</span> ±30 orang
                                         </p>
                                     </div>
-                                    <div class="flex justify-center">
-                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                                    <div class="w-full md:w-auto">
+                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover-text-amber hover:shadow-xl">
                                             <span class="text-lg sm:text-lg">Hubungi Kami</span>
                                         </a>
                                     </div>
@@ -2388,7 +2392,7 @@
                                 <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Laboratorium Tata Boga</h3>
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
                                             <span class="font-bold">Ukuran :</span> 40m<sup>2</sup>
@@ -2397,8 +2401,8 @@
                                             <span class="font-bold">Kapasitas :</span> ±30 orang
                                         </p>
                                     </div>
-                                    <div class="flex justify-center">
-                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                                    <div class="flex justify-center md:text-sm md:mr-4">
+                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover-text-amber hover:scale-105 shadow-lg hover:shadow-xl">
                                             <span class="text-lg sm:text-lg">Hubungi Kami</span>
                                         </a>
                                     </div>
@@ -2448,7 +2452,7 @@
                                 <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Laboratorium Komputer</h3>
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
                                             <span class="font-bold">Ukuran :</span> 60m<sup>2</sup>
@@ -2457,8 +2461,8 @@
                                             <span class="font-bold">Kapasitas :</span> ±30 orang
                                         </p>
                                     </div>
-                                    <div class="flex justify-center">
-                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                                    <div class="flex justify-center md:text-sm md:mr-4">
+                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover-text-amber hover:scale-105 shadow-lg hover:shadow-xl">
                                             <span class="text-lg sm:text-lg">Hubungi Kami</span>
                                         </a>
                                     </div>
@@ -2509,7 +2513,7 @@
                                 <div class="bg-blue-950 text-white px-4 py-2 rounded-lg mb-3">
                                     <h3 class="text-2xl font-bold text-center">Laboratorium Jahit</h3>
                                 </div>
-                                <div class="flex justify-between">
+                                <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
                                             <span class="font-bold">Ukuran :</span> 60m<sup>2</sup>
@@ -2518,8 +2522,8 @@
                                             <span class="font-bold">Kapasitas :</span> ±30 orang
                                         </p>
                                     </div>
-                                    <div class="flex justify-center">
-                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                                    <div class="flex justify-center md:text-sm">
+                                        <a href="https://wa.me/6289670131732" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover-text-amber hover:scale-105 shadow-lg hover:shadow-xl">
                                             <span class="text-lg sm:text-lg">Hubungi Kami</span>
                                         </a>
                                     </div>
