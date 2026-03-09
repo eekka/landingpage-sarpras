@@ -1209,10 +1209,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center mb-8">
-                    <div class="bg-blue-950 rounded-2xl px-4 py-2 shadow inline-block text-center">
-                        <span class="text-4xl font-bold heading-modern bounce-3s section-title-fancy text-white whitespace-nowrap" style="font-size:2rem;">Fasilitas Lengkap</span>
-                        <div class="h-2 border-b-2 border-yellow-400"></div>
+                <div class="flex flex-col items-center mb-8 gap-2">
+                    <div class="bg-blue-950 rounded-2xl px-8 py-3 shadow-lg inline-block text-center" style="border-bottom:3px solid #FFD700;">
+                        <span class="font-bold heading-modern bounce-3s section-title-fancy text-white whitespace-nowrap" style="font-size:2rem;">Fasilitas </span><span class="font-bold heading-modern bounce-3s section-title-fancy whitespace-nowrap" style="color:#FFD700;font-size:2rem;">Lengkap</span>
                     </div>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
