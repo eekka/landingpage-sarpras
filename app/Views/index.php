@@ -46,6 +46,20 @@
             .nav-link:hover::after {
             width: 100%;
             }
+            /* Active nav highlight */
+            .nav-active {
+                color: #FFD700 !important;
+            }
+            .nav-active::after {
+                width: 100% !important;
+            }
+            #mobileMenu a.nav-active {
+                background-color: #f3f4f6;
+                transform: translateX(4px);
+            }
+            #mobileMenu a.nav-active .mobile-link-text::after {
+                width: 100%;
+            }
             .mobile-menu {
             display: none;
             background: #ffffff;
@@ -576,13 +590,94 @@
             }
 
 
+            /* ===== Fasilitas Lengkap — clean card redesign ===== */
+            .fcard {
+                background: #fff;
+                border: 1px solid #e5e7eb;
+                border-radius: 1rem;
+                padding: 1.5rem 1.5rem 2rem;
+                text-align: left;
+                cursor: pointer;
+                transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .fcard::before {
+                content: '';
+                position: absolute;
+                left: 0; top: 0; bottom: 0;
+                width: 4px;
+                background: #172554;
+                border-radius: 4px 0 0 4px;
+                transform: scaleY(0);
+                transform-origin: bottom;
+                transition: transform 0.28s ease;
+            }
+            .fcard:hover::before,
+            .fcard:focus-visible::before {
+                transform: scaleY(1);
+            }
+            .fcard:hover,
+            .fcard:focus-visible {
+                transform: translateY(-5px);
+                box-shadow: 0 18px 36px -10px rgba(15,23,42,0.13);
+                border-color: #93c5fd;
+                outline: none;
+            }
+            .fcard-icon-wrap {
+                width: 50px;
+                height: 50px;
+                border-radius: 0.75rem;
+                background: #172554;
+                border: 1px solid #1e3a8a;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1.1rem;
+                flex-shrink: 0;
+                transition: background 0.25s;
+            }
+            .fcard:hover .fcard-icon-wrap {
+                background: #1e3a8a;
+            }
+            .fcard-title {
+                font-size: 1.05rem;
+                font-weight: 700;
+                color: #0f172a;
+                margin-bottom: 0.4rem;
+                line-height: 1.3;
+            }
+            .fcard-desc {
+                font-size: 0.875rem;
+                color: #64748b;
+                line-height: 1.65;
+                flex: 1;
+            }
+            .fcard-arrow {
+                position: absolute;
+                bottom: 1rem;
+                right: 1rem;
+                width: 22px;
+                height: 22px;
+                opacity: 0;
+                color: #ca8a04;
+                transition: opacity 0.22s, transform 0.22s;
+            }
+            .fcard:hover .fcard-arrow {
+                opacity: 1;
+                transform: translate(2px, -2px);
+            }
+
             /* Remove underline from brand text */
             .brand-link {
-                text-decoration: none;
+                text-decoration: none !important;
             }
             .brand-link:hover,
             .brand-link:focus-visible {
-                text-decoration: none;
+                text-decoration: none !important;
             }
 
             /* Hero button custom styles */
@@ -987,7 +1082,7 @@
                                     </div>
                                 </div>
                                 <!-- Ruang Kelas/Rapat -->
-                                <div class="w-max-xl h-auto md: swiper-slide flex justify-center">                                
+                                <div class="w-max-xl h-auto md: swiper-slide flex justify-center">
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
                                             <img class="w-full h-full object-cover block" src="<?= base_url('images/ruang/bougenville/b.JPG') ?>" alt="Ruang Kelas | Rapat">
@@ -1114,76 +1209,83 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center mb-4">
+                <div class="flex justify-center mb-8">
                     <div class="bg-blue-950 rounded-2xl px-4 py-2 shadow inline-block text-center">
-                            <span class="text-4xl font-bold heading-modern bounce-3s section-title-fancy text-white whitespace-nowrap" style="font-size:2rem;">Fasilitas Lengkap</span>
+                        <span class="text-4xl font-bold heading-modern bounce-3s section-title-fancy text-white whitespace-nowrap" style="font-size:2rem;">Fasilitas Lengkap</span>
                         <div class="h-2 border-b-2 border-yellow-400"></div>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Fasilitas Card - Kesehatan -->
-                    <button onclick="openModal('kesehatan')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-1 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
-                        <div class="facility-hero mb-5">
-                            <svg class="card-icon" style="color:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <!-- Kesehatan -->
+                    <button onclick="openModal('kesehatan')" class="fcard reveal stagger-1 reveal-on-scroll">
+                        <div class="fcard-icon-wrap">
+                            <svg style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold facility-title mb-2">Kesehatan</h3>
-                        <p class="text-sm facility-description">Klinik kesehatan dengan kelengkapan p3k</p>
+                        <p class="fcard-title">Kesehatan</p>
+                        <p class="fcard-desc">Klinik kesehatan dengan kelengkapan p3k</p>
+                        <svg class="fcard-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
                     </button>
 
-                    <!-- Fasilitas Card - Perpustakaan -->
-                    <button onclick="openModal('perpustakaan')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-2 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
-                        <div class="facility-hero mb-5">
-                            <svg class="card-icon" style="color:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Perpustakaan -->
+                    <button onclick="openModal('perpustakaan')" class="fcard reveal stagger-2 reveal-on-scroll">
+                        <div class="fcard-icon-wrap">
+                            <svg style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
                                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold facility-title mb-2">Perpustakaan</h3>
-                        <p class="text-sm facility-description">Koleksi buku lengkap dengan ruang baca nyaman</p>
+                        <p class="fcard-title">Perpustakaan</p>
+                        <p class="fcard-desc">Koleksi buku lengkap dengan ruang baca nyaman</p>
+                        <svg class="fcard-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
                     </button>
 
-                    <!-- Fasilitas Card - Kantin -->
-                    <button onclick="openModal('ruangtransit')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-3 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
-                        <div class="facility-hero mb-5">
-                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Ruang Transit -->
+                    <button onclick="openModal('ruangtransit')" class="fcard reveal stagger-3 reveal-on-scroll">
+                        <div class="fcard-icon-wrap">
+                            <svg style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="2" y="7" width="20" height="13" rx="2"/>
                                 <path d="M6 7V5a4 4 0 0 1 8 0v2"/>
                                 <path d="M9 13h6"/>
                                 <path d="M9 16h6"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold facility-title mb-2">Ruang Transit</h3>
-                        <p class="text-sm facility-description">Ruang transit nyaman untuk istirahat dan persiapan sebelum kegiatan utama</p>
+                        <p class="fcard-title">Ruang Transit</p>
+                        <p class="fcard-desc">Ruang transit nyaman untuk istirahat dan persiapan sebelum kegiatan utama</p>
+                        <svg class="fcard-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
                     </button>
 
-                    <!-- Fasilitas Card - Parkir -->
-                    <button onclick="openModal('parkir')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-4 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
-                        <div class="facility-hero mb-5">
-                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Parkir -->
+                    <button onclick="openModal('parkir')" class="fcard reveal stagger-4 reveal-on-scroll">
+                        <div class="fcard-icon-wrap">
+                            <svg style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect x="3" y="3" width="18" height="18" rx="2"/>
                                 <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold facility-title mb-2">Parkir</h3>
-                        <p class="text-sm facility-description">Lahan parkir luas dengan sistem keamanan modern</p>
+                        <p class="fcard-title">Parkir</p>
+                        <p class="fcard-desc">Lahan parkir luas dengan sistem keamanan modern</p>
+                        <svg class="fcard-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
                     </button>
 
-                    <button onclick="openModal('ruangtunggu')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-5 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
-                        <div class="facility-hero mb-5">
-                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Ruang Tunggu -->
+                    <button onclick="openModal('ruangtunggu')" class="fcard reveal stagger-5 reveal-on-scroll">
+                        <div class="fcard-icon-wrap">
+                            <svg style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                                 <polyline points="9 22 9 12 15 12 15 22"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold facility-title mb-2">Ruang Tunggu</h3>
-                        <p class="text-sm facility-description">Ruang tunggu modern dengan fasilitas nyaman dan lengkap untuk peserta</p>
+                        <p class="fcard-title">Ruang Tunggu</p>
+                        <p class="fcard-desc">Ruang tunggu modern dengan fasilitas nyaman dan lengkap untuk peserta</p>
+                        <svg class="fcard-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
                     </button>
-                    <!-- Fasilitas Card - Mushola -->
-                    <button onclick="openModal('mushola')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-6 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
-                        <div class="facility-hero mb-5">
-                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                    <!-- Mushola -->
+                    <button onclick="openModal('mushola')" class="fcard reveal stagger-6 reveal-on-scroll">
+                        <div class="fcard-icon-wrap">
+                            <svg style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 21h18"/>
                                 <path d="M5 21V11l7-6 7 6v10"/>
                                 <circle cx="12" cy="5" r="1.5" fill="#FFD700"/>
@@ -1192,29 +1294,32 @@
                                 <path d="M12 8.5c-2.5 0-4 1.5-4 3v1.5h8V11.5c0-1.5-1.5-3-4-3z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold facility-title mb-2">Mushola</h3>
-                        <p class="text-sm facility-description">Mushola bersih dan nyaman dengan fasilitas ibadah lengkap</p>
+                        <p class="fcard-title">Mushola</p>
+                        <p class="fcard-desc">Mushola bersih dan nyaman dengan fasilitas ibadah lengkap</p>
+                        <svg class="fcard-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
                     </button>
 
-                    <!-- Fasilitas Card - Smoking Area -->
-                    <button onclick="openModal('smokingarea')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-7 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
-                        <div class="facility-hero mb-5">
-                            <img src="https://img.icons8.com/?size=100&id=8060&format=png&color=000000" alt="Smoking Icon" width="32" height="32" style="filter: brightness(0) saturate(100%) invert(77%) sepia(80%) saturate(500%) hue-rotate(0deg);" />
+                    <!-- Smoking Area -->
+                    <button onclick="openModal('smokingarea')" class="fcard reveal stagger-7 reveal-on-scroll">
+                        <div class="fcard-icon-wrap">
+                            <img src="https://img.icons8.com/?size=100&id=8060&format=png&color=000000" alt="Smoking Icon" width="26" height="26" style="filter: brightness(0) saturate(100%) invert(83%) sepia(60%) saturate(800%) hue-rotate(359deg) brightness(105%);" />
                         </div>
-                        <h3 class="text-xl font-bold facility-title mb-2">Smoking Area</h3>
-                        <p class="text-sm facility-description">Area khusus merokok yang nyaman dan terpisah dari ruang utama</p>
+                        <p class="fcard-title">Smoking Area</p>
+                        <p class="fcard-desc">Area khusus merokok yang nyaman dan terpisah dari ruang utama</p>
+                        <svg class="fcard-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
                     </button>
 
-                    <!-- Fasilitas Card - Keamanan -->
-                    <button onclick="openModal('keamanan')" class="bg-blue-950 rounded-3xl p-6 shadow-xl transition cursor-pointer text-left facility-card reveal stagger-8 reveal-on-scroll hover:bg-blue-950 hover:scale-105 hover:shadow-2xl focus-visible:animate-pulse group text-white">
-                        <div class="facility-hero mb-5">
-                            <svg class="card-icon" style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Keamanan -->
+                    <button onclick="openModal('keamanan')" class="fcard reveal stagger-8 reveal-on-scroll">
+                        <div class="fcard-icon-wrap">
+                            <svg style="color:#FFD700;stroke:#FFD700;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                                 <path d="m9 12 2 2 4-4"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold facility-title mb-2">Keamanan</h3>
-                        <p class="text-sm facility-description">Sistem keamanan berlapis dengan CCTV 24 jam</p>
+                        <p class="fcard-title">Keamanan</p>
+                        <p class="fcard-desc">Sistem keamanan berlapis dengan CCTV 24 jam</p>
+                        <svg class="fcard-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
                     </button>
                 </div>
             </div>
@@ -3477,6 +3582,49 @@
                         closeLightbox();
                     }
                 });
+            })();
+            
+            //  ACTIVE NAV HIGHLIGHT — IntersectionObserver
+            (function () {
+                const sectionIds = ['home', 'tentang', 'fasilitas', 'galeri', 'kontak'];
+                const desktopLinks = document.querySelectorAll('nav a.nav-link');
+                const mobileLinks  = document.querySelectorAll('#mobileMenu a[href^="#"]');
+
+                function setActiveNav(id) {
+                    desktopLinks.forEach(function (link) {
+                        link.classList.toggle('nav-active', link.getAttribute('href') === '#' + id);
+                    });
+                    mobileLinks.forEach(function (link) {
+                        link.classList.toggle('nav-active', link.getAttribute('href') === '#' + id);
+                    });
+                }
+
+                const visible = new Set();
+
+                const navObserver = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            visible.add(entry.target.id);
+                        } else {
+                            visible.delete(entry.target.id);
+                        }
+                    });
+                    // Highlight the topmost visible section
+                    for (var i = 0; i < sectionIds.length; i++) {
+                        if (visible.has(sectionIds[i])) {
+                            setActiveNav(sectionIds[i]);
+                            return;
+                        }
+                    }
+                }, { threshold: 0.1 });
+
+                sectionIds.forEach(function (id) {
+                    var el = document.getElementById(id);
+                    if (el) navObserver.observe(el);
+                });
+
+                // Set initial active on page load
+                setActiveNav('home');
             })();
 
         </script>
