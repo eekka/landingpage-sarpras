@@ -187,6 +187,12 @@
                 letter-spacing: 0.02em;
             }
 
+            @media (max-width: 600px) {
+                .section-title-fancy {
+                    font-size: 1.2rem !important;
+                }
+            }
+
             /* Modal */
 
             .modal-overlay {
@@ -687,6 +693,16 @@
                 color: white;
                 transition: all 0.3s ease;
             }
+            .hero-cta-btn {
+                background-color: #172554 !important;
+                border: 2px solid #172554 !important;
+                color: #FFD700 !important;
+            }
+            .hero-cta-btn:hover {
+                background-color: #FFD700 !important;
+                color: #172554 !important;
+                border: 2px solid #FFD700 !important;
+            }
             .hero-cta-btn:hover {
                 background-color: #fff;
                 color: #000 !important;
@@ -842,11 +858,21 @@
                     <div class="flex items-center gap-6">
                         <!-- menu -->
                         <div class="hidden md:flex space-x-8">
-                            <a href="#home" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">Beranda</a>
-                            <a href="#tentang" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">Tentang</a>
-                            <a href="#fasilitas" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">Fasilitas</a>
-                            <a href="#galeri" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">Galeri</a>
-                            <a href="#kontak" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">Kontak</a>
+                            <a href="#home" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">
+                                Beranda
+                            </a>
+                            <a href="#tentang" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">
+                                Tentang
+                            </a>
+                            <a href="#fasilitas" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">
+                                Fasilitas
+                            </a>
+                            <a href="#galeri" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">
+                                Galeri
+                            </a>
+                            <a href="#kontak" class="nav-link text-white font-medium transition" style="transition:color .2s;" onmouseover="this.style.color='#FFD700'" onmouseout="this.style.color=''" onfocus="this.style.color='#FFD700'" onblur="this.style.color=''">
+                                Kontak
+                            </a>
                         </div>
                         <!-- icon night mode  --> 
                         <div>
@@ -871,11 +897,21 @@
                 </div>
                 <!-- Mobile Menu -->
                 <div id="mobileMenu" class="mobile-menu md:hidden pb-4">
-                    <a href="#home" class="block py-2 transition"><span class="mobile-link-text">Beranda</span></a>
-                    <a href="#tentang" class="block py-2 transition"><span class="mobile-link-text">Tentang</span></a>
-                    <a href="#fasilitas" class="block py-2 transition"><span class="mobile-link-text">Fasilitas</span></a>
-                    <a href="#galeri" class="block py-2 transition"><span class="mobile-link-text">Galeri</span></a>
-                    <a href="#kontak" class="block py-2 transition"><span class="mobile-link-text">Kontak</span></a>
+                    <a href="#home" class="block py-2 transition">
+                        <span class="mobile-link-text">Beranda</span>
+                    </a>
+                    <a href="#tentang" class="block py-2 transition">
+                        <span class="mobile-link-text">Tentang</span>
+                    </a>
+                    <a href="#fasilitas" class="block py-2 transition">
+                        <span class="mobile-link-text">Fasilitas</span>
+                    </a>
+                    <a href="#galeri" class="block py-2 transition">
+                        <span class="mobile-link-text">Galeri</span>
+                    </a>
+                    <a href="#kontak" class="block py-2 transition">
+                        <span class="mobile-link-text">Kontak</span>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -900,19 +936,6 @@
                                 <p class="text-sm mt-2 md:text-lg mb-8 reveal-left reveal-on-scroll">Siap melayani kebutuhan koperasi, UKM, dan masyarakat Provinsi Jawa Tengah</p>
                                 <a href="#tentang" class="reveal-left reveal-on-scroll hero-cta-btn mt-5 text-sm w-62.5 justify-center uppercase inline-flex items-center gap-3 text-white text-decoration-none px-8 py-4 shadow-2xl focus-visible:animate-pulse active:scale-95">
                                     Jelajahi Sekarang
-                                </a>
-                                <style>
-                                    .hero-cta-btn {
-                                        background-color: #172554 !important;
-                                        border: 2px solid #172554 !important;
-                                        color: #FFD700 !important;
-                                    }
-                                    .hero-cta-btn:hover {
-                                        background-color: #FFD700 !important;
-                                        color: #172554 !important;
-                                        border: 2px solid #FFD700 !important;
-                                    }
-                                </style>
                                 </a>
                             </div>
                         </div>
@@ -983,11 +1006,26 @@
                 <!-- indikator -->
                 <div class="absolute bottom-0 left-0 right-0 w-full flex justify-center p-4">
                     <ul class="swiper-pagination flex absolute bottom-4 mb-5 justify-center w-full gap-4 p-4 text-white">
-                        <li class="nav-link" data-index="0"><span class="label">Slide 1</span><span class="underline"></span></li>
-                        <li class="nav-link" data-index="1"><span class="label">Slide 2</span><span class="underline"></span></li>
-                        <li class="nav-link" data-index="2"><span class="label">Slide 3</span><span class="underline"></span></li>
-                        <li class="nav-link" data-index="3"><span class="label">Slide 4</span><span class="underline"></span></li>
-                        <li class="nav-link" data-index="4"><span class="label">Slide 5</span><span class="underline"></span></li>
+                        <li class="nav-link" data-index="0">
+                            <span class="label">Slide 1</span>
+                            <span class="underline"></span>
+                        </li>
+                        <li class="nav-link" data-index="1">
+                            <span class="label">Slide 2</span>
+                            <span class="underline"></span>
+                        </li>
+                        <li class="nav-link" data-index="2">
+                            <span class="label">Slide 3</span>
+                            <span class="underline"></span>
+                        </li>
+                        <li class="nav-link" data-index="3">
+                            <span class="label">Slide 4</span>
+                            <span class="underline"></span>
+                        </li>
+                        <li class="nav-link" data-index="4">
+                            <span class="label">Slide 5</span>
+                            <span class="underline"></span>
+                        </li>
                     </ul>   
                 </div>
             </div>
@@ -1001,13 +1039,6 @@
                     <span class="font-bold heading-modern bounce-3s section-title-fancy text-white" style="font-size:2rem;">Tentang Sarana </span>
                     <span class="font-bold heading-modern bounce-3s section-title-fancy" style="color:#FFD700;font-size:2rem;">Prasarana Kami</span>
                 </div>
-                <style>
-                @media (max-width: 600px) {
-                    .section-title-fancy {
-                        font-size: 1.2rem !important;
-                    }
-                }
-                </style>
             </div>
             <div class="max-w-7xl mx-auto md:px-4 sm:px-6 lg:px-8 bg-blue-950 rounded-3xl shadow p-8 mt-2 reveal-on-scroll">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -1022,8 +1053,8 @@
                         </p>
                         <div class="flex gap-4 pt-4">
                             <div class="flex-1 bg-blue-50 p-6 rounded-xl">
-                                <div class="text-3xl font-bold text-blue-600">2000+</div>
-                                <div class="text-gray-600">m² Area</div>
+                                <div class="text-3xl font-bold text-blue-600">±5200</div>
+                                <div class="text-gray-600">m<sup>2</sup> Area</div>
                             </div>
                             <div class="flex-1 bg-green-50 p-6 rounded-xl">
                                 <div class="text-3xl font-bold text-green-600">24/7</div>
@@ -1054,7 +1085,7 @@
                                 <div class="w-max-xl h-auto swiper-slide flex justify-center">                            
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
-                                            <img src="<?= base_url('images/gedung%20aula/teratai.JPG') ?>" alt="Gedung Aula" class="w-full h-full object-cover block">
+                                            <img src="<?= base_url('images/aula/teratai.JPG') ?>" alt="Gedung Aula" class="w-full h-full object-cover block">
                                         </div>
                                         <div class="p-6 flex flex-col flex-1">
                                             <h3 class="text-2xl font-bold text-blue-600 mb-2">Gedung Aula</h3>
@@ -1337,34 +1368,34 @@
                 <div class="gallery-marquee-outer gallery-top mt-6">
                     <div class="gallery-scroll-track">
                         <div class="gallery-scroll-group">
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g1.JPG') ?>" data-alt="Galeri 1"><img src="<?= base_url('images/galeri/slide%20atas/g1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g2.jpeg') ?>" data-alt="Galeri 2"><img src="<?= base_url('images/galeri/slide%20atas/g2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g3.jpeg') ?>" data-alt="Galeri 3"><img src="<?= base_url('images/galeri/slide%20atas/g3.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g4.jpeg') ?>" data-alt="Galeri 4"><img src="<?= base_url('images/galeri/slide%20atas/g4.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g5.png') ?>" data-alt="Galeri 5"><img src="<?= base_url('images/galeri/slide%20atas/g5.png') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g6.jpeg') ?>" data-alt="Galeri 6"><img src="<?= base_url('images/galeri/slide%20atas/g6.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g7.jpeg') ?>" data-alt="Galeri 7"><img src="<?= base_url('images/galeri/slide%20atas/g7.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g8.jpeg') ?>" data-alt="Galeri 8"><img src="<?= base_url('images/galeri/slide%20atas/g8.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g9.jpeg') ?>" data-alt="Galeri 9"><img src="<?= base_url('images/galeri/slide%20atas/g9.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g10.JPG') ?>" data-alt="Galeri 10"><img src="<?= base_url('images/galeri/slide%20atas/g10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g11.JPG') ?>" data-alt="Galeri 11"><img src="<?= base_url('images/galeri/slide%20atas/g11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g12.JPG') ?>" data-alt="Galeri 12"><img src="<?= base_url('images/galeri/slide%20atas/g12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g13.JPG') ?>" data-alt="Galeri 13"><img src="<?= base_url('images/galeri/slide%20atas/g13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g1.JPG') ?>" data-alt="Galeri 1"><img src="<?= base_url('images/galeri/atas/g1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g2.jpeg') ?>" data-alt="Galeri 2"><img src="<?= base_url('images/galeri/atas/g2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g3.jpeg') ?>" data-alt="Galeri 3"><img src="<?= base_url('images/galeri/atas/g3.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g4.jpeg') ?>" data-alt="Galeri 4"><img src="<?= base_url('images/galeri/atas/g4.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g5.png') ?>" data-alt="Galeri 5"><img src="<?= base_url('images/galeri/atas/g5.png') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g6.jpeg') ?>" data-alt="Galeri 6"><img src="<?= base_url('images/galeri/atas/g6.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g7.jpeg') ?>" data-alt="Galeri 7"><img src="<?= base_url('images/galeri/atas/g7.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g8.jpeg') ?>" data-alt="Galeri 8"><img src="<?= base_url('images/galeri/atas/g8.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g9.jpeg') ?>" data-alt="Galeri 9"><img src="<?= base_url('images/galeri/atas/g9.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g10.JPG') ?>" data-alt="Galeri 10"><img src="<?= base_url('images/galeri/atas/g10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g11.JPG') ?>" data-alt="Galeri 11"><img src="<?= base_url('images/galeri/atas/g11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g12.JPG') ?>" data-alt="Galeri 12"><img src="<?= base_url('images/galeri/atas/g12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g13.JPG') ?>" data-alt="Galeri 13"><img src="<?= base_url('images/galeri/atas/g13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                         <div class="gallery-scroll-group" aria-hidden="true">
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g1.JPG') ?>" data-alt="Galeri 1"><img src="<?= base_url('images/galeri/slide%20atas/g1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g2.jpeg') ?>" data-alt="Galeri 2"><img src="<?= base_url('images/galeri/slide%20atas/g2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g3.jpeg') ?>" data-alt="Galeri 3"><img src="<?= base_url('images/galeri/slide%20atas/g3.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g4.jpeg') ?>" data-alt="Galeri 4"><img src="<?= base_url('images/galeri/slide%20atas/g4.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g5.png') ?>" data-alt="Galeri 5"><img src="<?= base_url('images/galeri/slide%20atas/g5.png') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g6.jpeg') ?>" data-alt="Galeri 6"><img src="<?= base_url('images/galeri/slide%20atas/g6.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g7.jpeg') ?>" data-alt="Galeri 7"><img src="<?= base_url('images/galeri/slide%20atas/g7.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g8.jpeg') ?>" data-alt="Galeri 8"><img src="<?= base_url('images/galeri/slide%20atas/g8.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g9.jpeg') ?>" data-alt="Galeri 9"><img src="<?= base_url('images/galeri/slide%20atas/g9.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g10.JPG') ?>" data-alt="Galeri 10"><img src="<?= base_url('images/galeri/slide%20atas/g10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g11.JPG') ?>" data-alt="Galeri 11"><img src="<?= base_url('images/galeri/slide%20atas/g11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g12.JPG') ?>" data-alt="Galeri 12"><img src="<?= base_url('images/galeri/slide%20atas/g12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20atas/g13.JPG') ?>" data-alt="Galeri 13"><img src="<?= base_url('images/galeri/slide%20atas/g13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g1.JPG') ?>" data-alt="Galeri 1"><img src="<?= base_url('images/galeri/atas/g1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g2.jpeg') ?>" data-alt="Galeri 2"><img src="<?= base_url('images/galeri/atas/g2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g3.jpeg') ?>" data-alt="Galeri 3"><img src="<?= base_url('images/galeri/atas/g3.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g4.jpeg') ?>" data-alt="Galeri 4"><img src="<?= base_url('images/galeri/atas/g4.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g5.png') ?>" data-alt="Galeri 5"><img src="<?= base_url('images/galeri/atas/g5.png') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g6.jpeg') ?>" data-alt="Galeri 6"><img src="<?= base_url('images/galeri/atas/g6.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g7.jpeg') ?>" data-alt="Galeri 7"><img src="<?= base_url('images/galeri/atas/g7.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g8.jpeg') ?>" data-alt="Galeri 8"><img src="<?= base_url('images/galeri/atas/g8.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g9.jpeg') ?>" data-alt="Galeri 9"><img src="<?= base_url('images/galeri/atas/g9.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g10.JPG') ?>" data-alt="Galeri 10"><img src="<?= base_url('images/galeri/atas/g10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g11.JPG') ?>" data-alt="Galeri 11"><img src="<?= base_url('images/galeri/atas/g11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g12.JPG') ?>" data-alt="Galeri 12"><img src="<?= base_url('images/galeri/atas/g12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g13.JPG') ?>" data-alt="Galeri 13"><img src="<?= base_url('images/galeri/atas/g13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                     </div>
                 </div>
@@ -1373,34 +1404,34 @@
                 <div class="gallery-marquee-outer gallery-bottom mt-4">
                     <div class="gallery-scroll-track">
                         <div class="gallery-scroll-group">
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb1.JPG') ?>" data-alt="Galeri B1"><img src="<?= base_url('images/galeri/slide%20bawah/gb1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb2.JPG') ?>" data-alt="Galeri B2"><img src="<?= base_url('images/galeri/slide%20bawah/gb2.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb3.JPG') ?>" data-alt="Galeri B3"><img src="<?= base_url('images/galeri/slide%20bawah/gb3.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb4.JPG') ?>" data-alt="Galeri B4"><img src="<?= base_url('images/galeri/slide%20bawah/gb4.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb5.JPG') ?>" data-alt="Galeri B5"><img src="<?= base_url('images/galeri/slide%20bawah/gb5.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb6.JPG') ?>" data-alt="Galeri B6"><img src="<?= base_url('images/galeri/slide%20bawah/gb6.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb7.JPG') ?>" data-alt="Galeri B7"><img src="<?= base_url('images/galeri/slide%20bawah/gb7.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb8.JPG') ?>" data-alt="Galeri B8"><img src="<?= base_url('images/galeri/slide%20bawah/gb8.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb9.JPG') ?>" data-alt="Galeri B9"><img src="<?= base_url('images/galeri/slide%20bawah/gb9.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb10.JPG') ?>" data-alt="Galeri B10"><img src="<?= base_url('images/galeri/slide%20bawah/gb10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb11.JPG') ?>" data-alt="Galeri B11"><img src="<?= base_url('images/galeri/slide%20bawah/gb11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb12.JPG') ?>" data-alt="Galeri B12"><img src="<?= base_url('images/galeri/slide%20bawah/gb12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb13.JPG') ?>" data-alt="Galeri B13"><img src="<?= base_url('images/galeri/slide%20bawah/gb13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb1.JPG') ?>" data-alt="Galeri B1"><img src="<?= base_url('images/galeri/bawah/gb1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb2.JPG') ?>" data-alt="Galeri B2"><img src="<?= base_url('images/galeri/bawah/gb2.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb3.JPG') ?>" data-alt="Galeri B3"><img src="<?= base_url('images/galeri/bawah/gb3.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb4.JPG') ?>" data-alt="Galeri B4"><img src="<?= base_url('images/galeri/bawah/gb4.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb5.JPG') ?>" data-alt="Galeri B5"><img src="<?= base_url('images/galeri/bawah/gb5.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb6.JPG') ?>" data-alt="Galeri B6"><img src="<?= base_url('images/galeri/bawah/gb6.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb7.JPG') ?>" data-alt="Galeri B7"><img src="<?= base_url('images/galeri/bawah/gb7.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb8.JPG') ?>" data-alt="Galeri B8"><img src="<?= base_url('images/galeri/bawah/gb8.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb9.JPG') ?>" data-alt="Galeri B9"><img src="<?= base_url('images/galeri/bawah/gb9.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb10.JPG') ?>" data-alt="Galeri B10"><img src="<?= base_url('images/galeri/bawah/gb10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb11.JPG') ?>" data-alt="Galeri B11"><img src="<?= base_url('images/galeri/bawah/gb11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb12.JPG') ?>" data-alt="Galeri B12"><img src="<?= base_url('images/galeri/bawah/gb12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb13.JPG') ?>" data-alt="Galeri B13"><img src="<?= base_url('images/galeri/bawah/gb13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                         <div class="gallery-scroll-group" aria-hidden="true">
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb1.JPG') ?>" data-alt="Galeri B1"><img src="<?= base_url('images/galeri/slide%20bawah/gb1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb2.JPG') ?>" data-alt="Galeri B2"><img src="<?= base_url('images/galeri/slide%20bawah/gb2.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb3.JPG') ?>" data-alt="Galeri B3"><img src="<?= base_url('images/galeri/slide%20bawah/gb3.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb4.JPG') ?>" data-alt="Galeri B4"><img src="<?= base_url('images/galeri/slide%20bawah/gb4.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb5.JPG') ?>" data-alt="Galeri B5"><img src="<?= base_url('images/galeri/slide%20bawah/gb5.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb6.JPG') ?>" data-alt="Galeri B6"><img src="<?= base_url('images/galeri/slide%20bawah/gb6.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb7.JPG') ?>" data-alt="Galeri B7"><img src="<?= base_url('images/galeri/slide%20bawah/gb7.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb8.JPG') ?>" data-alt="Galeri B8"><img src="<?= base_url('images/galeri/slide%20bawah/gb8.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb9.JPG') ?>" data-alt="Galeri B9"><img src="<?= base_url('images/galeri/slide%20bawah/gb9.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb10.JPG') ?>" data-alt="Galeri B10"><img src="<?= base_url('images/galeri/slide%20bawah/gb10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb11.JPG') ?>" data-alt="Galeri B11"><img src="<?= base_url('images/galeri/slide%20bawah/gb11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb12.JPG') ?>" data-alt="Galeri B12"><img src="<?= base_url('images/galeri/slide%20bawah/gb12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/slide%20bawah/gb13.JPG') ?>" data-alt="Galeri B13"><img src="<?= base_url('images/galeri/slide%20bawah/gb13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb1.JPG') ?>" data-alt="Galeri B1"><img src="<?= base_url('images/galeri/bawah/gb1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb2.JPG') ?>" data-alt="Galeri B2"><img src="<?= base_url('images/galeri/bawah/gb2.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb3.JPG') ?>" data-alt="Galeri B3"><img src="<?= base_url('images/galeri/bawah/gb3.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb4.JPG') ?>" data-alt="Galeri B4"><img src="<?= base_url('images/galeri/bawah/gb4.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb5.JPG') ?>" data-alt="Galeri B5"><img src="<?= base_url('images/galeri/bawah/gb5.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb6.JPG') ?>" data-alt="Galeri B6"><img src="<?= base_url('images/galeri/bawah/gb6.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb7.JPG') ?>" data-alt="Galeri B7"><img src="<?= base_url('images/galeri/bawah/gb7.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb8.JPG') ?>" data-alt="Galeri B8"><img src="<?= base_url('images/galeri/bawah/gb8.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb9.JPG') ?>" data-alt="Galeri B9"><img src="<?= base_url('images/galeri/bawah/gb9.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb10.JPG') ?>" data-alt="Galeri B10"><img src="<?= base_url('images/galeri/bawah/gb10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb11.JPG') ?>" data-alt="Galeri B11"><img src="<?= base_url('images/galeri/bawah/gb11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb12.JPG') ?>" data-alt="Galeri B12"><img src="<?= base_url('images/galeri/bawah/gb12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
+                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb13.JPG') ?>" data-alt="Galeri B13"><img src="<?= base_url('images/galeri/bawah/gb13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                     </div>
                 </div>                
@@ -1714,14 +1745,14 @@
                     <div class="relative">
                         <div class="swiper modal-img-swiper py-4" id="swiperAula" style="height: 360px;">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek.JPG') ?>" data-alt="Aula Anggrek">
-                                    <img src="<?= base_url('images/gedung%20aula/anggrek.JPG') ?>" class="w-full h-full object-cover">
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/anggrek.JPG') ?>" data-alt="Aula Anggrek">
+                                    <img src="<?= base_url('images/aula/anggrek.JPG') ?>" class="w-full h-full object-cover">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/teratai.JPG') ?>" data-alt="Aula Teratai">
-                                    <img src="<?= base_url('images/gedung%20aula/teratai.JPG') ?>" class="w-full h-full object-cover">
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/teratai.JPG') ?>" data-alt="Aula Teratai">
+                                    <img src="<?= base_url('images/aula/teratai.JPG') ?>" class="w-full h-full object-cover">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
                                     </div>
@@ -1743,10 +1774,10 @@
                                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-3">
                                     <div class="w-full md:w-auto bg-blue-100 border border-blue-300 px-4 py-3 rounded-lg shadow-sm">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold text-blue-900">Ukuran :</span> (80) m<sup>2</sup>
+                                            <span class="font-bold text-blue-900">Ukuran :</span> 240m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
-                                            <span class="font-bold text-blue-900">Kapasitas :</span> 200± orang
+                                            <span class="font-bold text-blue-900">Kapasitas :</span> ±150 orang
                                         </p>
                                     </div>
                                     <div class="w-full md:w-auto">
@@ -1759,50 +1790,50 @@
                             <!-- gambar2 -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek.JPG') ?>" data-alt="Aula Anggrek - Gambar 1">
-                                        <img src="<?= base_url('images/gedung%20aula/anggrek.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/anggrek.JPG') ?>" data-alt="Aula Anggrek - Gambar 1">
+                                        <img src="<?= base_url('images/aula/anggrek.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek1.JPG') ?>" data-alt="Aula Anggrek - Gambar 2">
-                                        <img src="<?= base_url('images/gedung%20aula/anggrek1.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/anggrek1.JPG') ?>" data-alt="Aula Anggrek - Gambar 2">
+                                        <img src="<?= base_url('images/aula/anggrek1.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek2.JPG') ?>" data-alt="Aula Anggrek - Gambar 3">
-                                        <img src="<?= base_url('images/gedung%20aula/anggrek2.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/anggrek2.JPG') ?>" data-alt="Aula Anggrek - Gambar 3">
+                                        <img src="<?= base_url('images/aula/anggrek2.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek3.JPG') ?>" data-alt="Aula Anggrek - Gambar 4">
-                                        <img src="<?= base_url('images/gedung%20aula/anggrek3.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/anggrek3.JPG') ?>" data-alt="Aula Anggrek - Gambar 4">
+                                        <img src="<?= base_url('images/aula/anggrek3.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek4.JPG') ?>" data-alt="Aula Anggrek - Gambar 5">
-                                        <img src="<?= base_url('images/gedung%20aula/anggrek4.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/anggrek4.JPG') ?>" data-alt="Aula Anggrek - Gambar 5">
+                                        <img src="<?= base_url('images/aula/anggrek4.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek5.JPG') ?>" data-alt="Aula Anggrek - Gambar 6">
-                                        <img src="<?= base_url('images/gedung%20aula/anggrek5.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/anggrek5.JPG') ?>" data-alt="Aula Anggrek - Gambar 6">
+                                        <img src="<?= base_url('images/aula/anggrek5.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek6.JPG') ?>" data-alt="Aula Anggrek - Gambar 7">
-                                        <img src="<?= base_url('images/gedung%20aula/anggrek6.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/anggrek6.JPG') ?>" data-alt="Aula Anggrek - Gambar 7">
+                                        <img src="<?= base_url('images/aula/anggrek6.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/anggrek7.JPG') ?>" data-alt="Aula Anggrek - Gambar 8">
-                                        <img src="<?= base_url('images/gedung%20aula/anggrek7.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/anggrek7.JPG') ?>" data-alt="Aula Anggrek - Gambar 8">
+                                        <img src="<?= base_url('images/aula/anggrek7.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Anggrek</span>
                                         </div>
@@ -1831,10 +1862,10 @@
                                 <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> (120) m<sup>2</sup>
+                                            <span class="font-bold">Ukuran :</span> 384m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
-                                            <span class="font-bold">Kapasitas :</span> 300+ orang
+                                            <span class="font-bold">Kapasitas :</span> ±250 orang
                                         </p>
                                     </div>
                                     <div class="w-fulll md:w-auto">
@@ -1848,26 +1879,26 @@
                             <!-- gambar2 -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/teratai.JPG') ?>" data-alt="Aula Teratai - Gambar 1">
-                                        <img src="<?= base_url('images/gedung%20aula/teratai.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/teratai.JPG') ?>" data-alt="Aula Teratai - Gambar 1">
+                                        <img src="<?= base_url('images/aula/teratai.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/teratai1.JPG') ?>" data-alt="Aula Teratai - Gambar 2">
-                                        <img src="<?= base_url('images/gedung%20aula/teratai1.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/teratai1.JPG') ?>" data-alt="Aula Teratai - Gambar 2">
+                                        <img src="<?= base_url('images/aula/teratai1.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/teratai2.JPG') ?>" data-alt="Aula Teratai - Gambar 3">
-                                        <img src="<?= base_url('images/gedung%20aula/teratai2.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/teratai2.JPG') ?>" data-alt="Aula Teratai - Gambar 3">
+                                        <img src="<?= base_url('images/aula/teratai2.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/gedung%20aula/teratai3.JPG') ?>" data-alt="Aula Teratai - Gambar 4">
-                                        <img src="<?= base_url('images/gedung%20aula/teratai3.JPG') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/teratai3.JPG') ?>" data-alt="Aula Teratai - Gambar 4">
+                                        <img src="<?= base_url('images/aula/teratai3.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
                                         </div>
@@ -1938,10 +1969,10 @@
                                 <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> 25m<sup>2</sup>
+                                            <span class="font-bold">Ukuran :</span> 56m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
-                                            <span class="font-bold">Kapasitas :</span> 25± orang
+                                            <span class="font-bold">Kapasitas :</span> ±30 orang
                                         </p>
                                     </div>
                                     <div class="w-full md:w-auto">
@@ -2014,10 +2045,10 @@
                                 <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> 50 m<sup>2</sup>
+                                            <span class="font-bold">Ukuran :</span> 105 m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
-                                            <span class="font-bold">Kapasitas :</span> 40± orang
+                                            <span class="font-bold">Kapasitas :</span> ±70 orang
                                         </p>
                                     </div>
                                     <div class="w-full md:w-auto">
@@ -2090,10 +2121,10 @@
                                 <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> 40 m<sup>2</sup>
+                                            <span class="font-bold">Ukuran :</span> 60m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
-                                            <span class="font-bold">Kapasitas :</span> 30± guests
+                                            <span class="font-bold">Kapasitas :</span> ±30 guests
                                         </p>
                                     </div>
                                     <div class="w-full md:w-auto">
@@ -2214,10 +2245,10 @@
                                 <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> 5m<sup>2</sup>
+                                            <span class="font-bold">Ukuran :</span> 10m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
-                                            <span class="font-bold">Kapasitas :</span> 4 orang
+                                            <span class="font-bold">Kapasitas :</span> 3-4 orang
                                         </p>
                                     </div>
                                     <div class="w-full md:w-auto">
@@ -2288,7 +2319,7 @@
                                             <span class="font-bold">Ukuran :</span> 10m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
-                                            <span class="font-bold">Kapasitas :</span> 6± orang
+                                            <span class="font-bold">Kapasitas :</span> ±10 orang
                                         </p>
                                     </div>
                                 </div>
@@ -2347,7 +2378,7 @@
                                 <div>
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> 60m<sup>2</sup>
+                                            <span class="font-bold">Ukuran :</span> 204m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
                                             <span class="font-bold">Kapasitas :</span> 80± orangg
@@ -2459,7 +2490,7 @@
                                 <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> 40m<sup>2</sup>
+                                            <span class="font-bold">Ukuran :</span> 48m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
                                             <span class="font-bold">Kapasitas :</span> ±30 orang
@@ -2521,7 +2552,7 @@
                                 <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> 40m<sup>2</sup>
+                                            <span class="font-bold">Ukuran :</span> 78m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
                                             <span class="font-bold">Kapasitas :</span> ±30 orang
@@ -2581,7 +2612,7 @@
                                 <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> 60m<sup>2</sup>
+                                            <span class="font-bold">Ukuran :</span> 78m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
                                             <span class="font-bold">Kapasitas :</span> ±30 orang
@@ -2642,7 +2673,7 @@
                                 <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
                                     <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
                                         <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> 60m<sup>2</sup>
+                                            <span class="font-bold">Ukuran :</span> 28m<sup>2</sup>
                                         </p>
                                         <p class="text-gray-700 text-sm">
                                             <span class="font-bold">Kapasitas :</span> ±30 orang
