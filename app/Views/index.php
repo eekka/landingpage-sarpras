@@ -13,8 +13,16 @@
         <link href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/output.css">
     </head>
-    <body class="bg-blue-100 overflow-x-hidden scroll-smooth">
+    <body class="bg-blue-100 overflow-x-hidden! scroll-smooth">
         <style>
+            html, body {
+            width: 100% !important;
+            max-width: 100% !important;
+            overflow-x: hidden !important;
+            margin: 0;
+            padding: 0;
+            }
+
             .facility-highlight-btn-blue:hover,
             .facility-highlight-btn-blue:focus,
             .facility-highlight-btn-blue:active {
@@ -1480,8 +1488,8 @@
                         </div>
                     </div>
                     
-                    <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-7 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/mushola.jpg') ?>" data-alt="Mushola">
-                        <img src="<?= base_url('images/core/mushola.jpg') ?>" alt="Mushola" class="absolute inset-0 w-full h-full object-cover gallery-img">
+                    <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-7 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/mushola.JPG') ?>" data-alt="Mushola">
+                        <img src="<?= base_url('images/core/mushola.JPG') ?>" alt="Mushola" class="absolute inset-0 w-full h-full object-cover gallery-img">
                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Lab</span>
                         </div>
@@ -1934,20 +1942,20 @@
                     <div class="relative">
                         <div class="swiper modal-img-swiper py-4 overflow-x-hidden" id="swiperRuang" style="height: 360px;">
                             <div class="swiper-wrapper ">
-                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                    <img src="<?= base_url('images/ruang/mawar/m.jpg') ?>" class="w-full h-full object-cover">
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                    <img src="<?= base_url('images/ruang/mawar/m.JPG') ?>" class="w-full h-full object-cover">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d.jpg') ?>" data-alt="Ruang Kelas - Gambar 2">
-                                    <img src="<?= base_url('images/ruang/dahlia/d.jpg') ?>" class="w-full h-full object-cover">
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d.JPG') ?>" data-alt="Ruang Kelas - Gambar 2">
+                                    <img src="<?= base_url('images/ruang/dahlia/d.JPG') ?>" class="w-full h-full object-cover">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 2</span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b.jpg') ?>" data-alt="Ruang Kelas - Gambar 3">
-                                    <img src="<?= base_url('images/ruang/bougenville/b.jpg') ?>" class="w-full h-full object-cover">
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b.JPG') ?>" data-alt="Ruang Kelas - Gambar 3">
+                                    <img src="<?= base_url('images/ruang/bougenville/b.JPG') ?>" class="w-full h-full object-cover">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 3</span>
                                     </div>
@@ -1985,38 +1993,38 @@
                             <!-- gambar2 -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m1.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/mawar/m1.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m1.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/ruang/mawar/m1.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruangan mawar - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m2.jpg') ?>" data-alt="Ruang Kelas - Gambar 2">
-                                        <img src="<?= base_url('images/ruang/mawar/m2.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m2.JPG') ?>" data-alt="Ruang Kelas - Gambar 2">
+                                        <img src="<?= base_url('images/ruang/mawar/m2.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang mawar - Gambar 2</span>
                                         </div>
                                     </div>                            
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m3.jpg') ?>" data-alt="Ruang Kelas - Gambar 3">
-                                        <img src="<?= base_url('images/ruang/mawar/m3.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m3.JPG') ?>" data-alt="Ruang Kelas - Gambar 3">
+                                        <img src="<?= base_url('images/ruang/mawar/m3.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang mawar - Gambar 3</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m4.jpg') ?>" data-alt="Ruang Kelas - Gambar 4">
-                                        <img src="<?= base_url('images/ruang/mawar/m4.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m4.JPG') ?>" data-alt="Ruang Kelas - Gambar 4">
+                                        <img src="<?= base_url('images/ruang/mawar/m4.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang mawar - Gambar 4</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m5.jpg') ?>" data-alt="Ruang Kelas - Gambar 5">
-                                        <img src="<?= base_url('images/ruang/mawar/m5.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m5.JPG') ?>" data-alt="Ruang Kelas - Gambar 5">
+                                        <img src="<?= base_url('images/ruang/mawar/m5.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang mawar - Gambar 5</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m6.jpg') ?>" data-alt="Ruang Kelas - Gambar 6">
-                                        <img src="<?= base_url('images/ruang/mawar/m6.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/mawar/m6.JPG') ?>" data-alt="Ruang Kelas - Gambar 6">
+                                        <img src="<?= base_url('images/ruang/mawar/m6.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang mawar - Gambar 6</span>
                                         </div>
@@ -2061,38 +2069,38 @@
                             <!-- gambar2 -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d1.jpg') ?>" data-alt="Ruang Dahlia - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/dahlia/d1.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d1.JPG') ?>" data-alt="Ruang Dahlia - Gambar 1">
+                                        <img src="<?= base_url('images/ruang/dahlia/d1.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Dahlia - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d2.jpg') ?>" data-alt="Ruang Dahlia - Gambar 2">
-                                        <img src="<?= base_url('images/ruang/dahlia/d2.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d2.JPG') ?>" data-alt="Ruang Dahlia - Gambar 2">
+                                        <img src="<?= base_url('images/ruang/dahlia/d2.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Dahlia - Gambar 2</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d3.jpg') ?>" data-alt="Ruang Dahlia - Gambar 3">
-                                        <img src="<?= base_url('images/ruang/dahlia/d3.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d3.JPG') ?>" data-alt="Ruang Dahlia - Gambar 3">
+                                        <img src="<?= base_url('images/ruang/dahlia/d3.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Dahlia - Gambar 3</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d4.jpg') ?>" data-alt="Ruang Dahlia - Gambar 4">
-                                        <img src="<?= base_url('images/ruang/dahlia/d4.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d4.JPG') ?>" data-alt="Ruang Dahlia - Gambar 4">
+                                        <img src="<?= base_url('images/ruang/dahlia/d4.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Dahlia - Gambar 4</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d5.jpg') ?>" data-alt="Ruang Dahlia - Gambar 5">
-                                        <img src="<?= base_url('images/ruang/dahlia/d5.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d5.JPG') ?>" data-alt="Ruang Dahlia - Gambar 5">
+                                        <img src="<?= base_url('images/ruang/dahlia/d5.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Dahlia - Gambar 5</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d6.jpg') ?>" data-alt="Ruang Dahlia - Gambar 6">
-                                        <img src="<?= base_url('images/ruang/dahlia/d6.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/dahlia/d6.JPG') ?>" data-alt="Ruang Dahlia - Gambar 6">
+                                        <img src="<?= base_url('images/ruang/dahlia/d6.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Dahlia - Gambar 6</span>
                                         </div>
@@ -2137,50 +2145,50 @@
                             <!-- gambar slide R.bougenville -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b1.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/bougenville/b1.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b1.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/ruang/bougenville/b1.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b2.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/bougenville/b2.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b2.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/ruang/bougenville/b2.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>                            
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b3.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/bougenville/b3.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b3.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/ruang/bougenville/b3.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b4.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/bougenville/b4.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b4.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/ruang/bougenville/b4.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b5.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/bougenville/b5.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b5.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/ruang/bougenville/b5.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b6.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/bougenville/b6.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b6.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/ruang/bougenville/b6.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>                                                                                                            
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b7.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/bougenville/b7.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b7.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/ruang/bougenville/b7.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>                                                                                                            
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b8.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/bougenville/b8.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/bougenville/b8.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/ruang/bougenville/b8.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
@@ -2219,13 +2227,13 @@
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Asrama Matahari - Gambar Utama</span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t.jpg') ?>" data-alt="Asrama - Gambar 2">
-                                    <img src="<?= base_url('images/asrama/r-transit/t.jpg') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t.JPG') ?>" data-alt="Asrama - Gambar 2">
+                                    <img src="<?= base_url('images/asrama/r-transit/t.JPG') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Asrama - Gambar 2</span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm.jpg') ?>" data-alt="Asrama - Gambar 2">
-                                    <img src="<?= base_url('images/asrama/r-makan/rm.jpg') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm.JPG') ?>" data-alt="Asrama - Gambar 2">
+                                    <img src="<?= base_url('images/asrama/r-makan/rm.JPG') ?>" class="w-full h-full object-cover"><div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Asrama - Gambar 3</span>
                                     </div>
                                 </div>></div>
@@ -2267,24 +2275,24 @@
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Kamar Asrama - Gambar Utama</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/kamar/k1.jpg') ?>" data-alt="Kamar Asrama - Gambar 2">
-                                        <img src="<?= base_url('images/asrama/kamar/k1.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/kamar/k1.JPG') ?>" data-alt="Kamar Asrama - Gambar 2">
+                                        <img src="<?= base_url('images/asrama/kamar/k1.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"></div>
                                     </div>                            
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/kamar/k2.jpg') ?>" data-alt="Ruang Kelas - Gambar 3">
-                                        <img src="<?= base_url('images/asrama/kamar/k2.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/kamar/k2.JPG') ?>" data-alt="Ruang Kelas - Gambar 3">
+                                        <img src="<?= base_url('images/asrama/kamar/k2.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"></div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/kamar/k3.jpg') ?>" data-alt="Ruang Kelas - Gambar 4">
-                                        <img src="<?= base_url('images/asrama/kamar/k3.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/kamar/k3.JPG') ?>" data-alt="Ruang Kelas - Gambar 4">
+                                        <img src="<?= base_url('images/asrama/kamar/k3.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"></div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/kamar/k4.jpg') ?>" data-alt="Ruang Kelas - Gambar 5">
-                                        <img src="<?= base_url('images/asrama/kamar/k4.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/kamar/k4.JPG') ?>" data-alt="Ruang Kelas - Gambar 5">
+                                        <img src="<?= base_url('images/asrama/kamar/k4.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"></div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/kamar/k5.jpg') ?>" data-alt="Ruang Kelas - Gambar 6">
-                                        <img src="<?= base_url('images/asrama/kamar/k5.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/kamar/k5.JPG') ?>" data-alt="Ruang Kelas - Gambar 6">
+                                        <img src="<?= base_url('images/asrama/kamar/k5.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);"></div>
                                     </div>                                                                                                            
                                 </div>
@@ -2327,32 +2335,32 @@
                             <!-- gambar slide  -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t1.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/asrama/r-transit/t1.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t1.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/asrama/r-transit/t1.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>                            
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t2.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/asrama/r-transit/t2.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t2.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/asrama/r-transit/t2.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t3.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/asrama/r-transit/t3.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t3.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/asrama/r-transit/t3.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t4.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/asrama/r-transit/t4.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t4.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/asrama/r-transit/t4.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t5.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/asrama/r-transit/t5.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-transit/t5.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/asrama/r-transit/t5.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
@@ -2389,38 +2397,38 @@
                             <!-- gambar slide R.makan -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm1.jpg') ?>" data-alt="Ruang Kelas - Gambar 1">
-                                        <img src="<?= base_url('images/asrama/r-makan/rm1.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm1.JPG') ?>" data-alt="Ruang Kelas - Gambar 1">
+                                        <img src="<?= base_url('images/asrama/r-makan/rm1.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm2.jpg') ?>" data-alt="Ruang Makan - Gambar 2">
-                                        <img src="<?= base_url('images/asrama/r-makan/rm2.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm2.JPG') ?>" data-alt="Ruang Makan - Gambar 2">
+                                        <img src="<?= base_url('images/asrama/r-makan/rm2.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Makan - Gambar 2</span>
                                         </div>
                                     </div>                            
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm3.jpg') ?>" data-alt="Ruang makan - Gambar 3">
-                                        <img src="<?= base_url('images/asrama/r-makan/rm3.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm3.JPG') ?>" data-alt="Ruang makan - Gambar 3">
+                                        <img src="<?= base_url('images/asrama/r-makan/rm3.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Makan - Gambar 3</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm4.jpg') ?>" data-alt="Ruang makan - Gambar 4">
-                                        <img src="<?= base_url('images/asrama/r-makan/rm4.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm4.JPG') ?>" data-alt="Ruang makan - Gambar 4">
+                                        <img src="<?= base_url('images/asrama/r-makan/rm4.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Makan - Gambar 4</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm5.jpg') ?>" data-alt="Ruang makan - Gambar 5">
-                                        <img src="<?= base_url('images/asrama/r-makan/rm5.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm5.JPG') ?>" data-alt="Ruang makan - Gambar 5">
+                                        <img src="<?= base_url('images/asrama/r-makan/rm5.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Makan - Gambar 5</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm6.jpg') ?>" data-alt="Ruang makan - Gambar 6">
-                                        <img src="<?= base_url('images/asrama/r-makan/rm6.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/asrama/r-makan/rm6.JPG') ?>" data-alt="Ruang makan - Gambar 6">
+                                        <img src="<?= base_url('images/asrama/r-makan/rm6.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Makan - Gambar 6</span>
                                         </div>
@@ -2568,26 +2576,26 @@
                             <!-- gambar slide lab tata boga -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/boga1.jpg') ?>" data-alt="Laboratorium Tata Boga - Gambar 1">
-                                        <img src="<?= base_url('images/lab/boga1.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/boga1.JPG') ?>" data-alt="Laboratorium Tata Boga - Gambar 1">
+                                        <img src="<?= base_url('images/lab/boga1.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Tata Boga - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/boga2.jpg') ?>" data-alt="Laboratorium Tata Boga - Gambar 2">
-                                        <img src="<?= base_url('images/lab/boga2.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/boga2.JPG') ?>" data-alt="Laboratorium Tata Boga - Gambar 2">
+                                        <img src="<?= base_url('images/lab/boga2.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Tata Boga - Gambar 2</span>
                                         </div>
                                     </div>                            
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/boga3.jpg') ?>" data-alt="Laboratorium Tata Boga - Gambar 3">
-                                        <img src="<?= base_url('images/lab/boga3.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/boga3.JPG') ?>" data-alt="Laboratorium Tata Boga - Gambar 3">
+                                        <img src="<?= base_url('images/lab/boga3.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Tata Boga - Gambar 3</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/boga4.jpg') ?>" data-alt="Laboratorium Tata Boga - Gambar 4">
-                                        <img src="<?= base_url('images/lab/boga4.jpg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/boga4.JPG') ?>" data-alt="Laboratorium Tata Boga - Gambar 4">
+                                        <img src="<?= base_url('images/lab/boga4.JPG') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Tata Boga - Gambar 4</span>
                                         </div>
@@ -2923,7 +2931,7 @@
                         <button onclick="closeModal('lab')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/komputer.jpg') ?>" alt="Lab Komputer" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/komputer.JPG') ?>" alt="Lab Komputer" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Lab Komputer Terkini</h3>
                         <p class="text-gray-700 mb-6">Laboratorium komputer kami dilengkapi dengan perangkat terbaru dan software profesional untuk mendukung pembelajaran dan riset.</p>
                         
@@ -2973,7 +2981,7 @@
                         <button onclick="closeModal('mushola')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/mushola.jpg') ?>" alt="Mushola" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/mushola.JPG') ?>" alt="Mushola" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Mushola Nyaman & Tenang</h3>
                         <p class="text-gray-700 mb-6">Mushola kami menyediakan ruang ibadah yang bersih, tenang, dan nyaman untuk menunjang kebutuhan spiritual seluruh pengguna.</p>
                         
