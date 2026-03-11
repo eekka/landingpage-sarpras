@@ -402,6 +402,12 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-3\.5 {
+    margin-top: calc(var(--spacing) * 3.5);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -664,6 +670,9 @@
   }
   .resize {
     resize: both;
+  }
+  .list-disc {
+    list-style-type: disc;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
