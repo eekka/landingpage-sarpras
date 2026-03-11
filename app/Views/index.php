@@ -1315,7 +1315,7 @@
                                 <polyline points="9 22 9 12 15 12 15 22"/>
                             </svg>
                         </div>
-                        <p class="fcard-title">Ruang Tunggu</p>
+                        <p class="fcard-title">Ruang Tunggu (Geleri)</p>
                         <p class="fcard-desc">Ruang tunggu modern dengan fasilitas nyaman dan lengkap untuk peserta</p>
                         <svg class="fcard-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
                     </button>
@@ -1379,31 +1379,19 @@
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g1.JPG') ?>" data-alt="Galeri 1"><img src="<?= base_url('images/galeri/atas/g1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g2.jpeg') ?>" data-alt="Galeri 2"><img src="<?= base_url('images/galeri/atas/g2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g3.jpeg') ?>" data-alt="Galeri 3"><img src="<?= base_url('images/galeri/atas/g3.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g4.jpeg') ?>" data-alt="Galeri 4"><img src="<?= base_url('images/galeri/atas/g4.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g5.png') ?>" data-alt="Galeri 5"><img src="<?= base_url('images/galeri/atas/g5.png') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g6.jpeg') ?>" data-alt="Galeri 6"><img src="<?= base_url('images/galeri/atas/g6.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g7.jpeg') ?>" data-alt="Galeri 7"><img src="<?= base_url('images/galeri/atas/g7.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g8.jpeg') ?>" data-alt="Galeri 8"><img src="<?= base_url('images/galeri/atas/g8.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g9.jpeg') ?>" data-alt="Galeri 9"><img src="<?= base_url('images/galeri/atas/g9.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g10.JPG') ?>" data-alt="Galeri 10"><img src="<?= base_url('images/galeri/atas/g10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g11.JPG') ?>" data-alt="Galeri 11"><img src="<?= base_url('images/galeri/atas/g11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g12.JPG') ?>" data-alt="Galeri 12"><img src="<?= base_url('images/galeri/atas/g12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g13.JPG') ?>" data-alt="Galeri 13"><img src="<?= base_url('images/galeri/atas/g13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                         <div class="gallery-scroll-group" aria-hidden="true">
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g1.JPG') ?>" data-alt="Galeri 1"><img src="<?= base_url('images/galeri/atas/g1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g2.jpeg') ?>" data-alt="Galeri 2"><img src="<?= base_url('images/galeri/atas/g2.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g3.jpeg') ?>" data-alt="Galeri 3"><img src="<?= base_url('images/galeri/atas/g3.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g4.jpeg') ?>" data-alt="Galeri 4"><img src="<?= base_url('images/galeri/atas/g4.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g5.png') ?>" data-alt="Galeri 5"><img src="<?= base_url('images/galeri/atas/g5.png') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g6.jpeg') ?>" data-alt="Galeri 6"><img src="<?= base_url('images/galeri/atas/g6.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g7.jpeg') ?>" data-alt="Galeri 7"><img src="<?= base_url('images/galeri/atas/g7.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g8.jpeg') ?>" data-alt="Galeri 8"><img src="<?= base_url('images/galeri/atas/g8.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g9.jpeg') ?>" data-alt="Galeri 9"><img src="<?= base_url('images/galeri/atas/g9.jpeg') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g10.JPG') ?>" data-alt="Galeri 10"><img src="<?= base_url('images/galeri/atas/g10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g11.JPG') ?>" data-alt="Galeri 11"><img src="<?= base_url('images/galeri/atas/g11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g12.JPG') ?>" data-alt="Galeri 12"><img src="<?= base_url('images/galeri/atas/g12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/atas/g13.JPG') ?>" data-alt="Galeri 13"><img src="<?= base_url('images/galeri/atas/g13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                     </div>
                 </div>
@@ -1412,99 +1400,27 @@
                 <div class="gallery-marquee-outer gallery-bottom mt-4">
                     <div class="gallery-scroll-track">
                         <div class="gallery-scroll-group">
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb1.JPG') ?>" data-alt="Galeri B1"><img src="<?= base_url('images/galeri/bawah/gb1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb2.JPG') ?>" data-alt="Galeri B2"><img src="<?= base_url('images/galeri/bawah/gb2.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb3.JPG') ?>" data-alt="Galeri B3"><img src="<?= base_url('images/galeri/bawah/gb3.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb4.JPG') ?>" data-alt="Galeri B4"><img src="<?= base_url('images/galeri/bawah/gb4.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb5.JPG') ?>" data-alt="Galeri B5"><img src="<?= base_url('images/galeri/bawah/gb5.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb6.JPG') ?>" data-alt="Galeri B6"><img src="<?= base_url('images/galeri/bawah/gb6.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb7.JPG') ?>" data-alt="Galeri B7"><img src="<?= base_url('images/galeri/bawah/gb7.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb8.JPG') ?>" data-alt="Galeri B8"><img src="<?= base_url('images/galeri/bawah/gb8.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb9.JPG') ?>" data-alt="Galeri B9"><img src="<?= base_url('images/galeri/bawah/gb9.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb10.JPG') ?>" data-alt="Galeri B10"><img src="<?= base_url('images/galeri/bawah/gb10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb11.JPG') ?>" data-alt="Galeri B11"><img src="<?= base_url('images/galeri/bawah/gb11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb12.JPG') ?>" data-alt="Galeri B12"><img src="<?= base_url('images/galeri/bawah/gb12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb13.JPG') ?>" data-alt="Galeri B13"><img src="<?= base_url('images/galeri/bawah/gb13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                         <div class="gallery-scroll-group" aria-hidden="true">
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb1.JPG') ?>" data-alt="Galeri B1"><img src="<?= base_url('images/galeri/bawah/gb1.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb2.JPG') ?>" data-alt="Galeri B2"><img src="<?= base_url('images/galeri/bawah/gb2.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb3.JPG') ?>" data-alt="Galeri B3"><img src="<?= base_url('images/galeri/bawah/gb3.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb4.JPG') ?>" data-alt="Galeri B4"><img src="<?= base_url('images/galeri/bawah/gb4.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb5.JPG') ?>" data-alt="Galeri B5"><img src="<?= base_url('images/galeri/bawah/gb5.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb6.JPG') ?>" data-alt="Galeri B6"><img src="<?= base_url('images/galeri/bawah/gb6.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb7.JPG') ?>" data-alt="Galeri B7"><img src="<?= base_url('images/galeri/bawah/gb7.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb8.JPG') ?>" data-alt="Galeri B8"><img src="<?= base_url('images/galeri/bawah/gb8.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
-                            <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb9.JPG') ?>" data-alt="Galeri B9"><img src="<?= base_url('images/galeri/bawah/gb9.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb10.JPG') ?>" data-alt="Galeri B10"><img src="<?= base_url('images/galeri/bawah/gb10.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb11.JPG') ?>" data-alt="Galeri B11"><img src="<?= base_url('images/galeri/bawah/gb11.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb12.JPG') ?>" data-alt="Galeri B12"><img src="<?= base_url('images/galeri/bawah/gb12.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                             <div class="gallery-item w-94 overflow-hidden rounded-2xl cursor-pointer" style="height:220px;" data-img="<?= base_url('images/galeri/bawah/gb13.JPG') ?>" data-alt="Galeri B13"><img src="<?= base_url('images/galeri/bawah/gb13.JPG') ?>" class="w-full h-full object-cover" loading="lazy"></div>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
         </section>
-                <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-1 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" data-alt="Gedung Utama">
-                        <img src="<?= base_url('images/core/bg-balatkop1.jpeg') ?>" alt="Gedung Utama" class="absolute inset-0 w-full h-full object-cover gallery-img">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Gedung Utama</span>
-                        </div>
-                    </div>
-                    
-                    <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-2 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruangan">
-                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Ruangan" class="absolute inset-0 w-full h-full object-cover gallery-img">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruangan</span>
-                        </div>
-                    </div>
-                    
-                    <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-3 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" data-alt="Lobby">
-                        <img src="<?= base_url('images/core/bg-balatkop3.jpeg') ?>" alt="Lobby" class="absolute inset-0 w-full h-full object-cover gallery-img">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Lobby</span>
-                        </div>
-                    </div>
-                    
-                    <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-4 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" data-alt="Fasilitas">
-                        <img src="<?= base_url('images/core/bg-balatkop4.jpeg') ?>" alt="Fasilitas" class="absolute inset-0 w-full h-full object-cover gallery-img">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Fasilitas</span>
-                        </div>
-                    </div>
-                    
-                    <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-5 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop5.jpeg') ?>" data-alt="Kantin">
-                        <img src="<?= base_url('images/core/bg-balatkop5.jpeg') ?>" alt="Kantin" class="absolute inset-0 w-full h-full object-cover gallery-img">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Kantin</span>
-                        </div>
-                    </div>
-                    
-                    <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-6 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" data-alt="Ruang Meeting">
-                        <img src="<?= base_url('images/core/bg-balatkop2.jpeg') ?>" alt="Ruang Meeting" class="absolute inset-0 w-full h-full object-cover gallery-img">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Meeting</span>
-                        </div>
-                    </div>
-                    
-                    <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-7 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/mushola.JPG') ?>" data-alt="Mushola">
-                        <img src="<?= base_url('images/core/mushola.JPG') ?>" alt="Mushola" class="absolute inset-0 w-full h-full object-cover gallery-img">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Lab</span>
-                        </div>
-                    </div>
-                    
-                    <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover h-64 bg-gray-200 reveal-scale stagger-8 reveal-on-scroll cursor-pointer transition-transform duration-300 hover:scale-105 active:scale-100 gallery-item" data-img="<?= base_url('images/core/timbalatkop2.jpeg') ?>" data-alt="Parkir">
-                        <img src="<?= base_url('images/core/timbalatkop2.jpeg') ?>" alt="Parkir" class="absolute inset-0 w-full h-full object-cover gallery-img">
-                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Parkir</span>
-                        </div>
-                    </div>
-                </div> -->
-        <!-- /gallery section -->
-
-        <!-- CTA -->
         <section id="kontak" class="py-36 bg-blue-800 text-white relative overflow-hidden">
             <div class="">
                 <div class="absolute inset-0 opacity-10">
@@ -2981,7 +2897,7 @@
                         <button onclick="closeModal('mushola')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/mushola.JPG') ?>" alt="Mushola" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/mushola1.png') ?>" alt="Mushola" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Mushola Nyaman & Tenang</h3>
                         <p class="text-gray-700 mb-6">Mushola kami menyediakan ruang ibadah yang bersih, tenang, dan nyaman untuk menunjang kebutuhan spiritual seluruh pengguna.</p>
                         
