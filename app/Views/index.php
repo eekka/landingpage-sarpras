@@ -843,7 +843,7 @@
             </div>
         </a>
         <!-- navbar -->
-        <nav class="w-full h-auto bg-blue-950 shadow-lg fixed top-0 z-40">
+        <nav class="bg-blue-950 shadow-lg fixed top-0 left-0 right-0 w-full h-auto z-30">
             <div class="px-2 lg:px-8 relative">
                 <div class="flex justify-between items-center h-20">
                     <!-- logo -->
@@ -926,10 +926,10 @@
         <!-- /navbar -->
         
         <!-- Hero section -->
-         <section id="home" class=" flex items-center justify-center h-screen w-full overflow-hidden">
+        <section id="home" class="flex items-center justify-center h-screen w-full overflow-hidden pt-20">
             <div class="h-screen w-full overflow-x-hidden relative swiper mySwiper">
                 <!-- slide -->
-                <div class="swiper-wrapper">                    
+                <div class="swiper-wrapper">
                     <!-- 1 -->
                     <div class="swiper-slide h-screen w-full relative bg-black">
                         <img src="<?= base_url('images/core/slide1.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
@@ -1073,7 +1073,7 @@
                     <div class="relative reveal-right reveal-on-scroll">
                         <div class="absolute inset-0 bg-gray-300 rounded-2xl transform rotate-3"></div>
                         <div class="relative bg-transparent rounded-2xl overflow-hidden shadow-2xl transform -rotate-1 hover:rotate-0 transition-transform h-96 flex items-center justify-center">
-                            <img id="aboutAutoImage" src="<?= base_url('images/core/denah.png') ?>" alt="About Image" class="w-full h-full object-cover about-auto-image">
+                            <img id="aboutAutoImage" src="<?= base_url('images/core/denah.png') ?>" alt="About Image" data-img="<?= base_url('images/core/denah.png') ?>" data-alt="About Image" class="w-full h-full object-cover about-auto-image gallery-item cursor-pointer">
                         </div>
                     </div>
                 </div>
@@ -1090,7 +1090,7 @@
                         <div class="swiper2 mySwiper2 overflow-hidden mt-5">
                             <div class="swiper-wrapper">
                                 <!-- Aula -->
-                                <div class="w-max-xl h-auto swiper-slide flex justify-center">                            
+                                <div class="w-max-xl h-auto swiper-slide flex justify-center">
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
                                             <img src="<?= base_url('images/aula/teratai/teratai.jpeg') ?>" alt="Gedung Aula" class="w-full h-full object-cover block">
@@ -1553,7 +1553,7 @@
                 <!-- Copyright Section -->
                 <hr class="border-gray-8teks 00 mb-8">
                 <div class="text-center text-gray-400 text-sm">
-                    <p>© 2026 Sarana dan Prasarana Balatkop UKMK Jateng. Created by Handy & Eka</p>
+                    <p>© Sarana dan Prasarana Balatkop UKMK Jateng. Created by Handy & Eka Magang Balatkop 2026</p>
                 </div>
             </div>
         </footer>
@@ -3430,9 +3430,8 @@
                 if (!aboutAutoImage) return;
 
                 const aboutImages = [
+                    "<?= base_url('images/core/denah.png') ?>",
                     "<?= base_url('images/core/bg-balatkop1.jpeg') ?>",
-                    "<?= base_url('images/core/bg-balatkop2.jpeg') ?>",
-                    "<?= base_url('images/core/bg-balatkop3.jpeg') ?>"
                 ];
 
                 let currentIndex = 0;
@@ -3442,17 +3441,12 @@
                     preloaded.src = source;
                 });
 
+                aboutAutoImage.setAttribute('data-img', aboutImages[currentIndex]);
+
                 const switchImage = () => {
-                    aboutAutoImage.classList.add('is-fade-switch');
-
-                    setTimeout(() => {
-                        currentIndex = (currentIndex + 1) % aboutImages.length;
-                        aboutAutoImage.src = aboutImages[currentIndex];
-                    }, 550);
-
-                    setTimeout(() => {
-                        aboutAutoImage.classList.remove('is-fade-switch');
-                    }, 1100);
+                    currentIndex = (currentIndex + 1) % aboutImages.length;
+                    aboutAutoImage.src = aboutImages[currentIndex];
+                    aboutAutoImage.setAttribute('data-img', aboutImages[currentIndex]);
                 };
 
                 setInterval(switchImage, 5000);
