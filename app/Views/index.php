@@ -1073,7 +1073,7 @@
                     <div class="relative reveal-right reveal-on-scroll">
                         <div class="absolute inset-0 bg-gray-300 rounded-2xl transform rotate-3"></div>
                         <div class="relative bg-transparent rounded-2xl overflow-hidden shadow-2xl transform -rotate-1 hover:rotate-0 transition-transform h-96 flex items-center justify-center">
-                            <img id="aboutAutoImage" src="<?= base_url('images/core/denah.png') ?>" alt="About Image" class="w-full h-full object-cover about-auto-image">
+                            <img id="aboutAutoImage" src="<?= base_url('images/core/denah.png') ?>" alt="About Image" data-img="<?= base_url('images/core/denah.png') ?>" data-alt="About Image" class="w-full h-full object-cover about-auto-image gallery-item cursor-pointer">
                         </div>
                     </div>
                 </div>
@@ -1090,7 +1090,7 @@
                         <div class="swiper2 mySwiper2 overflow-hidden mt-5">
                             <div class="swiper-wrapper">
                                 <!-- Aula -->
-                                <div class="w-max-xl h-auto swiper-slide flex justify-center">                            
+                                <div class="w-max-xl h-auto swiper-slide flex justify-center">
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
                                             <img src="<?= base_url('images/aula/teratai/teratai.jpeg') ?>" alt="Gedung Aula" class="w-full h-full object-cover block">
@@ -3430,9 +3430,8 @@
                 if (!aboutAutoImage) return;
 
                 const aboutImages = [
+                    "<?= base_url('images/core/denah.png') ?>",
                     "<?= base_url('images/core/bg-balatkop1.jpeg') ?>",
-                    "<?= base_url('images/core/bg-balatkop2.jpeg') ?>",
-                    "<?= base_url('images/core/bg-balatkop3.jpeg') ?>"
                 ];
 
                 let currentIndex = 0;
@@ -3442,17 +3441,12 @@
                     preloaded.src = source;
                 });
 
+                aboutAutoImage.setAttribute('data-img', aboutImages[currentIndex]);
+
                 const switchImage = () => {
-                    aboutAutoImage.classList.add('is-fade-switch');
-
-                    setTimeout(() => {
-                        currentIndex = (currentIndex + 1) % aboutImages.length;
-                        aboutAutoImage.src = aboutImages[currentIndex];
-                    }, 550);
-
-                    setTimeout(() => {
-                        aboutAutoImage.classList.remove('is-fade-switch');
-                    }, 1100);
+                    currentIndex = (currentIndex + 1) % aboutImages.length;
+                    aboutAutoImage.src = aboutImages[currentIndex];
+                    aboutAutoImage.setAttribute('data-img', aboutImages[currentIndex]);
                 };
 
                 setInterval(switchImage, 5000);
