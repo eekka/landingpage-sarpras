@@ -843,7 +843,7 @@
             </div>
         </a>
         <!-- navbar -->
-        <nav class="bg-blue-950 shadow-lg sticky top-0 z-30">
+        <nav class="bg-blue-950 shadow-lg fixed top-0 left-0 right-0 w-full z-30">
             <div class="px-2 lg:px-8 relative">
                 <div class="flex justify-between items-center h-20">
                     <!-- logo -->
@@ -926,10 +926,10 @@
         <!-- /navbar -->
         
         <!-- Hero section -->
-         <section id="home" class=" flex items-center justify-center h-screen w-full overflow-hidden">
+        <section id="home" class="flex items-center justify-center h-screen w-full overflow-hidden pt-20">
             <div class="h-screen w-full overflow-x-hidden relative swiper mySwiper">
                 <!-- slide -->
-                <div class="swiper-wrapper">                    
+                <div class="swiper-wrapper">
                     <!-- 1 -->
                     <div class="swiper-slide h-screen w-full relative bg-black">
                         <img src="<?= base_url('images/core/slide1.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
@@ -1550,7 +1550,7 @@
                 <!-- Copyright Section -->
                 <hr class="border-gray-8teks 00 mb-8">
                 <div class="text-center text-gray-400 text-sm">
-                    <p>© 2026 Sarana dan Prasarana Balatkop UKMK Jateng. Created by Handy & Eka</p>
+                    <p>© Sarana dan Prasarana Balatkop UKMK Jateng. Created by Handy & Eka Magang Balatkop 2026</p>
                 </div>
             </div>
         </footer>
