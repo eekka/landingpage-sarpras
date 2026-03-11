@@ -2610,32 +2610,32 @@
                             <!-- gambar slide lab jahit -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/lab-jahit.jpeg') ?>" data-alt="Laboratorium Jahit - Gambar 1">
-                                        <img src="<?= base_url('images/lab/lab-jahit.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/jahit/lab-jahit.jpeg') ?>" data-alt="Laboratorium Jahit - Gambar 1">
+                                        <img src="<?= base_url('images/lab/jahit/lab-jahit.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Jahit - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/jahit1.jpeg') ?>" data-alt="Laboratorium Jahit - Gambar 2">
-                                        <img src="<?= base_url('images/lab/jahit1.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/jahit/jahit1.jpeg') ?>" data-alt="Laboratorium Jahit - Gambar 2">
+                                        <img src="<?= base_url('images/lab/jahit/jahit1.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Jahit - Gambar 2</span>
                                         </div>
                                     </div>                            
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/jahit2.jpeg') ?>" data-alt="Laboratorium Jahit - Gambar 3">
-                                        <img src="<?= base_url('images/lab/jahit2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/jahit/jahit2.jpeg') ?>" data-alt="Laboratorium Jahit - Gambar 3">
+                                        <img src="<?= base_url('images/lab/jahit/jahit2.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Jahit - Gambar 3</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/jahit3.jpeg') ?>" data-alt="Laboratorium Jahit - Gambar 4">
-                                        <img src="<?= base_url('images/lab/jahit3.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/jahit/jahit3.jpeg') ?>" data-alt="Laboratorium Jahit - Gambar 4">
+                                        <img src="<?= base_url('images/lab/jahit/jahit3.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Jahit - Gambar 4</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/jahit4.jpeg') ?>" data-alt="Laboratorium Jahit - Gambar 5">
-                                        <img src="<?= base_url('images/lab/jahit4.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/jahit/jahit4.jpeg') ?>" data-alt="Laboratorium Jahit - Gambar 5">
+                                        <img src="<?= base_url('images/lab/jahit/jahit4.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Jahit - Gambar 5</span>
                                         </div>
@@ -3030,7 +3030,7 @@
                         <button onclick="closeModal('keamanan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/keamanan.jpeg') ?>" alt="Keamanan" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/keamanan.png') ?>" alt="Keamanan" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Keamanan 24 Jam</h3>
                         <p class="text-gray-700 mb-6">Sistem keamanan kami menggunakan teknologi terkini dengan monitoring 24 jam untuk menjamin keamanan dan kenyamanan semua pengguna.</p>
                         
