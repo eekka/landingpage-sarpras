@@ -903,11 +903,12 @@
          <section id="home" class="flex items-center justify-center h-screen w-full overflow-hidden pt-20">
             <div class="h-screen w-100vw overflow-x-hidden relative swiper mySwiper"> 
                 <!-- logo logo -->
-                 <div class="absolute w-full h-8 flex justify-center gap-2 top-0 mt-20 z-50 md:h-12">
-                    <img src="images/core/logo-pemprov-jateng.png" alt="logo Pememerintah Provinsi Jateng">
+                 <div class="absolute w-full h-8 flex justify-center gap-2 top-0 mt-20 z-50 md:h-14">
+                    <img src="images/core/logo-instansi.png" alt="logo instansi">
+                    <!-- <img src="images/core/logo-pemprov-jateng.png" alt="logo Pememerintah Provinsi Jateng">
                     <img src="images/core/logo-diskop.png" alt="logo Dinas Koprasi dan UKM Jateng">
-                    <img src="images/core/logo-ngopeni.png" alt="logo ngopeni nglakoni">
                     <img src="images/core/logo11.png" alt="logo Balatkop">
+                    <img src="images/core/logo-ngopeni.png" alt="logo ngopeni nglakoni"> -->
                  </div>
                  <!-- penghargaan -->
                  <div class="absolute left-1/2 -translate-x-1/2 bottom-0 mb-18 z-50 max-w-xl w-full px-4">
@@ -997,7 +998,7 @@
                 </div>
 
                 <!-- indikator -->
-                 <div>swiper-pagination</div>
+                 <div>swiper-scrollbar</div>
                 <!-- <div class="absolute bottom-0 left-0 right-0 w-full flex justify-center p-4">
                     <ul class="swiper-pagination flex absolute bottom-4 mb-5 justify-center w-full gap-4 p-4 text-white">
                         <li class="nav-link" data-index="0">
@@ -1077,7 +1078,7 @@
                             <div class="swiper-wrapper">
                                 <!-- Aula -->
                                 <div class="w-max-xl h-auto swiper-slide flex justify-center">
-                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
                                             <img src="<?= base_url('images/aula/teratai/teratai.jpeg') ?>" alt="Gedung Aula" class="w-full h-full object-cover block">
                                         </div>
@@ -1108,7 +1109,7 @@
                                 </div>
                                 <!-- Ruang Kelas/Rapat -->
                                 <div class="w-max-xl h-auto md: swiper-slide flex justify-center">
-                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
                                             <img class="w-full h-full object-cover block" src="<?= base_url('images/ruang/bougenville/b.jpeg') ?>" alt="Ruang Kelas | Rapat">
                                         </div>
@@ -1140,7 +1141,7 @@
                                 </div>
                                 <!-- Asrama -->
                                 <div class="w-max-xl h-auto swiper-slide flex justify-center">
-                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
                                             <img src="<?= base_url('images/asrama/kamar/asrama1.jpeg') ?>" alt="Asrama Matahari" class="w-full h-full object-cover block">
                                         </div>
@@ -1171,7 +1172,7 @@
                                 </div>
                                 <!-- Laboratorium -->
                                 <div class="w-max-xl h-auto swiper-slide flex justify-center">                            
-                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white rounded shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
+                                    <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
                                             <img src="<?= base_url('/images/core/laboratorium.jpeg') ?>" alt="Laboratorium" class="w-full h-full object-cover block">
                                         </div>
