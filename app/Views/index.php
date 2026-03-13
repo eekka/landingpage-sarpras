@@ -904,11 +904,11 @@
             <div class="h-screen w-100vw overflow-x-hidden relative swiper mySwiper"> 
                 <!-- logo logo -->
                  <div class="absolute w-full h-8 flex justify-center gap-2 top-0 mt-20 z-50 md:h-14">
-                    <img src="images/core/logo-instansi.png" alt="logo instansi">
-                    <!-- <img src="images/core/logo-pemprov-jateng.png" alt="logo Pememerintah Provinsi Jateng">
+                    <!-- <img src="images/core/logo-instansi.png" alt="logo instansi"> -->
+                    <img src="images/core/logo-pemprov-jateng.png" alt="logo Pememerintah Provinsi Jateng">
                     <img src="images/core/logo-diskop.png" alt="logo Dinas Koprasi dan UKM Jateng">
                     <img src="images/core/logo11.png" alt="logo Balatkop">
-                    <img src="images/core/logo-ngopeni.png" alt="logo ngopeni nglakoni"> -->
+                    <img src="images/core/logo-ngopeni.png" alt="logo ngopeni nglakoni">
                  </div>
                  <!-- penghargaan -->
                  <div class="absolute left-1/2 -translate-x-1/2 bottom-0 mb-18 z-50 max-w-xl w-full px-4">
@@ -918,7 +918,7 @@
                 <div class="swiper-wrapper">
                     <!-- 1 -->
                     <div class="swiper-slide h-screen w-full relative bg-black">
-                        <img src="<?= base_url('images/core/slide11.png') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
+                        <img src="<?= base_url('images/core/slide11.jpeg') ?>" alt="Slide 1" class="w-full h-full object-cover mask-l-from-20% mask-l-to-90%">
                         <div class="absolute inset-0 flex flex-col justify-center text-white text-left p-4 pl-16 md:pl-20">
                             <div class="md:max-w-2/3 lg:max-w-1/2 lg:ml-15">
                                 <p class="text-lg reveal-left reveal-on-scroll">Slide 1</p>
@@ -1928,8 +1928,8 @@
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang bougenville - Gambar 2</span>
                                     </div>
                                 </div>
-                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/Ruang Flamboyan/FL.jpeg') ?>" data-alt="Ruang Flamboyan - Gambar Utama">
-                                    <img src="<?= base_url('images/ruang/Ruang Flamboyan/FL.jpeg') ?>" class="w-full h-full object-cover">
+                                <div class="swiper-slide group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/flamboyan/FL.jpeg') ?>" data-alt="Ruang Flamboyan - Gambar Utama">
+                                    <img src="<?= base_url('images/ruang/flamboyan/FL.jpeg') ?>" class="w-full h-full object-cover">
                                     <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                         <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Flamboyan - Gambar Utama</span>
                                     </div>
@@ -2120,44 +2120,44 @@
                             <!-- gambar slide R.flamboyan -->
                             <div class="swiperimg mySwiperimg">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/Ruang Flamboyan/FL.jpeg') ?>" data-alt="Ruang Flamboyan - Gambar 1">
-                                        <img src="<?= base_url('images/ruang/Ruang Flamboyan/FL.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/flamboyan/FL.jpeg') ?>" data-alt="Ruang Flamboyan - Gambar 1">
+                                        <img src="<?= base_url('images/ruang/flamboyan/FL.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Flamboyan - Gambar 1</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">flamboyan - Gambar 1</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/Ruang Flamboyan/f1.jpeg') ?>" data-alt="Ruang Flamboyan - Gambar 2">
-                                        <img src="<?= base_url('images/ruang/Ruang Flamboyan/f1.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/flamboyan/f1.jpeg') ?>" data-alt="flamboyan - Gambar 2">
+                                        <img src="<?= base_url('images/ruang/flamboyan/f1.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Flamboyan - Gambar 2</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">flamboyan - Gambar 2</span>
                                         </div>
                                     </div>                            
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/Ruang Flamboyan/f2.jpeg') ?>" data-alt="Ruang Flamboyan - Gambar 3">
-                                        <img src="<?= base_url('images/ruang/Ruang Flamboyan/f2.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/flamboyan/f2.jpeg') ?>" data-alt="flamboyan - Gambar 3">
+                                        <img src="<?= base_url('images/ruang/flamboyan/f2.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Flamboyan - Gambar 3</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">flamboyan - Gambar 3</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/Ruang Flamboyan/f3.jpeg') ?>" data-alt="Ruang Flamboyan - Gambar 4">
-                                        <img src="<?= base_url('images/ruang/Ruang Flamboyan/f3.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/flamboyan/f3.jpeg') ?>" data-alt="flamboyan - Gambar 4">
+                                        <img src="<?= base_url('images/ruang/flamboyan/f3.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Flamboyan - Gambar 4</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">flamboyan - Gambar 4</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/Ruang Flamboyan/f4.jpeg') ?>" data-alt="Ruang Flamboyan - Gambar 5">
-                                        <img src="<?= base_url('images/ruang/Ruang Flamboyan/f4.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/flamboyan/f4.jpeg') ?>" data-alt="flamboyan - Gambar 5">
+                                        <img src="<?= base_url('images/ruang/flamboyan/f4.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Flamboyan - Gambar 5</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">flamboyan - Gambar 5</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/Ruang Flamboyan/f5.jpeg') ?>" data-alt="Ruang Flamboyan - Gambar 6">
-                                        <img src="<?= base_url('images/ruang/Ruang Flamboyan/f5.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/flamboyan/f5.jpeg') ?>" data-alt="flamboyan - Gambar 6">
+                                        <img src="<?= base_url('images/ruang/flamboyan/f5.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Flamboyan - Gambar 6</span>
+                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">flamboyan - Gambar 6</span>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/Ruang Flamboyan/f6.jpeg') ?>" data-alt="Ruang Flamboyan - Gambar 7">
-                                        <img src="<?= base_url('images/ruang/Ruang Flamboyan/f6.jpeg') ?>" class="w-full h-full object-cover">
+                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/ruang/flamboyan/f6.jpeg') ?>" data-alt="flamboyan - Gambar 7">
+                                        <img src="<?= base_url('images/ruang/flamboyan/f6.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Flamboyan - Gambar 7</span>
                                         </div>
@@ -2961,7 +2961,7 @@
                         <button onclick="closeModal('parkir')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/parkir.png') ?>" alt="Parkir" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/parkir.jpeg') ?>" alt="Parkir" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Lahan Parkir Luas & Aman</h3>
                         <p class="text-gray-700 mb-6">Fasilitas parkir kami dirancang modern dengan sistem keamanan berlapis untuk menjamin kendaraan Anda aman dan terpantau 24 jam.</p>
                         
@@ -3051,7 +3051,7 @@
                         <button onclick="closeModal('mushola')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/m1.png') ?>" alt="Mushola" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/m1.jpeg') ?>" alt="Mushola" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Mushola Nyaman & Tenang</h3>
                         <p class="text-gray-700 mb-6">Mushola kami menyediakan ruang ibadah yang bersih, tenang, dan nyaman untuk menunjang kebutuhan spiritual seluruh pengguna.</p>
                         
@@ -3183,7 +3183,7 @@
                         <button onclick="closeModal('keamanan')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
                     <div class="p-6">
-                        <img src="<?= base_url('images/core/keamanan.png') ?>" alt="Keamanan" class="w-full rounded-lg mb-6">
+                        <img src="<?= base_url('images/core/keamanan.jpeg') ?>" alt="Keamanan" class="w-full rounded-lg mb-6">
                         <h3 class="text-2xl font-bold text-blue-600 mb-4">Keamanan 24 Jam</h3>
                         <p class="text-gray-700 mb-6">Sistem keamanan kami menggunakan teknologi terkini dengan monitoring 24 jam untuk menjamin keamanan dan kenyamanan semua pengguna.</p>
                         
@@ -3209,11 +3209,96 @@
             </div>
         <!-- /Modal -->
 
-        <!-- Gallery Lightbox -->
-        <div id="galleryLightbox" class="hidden fixed inset-0 items-center justify-center p-4 cursor-pointer" style="background-color: rgba(0, 0, 0, 0.3); backdrop-filter: blur(4px); z-index: 99999 !important;">
-            <img id="galleryLightboxImg" src="" alt="" class="max-w-4xl max-h-[75vh] w-auto h-auto object-contain opacity-0 scale-95 transition-all duration-200 cursor-default" onclick="event.stopPropagation()">
+
+        <!-- Modern Gallery Lightbox -->
+        <div id="galleryLightbox" class="fixed inset-0 z-50 hidden opacity-0 transition-opacity duration-300 bg-black/95 backdrop-blur-sm">
+            <!-- Header Controls -->
+            <div class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 bg-gradient-to-b from-black/80 to-transparent">
+                <!-- Zoom Controls -->
+                <div class="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 border border-white/20">
+                    <button id="lightboxZoomOut" class="w-8 h-8 flex items-center justify-center text-white hover:text-gray-300 transition-colors rounded-full hover:bg-white/10 active:scale-95" aria-label="Zoom out">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>
+                        </svg>
+                    </button>
+                    <span id="zoomLevel" class="text-white text-sm font-medium w-12 text-center">100%</span>
+                    <button id="lightboxZoomIn" class="w-8 h-8 flex items-center justify-center text-white hover:text-gray-300 transition-colors rounded-full hover:bg-white/10 active:scale-95" aria-label="Zoom in">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                        </svg>
+                    </button>
+                    <div class="w-px h-4 bg-white/20 mx-1"></div>
+                    <button id="lightboxReset" class="text-white text-xs hover:text-gray-300 transition-colors px-2 py-1 rounded hover:bg-white/10 active:scale-95" aria-label="Reset zoom">
+                        Reset
+                    </button>
+                </div>
+
+                <!-- Close Button -->
+                <button id="lightboxClose" class="w-10 h-10 flex items-center justify-center text-white hover:text-gray-300 transition-all rounded-full hover:bg-white/10 active:scale-95 bg-white/10 backdrop-blur-md border border-white/20" aria-label="Close lightbox">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navigation Buttons (Desktop) -->
+            <button id="lightboxPrev" class="hidden md:flex fixed left-4 top-1/2 -translate-y-1/2 z-40 w-12 h-12 items-center justify-center text-white hover:text-gray-300 transition-all rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 active:scale-95 opacity-0 group-hover:opacity-100" aria-label="Previous image">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+            </button>
+            
+            <button id="lightboxNext" class="hidden md:flex fixed right-4 top-1/2 -translate-y-1/2 z-40 w-12 h-12 items-center justify-center text-white hover:text-gray-300 transition-all rounded-full bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 active:scale-95 opacity-0 group-hover:opacity-100" aria-label="Next image">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
+
+            <!-- Main Image Container -->
+            <div class="relative w-full h-full flex items-center justify-center p-4 md:p-12 overflow-hidden" id="lightboxContainer">
+                <div class="relative w-full h-full flex items-center justify-center">
+                    <img 
+                        id="galleryLightboxImg" 
+                        src="" 
+                        alt="" 
+                        class="max-w-full max-h-full object-contain select-none transition-transform duration-200 ease-out will-change-transform cursor-grab active:cursor-grabbing"
+                        style="transform: scale(1) translate(0px, 0px);"
+                        draggable="false"
+                    >
+                </div>
+            </div>
+
+            <!-- Bottom Info Bar -->
+            <div class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                <div class="flex items-center justify-between max-w-4xl mx-auto">
+                    <!-- Image Counter -->
+                    <div id="lightboxCounter" class="text-white/90 text-sm font-medium bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
+                        1 / 10
+                    </div>
+                    
+                    <!-- Mobile Navigation Dots -->
+                    <div id="mobileDots" class="flex md:hidden gap-2">
+                        <!-- Generated by JS -->
+                    </div>
+
+                    <!-- Image Title/Description (Optional) -->
+                    <div id="lightboxCaption" class="hidden md:block text-white/80 text-sm max-w-md text-right truncate">
+                        Image description here
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Swipe Hint -->
+            <div id="swipeHint" class="md:hidden fixed bottom-20 left-1/2 -translate-x-1/2 text-white/50 text-xs bg-black/50 px-3 py-1 rounded-full backdrop-blur-sm opacity-0 transition-opacity duration-500 pointer-events-none">
+                Swipe to navigate • Pinch to zoom
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="lightboxLoader" class="fixed inset-0 z-50 flex items-center justify-center pointer-events-none opacity-0 transition-opacity duration-200">
+                <div class="w-12 h-12 border-4 border-white/20 border-t-white rounded-full animate-spin"></div>
+            </div>
         </div>
-        <!-- /Gallery Lightbox -->
+
 
         <!-- Script -->
         <!-- Swiper --> 
@@ -3608,7 +3693,7 @@
                 }
             });
 
-            // gambar About auto ganti
+            // img about autoplay
             (function () {
                 const aboutAutoImage = document.getElementById('aboutAutoImage');
 
@@ -3698,57 +3783,322 @@
                 targets.forEach((el) => obs.observe(el));
             })();
 
-            // Gallery lightbox (event delegation agar clone slides dari loop juga bisa di-klik)
-            (function () {
-                const lightbox = document.getElementById('galleryLightbox');
-                const lightboxImg = document.getElementById('galleryLightboxImg');
-                const lightboxClose = document.getElementById('galleryLightboxClose');
-                if (!lightbox || !lightboxImg) return;
+            // lightbox dengan fitur PhotoSwipe-like (zoom, pan, navigasi)
+            class ModernLightbox {
+            constructor() {
+                this.lightbox = document.getElementById('galleryLightbox');
+                this.img = document.getElementById('galleryLightboxImg');
+                this.container = document.getElementById('lightboxContainer');
+                this.zoomLevel = document.getElementById('zoomLevel');
+                this.loader = document.getElementById('lightboxLoader');
+                this.swipeHint = document.getElementById('swipeHint');
+                
+                this.currentIndex = 0;
+                this.images = [];
+                this.scale = 1;
+                this.translateX = 0;
+                this.translateY = 0;
+                this.isDragging = false;
+                this.startX = 0;
+                this.startY = 0;
+                this.initialDistance = 0;
+                this.initialScale = 1;
+                
+                this.init();
+            }
 
-                const openLightbox = (src, alt) => {
-                    galleryPreviewOpen = true;
-                    pauseGallery();
-                    lightboxImg.src = src;
-                    lightboxImg.alt = alt || '';
-                    lightbox.classList.remove('hidden');
-                    lightbox.classList.add('flex');
-                    lightboxImg.classList.remove('opacity-0', 'scale-95');
-                    lightboxImg.classList.add('opacity-100', 'scale-100');
-                };
+            init() {
+                this.bindEvents();
+                this.setupTouchGestures();
+            }
 
-                const closeLightbox = () => {
-                    galleryPreviewOpen = false;
-                    lightboxImg.classList.add('opacity-0', 'scale-95');
-                    lightboxImg.classList.remove('opacity-100', 'scale-100');
-                    lightbox.classList.add('hidden');
-                    lightbox.classList.remove('flex');
-                    lightboxImg.src = '';
-                    resumeGallery();
-                };
-
-                // Event delegation: klik pada gallery-item manapun (termasuk clone)
-                document.addEventListener('click', (e) => {
-                    const item = e.target.closest('.gallery-item');
-                    if (!item) return;
-                    const src = item.getAttribute('data-img');
-                    const alt = item.getAttribute('data-alt');
-                    if (!src) return;
-                    openLightbox(src, alt);
-                });
-
-                lightbox?.addEventListener('click', (e) => {
-                    if (e.target === lightbox) closeLightbox();
-                });
-
-                lightboxClose?.addEventListener('click', closeLightbox);
+            bindEvents() {
+                // Zoom controls
+                document.getElementById('lightboxZoomIn').addEventListener('click', () => this.zoom(0.25));
+                document.getElementById('lightboxZoomOut').addEventListener('click', () => this.zoom(-0.25));
+                document.getElementById('lightboxReset').addEventListener('click', () => this.resetZoom());
+                
+                // Navigation
+                document.getElementById('lightboxClose').addEventListener('click', () => this.close());
+                document.getElementById('lightboxPrev').addEventListener('click', () => this.prev());
+                document.getElementById('lightboxNext').addEventListener('click', () => this.next());
+                
+                // Keyboard
                 document.addEventListener('keydown', (e) => {
-                    if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
-                        closeLightbox();
+                    if (!this.lightbox.classList.contains('hidden')) {
+                        if (e.key === 'Escape') this.close();
+                        if (e.key === 'ArrowLeft') this.prev();
+                        if (e.key === 'ArrowRight') this.next();
+                        if (e.key === '+' || e.key === '=') this.zoom(0.25);
+                        if (e.key === '-') this.zoom(-0.25);
                     }
                 });
-            })();
-            
-            //  ACTIVE NAV HIGHLIGHT — IntersectionObserver
+
+                // Close on backdrop click
+                this.lightbox.addEventListener('click', (e) => {
+                    if (e.target === this.lightbox || e.target === this.container) {
+                        this.close();
+                    }
+                });
+
+                // Mouse drag to pan
+                this.img.addEventListener('mousedown', (e) => this.startDrag(e));
+                document.addEventListener('mousemove', (e) => this.drag(e));
+                document.addEventListener('mouseup', () => this.endDrag());
+            }
+
+            setupTouchGestures() {
+                let touchStartX = 0;
+                let touchStartY = 0;
+                let touchStartTime = 0;
+                let initialTouchDistance = 0;
+
+                this.container.addEventListener('touchstart', (e) => {
+                    touchStartTime = Date.now();
+                    
+                    if (e.touches.length === 1) {
+                        touchStartX = e.touches[0].clientX;
+                        touchStartY = e.touches[0].clientY;
+                        
+                        if (this.scale > 1) {
+                            this.startDrag(e.touches[0]);
+                        }
+                    } else if (e.touches.length === 2) {
+                        initialTouchDistance = this.getTouchDistance(e.touches);
+                        this.initialScale = this.scale;
+                    }
+                }, { passive: false });
+
+                this.container.addEventListener('touchmove', (e) => {
+                    e.preventDefault();
+                    
+                    if (e.touches.length === 1 && this.scale > 1) {
+                        this.drag(e.touches[0]);
+                    } else if (e.touches.length === 2) {
+                        const currentDistance = this.getTouchDistance(e.touches);
+                        const delta = (currentDistance - initialTouchDistance) / 200;
+                        this.scale = Math.max(0.5, Math.min(4, this.initialScale + delta));
+                        this.updateTransform();
+                    }
+                }, { passive: false });
+
+                this.container.addEventListener('touchend', (e) => {
+                    const touchDuration = Date.now() - touchStartTime;
+                    const touchEndX = e.changedTouches[0].clientX;
+                    const diffX = touchStartX - touchEndX;
+
+                    // Swipe detection (only when not zoomed)
+                    if (this.scale === 1 && touchDuration < 300) {
+                        if (Math.abs(diffX) > 50) {
+                            if (diffX > 0) this.next();
+                            else this.prev();
+                        }
+                    }
+
+                    if (this.scale > 1) {
+                        this.endDrag();
+                    }
+                });
+            }
+
+            getTouchDistance(touches) {
+                const dx = touches[0].clientX - touches[1].clientX;
+                const dy = touches[0].clientY - touches[1].clientY;
+                return Math.sqrt(dx * dx + dy * dy);
+            }
+
+            startDrag(e) {
+                if (this.scale === 1) return;
+                this.isDragging = true;
+                this.startX = e.clientX - this.translateX;
+                this.startY = e.clientY - this.translateY;
+                this.img.style.cursor = 'grabbing';
+            }
+
+            drag(e) {
+                if (!this.isDragging) return;
+                e.preventDefault();
+                this.translateX = e.clientX - this.startX;
+                this.translateY = e.clientY - this.startY;
+                this.updateTransform();
+            }
+
+            endDrag() {
+                this.isDragging = false;
+                this.img.style.cursor = 'grab';
+            }
+
+            zoom(delta) {
+                this.scale = Math.max(0.5, Math.min(4, this.scale + delta));
+                if (this.scale === 1) {
+                    this.translateX = 0;
+                    this.translateY = 0;
+                }
+                this.updateTransform();
+            }
+
+            resetZoom() {
+                this.scale = 1;
+                this.translateX = 0;
+                this.translateY = 0;
+                this.updateTransform();
+            }
+
+            updateTransform() {
+                this.img.style.transform = `scale(${this.scale}) translate(${this.translateX}px, ${this.translateY}px)`;
+                this.zoomLevel.textContent = `${Math.round(this.scale * 100)}%`;
+                
+                // Toggle cursor based on zoom level
+                this.img.style.cursor = this.scale > 1 ? 'grab' : 'default';
+            }
+
+            open(index, images) {
+                this.currentIndex = index;
+                this.images = images;
+                this.loadImage();
+                
+                this.lightbox.classList.remove('hidden');
+                // Trigger reflow
+                void this.lightbox.offsetWidth;
+                this.lightbox.classList.remove('opacity-0');
+                
+                // Show swipe hint on mobile
+                if (window.innerWidth < 768) {
+                    setTimeout(() => {
+                        this.swipeHint.classList.remove('opacity-0');
+                        setTimeout(() => this.swipeHint.classList.add('opacity-0'), 3000);
+                    }, 500);
+                }
+                
+                document.body.style.overflow = 'hidden';
+                this.updateCounter();
+                this.generateMobileDots();
+            }
+
+            close() {
+                this.lightbox.classList.add('opacity-0');
+                setTimeout(() => {
+                    this.lightbox.classList.add('hidden');
+                    this.resetZoom();
+                    document.body.style.overflow = '';
+                }, 300);
+            }
+
+            loadImage() {
+                this.loader.classList.remove('opacity-0');
+                const src = this.images[this.currentIndex];
+                
+                this.img.onload = () => {
+                    this.loader.classList.add('opacity-0');
+                };
+                
+                this.img.src = src;
+                this.resetZoom();
+            }
+
+            prev() {
+                if (this.currentIndex > 0) {
+                    this.currentIndex--;
+                    this.loadImage();
+                    this.updateCounter();
+                    this.updateMobileDots();
+                }
+            }
+
+            next() {
+                if (this.currentIndex < this.images.length - 1) {
+                    this.currentIndex++;
+                    this.loadImage();
+                    this.updateCounter();
+                    this.updateMobileDots();
+                }
+            }
+
+            updateCounter() {
+                document.getElementById('lightboxCounter').textContent = 
+                    `${this.currentIndex + 1} / ${this.images.length}`;
+            }
+
+            generateMobileDots() {
+                const dotsContainer = document.getElementById('mobileDots');
+                dotsContainer.innerHTML = '';
+                
+                this.images.forEach((_, idx) => {
+                    const dot = document.createElement('button');
+                    dot.className = `w-2 h-2 rounded-full transition-all duration-300 ${
+                        idx === this.currentIndex ? 'bg-white w-6' : 'bg-white/40'
+                    }`;
+                    dot.onclick = () => {
+                        this.currentIndex = idx;
+                        this.loadImage();
+                        this.updateCounter();
+                        this.updateMobileDots();
+                    };
+                    dotsContainer.appendChild(dot);
+                });
+            }
+
+            updateMobileDots() {
+                const dots = document.getElementById('mobileDots').children;
+                Array.from(dots).forEach((dot, idx) => {
+                    dot.className = `w-2 h-2 rounded-full transition-all duration-300 ${
+                        idx === this.currentIndex ? 'bg-white w-6' : 'bg-white/40'
+                    }`;
+                });
+            }
+        }
+
+        // Initialize
+        const lightbox = new ModernLightbox();
+
+        // Usage example:
+        // lightbox.open(0, ['image1.jpg', 'image2.jpg', 'image3.jpg']);
+
+        // Integrate with about image
+        (function () {
+            const aboutAutoImage = document.getElementById('aboutAutoImage');
+            if (!aboutAutoImage) return;
+
+            const aboutImages = [
+                "<?= base_url('images/core/denah.png') ?>",
+                "<?= base_url('images/core/bg-balatkop1.jpeg') ?>",
+            ];
+
+            let currentIndex = 0;
+
+            aboutImages.forEach((source) => {
+                const preloaded = new Image();
+                preloaded.src = source;
+            });
+
+            aboutAutoImage.setAttribute('data-img', aboutImages[currentIndex]);
+            aboutAutoImage.src = aboutImages[currentIndex];
+
+            const switchImage = () => {
+                currentIndex = (currentIndex + 1) % aboutImages.length;
+                aboutAutoImage.src = aboutImages[currentIndex];
+                aboutAutoImage.setAttribute('data-img', aboutImages[currentIndex]);
+            };
+
+            setInterval(switchImage, 5000);
+
+            // Click to open lightbox
+            aboutAutoImage.addEventListener('click', () => {
+                lightbox.open(currentIndex, aboutImages);
+            });
+        })();
+
+        // Integrate with gallery items
+        document.addEventListener('click', (e) => {
+            const item = e.target.closest('.gallery-item');
+            if (!item || item === aboutAutoImage) return;
+            const src = item.getAttribute('data-img');
+            if (!src) return;
+            // For single image, create array with one item
+            lightbox.open(0, [src]);
+        });
+
+        //  ACTIVE NAV HIGHLIGHT — IntersectionObserver
             (function () {
                 const sectionIds = ['home', 'tentang', 'fasilitas', 'galeri', 'kontak'];
                 const desktopLinks = document.querySelectorAll('nav a.nav-link');
