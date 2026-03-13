@@ -1111,7 +1111,7 @@
                                 <div class="w-max-xl h-auto md: swiper-slide flex justify-center">
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
-                                            <img class="w-full h-full object-cover block" src="<?= base_url('images/ruang/bougenville/b.jpeg') ?>" alt="Ruang Kelas | Rapat">
+                                            <img class="w-full h-full object-cover block" src="<?= base_url('images/ruang/dahlia/d.jpeg') ?>" alt="Ruang Kelas | Rapat">
                                         </div>
                                         <div class="p-6 flex flex-col flex-1">
                                             <h3 class="text-2xl font-bold text-blue-600 mb-2">Ruang Kelas | Rapat</h3>
@@ -1171,7 +1171,7 @@
                                     </div>
                                 </div>
                                 <!-- Laboratorium -->
-                                <div class="w-max-xl h-auto swiper-slide flex justify-center">                            
+                                <div class="w-max-xl h-auto swiper-slide flex justify-center">
                                     <div class="w-full max-w-md sm:max-w-lg md:max-w-6xl bg-white shadow-xl overflow-hidden card-hover hover:shadow-2xl transition-shadow text-left h-full flex flex-col reveal-on-scroll">
                                         <div class="h-52 md:h-70 flex items-center justify-center">
                                             <img src="<?= base_url('/images/core/laboratorium.jpeg') ?>" alt="Laboratorium" class="w-full h-full object-cover block">
@@ -1834,74 +1834,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- aula teratai -->
-                        <div class="p-6 modal-info-utama modal-info-block hidden" data-slide="1">
-                            <div class="flex flex-col">
-                                <div class="bg-blue-950 text-white p-2 rounded-lg mb-3 items-center justify-center">
-                                    <h3 class="text-2xl font-bold p-0 text-center">Aula Teratai</h3>
-                                </div>
-                                <div class="flex flex-col md:flex-row md:items-center gap-4 mb-3 justify-between">
-                                    <div class="inline-block bg-blue-100 border border-blue-300 px-3 py-2 rounded-lg mb-3">
-                                        <p class="text-gray-700 text-sm mb-1">
-                                            <span class="font-bold">Ukuran :</span> 384m<sup>2</sup>
-                                        </p>
-                                        <p class="text-gray-700 text-sm">
-                                            <span class="font-bold">Kapasitas :</span> ±250 orang
-                                        </p>
-                                    </div>
-                                    <div class="w-fulll md:w-auto">
-                                        <a href="https://wa.me/6282135543569" target="_blank" class="h-10 w-auto p-4 text-decoration-none inline-flex items-center justify-center gap-3 bg-blue-950 hover:bg-blue-800 text-white rounded-lg font-bold transition-all duration-300 hover:scale-105 shadow-lg hover-text-amber hover:shadow-xl">
-                                            <span class="text-lg sm:text-lg">Hubungi Kami</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <!-- gambar2 -->
-                            <div class="swiperimg mySwiperimg">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/teratai/teratai.jpeg') ?>" data-alt="Aula Teratai - Gambar 1">
-                                        <img src="<?= base_url('images/aula/teratai/teratai.jpeg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/teratai/teratai1.jpeg') ?>" data-alt="Aula Teratai - Gambar 2">
-                                        <img src="<?= base_url('images/aula/teratai/teratai1.jpeg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/teratai/teratai2.jpeg') ?>" data-alt="Aula Teratai - Gambar 3">
-                                        <img src="<?= base_url('images/aula/teratai/teratai2.jpeg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" data-img="<?= base_url('images/aula/teratai/teratai3.jpeg') ?>" data-alt="Aula Teratai - Gambar 4">
-                                        <img src="<?= base_url('images/aula/teratai/teratai3.jpeg') ?>" class="w-full h-full object-cover">
-                                        <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
-                                            <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Aula Teratai</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                            <div class="mt-3.5">
-                                <p class="text-gray-600 text-lg mb-3 modal-info-desc">Mencari tempat pertemuan berukuran besar dengan daya tampung yang banyak tidak akan sulit lagi karena Aula Teratai telah mempresentasikannya kepada Anda. Sempurna untuk acara formal maupun gathering dan reuni.</p>
-                                <p class="text-gray-600 text-lg mb-3">Fasilitas dan keuntungan yang disediakan:</p>
-                                <ul class="modal-info-list list-disc">
-                                    <li>Aula teratai berada di Gedung Tengah Balatkop</li>
-                                    <li>Dipergunakan untuk pembukaan pelatihan maupun acara formail lainnya.</li>
-                                    <li>Meja dan kursi peserta serta narasumber</li>
-                                    <li>LCD dan proyektor</li>
-                                    <li>Sound system lengkap</li>
-                                    <li>Toilet</li>
-                                    <li>Ruang transit</li>
-                                    <li>Ruang monitor</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                     <div class="p-4 border-t">
                         <button onclick="closeBuildingModal('aula')" class="w-full bg-blue-950 text-white py-3 rounded-xl font-bold hover:bg-blue-800 transition hover-text-gold">Tutup</button>
@@ -2416,7 +2348,7 @@
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Ruang Kelas - Gambar 1</span>
                                         </div>
-                                    </div>                                                                                                           
+                                    </div>
                                 </div>
                                 <div class="swiper-pagination"></div>
                             </div>
@@ -2647,7 +2579,7 @@
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Tata Boga - Gambar 2</span>
                                         </div>
-                                    </div>                            
+                                    </div>
                                     <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/boga/boga3.jpeg') ?>" data-alt="Laboratorium Tata Boga - Gambar 3">
                                         <img src="<?= base_url('images/lab/boga/boga3.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
@@ -2709,7 +2641,7 @@
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Komputer - Gambar 2</span>
                                         </div>
-                                    </div>                            
+                                    </div>
                                     <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/komputer/komputer2.jpeg') ?>" data-alt="Laboratorium Komputer - Gambar 3">
                                         <img src="<?= base_url('images/lab/komputer/komputer2.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
@@ -2772,7 +2704,7 @@
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
                                             <span class="text-white font-bold opacity-0 group-hover:opacity-100 transition-opacity">Laboratorium Jahit - Gambar 2</span>
                                         </div>
-                                    </div>                            
+                                    </div>
                                     <div class="swiper-slide aspect-video w-94 h-auto group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition-transform duration-300 hover:shadow-2xl gallery-item" style="aspect-ratio: 16/9;" data-img="<?= base_url('images/lab/jahit/jahit2.jpeg') ?>" data-alt="Laboratorium Jahit - Gambar 3">
                                         <img src="<?= base_url('images/lab/jahit/jahit2.jpeg') ?>" class="w-full h-full object-cover">
                                         <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4" style="background-color: rgba(0, 0, 0, 0.14);">
