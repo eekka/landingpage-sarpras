@@ -1305,7 +1305,7 @@
                                 <polyline points="9 22 9 12 15 12 15 22"/>
                             </svg>
                         </div>
-                        <p class="fcard-title">Ruang Tunggu (Geleri)</p>
+                        <p class="fcard-title">Ruang Tunggu (Gallery)</p>
                         <p class="fcard-desc">Ruang tunggu modern dengan fasilitas nyaman dan lengkap untuk peserta</p>
                         <svg class="fcard-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
                     </button>
@@ -1544,9 +1544,10 @@
             </div>
         </footer>
         <!-- /footer -->
-
-        <!-- Modal -->
-        <!-- Modal Alur Penyewaan -->
+        
+        <!-- modal -->
+         <!-- Modal Gedung-->
+          <!-- Modal Alur Penyewaan -->
             <div id="modalAlurPenyewaan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-none w-full max-h-[90vh] overflow-y-scroll shadow-2xl modal-panel" style="max-width:min(96vw, 1600px);">
                     <div class="static md:sticky md:top-0 z-20 bg-white px-6 py-4 text-center">
@@ -2746,7 +2747,7 @@
             </div>
 
 
-        <!-- fasilitas -->
+         <!-- Modal fasilitas -->
             <!-- Modal Kesehatan -->
             <div id="modalKesehatan" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel">
@@ -3068,7 +3069,7 @@
                 </div>
             </div>
 
-            <!-- Modal Ruang Tunggu -->
+            <!-- Modal Ruang Tunggu & Gallery -->
             <div id="modalRuangtunggu" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4 overflow-y-scroll">
                 <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-scroll modal-panel my-auto sm:my-8">
                     <div class="sticky top-0 bg-white border-b flex justify-between items-center p-4 sm:p-6">
@@ -3079,7 +3080,7 @@
                                     <polyline points="9 22 9 12 15 12 15 22"/>
                                 </svg>
                             </span>
-                            <span>Ruang Tunggu</span>
+                            <span>Ruang Tunggu & Gallery</span>
                         </h2>
                         <button onclick="closeModal('ruangtunggu')" class="text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
                     </div>
@@ -3345,9 +3346,12 @@
             }
 
             // Swiper (Modal Gedung) 
+            // swiper aula
             const modalSwipers = {
                 Aula: new window.Swiper('#swiperAula', {
                     loop: false,
+                    observer: true, 
+                    observeParents: true,
                     initialSlide: 0,
                     slidesPerView: 1.2,
                     centeredSlides: true,
@@ -3364,8 +3368,11 @@
                         }
                     }
                 }),
+                // swiper ruang
                 Ruang: new window.Swiper('#swiperRuang', {
                     loop: false,
+                    observer: true, 
+                    observeParents: true,
                     initialSlide: 0,
                     slidesPerView: 1.2,
                     centeredSlides: true,
@@ -3382,8 +3389,11 @@
                         }
                     }
                 }),
+                // swiper asrama
                 Asrama: new window.Swiper('#swiperAsrama', {
                     loop: false,
+                    observer: true, 
+                    observeParents: true,
                     initialSlide: 0,
                     slidesPerView: 1.2,
                     centeredSlides: true,
@@ -3400,8 +3410,11 @@
                         }
                     }
                 }),
+                // swiper lab
                 Laboratorium: new window.Swiper('#swiperLaboratorium', {
                     loop: false,
+                    observer: true, 
+                    observeParents: true,
                     initialSlide: 0,
                     slidesPerView: 1.2,
                     centeredSlides: true,
@@ -3420,12 +3433,20 @@
                 }),
             };
 
+            // Stop modal swipers autoplay until the modal is opened
+            Object.values(modalSwipers).forEach(swiper => {
+                if (swiper && swiper.autoplay && typeof swiper.autoplay.stop === 'function') {
+                    swiper.autoplay.stop();
+                }
+            });
+
             // modal open close
             function openModal(facility) {
                 const modal = document.getElementById('modal' + facility.charAt(0).toUpperCase() + facility.slice(1));
                 if (modal) {
                     modal.classList.remove('hidden');
                     document.body.style.overflow = 'hidden';
+                    swiperModal.autoplay.start();
                 }
             }
 
@@ -3434,30 +3455,10 @@
                 if (modal) {
                     modal.classList.add('hidden');
                     document.body.style.overflow = 'auto';
+                    swiperModal.autoplay.stop();
                 }
             }
 
-            // Close modal klik luar
-            document.addEventListener('click', function(event) {
-                const modals = document.querySelectorAll('[id^="modal"]');
-                modals.forEach(modal => {
-                    if (event.target === modal) {
-                        modal.classList.add('hidden');
-                        document.body.style.overflow = 'auto';
-                    }
-                });
-            });
-
-            // Close modal esc
-            document.addEventListener('keydown', function(event) {
-                if (event.key === 'Escape') {
-                    const modals = document.querySelectorAll('[id^="modal"]');
-                    modals.forEach(modal => {
-                        modal.classList.add('hidden');
-                        document.body.style.overflow = 'auto';
-                    });
-                }
-            });
             // modal gedung
             // Building Modal Functions
             function openBuildingModal(building) {
@@ -3472,11 +3473,13 @@
                     modal.classList.remove('hidden');
                     document.body.style.overflow = 'hidden';
                     // ensure swiper updates after modal becomes visible
-                    const key = 'Ruangan' + building.charAt(0).toUpperCase() + building.slice(1);
-                    if (modalSwipers[key] && typeof modalSwipers[key].update === 'function') {
+                    const key = building.charAt(0).toUpperCase() + building.slice(1);
+                    const swiper = modalSwipers[key];
+                    if (swiper) {
                         setTimeout(() => {
-                            modalSwipers[key].update();
-                            modalSwipers[key].slideTo(0, 0); 
+                            if (typeof swiper.update === 'function') swiper.update();
+                            if (typeof swiper.slideTo === 'function') swiper.slideTo(0, 0);
+                            if (swiper.autoplay && typeof swiper.autoplay.start === 'function') swiper.autoplay.start();
                         }, 250);
                     }
                 }
@@ -3493,21 +3496,51 @@
                 if (modal) {
                     modal.classList.add('hidden');
                     document.body.style.overflow = 'auto';
+                    const key = building.charAt(0).toUpperCase() + building.slice(1);
+                    const swiper = modalSwipers[key];
+                    if (swiper && swiper.autoplay && typeof swiper.autoplay.stop === 'function') {
+                        swiper.autoplay.stop();
+                    }
                 }
             }
 
-            // Close building modal when clicking backdrop
+            // Close modal klik luar
             document.addEventListener('click', function(event) {
-                const modals = document.querySelectorAll('[id^="modal"][id*="utama"], [id^="modal"][id*="pendukung"], [id^="modal"][id*="publik"]');
+                const modals = document.querySelectorAll('[id^="modal"]');
                 modals.forEach(modal => {
                     if (event.target === modal) {
-                        const building = modal.id.includes('Utama') ? 'utama' : modal.id.includes('Pendukung') ? 'pendukung' : 'publik';
-                        closeBuildingModal(building);
+                        modal.classList.add('hidden');
+                        document.body.style.overflow = 'auto';
+                        swiperModal.autoplay.stop();
+
+                        // stop any modal swipers (aula/ruang/asrama/lab)
+                        Object.values(modalSwipers).forEach(swiper => {
+                            if (swiper && swiper.autoplay && typeof swiper.autoplay.stop === 'function') {
+                                swiper.autoplay.stop();
+                            }
+                        });
                     }
                 });
             });
 
-            // About image auto change every 5s with fade transition (3 images)
+            // Close modal esc
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    const modals = document.querySelectorAll('[id^="modal"]');
+                    modals.forEach(modal => {
+                        modal.classList.add('hidden');
+                        document.body.style.overflow = 'auto';
+                    });
+
+                    Object.values(modalSwipers).forEach(swiper => {
+                        if (swiper && swiper.autoplay && typeof swiper.autoplay.stop === 'function') {
+                            swiper.autoplay.stop();
+                        }
+                    });
+                }
+            });
+
+            // gambar About auto ganti
             (function () {
                 const aboutAutoImage = document.getElementById('aboutAutoImage');
 
