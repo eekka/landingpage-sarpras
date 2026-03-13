@@ -1651,7 +1651,7 @@
 
             <!-- gedung -->
             <!-- Modal Aula -->
-            <div id="modalAula" class="hidden fixed inset-0 z-60 modal-overlay flex items-center justify-center p-4">
+            <div id="modalAula" class="hidden fixed inset-0 z-40 modal-overlay flex items-center justify-center p-4">
                 <div class="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-scroll overflow-x-hidden shadow-2xl modal-panel">
                     <!-- Gambar slide -->
                     <div class="relative">
